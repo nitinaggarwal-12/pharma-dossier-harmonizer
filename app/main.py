@@ -205,10 +205,44 @@ def list_specifications(api_key: str = Depends(verify_api_key)):
 @app.post("/analyze")
 def analyze_dossier(request: AnalysisRequest, api_key: str = Depends(verify_api_key)):
     import requests
-    from google.auth.transport.requests import Request
-    from google.oauth2 import id_token
     
     prompt = f"Dossier Name: {request.dossier_name}. Analysis Types: {', '.join(request.analysis_types)}."
+    
+    # Try local ADK server first
+    local_url = "http://127.0.0.1:8001/run"
+    try:
+        payload = {
+            "appName": "pharma_agent",
+            "userId": "nitinagga",
+            "sessionId": "local-session",
+            "newMessage": {
+                "parts": [{"text": prompt}],
+                "role": "user"
+            }
+        }
+        response = requests.post(local_url, json=payload, timeout=120)
+        response.raise_for_status()
+        events = response.json()
+        
+        text_response = ""
+        for event in events:
+            if isinstance(event, dict) and "content" in event and "parts" in event["content"]:
+                for part in event["content"]["parts"]:
+                    if isinstance(part, dict) and "text" in part and part["text"]:
+                        text_response += part["text"]
+                        
+        if text_response:
+            return {
+                "status": "success",
+                "response": text_response
+            }
+    except Exception as local_err:
+        # Fall back to Cloud Run agent if local server is down or error occurs
+        pass
+
+    # Cloud Run fallback
+    from google.auth.transport.requests import Request
+    from google.oauth2 import id_token
     
     audience = "https://adk-default-service-name-528479452485.us-central1.run.app"
     cloud_run_url = f"{audience}/query"
@@ -234,6 +268,7 @@ def analyze_dossier(request: AnalysisRequest, api_key: str = Depends(verify_api_
             "status": "error",
             "response": f"Error calling Cloud Run agent: {e}"
         }
+
 
 from fastapi import Form
 
