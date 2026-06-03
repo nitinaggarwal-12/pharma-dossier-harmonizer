@@ -1,0 +1,998 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="https://www.accessdata.fda.gov/spl/stylesheet/spl.xsl" type="text/xsl"?>
+<document xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 https://www.accessdata.fda.gov/spl/schema/spl.xsd">
+   <id root="a018768a-e7f1-4a97-a0e3-54948c1d0deb"/>
+   <code code="50578-4" codeSystem="2.16.840.1.113883.6.1" displayName="PRESCRIPTION ANIMAL DRUG LABEL"/>
+   <title>
+      <content styleCode="bold"/>
+   </title>
+   <effectiveTime value="20260224"/>
+   <setId root="9ccf3782-220d-4e8e-95d0-8e79a9a909ae"/>
+   <versionNumber value="6"/>
+   <author>
+      <time/>
+      <assignedEntity>
+         <representedOrganization>
+            <id extension="966985624" root="1.3.6.1.4.1.519.1"/>
+            <name>Elanco US Inc.</name>
+            <assignedEntity>
+               <assignedOrganization/>
+            </assignedEntity>
+         </representedOrganization>
+      </assignedEntity>
+   </author>
+   <component>
+      <structuredBody>
+         <component>
+            <section>
+               <id root="e90c8548-f3aa-47eb-b4d2-be9d6ce0740b"/>
+               <code code="48780-1" codeSystem="2.16.840.1.113883.6.1" displayName="SPL product data elements section"/>
+               <effectiveTime value="20260224"/>
+               <subject>
+                  <manufacturedProduct>
+                     <manufacturedProduct>
+                        <code code="58198-0065" codeSystem="2.16.840.1.113883.6.69"/>
+                        <name>Drontal Plus</name>
+                        <formCode code="C42998" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET"/>
+                        <asEntityWithGeneric>
+                           <genericMedicine>
+                              <name>PRAZIQUANTEL, PYRANTEL PAMOATE, FEBANTEL</name>
+                           </genericMedicine>
+                        </asEntityWithGeneric>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator unit="mg" value="22.7"/>
+                              <denominator unit="1" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="6490C9U457" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>PRAZIQUANTEL</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="6490C9U457" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>PRAZIQUANTEL</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIM">
+                           <quantity>
+                              <numerator unit="mg" value="22.7"/>
+                              <denominator unit="1" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="81BK194Z5M" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>PYRANTEL PAMOATE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="4QIH0N49E7" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>PYRANTEL</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator unit="mg" value="113.4"/>
+                              <denominator unit="1" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="S75C401OS1" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>FEBANTEL</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="S75C401OS1" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>FEBANTEL</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <asContent>
+                           <quantity>
+                              <numerator unit="1" value="50"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code code="58198-0065-1" codeSystem="2.16.840.1.113883.6.69"/>
+                              <formCode code="C43169" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE"/>
+                           </containerPackagedProduct>
+                        </asContent>
+                     </manufacturedProduct>
+                     <subjectOf>
+                        <approval>
+                           <id extension="NADA141007" root="2.16.840.1.113883.3.150"/>
+                           <code code="C73593" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="NADA"/>
+                           <author>
+                              <territorialAuthority>
+                                 <territory>
+                                    <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                 </territory>
+                              </territorialAuthority>
+                           </author>
+                        </approval>
+                     </subjectOf>
+                     <subjectOf>
+                        <marketingAct>
+                           <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <statusCode code="active"/>
+                           <effectiveTime>
+                              <low value="19940519"/>
+                           </effectiveTime>
+                        </marketingAct>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLCOLOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C48330" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="yellow" xsi:type="CE">
+                              <originalText>yellow</originalText>
+                           </value>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSIZE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value unit="mm" value="10" xsi:type="PQ"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSHAPE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C48348" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ROUND" xsi:type="CE">
+                              <originalText>ROUND</originalText>
+                           </value>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSCORE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value value="2" xsi:type="INT"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLIMPRINT" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value xsi:type="ST">D10</value>
+                        </characteristic>
+                     </subjectOf>
+                     <consumedIn>
+                        <substanceAdministration>
+                           <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORAL"/>
+                        </substanceAdministration>
+                     </consumedIn>
+                  </manufacturedProduct>
+               </subject>
+               <subject>
+                  <manufacturedProduct>
+                     <manufacturedProduct>
+                        <code code="58198-0066" codeSystem="2.16.840.1.113883.6.69"/>
+                        <name>Drontal Plus</name>
+                        <formCode code="C42998" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET"/>
+                        <asEntityWithGeneric>
+                           <genericMedicine>
+                              <name>PRAZIQUANTEL, PYRANTEL PAMOATE, FEBANTEL</name>
+                           </genericMedicine>
+                        </asEntityWithGeneric>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator unit="mg" value="68"/>
+                              <denominator unit="1" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="6490C9U457" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>PRAZIQUANTEL</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="6490C9U457" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>PRAZIQUANTEL</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIM">
+                           <quantity>
+                              <numerator unit="mg" value="68"/>
+                              <denominator unit="1" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="81BK194Z5M" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>PYRANTEL PAMOATE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="4QIH0N49E7" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>PYRANTEL</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator unit="mg" value="340.2"/>
+                              <denominator unit="1" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="S75C401OS1" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>FEBANTEL</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="S75C401OS1" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>FEBANTEL</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <asContent>
+                           <quantity>
+                              <numerator unit="1" value="50"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code code="58198-0066-1" codeSystem="2.16.840.1.113883.6.69"/>
+                              <formCode code="C43169" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE"/>
+                           </containerPackagedProduct>
+                        </asContent>
+                     </manufacturedProduct>
+                     <subjectOf>
+                        <approval>
+                           <id extension="NADA141007" root="2.16.840.1.113883.3.150"/>
+                           <code code="C73593" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="NADA"/>
+                           <author>
+                              <territorialAuthority>
+                                 <territory>
+                                    <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                 </territory>
+                              </territorialAuthority>
+                           </author>
+                        </approval>
+                     </subjectOf>
+                     <subjectOf>
+                        <marketingAct>
+                           <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <statusCode code="active"/>
+                           <effectiveTime>
+                              <low value="19940519"/>
+                           </effectiveTime>
+                        </marketingAct>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLCOLOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C48330" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="yellow" xsi:type="CE">
+                              <originalText>yellow</originalText>
+                           </value>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSIZE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value unit="mm" value="14" xsi:type="PQ"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSHAPE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C48348" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ROUND" xsi:type="CE">
+                              <originalText>ROUND</originalText>
+                           </value>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSCORE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value value="2" xsi:type="INT"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLIMPRINT" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value xsi:type="ST">D30</value>
+                        </characteristic>
+                     </subjectOf>
+                     <consumedIn>
+                        <substanceAdministration>
+                           <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORAL"/>
+                        </substanceAdministration>
+                     </consumedIn>
+                  </manufacturedProduct>
+               </subject>
+               <subject>
+                  <manufacturedProduct>
+                     <manufacturedProduct>
+                        <code code="58198-0070" codeSystem="2.16.840.1.113883.6.69"/>
+                        <name>Drontal Plus</name>
+                        <formCode code="C42998" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET"/>
+                        <asEntityWithGeneric>
+                           <genericMedicine>
+                              <name>PRAZIQUANTEL, PYRANTEL PAMOATE, FEBANTEL</name>
+                           </genericMedicine>
+                        </asEntityWithGeneric>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator unit="mg" value="136"/>
+                              <denominator unit="1" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="6490C9U457" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>PRAZIQUANTEL</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="6490C9U457" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>PRAZIQUANTEL</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIM">
+                           <quantity>
+                              <numerator unit="mg" value="136"/>
+                              <denominator unit="1" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="81BK194Z5M" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>PYRANTEL PAMOATE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="4QIH0N49E7" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>PYRANTEL</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator unit="mg" value="680.4"/>
+                              <denominator unit="1" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="S75C401OS1" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>FEBANTEL</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="S75C401OS1" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>FEBANTEL</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <asContent>
+                           <quantity>
+                              <numerator unit="1" value="30"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code code="58198-0070-1" codeSystem="2.16.840.1.113883.6.69"/>
+                              <formCode code="C43169" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE"/>
+                           </containerPackagedProduct>
+                        </asContent>
+                     </manufacturedProduct>
+                     <subjectOf>
+                        <approval>
+                           <id extension="NADA141007" root="2.16.840.1.113883.3.150"/>
+                           <code code="C73593" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="NADA"/>
+                           <author>
+                              <territorialAuthority>
+                                 <territory>
+                                    <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                 </territory>
+                              </territorialAuthority>
+                           </author>
+                        </approval>
+                     </subjectOf>
+                     <subjectOf>
+                        <marketingAct>
+                           <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <statusCode code="active"/>
+                           <effectiveTime>
+                              <low value="19940519"/>
+                           </effectiveTime>
+                        </marketingAct>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLCOLOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C48330" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="yellow" xsi:type="CE">
+                              <originalText>yellow</originalText>
+                           </value>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSIZE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value unit="mm" value="19" xsi:type="PQ"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSHAPE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C48345" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="OVAL" xsi:type="CE">
+                              <originalText>OVAL</originalText>
+                           </value>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSCORE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value value="2" xsi:type="INT"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLIMPRINT" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value xsi:type="ST">D60</value>
+                        </characteristic>
+                     </subjectOf>
+                     <consumedIn>
+                        <substanceAdministration>
+                           <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORAL"/>
+                        </substanceAdministration>
+                     </consumedIn>
+                  </manufacturedProduct>
+               </subject>
+            </section>
+         </component>
+         <component>
+            <section ID="s1">
+               <id root="6a99007e-78ca-4e16-b310-e6080166723c"/>
+               <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">
+                        <content styleCode="italics">Elanco</content>
+                     </content>™ </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Drontal<sup>™</sup> Plus</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">(praziquantel/pyrantel pamoate/febantel) Tablets</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Broad Spectrum Anthelmintic for Dogs</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">CAUTION:</content> Federal law restricts this drug to use by or on the order of a licensed veterinarian. </paragraph>
+               </text>
+               <effectiveTime value="20260224"/>
+            </section>
+         </component>
+         <component>
+            <section ID="s2">
+               <id root="d863937d-f943-483a-b756-857437693ae0"/>
+               <code code="34089-3" codeSystem="2.16.840.1.113883.6.1" displayName="DESCRIPTION SECTION"/>
+               <title>DESCRIPTION: </title>
+               <text>
+                  <paragraph>Drontal Plus (praziquantel/pyrantel pamoate/ febantel) Broad Spectrum Anthelmintic Tablets are available in three sizes. Each size is scored for convenient oral administration. </paragraph>
+                  <paragraph>Each Drontal Plus Tablet for Puppies and Small Dogs contains 22.7 mg praziquantel, 22.7 mg pyrantel base as pyrantel pamoate and 113.4 mg febantel. </paragraph>
+                  <paragraph>Each Drontal Plus Tablet for Medium Sized Dogs contains 68.0 mg praziquantel, 68.0 mg pyrantel base as pyrantel pamoate and 340.2 mg febantel. </paragraph>
+                  <paragraph>Each Drontal Plus Tablet for Large Dogs contains 136.0 mg praziquantel, 136.0 mg pyrantel base as pyrantel pamoate, and 680.4 mg febantel. </paragraph>
+               </text>
+               <effectiveTime value="20260224"/>
+            </section>
+         </component>
+         <component>
+            <section ID="s3">
+               <id root="4fc44f4c-1738-479e-985d-c1f967db4aca"/>
+               <code code="43679-0" codeSystem="2.16.840.1.113883.6.1" displayName="MECHANISM OF ACTION SECTION"/>
+               <title>ACTION:</title>
+               <text>
+                  <paragraph>Drontal Plus Tablets contain three active ingredients having different modes of action and spectra of activity. Praziquantel is active against cestodes (tapeworms). Praziquantel is absorbed, metabolized in the liver and excreted in the bile. Upon entering the digestive tract from the bile, cestocidal activity is exhibited.<sup>1</sup> Following exposure to praziquantel, the tapeworm loses its ability to resist digestion by the mammalian host. Because of this, whole tapeworms, including the scolices, are very rarely passed after administration of praziquantel. In many instances only disintegrated and partially digested pieces of tapeworms will be seen in the stool. The majority of tapeworms are digested and are not found in the feces. </paragraph>
+                  <paragraph>Pyrantel pamoate is active against hookworms and ascarids. Pyrantel pamoate acts on the cholinergic receptors of the nematode resulting in spastic paralysis. Peristaltic action of the intestinal tract then eliminates the parasite.<sup>2</sup>
+                  </paragraph>
+                  <paragraph>Febantel is active against nematode parasites including whipworms. Febantel is rapidly absorbed and metabolized in the animal. Available information suggests that the parasite's energy metabolism is blocked, leading to energy exchange breakdown and inhibited glucose uptake. </paragraph>
+                  <paragraph>Laboratory efficacy and clinical studies conducted with Drontal Plus Tablets demonstrate that each of the three active ingredients act independently without interference. The combined tablet formulation provides a wide spectrum of activity against the indicated species of intestinal helminths. </paragraph>
+               </text>
+               <effectiveTime value="20260224"/>
+            </section>
+         </component>
+         <component>
+            <section ID="s4">
+               <id root="6c5987b5-7ff7-4f8f-a885-13e905a019ce"/>
+               <code code="34067-9" codeSystem="2.16.840.1.113883.6.1" displayName="INDICATIONS &amp; USAGE SECTION"/>
+               <title>INDICATIONS: </title>
+               <text>
+                  <paragraph>Drontal Plus (praziquantel/pyrantel pamoate/ febantel) Broad Spectrum Anthelmintic Tablets are indicated for removal of Tapeworms <content styleCode="italics">(Dipylidium caninum, Taenia pisiformis, Echinococcus granulosus,</content> and removal and control of <content styleCode="italics">Echincoccus multilocularis).</content> For removal of Hookworms <content styleCode="italics">(Ancylostoma caninum, Uncinaria stenocephala),</content> Ascarids <content styleCode="italics">(Toxocara canis, Toxascaris leonina),</content> and Whipworms <content styleCode="italics">(Trichuris vulpis)</content> in dogs. </paragraph>
+               </text>
+               <effectiveTime value="20260224"/>
+            </section>
+         </component>
+         <component>
+            <section ID="s5">
+               <id root="0125bd51-3e38-42a0-8a53-f1e146e7c71c"/>
+               <code code="34070-3" codeSystem="2.16.840.1.113883.6.1" displayName="CONTRAINDICATIONS SECTION"/>
+               <title>CONTRAINDICATIONS: </title>
+               <text>
+                  <paragraph>DO NOT USE IN PREGNANT ANIMALS. Dogs treated with elevated levels (6 consecutive days with 3 times the labeled dosage rate) of the combination of febantel and praziquantel in early pregnancy demonstrated an increased incidence of abortion and fetal abnormalities.<sup>8</sup> The effects of Drontal Plus on pregnant animals have not been determined. </paragraph>
+                  <paragraph>There are no known contraindications against the use of praziquantel or pyrantel pamoate in dogs. </paragraph>
+               </text>
+               <effectiveTime value="20260224"/>
+            </section>
+         </component>
+         <component>
+            <section ID="s6">
+               <id root="7ceb85a9-088b-42fb-b597-f7155e511b3a"/>
+               <code code="34068-7" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE &amp; ADMINISTRATION SECTION"/>
+               <title>USE DIRECTIONS </title>
+               <effectiveTime value="20260224"/>
+               <component>
+                  <section ID="s7">
+                     <id root="ffb53e77-8d11-4c39-b457-7db003547897"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <text>
+                        <paragraph>
+                           <content styleCode="bold">DOSAGE:</content> The presence of parasites should be confirmed by laboratory fecal examination. Weigh the animal before treatment. Administer the proper dosage as specified in the following table as a single oral treatment. </paragraph>
+                        <table ID="_Reft300" width="100%">
+                           <caption>DOSAGE CHARTS </caption>
+                           <col width="17%"/>
+                           <col width="14%"/>
+                           <col width="19%"/>
+                           <col width="16%"/>
+                           <col width="17%"/>
+                           <col width="18%"/>
+                           <tfoot>
+                              <tr>
+                                 <td align="left" colspan="6" valign="top">*NOT FOR USE IN PUPPIES LESS THAN 3 WEEKS OF AGE OR DOGS WEIGHING LESS THAN 2 LBS. </td>
+                              </tr>
+                           </tfoot>
+                           <tbody>
+                              <tr>
+                                 <td align="center" colspan="2" styleCode="Rrule Botrule Lrule Toprule " valign="top">
+                                    <paragraph>Drontal Plus<br/>Tablets<br/>for Puppies and<br/>Small Dogs*<br/>(2 - 25 lbs.) </paragraph>
+                                 </td>
+                                 <td align="center" colspan="2" styleCode="Rrule Botrule Toprule " valign="top">
+                                    <paragraph>Drontal Plus<br/>Tablets<br/>for Medium<br/>Sized Dogs<br/>(26 - 60 lbs.) </paragraph>
+                                 </td>
+                                 <td align="center" colspan="2" styleCode="Rrule Botrule Toprule " valign="top">
+                                    <paragraph>Drontal Plus<br/>Tablets<br/>for Large Dogs<br/>(45 lbs.<br/>and greater) </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td align="center" styleCode="Lrule " valign="middle">
+                                    <paragraph>Body Wt.<br/>(lbs.) </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule " valign="middle">
+                                    <paragraph>No. of<br/>Tablets </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Toprule " valign="middle">
+                                    <paragraph>Body Wt.<br/>(lbs.) </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Toprule " valign="middle">
+                                    <paragraph>No. of<br/>Tablets </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Toprule " valign="middle">
+                                    <paragraph>Body Wt.<br/>(lbs.) </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Toprule " valign="middle">
+                                    <paragraph>No. of<br/>Tablets </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td align="center" styleCode="Lrule " valign="middle">
+                                    <paragraph>2 – 4</paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule " valign="middle">
+                                    <paragraph>0.5 </paragraph>
+                                 </td>
+                                 <td align="center" valign="middle">
+                                    <paragraph>26 – 30</paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule " valign="middle">
+                                    <paragraph>1.0 </paragraph>
+                                 </td>
+                                 <td align="center" valign="middle">
+                                    <paragraph>45 – 60</paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule " valign="middle">
+                                    <paragraph>1.0 </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td align="center" styleCode="Lrule " valign="middle">
+                                    <paragraph>5 – 7</paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule " valign="middle">
+                                    <paragraph>1.0 </paragraph>
+                                 </td>
+                                 <td align="center" valign="middle">
+                                    <paragraph>31 – 44</paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule " valign="middle">
+                                    <paragraph>1.5 </paragraph>
+                                 </td>
+                                 <td align="center" valign="middle">
+                                    <paragraph>61 – 90</paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule " valign="middle">
+                                    <paragraph>1.5 </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td align="center" styleCode="Lrule " valign="middle">
+                                    <paragraph>8 – 12</paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule " valign="middle">
+                                    <paragraph>1.5 </paragraph>
+                                 </td>
+                                 <td align="center" valign="middle">
+                                    <paragraph>45 – 60</paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule " valign="middle">
+                                    <paragraph>2.0 </paragraph>
+                                 </td>
+                                 <td align="center" valign="middle">
+                                    <paragraph>91 – 120</paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule " valign="middle">
+                                    <paragraph>2.0 </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td align="center" styleCode="Lrule " valign="middle">
+                                    <paragraph>13 – 18</paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule " valign="middle">
+                                    <paragraph>2.0 </paragraph>
+                                 </td>
+                                 <td valign="middle"/>
+                                 <td styleCode="Rrule " valign="middle"/>
+                                 <td valign="middle"/>
+                                 <td styleCode="Rrule " valign="middle"/>
+                              </tr>
+                              <tr>
+                                 <td align="center" styleCode="Botrule Lrule " valign="middle">
+                                    <paragraph>19 – 25</paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="middle">
+                                    <paragraph>2.5 </paragraph>
+                                 </td>
+                                 <td styleCode="Botrule " valign="middle"/>
+                                 <td styleCode="Rrule Botrule " valign="middle"/>
+                                 <td styleCode="Botrule " valign="middle"/>
+                                 <td styleCode="Rrule Botrule " valign="middle"/>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <paragraph>
+                           <content styleCode="bold">ADMINISTRATION:</content> Drontal Plus Tablets have been developed for oral administration. Tablets may be given directly by mouth or offered in a small amount of food. Fasting is neither necessary nor recommended prior to or after treatment. </paragraph>
+                        <paragraph>
+                           <content styleCode="bold">RETREATMENT:</content> For those animals living where reinfections are likely to occur, clients should be instructed in the steps to optimize prevention; otherwise, retreatment may be necessary. This is true in cases of <content styleCode="italics">Dipylidium caninum</content> where reinfection is almost certain to occur if fleas are not removed from the animal and its environment. In addition, for control of <content styleCode="italics">Echinococcus multilocularis,</content> a program of regular treatment every 21 to 26 days may be indicated (see <content styleCode="italics">
+                              <linkHtml href="#E_multilocularis">E. multilocularis</linkHtml>
+                           </content> section below). </paragraph>
+                     </text>
+                     <effectiveTime value="20260224"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="s8">
+                     <id root="261fcd12-f57d-4d19-82b8-6e3ff5fec7ca"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <text>
+                        <paragraph ID="E_multilocularis">
+                           <content styleCode="bold">ECHINOCOCCUS MULTILOCULARIS: </content>
+                           <content styleCode="italics">Echinococcus multilocularis</content> is a tapeworm species usually found in wild canids, including foxes, coyotes and wolves. The parasite has also been identified in domestic dogs and cats and is potentially a serious public health concern because it may infect humans. </paragraph>
+                        <paragraph>The life cycle of the parasite is based on a predator-prey relationship as depicted. </paragraph>
+                        <renderMultiMedia ID="f01" referencedObject="mm01"/>
+                        <paragraph>The adult tapeworm is small (1-4mm) and resides in the intestinal tract of the definitive host (wild or domestic canids). Eggs from the adult tapeworm are shed in the feces. Rodents such as mice and voles serve as the intermediate host. Eggs ingested by rodents develop in the liver, lungs and other organs to form multilocular cysts. The life cycle is completed after a canid consumes a rodent infected with cysts. Larvae within the cyst develop into adult tapeworms in the intestinal tract of the canid. Eggs may be passed in the feces of the canid approximately 28 days later. </paragraph>
+                        <paragraph>This parasite poses a serious public health problem because of the possibility for human involvement in the life cycle. If eggs shed by an infected canid are accidentally ingested, a highly pathogenic condition (Alveolar Hydatid Disease) results from development of the cyst stage in humans. </paragraph>
+                        <paragraph>The original geographic distribution of <content styleCode="italics">E. multilocularis</content> was primarily confined to northern areas of North America. Current evidence indicates migration of the parasite well into the continental United States.<sup>3,4</sup>
+                        </paragraph>
+                        <paragraph>Domestic dogs living in <content styleCode="italics">E. multilocularis</content> endemic areas that roam freely with the opportunity to catch wild rodents are at risk of infection. Pet owners should be advised on how to minimize this risk. Proper restraint of dogs should be encouraged, along with regular treatment with Drontal Plus Tablets, following the dosing schedule aforementioned and precautions indicated below. </paragraph>
+                        <paragraph>Additional information on the life cycle and epidemiology of this parasite is available in veterinary parasitology texts.<sup>5,6</sup>
+                        </paragraph>
+                     </text>
+                     <effectiveTime value="20260224"/>
+                     <component>
+                        <observationMedia ID="mm01">
+                           <text>Life cycle of the parasite</text>
+                           <value mediaType="image/jpeg" xsi:type="ED">
+                              <reference value="dro0a-0000-01.jpg"/>
+                           </value>
+                        </observationMedia>
+                     </component>
+                  </section>
+               </component>
+               <component>
+                  <section ID="s9">
+                     <id root="f2753ac1-3406-40b1-8389-b637895fa05a"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <text>
+                        <paragraph>
+                           <content styleCode="bold">DIAGNOSIS:</content> Diagnosis of <content styleCode="italics">E. multilocularis</content> in canids is difficult. The adult tapeworm produces no clinical signs of infection. Tapeworm segments (proglottids) are usually not observed in the feces. <content styleCode="italics">E. multilocularis</content> eggs, observed using microscopic fecal examination procedures, are similar in appearance to those of common species such as <content styleCode="italics">Taenia pisiformis.</content>
+                        </paragraph>
+                        <paragraph>Assistance in the diagnosis of <content styleCode="italics">E. multilocularis</content> may be available from a state veterinary diagnostic laboratory. Additional information regarding areas where <content styleCode="italics">E. multilocularis</content> is suspected or has been confirmed may be obtained from area veterinary schools or the Centers for Disease Control in Atlanta, GA. </paragraph>
+                     </text>
+                     <effectiveTime value="20260224"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="s10">
+                     <id root="d94e1b6a-5057-47da-b67b-fedf32807ad6"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <text>
+                        <paragraph>
+                           <content styleCode="bold">TREATMENT:</content> Dogs infected with <content styleCode="italics">E. multilocularis</content> should be treated to prevent exposure of humans to infective eggs and to break the parasite's life cycle. </paragraph>
+                        <paragraph>The dosage of Drontal Plus Tablets for removal of <content styleCode="italics">E. multilocularis</content> is the same as that indicated for the removal of the other tapeworm species listed on the label. Laboratory efficacy studies have demonstrated the recommended dosage is 100% effective. </paragraph>
+                        <paragraph>Under condition of continual exposure to wild rodents, retreatment of the dog at 21-26 day intervals is recommended to prevent the shedding of infectious eggs. </paragraph>
+                     </text>
+                     <effectiveTime value="20260224"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="s11">
+               <id root="79aa7f66-5e95-4e2e-a218-a3bc159ff29b"/>
+               <code code="42232-9" codeSystem="2.16.840.1.113883.6.1" displayName="PRECAUTIONS SECTION"/>
+               <title>PRECAUTIONS: </title>
+               <text>
+                  <paragraph>Strict hygienic precautions should be taken when handling dogs or feces suspected of harboring <content styleCode="italics">E. multilocularis.</content> Infected dogs treated for the first time with Drontal Plus Tablets and dogs treated at intervals greater than 28 days may shed eggs in the feces after treatment. The animal should be held in the clinic during this interval and all feces should be incinerated or autoclaved. If these procedures are not possible, the eggs can be destroyed by soaking the feces in a sodium hypochlorite (bleach) solution of 3.75% or greater.<sup>7</sup> All areas where the animal was maintained or in contact with should be thoroughly cleaned with sodium hypochlorite and allowed to dry completely before reuse. </paragraph>
+               </text>
+               <effectiveTime value="20260224"/>
+            </section>
+         </component>
+         <component>
+            <section ID="s12">
+               <id root="398574ae-098a-4c06-8bd3-99600c945bad"/>
+               <code code="60563-4" codeSystem="2.16.840.1.113883.6.1" displayName="SUMMARY OF SAFETY AND EFFECTIVENESS"/>
+               <title>EFFICACY:</title>
+               <text>
+                  <paragraph>A total of 176 dogs and puppies with naturally acquired or experimental parasite infections were included in 4 well-controlled laboratory studies to establish the efficacy of Drontal Plus Tablets. In addition, 103 dogs and puppies were included in clinical field studies conducted in 5 veterinary clinics at different geographic locations throughout the United States to further evaluate safety and efficacy. These studies included dogs of various sizes, ages and breeds. Data from these studies demonstrated Drontal Plus Tablets are safe and efficacious for the removal of the parasite species indicated on the label when used as directed. </paragraph>
+                  <paragraph>Results obtained in the laboratory and clinical studies indicate small numbers of hookworm or roundworm eggs may be passed in the feces for up to 7 days after treatment although the worms themselves were eliminated. A follow-up fecal examination should be conducted 2 to 4 weeks after treatment to determine the need for retreatment. </paragraph>
+               </text>
+               <effectiveTime value="20260224"/>
+            </section>
+         </component>
+         <component>
+            <section ID="s13">
+               <id root="8da020d8-cbf1-4945-8f64-f3dcb7f5a3bb"/>
+               <code code="34084-4" codeSystem="2.16.840.1.113883.6.1" displayName="ADVERSE REACTIONS SECTION"/>
+               <title>ADVERSE REACTIONS: </title>
+               <text>
+                  <paragraph>None of the 103 dogs treated with Drontal Plus Anthelmintic Tablets in the clinical field studies exhibited drug-related side effects. </paragraph>
+               </text>
+               <effectiveTime value="20260224"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_6f51a920-d25e-4a2a-9db6-dba3b47a6e98">
+               <id root="4121d870-067c-42be-a6d2-7ca96a3358bd"/>
+               <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+               <title>CONTACT INFORMATION: </title>
+               <text>
+                  <paragraph>For product questions, to report adverse reactions, or for a copy of the Safety Data Sheet (SDS), call Elanco Product &amp; Veterinary Support at 888-545-5973. For additional information about reporting adverse drug experiences for animal drugs, contact FDA at 1-888-FDA-VETS or <linkHtml href="http://www.fda.gov/reportanimalae">http://www.fda.gov/reportanimalae</linkHtml>.</paragraph>
+               </text>
+               <effectiveTime value="20260224"/>
+            </section>
+         </component>
+         <component>
+            <section ID="s14">
+               <id root="adfa39cf-19d0-4457-a6e8-ffac0fae4cf1"/>
+               <code code="34091-9" codeSystem="2.16.840.1.113883.6.1" displayName="ANIMAL PHARMACOLOGY &amp; OR TOXICOLOGY SECTION"/>
+               <title>ANIMAL SAFETY: </title>
+               <text>
+                  <paragraph>Controlled safety evaluations have been conducted in dogs with Drontal Plus (praziquantel/pyrantel pamoate/febantel) Broad Spectrum Anthelmintic Tablets. Dogs receiving up to 5 times the label dosage (35 mg praziquantel, 35 mg pyrantel pamoate and 179 mg febantel per kg of body weight) for 3 consecutive days (3 times the label duration) showed clinical signs of vomition and non-formed stools. One dog receiving a 3 times labeled dose had elevated SGPT, SGOT, CPK and GGT readings (outside of normal range) at 6 days post-treatment. No additional findings were noted in hematology/clinical chemistry parameters nor were there any treatment-related histological lesions. Vomition was the only side effect observed when dogs received a single treatment of 61 mg praziquantel, 61 mg pyrantel pamoate and 305 mg febantel/kg with one dog having an elevated SGPT reading (outside of normal range) at 24 hours post-treatment which had returned to normal by 7 days.</paragraph>
+               </text>
+               <effectiveTime value="20260224"/>
+            </section>
+         </component>
+         <component>
+            <section ID="e8">
+               <id root="1b30abd1-83c2-4926-aec6-f191b91620a6"/>
+               <code code="34071-1" codeSystem="2.16.840.1.113883.6.1" displayName="WARNINGS SECTION"/>
+               <title>WARNING: </title>
+               <text>
+                  <paragraph>KEEP OUT OF REACH OF CHILDREN. </paragraph>
+               </text>
+               <effectiveTime value="20260224"/>
+            </section>
+         </component>
+         <component>
+            <section ID="s15">
+               <id root="dc54108b-3928-4aad-95d8-76d50a3a9a63"/>
+               <code code="44425-7" codeSystem="2.16.840.1.113883.6.1" displayName="STORAGE AND HANDLING SECTION"/>
+               <title>STORAGE CONDITIONS: </title>
+               <text>
+                  <paragraph>Drontal Plus Tablets should be stored at controlled room temperatures between 59-86°F (15-30°C). </paragraph>
+               </text>
+               <effectiveTime value="20260224"/>
+            </section>
+         </component>
+         <component>
+            <section ID="s16">
+               <id root="1535a6c8-d5d3-45be-9654-50147d56420d"/>
+               <code code="34069-5" codeSystem="2.16.840.1.113883.6.1" displayName="HOW SUPPLIED SECTION"/>
+               <title>HOW SUPPLIED: </title>
+               <text>
+                  <paragraph>Each tablet size is available in bottles of 50 (puppies and small dogs, medium sized dogs) or 30 (large dogs). </paragraph>
+                  <table width="100%">
+                     <col width="24%"/>
+                     <col width="76%"/>
+                     <tbody>
+                        <tr>
+                           <td valign="top">
+                              <paragraph>50 Tablets/Bottle </paragraph>
+                           </td>
+                           <td valign="top">
+                              <paragraph>(Puppies and Small Dogs) </paragraph>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td valign="top">
+                              <paragraph>50 Tablets/Bottle </paragraph>
+                           </td>
+                           <td valign="top">
+                              <paragraph>(Medium Sized Dogs) </paragraph>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td valign="top">
+                              <paragraph>30 Tablets/Bottle </paragraph>
+                           </td>
+                           <td valign="top">
+                              <paragraph>(Large Dogs) </paragraph>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </text>
+               <effectiveTime value="20260224"/>
+            </section>
+         </component>
+         <component>
+            <section ID="s17">
+               <id root="6e16badd-e9c5-4467-ba16-5e5dea5ea1a5"/>
+               <code code="34093-5" codeSystem="2.16.840.1.113883.6.1" displayName="REFERENCES SECTION"/>
+               <title>REFERENCES: </title>
+               <text>
+                  <paragraph>
+                     <sup>1</sup> Andrews P. 1976. Pharmacokinetlc Studies with DRONCIT in Animals Using a Biological Assay. Veterinary Medical Review. 2:154-165. </paragraph>
+                  <paragraph>
+                     <sup>2</sup> Campbell WC. 1986. The Chemotherapy of Parasitic Infections. J. Parasit. 72(1):45-61. </paragraph>
+                  <paragraph>
+                     <sup>3</sup> Hildreth MB Johnson MD and Kazacos KR. 1991. A Zoonosis of Increasing Concern in the United States. Compendium for Cont. Ed. 13(5): 727-740. </paragraph>
+                  <paragraph>
+                     <sup>4</sup> Lieby PD Carney WP and Woods CE. 1970. Studies on Sylvatic Echinococcosis, III. Host Occurrence and Geographic Distribution of Echinococcus multilocularis in the North Central United States. J. Parasit. 56(6): 1141-1150. </paragraph>
+                  <paragraph>
+                     <sup>5</sup> Georgi JR and Georgi ME. 1990. Parasitology for Veterinarians. W.B. Saunders Co. 118-138. </paragraph>
+                  <paragraph>
+                     <sup>6</sup> Soulsby EJL. 1982. Helminths, Arthropods and Protozoa of Domesticated Animals. 7th Edition. Lea &amp; Febiger. 118-138. </paragraph>
+                  <paragraph>
+                     <sup>7</sup> Craig PS and McPharson CNL. 1988. Sodium Hypochlorite as an Ovicide for Echinococcus. Ann Trop Med. and Parasit. 82(2): 211-213. </paragraph>
+                  <paragraph>
+                     <sup>8</sup> Freedom of Information Summary (FOI) NADA 133-953 Vercom Paste (febantel and praziquantel). </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">
+                        <content styleCode="italics">Elanco</content>
+                     </content>™</paragraph>
+                  <paragraph>Manufactured for: <br/>Elanco US Inc.<br/>Indianapolis, IN 46221 U.S.A.</paragraph>
+                  <paragraph>Approved by FDA under NADA # 141-007</paragraph>
+                  <paragraph>Drontal, Elanco and the diagonal bar logo are trademarks of Elanco or its affiliates.</paragraph>
+                  <paragraph>© 2025 Elanco or its affiliates</paragraph>
+                  <paragraph>REVISED: November 2025</paragraph>
+                  <paragraph>PA600574X</paragraph>
+               </text>
+               <effectiveTime value="20260224"/>
+            </section>
+         </component>
+         <component>
+            <section ID="s18">
+               <id root="b9a36ac5-e0d5-47c5-a880-6df61ac6eff5"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>Principal Display Panel – 50 Tablets Bottle Label </title>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">Drontal™ Plus</content>
+                  </paragraph>
+                  <paragraph>(praziquantel/pyrantel pamoate/febantel) tablets </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Broad spectrum anthelmintic for</content>
+                     <br/>
+                     <content styleCode="bold">puppies and small dogs (2 to 25 lbs.)</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">EACH TABLET CONTAINS:</content> 22.7 mg praziquantel, 22.7 mg<br/>pyrantel base as pyrantel pamoate, and 113.4 mg febantel. </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">CAUTION:</content> Federal law restricts this drug to use by or on the <br/>order of a licensed veterinarian. </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">WARNING:</content> KEEP OUT OF REACH OF CHILDREN. </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">
+                        <content styleCode="italics">Elanco</content>
+                     </content>
+                  </paragraph>
+                  <paragraph>50 Tablets </paragraph>
+                  <paragraph>Manufactured for: <br/>Elanco US Inc., Indianapolis, IN 46221 U.S.A.<br/>Approved by FDA under NADA # 141-007 </paragraph>
+                  <renderMultiMedia ID="id-1432117094" referencedObject="ID_3b44165e-63e5-48ad-a5b3-a429d18c045b"/>
+               </text>
+               <effectiveTime value="20260224"/>
+               <component>
+                  <observationMedia ID="ID_3b44165e-63e5-48ad-a5b3-a429d18c045b">
+                     <text>Drontal Plus (praziquantel/pyrantel pamoate/febantel) 50 Tablets Bottle Label - 2 to 25 lbs. dogs</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="dro0a-0000-02.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="s19">
+               <id root="c0d01f14-f83e-4d04-a958-06beeb32cc73"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>Principal Display Panel – 50 Tablets Bottle Label </title>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">Drontal™ Plus</content>
+                  </paragraph>
+                  <paragraph>(praziquantel/pyrantel pamoate/febantel) tablets </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Broad spectrum anthelmintic for</content>
+                     <br/>
+                     <content styleCode="bold">medium sized dogs (26 to 60 lbs.)</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">EACH TABLET CONTAINS:</content> 68.0 mg praziquantel,<br/>68.0 mg pyrantel base as pyrantel pamoate, and<br/>340.2 mg febantel. </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">CAUTION:</content> Federal law restricts this drug to use by <br/>or on the order of a licensed veterinarian. </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">WARNING:</content> KEEP OUT OF REACH OF CHILDREN. </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">
+                        <content styleCode="italics">Elanco</content>
+                     </content>
+                  </paragraph>
+                  <paragraph>50 Tablets </paragraph>
+                  <paragraph>Manufactured for: Elanco US Inc.<br/>Indianapolis, IN 46221 U.S.A<br/>Approved by FDA under NADA # 141-007 </paragraph>
+                  <renderMultiMedia ID="id966387944" referencedObject="ID_6f9e5607-98d6-41d8-aead-51d333520ad5"/>
+               </text>
+               <effectiveTime value="20260224"/>
+               <component>
+                  <observationMedia ID="ID_6f9e5607-98d6-41d8-aead-51d333520ad5">
+                     <text>Drontal Plus (praziquantel/pyrantel pamoate/febantel) 50 Tablets Bottle Label - 26 to 60 lbs. dogs</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="dro0a-0000-03.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="s20">
+               <id root="b39b9ff2-e11b-4bfc-9b1e-047e7fd715a2"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>Principal Display Panel – 30 Tablets Bottle Label </title>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">Drontal™ Plus</content>
+                  </paragraph>
+                  <paragraph>(praziquantel/pyrantel pamoate/febantel) tablets </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Broad spectrum anthelmintic for</content>
+                     <br/>
+                     <content styleCode="bold">large dogs (45 lbs. and greater)</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">EACH TABLET CONTAINS:</content> 136.0 mg praziquantel,<br/>136.0 mg pyrantel base as pyrantel pamoate, and<br/>680.4 mg febantel. </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">CAUTION:</content> Federal law restricts this drug to use<br/>by or on the order of a licensed veterinarian. </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">WARNING:</content> KEEP OUT OF REACH OF CHILDREN. </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">
+                        <content styleCode="italics">Elanco</content>
+                     </content>
+                  </paragraph>
+                  <paragraph>30 Tablets </paragraph>
+                  <paragraph>Manufactured for:<br/>Elanco US Inc.<br/>Indianapolis, IN 46221 U.S.A.<br/>Approved by FDA under NADA # 141-007 </paragraph>
+                  <renderMultiMedia ID="id-1960644084" referencedObject="ID_7358f2d0-8560-4fd7-9d27-9d3898c1b210"/>
+               </text>
+               <effectiveTime value="20260224"/>
+               <component>
+                  <observationMedia ID="ID_7358f2d0-8560-4fd7-9d27-9d3898c1b210">
+                     <text>Drontal Plus (praziquantel/pyrantel pamoate/febantel) 30 Tablets Bottle Label - 45 lbs. and greater dogs</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="dro0a-0000-04.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+      </structuredBody>
+   </component>
+</document>

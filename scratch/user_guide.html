@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Pharma Dossier Harmonizer User Guide</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #1e293b;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 24px;
+            background-color: #f8fafc;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            border: 1px solid #e2e8f0;
+        }
+        h1 {
+            font-size: 2.2em;
+            color: #0f172a;
+            border-bottom: 2px solid #4f46e5;
+            padding-bottom: 12px;
+            margin-top: 0;
+        }
+        h2 {
+            font-size: 1.6em;
+            color: #1e1b4b;
+            margin-top: 36px;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 8px;
+        }
+        h3 {
+            font-size: 1.2em;
+            color: #4f46e5;
+            margin-top: 24px;
+        }
+        p, li {
+            font-size: 15px;
+            color: #334155;
+        }
+        code {
+            background-color: #f1f5f9;
+            padding: 3px 6px;
+            border-radius: 6px;
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+            font-size: 0.9em;
+            color: #0f172a;
+        }
+        pre {
+            background-color: #0f172a;
+            padding: 16px;
+            border-radius: 12px;
+            overflow-x: auto;
+            border: 1px solid #1e293b;
+        }
+        pre code {
+            background-color: transparent;
+            color: #f8fafc;
+            padding: 0;
+            border-radius: 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 24px 0;
+            font-size: 14px;
+            text-align: left;
+        }
+        th {
+            background-color: #f8fafc;
+            color: #0f172a;
+            font-weight: 600;
+            padding: 12px 16px;
+            border-bottom: 2px solid #e2e8f0;
+        }
+        td {
+            padding: 12px 16px;
+            border-bottom: 1px solid #f1f5f9;
+            color: #475569;
+        }
+        tr:hover td {
+            background-color: #f8fafc;
+        }
+        blockquote {
+            margin: 20px 0;
+            padding: 16px;
+            border-left: 4px solid #4f46e5;
+            background-color: #eff6ff;
+            border-radius: 0 12px 12px 0;
+        }
+        blockquote p {
+            margin: 0;
+            font-weight: 500;
+            color: #1e40af;
+        }
+        hr {
+            border: 0;
+            border-top: 1px solid #e2e8f0;
+            margin: 32px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📖 Pharma Dossier Harmonizer — End-to-End User Guide</h1>
+<p>Welcome to the <strong>Pharma Dossier Harmonizer</strong> End-to-End User Guide. This system is a multi-agent regulatory compliance engine designed to validate, audit, and harmonize pharmaceutical regulatory dossiers against international standards (ICH, FDA, EMA).</p>
+<p>This guide details exactly <strong>where files are located</strong>, <strong>how to run the local stack (<code>localhost:3000</code>)</strong>, and <strong>how to interact with the Gemini Enterprise Agent</strong> conversing natively or via the web interface.</p>
+<hr/>
+<h2>📁 Active Files Inventory & Locations</h2>
+<p>All dossier files and target specification guidelines are pre-staged in the local workspace repository under the following directory:</p>
+<p>📂 <strong><code>pharma_agent/ground_truth/</code></strong> (<a href="file:///Users/nitinagga/Documents/pharma-dossier-ge/pharma_agent/ground_truth/" style="color:#4f46e5; text-decoration:none;">ground_truth directory</a>)</p>
+<h3>1. Staged Dossiers (Source Files to be Audited)</h3>
+<ul>
+  <li>  <strong><code>m3-dp-pharma-dev - working.md</code></strong> (<a href="file:///Users/nitinagga/Documents/pharma-dossier-ge/pharma_agent/ground_truth/m3-dp-pharma-dev%20-%20working.md" style="color:#4f46e5; text-decoration:none;">view file</a>): Plaintext Module 3 Drug Product draft containing high-level stability summaries but lacking raw tabulated data.</li>
+  <li>  <strong><code>m3-device-dmf.md</code></strong> (<a href="file:///Users/nitinagga/Documents/pharma-dossier-ge/pharma_agent/ground_truth/m3-device-dmf.md" style="color:#4f46e5; text-decoration:none;">view file</a>): Plaintext Drug Master File specifying active excipients and safety labeling details.</li>
+  <li>  <strong><code>m3-dp-pharma-dev.md.pdf</code></strong> (<a href="file:///Users/nitinagga/Documents/pharma-dossier-ge/pharma_agent/ground_truth/m3-dp-pharma-dev.md.pdf" style="color:#4f46e5; text-decoration:none;">view file</a>): Double-extended plaintext dossier in PDF format for OCR stress-testing.</li>
+  <li>  <strong><code>125057Orig1s425ltr.pdf</code></strong> (<a href="file:///Users/nitinagga/Documents/pharma-dossier-ge/pharma_agent/ground_truth/125057Orig1s425ltr.pdf" style="color:#4f46e5; text-decoration:none;">view file</a>): An authentic regional FDA regulatory submission draft containing complex clinical potency tables.</li>
+  <li>  <strong><code>m3-ds-stability.md</code></strong> (<a href="file:///Users/nitinagga/Documents/pharma-dossier-ge/pharma_agent/ground_truth/m3-ds-stability.md" style="color:#4f46e5; text-decoration:none;">view file</a>): Staged drug substance stability validation guidelines.</li>
+  <li>  <strong><code>m3-ds-manufacture.md</code></strong> (<a href="file:///Users/nitinagga/Documents/pharma-dossier-ge/pharma_agent/ground_truth/m3-ds-manufacture.md" style="color:#4f46e5; text-decoration:none;">view file</a>): Staged drug substance manufacturing and synthesis procedures.</li>
+  <li>  <strong><code>m3-ds-characterization.md</code></strong> (<a href="file:///Users/nitinagga/Documents/pharma-dossier-ge/pharma_agent/ground_truth/m3-ds-characterization.md" style="color:#4f46e5; text-decoration:none;">view file</a>): Staged drug substance elucidation of structure and impurities.</li>
+  <li>  <strong><code>m3-ds-control.md</code></strong> (<a href="file:///Users/nitinagga/Documents/pharma-dossier-ge/pharma_agent/ground_truth/m3-ds-control.md" style="color:#4f46e5; text-decoration:none;">view file</a>): Staged specification controls for drug substances.</li>
+  <li>  <strong><code>m3-ds-general.md</code></strong> (<a href="file:///Users/nitinagga/Documents/pharma-dossier-ge/pharma_agent/ground_truth/m3-ds-general.md" style="color:#4f46e5; text-decoration:none;">view file</a>): Staged general nomenclature and physical properties.</li>
+  <li>  <strong><code>m3-ds-container.md</code></strong> (<a href="file:///Users/nitinagga/Documents/pharma-dossier-ge/pharma_agent/ground_truth/m3-ds-container.md" style="color:#4f46e5; text-decoration:none;">view file</a>): Staged container closure system details.</li>
+  <li>  <strong><code>m3-ds-reference-standards.md</code></strong> (<a href="file:///Users/nitinagga/Documents/pharma-dossier-ge/pharma_agent/ground_truth/m3-ds-reference-standards.md" style="color:#4f46e5; text-decoration:none;">view file</a>): Staged reference standards and materials sections.</li>
+</ul>
+<h3>2. Reference Specifications (Target Compliance Guidelines)</h3>
+<ul>
+  <li>  <strong><code>M4Q_R1_Guideline.pdf</code></strong> (<a href="file:///Users/nitinagga/Documents/pharma-dossier-ge/pharma_agent/ground_truth/M4Q_R1_Guideline.pdf" style="color:#4f46e5; text-decoration:none;">view file</a>): The official <strong>ICH Scientific Quality & Stability Standards</strong> containing mandatory potencies and forced degradation thresholds.</li>
+  <li>  <strong><code>Validation_eCTD_v4_0_v1_5.pdf</code></strong> (<a href="file:///Users/nitinagga/Documents/pharma-dossier-ge/pharma_agent/ground_truth/Validation_eCTD_v4_0_v1_5.pdf" style="color:#4f46e5; text-decoration:none;">view file</a>): The <strong>ICH Technical Directory</strong> outlining strict folder layout schemes, schema validations, and casing laws.</li>
+  <li>  <strong><code>eCTD 3.2.2 - EU M1 Implementation Guide v3.1.1.pdf</code></strong> (<a href="file:///Users/nitinagga/Documents/pharma-dossier-ge/pharma_agent/ground_truth/eCTD%203.2.2%20-%20EU%20M1%20Implementation%20Guide%20v3.1.1.pdf" style="color:#4f46e5; text-decoration:none;">view file</a>): The administrative folder mapping guide for European regional submissions.</li>
+  <li>  <strong><code>eCTD 3.2.2 - EU M1 Validation Criteria v8.2.xlsx</code></strong> (<a href="file:///Users/nitinagga/Documents/pharma-dossier-ge/pharma_agent/ground_truth/eCTD%203.2.2%20-%20EU%20M1%20Validation%20Criteria%20v8.2.xlsx" style="color:#4f46e5; text-decoration:none;">view file</a>): Excel spreadsheet documenting strict technical error codes (e.g., Rule 1.1, 1.2).</li>
+  <li>  <strong><code>eCTD_Specification_v3_2_2_0.pdf</code></strong> (<a href="file:///Users/nitinagga/Documents/pharma-dossier-ge/pharma_agent/ground_truth/eCTD_Specification_v3_2_2_0.pdf" style="color:#4f46e5; text-decoration:none;">view file</a>): Official specification for the eCTD file format version 3.2.2.</li>
+  <li>  <strong><code>ICH_eCTDv4_0_ImplementationGuide_v1_6_2024_0522.pdf</code></strong> (<a href="file:///Users/nitinagga/Documents/pharma-dossier-ge/pharma_agent/ground_truth/ICH_eCTDv4_0_ImplementationGuide_v1_6_2024_0522.pdf" style="color:#4f46e5; text-decoration:none;">view file</a>): The official eCTD v4.0 implementation guide for electronic submission structure.</li>
+  <li>  <strong><code>ICH_eCTDv4_0_CV_v6_2025_0212.xlsx</code></strong> (<a href="file:///Users/nitinagga/Documents/pharma-dossier-ge/pharma_agent/ground_truth/ICH_eCTDv4_0_CV_v6_2025_0212.xlsx" style="color:#4f46e5; text-decoration:none;">view file</a>): Excel sheet mapping standard Controlled Vocabularies (CV) for eCTD submissions.</li>
+  <li>  <strong><code>ReadMe_eCTD v4_0_CV_Package_v1.0_2025_0212.pdf</code></strong> (<a href="file:///Users/nitinagga/Documents/pharma-dossier-ge/pharma_agent/ground_truth/ReadMe_eCTD%20v4_0_CV_Package_v1.0_2025_0212.pdf" style="color:#4f46e5; text-decoration:none;">view file</a>): Official guide explaining CV codes packaging.</li>
+</ul>
+<h3>3. eCTD Validation Technical XML Schemas & HL7 Standards</h3>
+<p>These files define physical file structure and envelope schema constraints during technical folder audits:</p>
+<ul>
+  <li>  <strong>XML Casing Schemas</strong> (<code>.xsd</code> files):</li>
+  <li>  <code>COCT_MT150007UV.xsd</code> (<a href="file:///Users/nitinagga/Documents/pharma-dossier-ge/pharma_agent/ground_truth/COCT_MT150007UV.xsd" style="color:#4f46e5; text-decoration:none;">view file</a>)</li>
+  <li>  <code>COCT_MT150000UV02.xsd</code> (<a href="file:///Users/nitinagga/Documents/pharma-dossier-ge/pharma_agent/ground_truth/COCT_MT150000UV02.xsd" style="color:#4f46e5; text-decoration:none;">view file</a>)</li>
+  <li>  <code>COCT_MT150003UV03.xsd</code> (<a href="file:///Users/nitinagga/Documents/pharma-dossier-ge/pharma_agent/ground_truth/COCT_MT150003UV03.xsd" style="color:#4f46e5; text-decoration:none;">view file</a>)</li>
+  <li>  <code>COCT_MT030203UV07.xsd</code> (<a href="file:///Users/nitinagga/Documents/pharma-dossier-ge/pharma_agent/ground_truth/COCT_MT030203UV07.xsd" style="color:#4f46e5; text-decoration:none;">view file</a>)</li>
+  <li>  <code>COCT_MT040203UV09.xsd</code> (<a href="file:///Users/nitinagga/Documents/pharma-dossier-ge/pharma_agent/ground_truth/COCT_MT040203UV09.xsd" style="color:#4f46e5; text-decoration:none;">view file</a>)</li>
+  <li>  <code>COCT_MT070000UV01.xsd</code> (<a href="file:///Users/nitinagga/Documents/pharma-dossier-ge/pharma_agent/ground_truth/COCT_MT070000UV01.xsd" style="color:#4f46e5; text-decoration:none;">view file</a>)</li>
+  <li>  <code>COCT_MT090100UV01.xsd</code> (<a href="file:///Users/nitinagga/Documents/pharma-dossier-ge/pharma_agent/ground_truth/COCT_MT090100UV01.xsd" style="color:#4f46e5; text-decoration:none;">view file</a>)</li>
+  <li>  <code>COCT_MT090108UV.xsd</code> (<a href="file:///Users/nitinagga/Documents/pharma-dossier-ge/pharma_agent/ground_truth/COCT_MT090108UV.xsd" style="color:#4f46e5; text-decoration:none;">view file</a>)</li>
+  <li>  <code>COCT_MT090300UV01.xsd</code> (<a href="file:///Users/nitinagga/Documents/pharma-dossier-ge/pharma_agent/ground_truth/COCT_MT090300UV01.xsd" style="color:#4f46e5; text-decoration:none;">view file</a>)</li>
+  <li>  <code>COCT_MT090303UV01.xsd</code> (<a href="file:///Users/nitinagga/Documents/pharma-dossier-ge/pharma_agent/ground_truth/COCT_MT090303UV01.xsd" style="color:#4f46e5; text-decoration:none;">view file</a>)</li>
+  <li>  <code>COCT_MT710000UV07.xsd</code> (<a href="file:///Users/nitinagga/Documents/pharma-dossier-ge/pharma_agent/ground_truth/COCT_MT710000UV07.xsd" style="color:#4f46e5; text-decoration:none;">view file</a>)</li>
+  <li>  <code>COCT_MT960000UV05.xsd</code> (<a href="file:///Users/nitinagga/Documents/pharma-dossier-ge/pharma_agent/ground_truth/COCT_MT960000UV05.xsd" style="color:#4f46e5; text-decoration:none;">view file</a>)</li>
+  <li>  <strong>HL7 & Schema Specifications</strong>:</li>
+  <li>  <code>hl7-r2_datatypes.xsd</code> (<a href="file:///Users/nitinagga/Documents/pharma-dossier-ge/hl7-r2_datatypes.xsd" style="color:#4f46e5; text-decoration:none;">view file</a>): Standards for HL7 structure mapping.</li>
+  <li>  <code>NarrativeBlock.xsd</code> (<a href="file:///Users/nitinagga/Documents/pharma-dossier-ge/NarrativeBlock.xsd" style="color:#4f46e5; text-decoration:none;">view file</a>): XML definition mapping text narrative schemas.</li>
+  <li>  <code>Genericode.zip</code> (<a href="file:///Users/nitinagga/Documents/pharma-dossier-ge/Genericode.zip" style="color:#4f46e5; text-decoration:none;">view file</a>): Controlled codelists.</li>
+  <li>  <code>datatypes-rX-cs.xsd</code> (<a href="file:///Users/nitinagga/Documents/pharma-dossier-ge/datatypes-rX-cs.xsd" style="color:#4f46e5; text-decoration:none;">view file</a>)</li>
+  <li>  <code>infrastructureRoot-r2.xsd</code> (<a href="file:///Users/nitinagga/Documents/pharma-dossier-ge/infrastructureRoot-r2.xsd" style="color:#4f46e5; text-decoration:none;">view file</a>)</li>
+  <li>  <code>voc-r2.xsd</code> (<a href="file:///Users/nitinagga/Documents/pharma-dossier-ge/voc-r2.xsd" style="color:#4f46e5; text-decoration:none;">view file</a>)</li>
+</ul>
+<hr/>
+<h2>💻 Localhost Web UI User Guide (`http://localhost:3000`)</h2>
+<p>The local stack provides a premium, reactive web dashboard designed for regulatory reviewers.</p>
+<h3>🚀 Step-by-Step Startup Procedure</h3>
+<p>1.  <strong>Start the FastAPI Backend Server (Port 8002):</strong></p>
+<pre><code>    uvicorn app.main:app --host 0.0.0.0 --port 8002</code></pre>
+<p>2.  <strong>Start the Next.js Frontend Server (Port 3000):</strong></p>
+<p>Inside the <code>frontend/</code> directory:</p>
+<pre><code>    npm run dev</code></pre>
+<p>3.  <strong>Access the UI:</strong> Open your browser and navigate to <strong><code>http://localhost:3000</code></strong>.</p>
+<hr/>
+<h3>📊 Core Interface Navigation</h3>
+<pre><code>+-------------------------------------------------------------------------+
+| BioPharma Analytics                                   [Global Search Q] |
++-------------------------------------------------------------------------+
+| 📊 Dashboard       |  🟢 ACTIVE KPI SUMMARY                             |
+| 📂 Dossiers        |  Total Dossiers: 11 |  Compliant: 50% | Issues: 25%  |
+| 🚀 Analysis        |  ------------------------------------------------- |
+| 💬 Correspondence  |  [ ⚡ RUN ECTD VALIDATION ]                         |
+| ⇄  Delta Analysis  |                                                     |
+| 📜 Audit Trail     |  📝 RECENT AUDIT LOGS &amp; TRANSITIONS                 |
+| 📚 Reference Lib   |  - Nitin Aggarwal approved Droncit (2h ago)        |
+| 🔍 External Res    |  - Gaps found in Numelvi (5h ago)                  |
++---------------------------------------+---------------------------------+
+|                                       | 🤖 zero-latency chat            |
+|                                       | Agent: Ready to validate.       |
+|                                       | [Write prompt here...       ] |
++---------------------------------------+---------------------------------+</code></pre>
+<h4>1. Dashboard Tab (📊)</h4>
+<ul>
+  <li>  <strong>Visuals:</strong> High-fidelity KPI metrics showing total dossiers, compliance donuts, and recent system operations.</li>
+  <li>  <strong>Actions:</strong> Press <strong><code>⚡ Run eCTD Validation</code></strong> on the top-right to instantly audit the directory structure against physical schema constraints.</li>
+</ul>
+<h4>2. Dossiers Tab (📂)</h4>
+<ul>
+  <li>  <strong>Visuals:</strong> A table listing all dossiers currently registered in BigQuery and GCS.</li>
+  <li>  <strong>Actions:</strong> Choose a pre-staged file or drag-and-drop a new local PDF to ingest it. Ingestion runs a 15-page segment split using <strong>Google Cloud Document AI</strong> before indexing the text in <strong>BigQuery</strong>.</li>
+</ul>
+<h4>3. Analysis Tab (🚀)</h4>
+<ul>
+  <li>  <strong>Visuals:</strong> An interactive quality auditor panel.</li>
+  <li>  <strong>Actions:</strong> Select a dossier (e.g., <code>m3-dp-pharma-dev - working.md</code>) and click <strong><code>Run Analysis</code></strong> to view a live typewriter-rendered HTML audit card highlighting scientific stability gaps and potency failures.</li>
+</ul>
+<h4>4. Correspondence Tab (💬)</h4>
+<ul>
+  <li>  <strong>Visuals:</strong> Interactive regulatory thread simulator displaying communications from the <strong>FDA</strong> or <strong>EMA</strong> regarding outstanding requests for information (IR) or Refusal-to-File (RTF) actions.</li>
+</ul>
+<h4>5. Delta Analysis Tab (⇄)</h4>
+<ul>
+  <li>  <strong>Visuals:</strong> Symmetrical side-by-side file selectors.</li>
+  <li>  <strong>Actions:</strong> Choose Dossier A and Dossier B to instantly calculate and render a unified git-style diff comparison in real-time.</li>
+</ul>
+<h4>6. Interactive Chat Sidebar (🤖)</h4>
+<ul>
+  <li>  <strong>Visuals:</strong> A conversational assistant panel visible on the right side of all pages.</li>
+  <li>  <strong>Actions:</strong> Choose your staged <strong>Source Dossier</strong> and <strong>Target Specification</strong> in the top drop-down selectors, then type conversational questions. The chat sidebar connects to <strong>Vertex AI Gemini 2.5 Flash</strong> natively, dynamically retrieving vector contexts from your selected guidelines in <strong>under 1.2 seconds</strong>!</li>
+</ul>
+<hr/>
+<h3>🧪 Local Conversational Test Scenarios</h3>
+<h4>📝 Test Scenario 1: ICH Potency & Forced Degradation Stability Gap Audit</h4>
+<ul>
+  <li>  <strong>Goal:</strong> Verify dynamic vector RAG retrieving accelerated stability requirements.</li>
+  <li>  <strong>Setup:</strong> In the chat sidebar drop-down selectors, choose:</li>
+  <li>  <strong>Select Source Dossier:</strong> <code>m3-dp-pharma-dev - working.md</code></li>
+  <li>  <strong>Select Target Specification:</strong> <code>M4Q_R1_Guideline.pdf</code></li>
+  <li>  <strong>Prompt to Write:</strong></li>
+<pre><code>    Audit my staged dossier for required forced degradation studies and potency limits under Module 3.2.S using the M4Q_R1 guideline. Cite exact page numbers.</code></pre>
+  <li>  <strong>Expected Response:</strong></li>
+  <li>  <strong>Citations:</strong> Verbatim citation of <strong><code>M4Q_R1_Guideline.pdf</code> Page 17 (Section 3.2.S.7.1)</strong>.</li>
+  <li>  <strong>Audited Gaps:</strong> Identifies that while the dossier lists standard shelf-life conclusions, <strong>it lacks the tabulated raw potency values from accelerated stability testing at 6 months under stress conditions</strong>.</li>
+</ul>
+<h4>📝 Test Scenario 2: Target Specification Mismatch Interceptor</h4>
+<ul>
+  <li>  <strong>Goal:</strong> Verify that the agent intercepts mismatching reference guides and guides the user.</li>
+  <li>  <strong>Setup:</strong> In the chat sidebar drop-down selectors, choose:</li>
+  <li>  <strong>Select Source Dossier:</strong> <code>m3-dp-pharma-dev - working.md</code></li>
+  <li>  <strong>Select Target Specification:</strong> <code>Validation_eCTD_v4_0_v1_5.pdf</code> *(An IT technical directory guide)*</li>
+  <li>  <strong>Prompt to Write:</strong></li>
+<pre><code>    Does my dossier include the required accelerated stability potency data under Module 3.2.S?</code></pre>
+  <li>  <strong>Expected Response:</strong></li>
+  <li>  <strong>Warning Banner:</strong> A prominent <strong><code>⚠️ Target Specification Mismatch</code></strong> card appears at the top of the chat.</li>
+  <li>  <strong>Explanation:</strong> Explains that <code>Validation_eCTD_v4_0_v1_5.pdf</code> is an IT technical folder specification and cannot validate scientific stability questions.</li>
+  <li>  <strong>Agent Recommendation:</strong> Automatically scans available files and recommends selecting <strong><code>M4Q_R1_Guideline.pdf</code></strong> from the dropdown instead to complete the scientific quality audit.</li>
+</ul>
+<hr/>
+<h2>🤖 Gemini Enterprise Agent Interaction Guide</h2>
+<div style="margin: 20px 0; padding: 16px; border-left: 4px solid #4f46e5; background-color: #f5f7ff; border-radius: 0 12px 12px 0;"><strong style="color:#4f46e5; text-transform: uppercase; font-size:12px; letter-spacing:1px;">IMPORTANT</strong><br/>
+<p style="margin: 8px 0 0 0; font-weight: 500; color: #1e1b4b;"><strong>Enterprise Plus Secured Workspace Integration</strong></p></div>
+<blockquote style="margin: 20px 0; padding: 16px; border-left: 4px solid #4f46e5; background-color: #eff6ff; border-radius: 0 12px 12px 0;"><p style="margin: 0; font-weight: 500; color: #1e40af;"></p></blockquote>
+<blockquote style="margin: 20px 0; padding: 16px; border-left: 4px solid #4f46e5; background-color: #eff6ff; border-radius: 0 12px 12px 0;"><p style="margin: 0; font-weight: 500; color: #1e40af;">The <strong>Pharma Dossier Harmonizer</strong> is officially registered inside <strong>Gemini Enterprise Plus</strong>. Corporate users can call upon its deep pharmaceutical intelligence directly from their main chat window. This sections covers the multi-agent routing system, stateful turn memory, and detailed step-by-step conversational prompts.</p></blockquote>
+<hr/>
+<h3>🧠 ADK Multi-Agent Routing Architecture</h3>
+<p>When you submit a query in Gemini Enterprise, the main <strong>Coordinator Agent</strong> (the primary router) parses your instruction and invokes specialized sub-agents using the <strong>Google ADK (Agent Development Kit)</strong> framework.</p>
+<table>
+  <tr>
+    <th>Sub-Agent Name</th>
+    <th>Primary Responsibility / Instruction</th>
+    <th>Active Backend Tool Called</th>
+  </tr>
+  <tr>
+    <td>:---</td>
+    <td>:---</td>
+    <td>:---</td>
+  </tr>
+  <tr>
+    <td><strong><code>DossierIngestionAgent</code></strong></td>
+    <td>Extracts raw facts, substances, and clinical information from dossiers. Validates file schema and rejects unrelated documents.</td>
+    <td><code>extract_dossier_text</code> (Document AI parsing / OCR fallback)</td>
+  </tr>
+  <tr>
+    <td><strong><code>RegulatoryRetrievalAgent</code></strong></td>
+    <td>Retrieves controlled guidelines (such as ICH M4 quality specifications).</td>
+    <td><code>retrieve_regulatory_guidelines</code></td>
+  </tr>
+  <tr>
+    <td><strong><code>DeltaAnalysisAgent</code></strong></td>
+    <td>Compares old and new versions of drafts to compute unified diffs.</td>
+    <td><code>compare_dossier_versions</code></td>
+  </tr>
+  <tr>
+    <td><strong><code>LabelHarmonizerAgent</code></strong></td>
+    <td>Compares labeling text across dossiers and DailyMed safety registries.</td>
+    <td><code>search_labels</code></td>
+  </tr>
+  <tr>
+    <td><strong><code>ComplianceAgent</code></strong></td>
+    <td>Strictly validates folder naming casing and technical spreadsheet validation rules.</td>
+    <td><code>query_excel_criteria</code>, <code>query_guideline_pdf</code>, <code>verify_ectd_packages</code></td>
+  </tr>
+  <tr>
+    <td><strong><code>EctdShellAgent</code></strong></td>
+    <td>Generates initial submission eCTD outlines for drug product modules.</td>
+    <td><code>generate_ectd_shell</code></td>
+  </tr>
+  <tr>
+    <td><strong><code>FinalReviewerAgent</code></strong></td>
+    <td>Produces a structured JSON-validated Regulatory Affairs final review report.</td>
+    <td>Runs LLM validation against <code>HarmonizerResult</code> output schema.</td>
+  </tr>
+</table>
+<hr/>
+<h3>🎛️ Dual-Input Processing Directives</h3>
+<p>The agent processes files in two distinct ways:</p>
+<p>1.  <strong>Direct Chat Attachment (Multimodal PDF Ingress):</strong></p>
+<div style="margin: 20px 0; padding: 16px; border-left: 4px solid #4f46e5; background-color: #f5f7ff; border-radius: 0 12px 12px 0;"><strong style="color:#4f46e5; text-transform: uppercase; font-size:12px; letter-spacing:1px;">NOTE</strong><br/>
+<p style="margin: 8px 0 0 0; font-weight: 500; color: #1e1b4b;"><strong>How it works:</strong> When you drag, drop, or upload a dossier PDF *directly* inside the conversational chat window, the agent reads the document <strong>natively using multimodal vision</strong> through its standard context. There is <strong>no need to call external APIs</strong>.</p></div>
+<p>2.  <strong>External GCS Staging URI (Cloud Storage Trigger):</strong></p>
+<div style="margin: 20px 0; padding: 16px; border-left: 4px solid #4f46e5; background-color: #f5f7ff; border-radius: 0 12px 12px 0;"><strong style="color:#4f46e5; text-transform: uppercase; font-size:12px; letter-spacing:1px;">NOTE</strong><br/>
+<p style="margin: 8px 0 0 0; font-weight: 500; color: #1e1b4b;"><strong>How it works:</strong> If you provide a Cloud Storage URI (e.g., <code>gs://pharma-dossiers-nitinagga-ge/dossiers/dossier.pdf</code>), the agent triggers <code>DossierIngestionAgent</code> to invoke <strong>Google Cloud Document AI</strong> to extract, pre-process, and index the text in the <strong>BigQuery database</strong> before proceeding.</p></div>
+<hr/>
+<h3>🧪 High-Fidelity Conversational Prompt Flows</h3>
+<p>Use these exact, pre-formatted scenarios to test the agent inside Gemini Enterprise.</p>
+<h4>📁 Prompt Flow 1: eCTD Directory Schema and Casing Validation Scan</h4>
+<ul>
+  <li>  <strong>User Goal:</strong> Audit GCS staged folder layouts for strict lowercase naming laws and missing regional folders.</li>
+  <li>  <strong>User Conversational Prompt:</strong></li>
+<pre><code>    Please invoke the verify_ectd_packages tool to scan my staged folders in Cloud Storage, list the scanned files, and audit them for compliance casing gaps.</code></pre>
+  <li>  <strong>Agent Workflow:</strong></li>
+</ul>
+<p>1. <strong>Coordinator</strong> routes the instruction to the <strong><code>ComplianceAgent</code></strong>.</p>
+<p>2. <strong><code>ComplianceAgent</code></strong> executes the <code>verify_ectd_packages</code> tool.</p>
+<p>3. The tool walks the staged bucket, checking for files with spaces or uppercase letters, and searches for required <code>m1/fda</code> and <code>m1/eu/util/dtd</code> directories.</p>
+<ul>
+  <li>  <strong>Expected Agent Response:</strong></li>
+<pre><code>    ### 🔴 eCTD Technical Audit Status: Non-Compliant
+    
+    Your physical folder layout violates eCTD filename casing laws and structural requirements.
+    
+    **Casing Gaps Identified:**
+    - Found **33 files** violating naming criteria (casing or spaces detected). Examples:
+      * `COCT_MT150007UV.xsd` (Contains uppercase characters)
+      * `eCTD 3.2.2 - EU M1 Validation Criteria v8.2.xlsx` (Contains spaces and capitals)
+      * `Genericode.zip` (Contains uppercase characters)
+      
+    **Structural Folder Gaps:**
+    - `🔴 Missing Path:` `m1/fda` (Mandatory US Regional folder)
+    - `🔴 Missing Path:` `m1/eu/util/dtd` (Mandatory EU DTD Schema folder)
+    
+    **🟢 Scanned Files List:**
+    Successfully indexed 46 files in GCS: `m3-dp-pharma-dev - working.md`, `M4Q_R1_Guideline.pdf`, `Validation_eCTD_v4_0_v1_5.pdf`, `eCTD_Specification_v3_2_2_0.pdf`, `COCT_MT150007UV.xsd`, etc.</code></pre>
+  <li>  <strong>Suggested Follow-Up Prompt:</strong></li>
+<pre><code>    Explain the naming requirements for eCTD schema files under Validation_eCTD_v4_0_v1_5.pdf.</code></pre>
+</ul>
+<hr/>
+<h4>🧪 Prompt Flow 2: Potency Gaps & Accelerated Stability Audit</h4>
+<ul>
+  <li>  <strong>User Goal:</strong> Perform a semantic vector RAG search to identify accelerated stability gaps in a draft dossier compared against official ICH standards.</li>
+  <li>  <strong>User Conversational Prompt:</strong></li>
+<pre><code>    Validate my staged dossier m3-dp-pharma-dev - working.md against the M4Q_R1_Guideline.pdf specifications. Check if the dossier includes the mandatory accelerated stability potency limits and forced degradation summaries under Module 3.2.S. Cite the exact section and page numbers.</code></pre>
+  <li>  <strong>Agent Workflow:</strong></li>
+</ul>
+<p>1. <strong>Coordinator</strong> routes the request to the <strong><code>ComplianceAgent</code></strong>.</p>
+<p>2. <strong><code>ComplianceAgent</code></strong> triggers the <code>query_guideline_pdf</code> tool to execute a semantic search using Vertex AI <code>text-embedding-004</code> over the guideline PDF.</p>
+<p>3. The agent extracts the requirements and compares them with the staged dossier text loaded from BigQuery.</p>
+<ul>
+  <li>  <strong>Expected Agent Response:</strong></li>
+<pre><code>    ### 🔍 Quality Audit Report: Gaps Identified
+    
+    An audit of your draft dossier **`m3-dp-pharma-dev - working.md`** against **`M4Q_R1_Guideline.pdf`** has revealed significant scientific gaps in Module 3.2.S:
+    
+    *   **🔴 Stability Potency Gap:**
+        *   *Requirement:* Under **`M4Q_R1_Guideline.pdf` Page 17 (Section 3.2.S.7.1 - Stability Summary)**, submissions must include tabulated results from accelerated stability testing (at 6 months, 40°C ± 2°C / 75% RH ± 5% RH).
+        *   *Dossier Status:* Your draft dossier only lists a generic shelf-life summary and lacks the raw tabulated accelerated stability potency metrics.
+    *   **🔴 Potency Degradation Gaps:**
+        *   *Requirement:* Tabulated potency summary results from Module 3.2.P.8.3 must also be summarized (**Guideline Page 9**).
+        *   *Dossier Status:* Accelerated degradation study limits are missing.</code></pre>
+  <li>  <strong>Suggested Follow-Up Prompt:</strong></li>
+<pre><code>    Generate an eCTD Module 3.2.S shell and mark these missing sections as Data Gaps.</code></pre>
+</ul>
+<hr/>
+<h4>🧪 Prompt Flow 3: Safety Labels Prescribing Warnings Harmonization</h4>
+<ul>
+  <li>  <strong>User Goal:</strong> Compare a custom dossier active compound safety sheet against official DailyMed boxed warnings.</li>
+  <li>  <strong>User Conversational Prompt:</strong></li>
+<pre><code>    Harmonize the safety warning labels for Adalimumab under my staged dossier Module 3 against the prescribing safety warnings in the DailyMed registry.</code></pre>
+  <li>  <strong>Agent Workflow:</strong></li>
+</ul>
+<p>1. <strong>Coordinator</strong> delegates to <strong><code>LabelHarmonizerAgent</code></strong>.</p>
+<p>2. <strong><code>LabelHarmonizerAgent</code></strong> executes <code>search_labels</code> passing <code>Adalimumab</code> as the product parameter.</p>
+<p>3. The tool retrieves the official prescribing warnings, and the agent performs a semantic comparison with the staged dossier.</p>
+<ul>
+  <li>  <strong>Expected Agent Response:</strong></li>
+<pre><code>    ### 🤖 Label Harmonization Summary: Gaps Identified
+    
+    **Analyzed Substance:** Adalimumab  
+    **Registry Source:** DailyMed SPL Prescribing Registry
+    
+    **Registry Boxed Warnings Found:**
+    1.  **⚠️ Serious Infections:** Increased risk of active tuberculosis, invasive fungal infections, and bacterial sepsis.
+    2.  **⚠️ Malignancies:** Increased risk of lymphoma and other pediatric cancers.
+    
+    **Dossier Alignment Gaps:**
+    - `✖ Critical Warning Gap:` The staged dossier `m3-device-dmf.md` correctly references active compound properties but **completely omits the mandatory boxed warnings for pediatric malignancies and invasive fungal infections**.
+    
+    **Suggested Action:**
+    Update Module 1.14 (Labeling section) to incorporate these boxed safety warnings to ensure FDA compliance.</code></pre>
+  <li>  <strong>Suggested Follow-Up Prompt:</strong></li>
+<pre><code>    Draft a compliant warning label text for Adalimumab serious infections for Module 1.14.</code></pre>
+</ul>
+<hr/>
+<h3>🧠 Stateful Multi-Turn Conversation Memory</h3>
+<p>Gemini Enterprise tracks the status of your audits across multiple conversation turns. For example, you can perform a casing audit, and then ask:</p>
+<ul>
+  <li>  *“Now draft an eCTD shell for that dossier, keeping those identified gaps marked as Pending.”*</li>
+  <li>  The agent will maintain the file context and dynamically generate the JSON outline, saving you from re-entering the file names!</li>
+</ul>
+<hr/>
+<h2>🚀 Suggested Next Steps for Reviewers</h2>
+<p>1.  <strong>Open Localhost (Port 3000):</strong> Try uploading <code>m3-device-dmf.md</code> on the Dossiers tab.</p>
+<p>2.  <strong>Run a Chat Session:</strong> In the chat sidebar, select the uploaded dossier and query: *"Retrieve Adalimumab safety warnings."*</p>
+<p>3.  <strong>Run eCTD Scan:</strong> Go to the Dashboard and click <code>⚡ Run eCTD Validation</code> to view casing and directory errors immediately!</p>
+    </div>
+</body>
+</html>

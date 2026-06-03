@@ -1,0 +1,1013 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="https://www.accessdata.fda.gov/spl/stylesheet/spl.xsl" type="text/xsl"?>
+<document xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 https://www.accessdata.fda.gov/spl/schema/spl.xsd">
+   <id root="5d024ebb-8d69-4ad9-bd2e-a3ee8d908c5d"/>
+   <code code="50578-4" codeSystem="2.16.840.1.113883.6.1" displayName="PRESCRIPTION ANIMAL DRUG LABEL"/>
+   <title>LAVERDIA®<br/>(verdinexor tablets)</title>
+   <effectiveTime value="20260209"/>
+   <setId root="60203a82-07fb-4701-b7a7-c8c53e0dc8c8"/>
+   <versionNumber value="1"/>
+   <author>
+      <time/>
+      <assignedEntity>
+         <representedOrganization>
+            <id root="1.3.6.1.4.1.519.1" extension="362142734"/>
+            <name>Dechra Veterinary Products, LLC</name>
+         </representedOrganization>
+      </assignedEntity>
+   </author>
+   <component>
+      <structuredBody>
+         <component>
+            <section>
+               <id root="5e9f2418-a169-458f-91c2-dad386d74a8c"/>
+               <code code="48780-1" codeSystem="2.16.840.1.113883.6.1" displayName="SPL product data elements section"/>
+               <title/>
+               <text/>
+               <effectiveTime value="20260209"/>
+               <subject>
+                  <manufacturedProduct>
+                     <manufacturedProduct>
+                        <code code="17033-021" codeSystem="2.16.840.1.113883.6.69"/>
+                        <name>Laverdia</name>
+                        <formCode code="C42897" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET, COATED"/>
+                        <asEntityWithGeneric>
+                           <genericMedicine>
+                              <name>verdinexor</name>
+                           </genericMedicine>
+                        </asEntityWithGeneric>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator value="2.5" unit="mg"/>
+                              <denominator value="1" unit="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="85Q03215IW" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>VERDINEXOR</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="85Q03215IW" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>VERDINEXOR</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <asContent>
+                           <quantity>
+                              <numerator value="16" unit="1"/>
+                              <denominator value="1" unit="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <formCode code="C43173" displayName="BOTTLE, PLASTIC" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                              <asContent>
+                                 <quantity>
+                                    <numerator value="1" unit="1"/>
+                                    <denominator value="1" unit="1"/>
+                                 </quantity>
+                                 <containerPackagedProduct>
+                                    <code code="17033-021-01" codeSystem="2.16.840.1.113883.6.69"/>
+                                    <formCode code="C43182" displayName="CARTON" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                 </containerPackagedProduct>
+                              </asContent>
+                           </containerPackagedProduct>
+                        </asContent>
+                     </manufacturedProduct>
+                     <subjectOf>
+                        <marketingAct>
+                           <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <statusCode code="active"/>
+                           <effectiveTime>
+                              <low value="20260301"/>
+                           </effectiveTime>
+                        </marketingAct>
+                     </subjectOf>
+                     <subjectOf>
+                        <approval>
+                           <id extension="NADA141614" root="2.16.840.1.113883.3.150"/>
+                           <code code="C73593" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="NADA"/>
+                           <author>
+                              <territorialAuthority>
+                                 <territory>
+                                    <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                 </territory>
+                              </territorialAuthority>
+                           </author>
+                        </approval>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic>
+                           <code code="SPLCOLOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C48331" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="orange" xsi:type="CE"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic>
+                           <code code="SPLSCORE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value value="1" xsi:type="INT"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic>
+                           <code code="SPLSHAPE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C48345" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="OVAL" xsi:type="CE"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic>
+                           <code code="SPLSIZE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value unit="mm" value="7" xsi:type="PQ"/>
+                        </characteristic>
+                     </subjectOf>
+                     <consumedIn>
+                        <substanceAdministration>
+                           <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORAL"/>
+                        </substanceAdministration>
+                     </consumedIn>
+                  </manufacturedProduct>
+               </subject>
+               <subject>
+                  <manufacturedProduct>
+                     <manufacturedProduct>
+                        <code code="17033-022" codeSystem="2.16.840.1.113883.6.69"/>
+                        <name>Laverdia</name>
+                        <formCode code="C42897" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET, COATED"/>
+                        <asEntityWithGeneric>
+                           <genericMedicine>
+                              <name>verdinexor</name>
+                           </genericMedicine>
+                        </asEntityWithGeneric>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator value="10" unit="mg"/>
+                              <denominator value="1" unit="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="85Q03215IW" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>VERDINEXOR</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="85Q03215IW" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>VERDINEXOR</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <asContent>
+                           <quantity>
+                              <numerator value="16" unit="1"/>
+                              <denominator value="1" unit="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <formCode code="C43173" displayName="BOTTLE, PLASTIC" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                              <asContent>
+                                 <quantity>
+                                    <numerator value="1" unit="1"/>
+                                    <denominator value="1" unit="1"/>
+                                 </quantity>
+                                 <containerPackagedProduct>
+                                    <code code="17033-022-01" codeSystem="2.16.840.1.113883.6.69"/>
+                                    <formCode code="C43182" displayName="CARTON" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                 </containerPackagedProduct>
+                              </asContent>
+                           </containerPackagedProduct>
+                        </asContent>
+                     </manufacturedProduct>
+                     <subjectOf>
+                        <marketingAct>
+                           <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <statusCode code="active"/>
+                           <effectiveTime>
+                              <low value="20260301"/>
+                           </effectiveTime>
+                        </marketingAct>
+                     </subjectOf>
+                     <subjectOf>
+                        <approval>
+                           <id extension="NADA141614" root="2.16.840.1.113883.3.150"/>
+                           <code code="C73593" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="NADA"/>
+                           <author>
+                              <territorialAuthority>
+                                 <territory>
+                                    <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                 </territory>
+                              </territorialAuthority>
+                           </author>
+                        </approval>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic>
+                           <code code="SPLCOLOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C48333" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="blue" xsi:type="CE"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic>
+                           <code code="SPLSCORE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value value="1" xsi:type="INT"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic>
+                           <code code="SPLSHAPE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C48345" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="OVAL" xsi:type="CE"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic>
+                           <code code="SPLSIZE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value unit="mm" value="9" xsi:type="PQ"/>
+                        </characteristic>
+                     </subjectOf>
+                     <consumedIn>
+                        <substanceAdministration>
+                           <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORAL"/>
+                        </substanceAdministration>
+                     </consumedIn>
+                  </manufacturedProduct>
+               </subject>
+               <subject>
+                  <manufacturedProduct>
+                     <manufacturedProduct>
+                        <code code="17033-024" codeSystem="2.16.840.1.113883.6.69"/>
+                        <name>Laverdia</name>
+                        <formCode code="C42897" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET, COATED"/>
+                        <asEntityWithGeneric>
+                           <genericMedicine>
+                              <name>verdinexor</name>
+                           </genericMedicine>
+                        </asEntityWithGeneric>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator value="50" unit="mg"/>
+                              <denominator value="1" unit="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="85Q03215IW" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>VERDINEXOR</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="85Q03215IW" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>VERDINEXOR</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <asContent>
+                           <quantity>
+                              <numerator value="16" unit="1"/>
+                              <denominator value="1" unit="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <formCode code="C43173" displayName="BOTTLE, PLASTIC" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                              <asContent>
+                                 <quantity>
+                                    <numerator value="1" unit="1"/>
+                                    <denominator value="1" unit="1"/>
+                                 </quantity>
+                                 <containerPackagedProduct>
+                                    <code code="17033-024-01" codeSystem="2.16.840.1.113883.6.69"/>
+                                    <formCode code="C43182" displayName="CARTON" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                 </containerPackagedProduct>
+                              </asContent>
+                           </containerPackagedProduct>
+                        </asContent>
+                     </manufacturedProduct>
+                     <subjectOf>
+                        <marketingAct>
+                           <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <statusCode code="active"/>
+                           <effectiveTime>
+                              <low value="20260301"/>
+                           </effectiveTime>
+                        </marketingAct>
+                     </subjectOf>
+                     <subjectOf>
+                        <approval>
+                           <id extension="NADA141614" root="2.16.840.1.113883.3.150"/>
+                           <code code="C73593" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="NADA"/>
+                           <author>
+                              <territorialAuthority>
+                                 <territory>
+                                    <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                 </territory>
+                              </territorialAuthority>
+                           </author>
+                        </approval>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic>
+                           <code code="SPLCOLOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C48329" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="green" xsi:type="CE"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic>
+                           <code code="SPLSCORE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value value="1" xsi:type="INT"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic>
+                           <code code="SPLSHAPE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C48345" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="OVAL" xsi:type="CE"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic>
+                           <code code="SPLSIZE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value unit="mm" value="15" xsi:type="PQ"/>
+                        </characteristic>
+                     </subjectOf>
+                     <consumedIn>
+                        <substanceAdministration>
+                           <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORAL"/>
+                        </substanceAdministration>
+                     </consumedIn>
+                  </manufacturedProduct>
+               </subject>
+            </section>
+         </component>
+         <component>
+            <section ID="L84de5b26-dc6a-4a88-9e78-40017fe848fc">
+               <id root="60a2c2ce-ba42-47f1-9b15-332e21022f8c"/>
+               <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">2.5 mg · 10 mg · 22.5 mg · 50 mg</content>
+                  </paragraph>
+                  <paragraph>Coated Tablets</paragraph>
+                  <paragraph>Antineoplastic</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">For oral use in dogs only</content>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20260226"/>
+            </section>
+         </component>
+         <component>
+            <section ID="Laa0c6c9e-395f-4203-9caa-0066f1b0b72a">
+               <id root="5b2dd1ed-0d17-4fd4-9bce-5e10b68faf62"/>
+               <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">CAUTION:</content> Federal law restricts this drug to use by or on the order of a licensed veterinarian.</paragraph>
+               </text>
+               <effectiveTime value="20260209"/>
+            </section>
+         </component>
+         <component>
+            <section ID="L3f6734d5-52e5-47d0-a86f-e8747f7f3730">
+               <id root="b0fc91fd-2f14-45d6-b587-1bdb2fcdf8d5"/>
+               <code code="34089-3" codeSystem="2.16.840.1.113883.6.1" displayName="DESCRIPTION SECTION"/>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">DESCRIPTION:</content> LAVERDIA (verdinexor tablets) is a selective inhibitor of nuclear export (SINE) that blocks chromosome region maintenance 1 (CRM1).</paragraph>
+                  <paragraph>LAVERDIA has the following structural formula:</paragraph>
+                  <paragraph>
+                     <renderMultiMedia referencedObject="L614c42d8-6abc-4d11-a84c-9abc61ba775e"/>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20260226"/>
+               <component>
+                  <observationMedia ID="L614c42d8-6abc-4d11-a84c-9abc61ba775e">
+                     <text>Chem Structure</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="Image 1 - Chem. Structure.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="Lfcd3a22a-5998-4e45-98c8-fd4cebf5aa9a">
+               <id root="a0a38c7f-1645-45a8-949e-069774c4acb6"/>
+               <code code="34067-9" codeSystem="2.16.840.1.113883.6.1" displayName="INDICATIONS &amp; USAGE SECTION"/>
+               <title>INDICATION:</title>
+               <text>
+                  <paragraph>LAVERDIA is indicated for the treatment of lymphoma in dogs.</paragraph>
+               </text>
+               <effectiveTime value="20260209"/>
+            </section>
+         </component>
+         <component>
+            <section ID="Lc4c69bb0-7654-42cc-9c93-fdca3ad4b0bb">
+               <id root="fa55fc24-b9d0-41dd-9f49-3a9d3882a98c"/>
+               <code code="34068-7" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE &amp; ADMINISTRATION SECTION"/>
+               <title>DOSAGE AND ADMINISTRATION:</title>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">Always provide the Client Information Sheet to the dog owner with each prescription.</content>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20260209"/>
+               <component>
+                  <section ID="L0298cb0d-6f99-4faf-8a46-5899a5ea1346">
+                     <id root="7a34030f-64a8-4835-95eb-25894c196782"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <text>
+                        <paragraph>
+                           <content styleCode="italics">Dosing Instructions:</content>
+                        </paragraph>
+                        <paragraph>1. <content styleCode="bold">Feed the dog immediately before giving LAVERDIA.</content>
+                        </paragraph>
+                        <paragraph>2. Wear protective disposable chemotherapy resistant gloves when handling LAVERDIA (see <content styleCode="bold">USER SAFETY WARNINGS</content>).</paragraph>
+                        <paragraph>3. Use an appropriate combination of tablets to administer the dose:</paragraph>
+                        <paragraph>
+                           <content>a) Administer LAVERDIA at an</content>
+                           <content styleCode="bold"> initial</content>
+                           <content> dose of 1.25 mg/kg administered orally twice per week (e.g., Monday and Thursday or Tuesday and Friday) with at least 72 hours between doses.</content>
+                        </paragraph>
+                        <paragraph>
+                           <content/>
+                           <content>b) If tolerated after 2 weeks, increase the dose of LAVERDIA to 1.5 mg/kg twice per week with at least 72 hours between doses.</content>
+                        </paragraph>
+                        <paragraph>
+                           <content/>
+                           <content>c) Dose reductions of 0.25 mg/kg to a minimum dose of 1 mg/kg twice per week with at least 72 hours between doses or dose interruptions may be considered if the dog has adverse reactions (see</content>
+                           <content styleCode="bold"> ANIMAL SAFETY WARNINGS</content>
+                           <content>, </content>
+                           <content styleCode="bold">PRECAUTIONS</content>
+                           <content>, and </content>
+                           <content styleCode="bold">ADVERSE REACTIONS</content>
+                           <content>).</content>
+                        </paragraph>
+                        <paragraph>4. Do not split or crush tablets.</paragraph>
+                     </text>
+                     <effectiveTime value="20260209"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="L7e51cf56-63d4-4cf6-8d7d-634d9a755c0c">
+               <id root="1a91d733-610e-46a7-8def-021d4177b03b"/>
+               <code code="34070-3" codeSystem="2.16.840.1.113883.6.1" displayName="CONTRAINDICATIONS SECTION"/>
+               <title>CONTRAINDICATIONS:</title>
+               <text>
+                  <paragraph>Do not use in dogs that are pregnant, lactating or intended for breeding. LAVERDIA is a possible teratogen and can affect female and male fertility. Laboratory studies in the rat have shown reduced fertility, embryotoxicity, teratogenicity and maternal toxicity. Administration of LAVERDIA caused degeneration/atrophy and vacuolation in the seminiferous tubules and oligospermia in the epididymides in male dogs in the margin of safety study (see <content styleCode="bold">TARGET ANIMAL SAFETY</content>).</paragraph>
+               </text>
+               <effectiveTime value="20260209"/>
+            </section>
+         </component>
+         <component>
+            <section ID="Ldc0974c5-b3ee-44c2-865a-1ff8eb350d04">
+               <id root="aa39cfa8-f69b-4d65-a446-1630fc7686f1"/>
+               <code code="34071-1" codeSystem="2.16.840.1.113883.6.1" displayName="WARNINGS SECTION"/>
+               <title>WARNINGS:</title>
+               <text>
+                  <paragraph/>
+               </text>
+               <effectiveTime value="20260209"/>
+               <component>
+                  <section ID="Lefeb8eda-c25c-4b6c-963c-481f7af7124f">
+                     <id root="5fe36963-495d-4677-abec-31581e7a92ce"/>
+                     <code code="54433-8" codeSystem="2.16.840.1.113883.6.1" displayName="USER SAFETY WARNINGS SECTION"/>
+                     <title>USER SAFETY WARNINGS:</title>
+                     <text>
+                        <paragraph>NOT FOR USE IN HUMANS. KEEP THIS AND ALL MEDICATIONS OUT OF THE REACH OF CHILDREN. CHILDREN SHOULD NOT COME INTO CONTACT WITH LAVERDIA. Children should not come in contact with the feces, urine, vomit, or saliva of treated dogs.</paragraph>
+                        <paragraph>Pregnant women, women who may become pregnant, and nursing women should not handle or administer LAVERDIA or come in contact with the feces, urine, vomit, or saliva from LAVERDIA-treated dogs. Based on animal studies, LAVERDIA can cause birth defects and affect female fertility.</paragraph>
+                        <paragraph>LAVERDIA can affect male fertility based on animal studies and studies in humans.</paragraph>
+                        <paragraph>Wear protective disposable chemotherapy resistant gloves when handling LAVERDIA to avoid exposure to drug.</paragraph>
+                        <paragraph>Wear protective disposable chemotherapy resistant gloves to prevent direct contact with moistened, broken, or crushed LAVERDIA tablets.</paragraph>
+                        <paragraph>Wear protective disposable chemotherapy resistant gloves to prevent contact with feces, urine, vomit, and saliva during treatment and for <content styleCode="bold">3 days</content> after the dog has received the last treatment. Place all waste material in a plastic bag and seal before general disposal. Wash hands immediately and thoroughly with soap and water if contact with the feces, urine, vomit, or saliva from LAVERDIA-treated dogs occurs.</paragraph>
+                        <paragraph>Any items that come in contact with feces, urine, vomit, or saliva should not be washed with other laundry during treatment and for <content styleCode="bold">3 days</content> after the last treatment with LAVERDIA.</paragraph>
+                        <paragraph>Wear protective disposable chemotherapy resistant gloves when handling the dog’s toys, food bowl, and water bowl. Wash food and water bowls separately from other items during treatment and for <content styleCode="bold">3 days</content> after the dog has received the last treatment.</paragraph>
+                        <paragraph>If LAVERDIA is accidentally ingested, or if there is significant contact with feces, urine, vomit, or saliva of dogs during treatment or within <content styleCode="bold">3 days</content> after the last treatment without proper precautions, seek medical advice immediately.</paragraph>
+                        <paragraph>It is important to show the treating physician a copy of the package insert, label, or client information sheet.</paragraph>
+                     </text>
+                     <effectiveTime value="20260209"/>
+                     <component>
+                        <section ID="L11e774d0-995c-497e-aaf4-653f481aa235">
+                           <id root="56437dff-fb2e-472a-b8c7-24b35c760ca4"/>
+                           <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                           <text>
+                              <paragraph>
+                                 <content styleCode="italics">Special instructions for handling and administering the product</content>
+                              </paragraph>
+                              <paragraph>
+                                 <content styleCode="italics">• </content>It is recommended that LAVERDIA be administered under the supervision of, or in consultation with, a veterinarian experienced in the use of cancer therapeutic agents.</paragraph>
+                              <paragraph>• Use standard measures for the safe handling of all chemotherapeutic drugs. Refer to Occupational Safety and Health Administration (OSHA) for appropriate guidelines, recommendations, and regulations for handling antineoplastic agents.</paragraph>
+                              <paragraph>• Do not eat, drink or smoke while handling the product.</paragraph>
+                              <paragraph>• Do not store near food, in or near a food preparation area, or with medications intended for use in humans.</paragraph>
+                              <paragraph>
+                                 <content styleCode="italics">Skin contact</content>
+                              </paragraph>
+                              <paragraph>• In case of contact with skin, wash the affected area immediately and thoroughly with soap and water.</paragraph>
+                              <paragraph>
+                                 <content styleCode="italics">Accidental eye exposure</content>
+                              </paragraph>
+                              <paragraph>• Rinse eyes with large amounts of tap water (use eyewash station if present) for 10 minutes while holding back the eyelid.</paragraph>
+                              <paragraph>• Remove contact lenses.</paragraph>
+                              <paragraph>• Seek medical advice immediately and show the package insert or label to the physician.</paragraph>
+                              <paragraph>
+                                 <content styleCode="italics">Accidental oral exposure or ingestion</content>
+                              </paragraph>
+                              <paragraph>• Seek medical advice immediately and show the package insert or label to the physician.</paragraph>
+                           </text>
+                           <effectiveTime value="20260209"/>
+                        </section>
+                     </component>
+                  </section>
+               </component>
+               <component>
+                  <section ID="Lff576202-1649-40a9-95a0-67d61ceb2eb3">
+                     <id root="c4c14aa7-9d1e-420d-8544-47d72e23d4bd"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>ANIMAL SAFETY WARNINGS:</title>
+                     <text>
+                        <paragraph>LAVERDIA can cause severe anorexia. Dogs should be carefully monitored for inappetence, vomiting, diarrhea, dehydration and weight loss, and supportive care should be provided as clinically indicated (see <content styleCode="bold">ADVERSE REACTIONS</content>).</paragraph>
+                        <paragraph>In the studies used to support approval, appetite stimulants, anti-nausea medication, and corticosteroids (prednisone) were found to reduce the incidence of anorexia and gastrointestinal adverse reactions associated with LAVERDIA.</paragraph>
+                        <paragraph>Keep LAVERDIA in a secure location out of reach of dogs, cats, and other animals to prevent accidental ingestion or overdose.</paragraph>
+                     </text>
+                     <effectiveTime value="20260209"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="Lae2a82c7-371e-4b79-b00f-7eda90b008b7">
+               <id root="645c89df-c4b1-4d55-9c83-383b5b4084f0"/>
+               <code code="42232-9" codeSystem="2.16.840.1.113883.6.1" displayName="PRECAUTIONS SECTION"/>
+               <title>PRECAUTIONS:</title>
+               <text>
+                  <paragraph>Safe use of LAVERDIA has not been evaluated in dogs with concurrent serious infections; in dogs with concurrent renal, cardiovascular, or hepatic disease; in dogs with concurrent diabetes mellitus; in dogs with clinically relevant hypercalcemia; or in dogs with concurrent malignancy.</paragraph>
+                  <paragraph>LAVERDIA can cause hematologic and serum chemistry abnormalities. Dogs should be frequently monitored for evidence of hematologic and serum chemistry abnormalities when initiating and maintaining treatment with LAVERDIA (see <content styleCode="bold">ADVERSE REACTIONS</content> and <content styleCode="bold">TARGET ANIMAL SAFETY</content>).</paragraph>
+                  <paragraph>The safety and effectiveness of LAVERDIA has not been evaluated in conjunction with other chemotherapeutic agents or other treatment modalities for lymphoma.</paragraph>
+                  <paragraph>The effect of concomitant medications on the metabolism of LAVERDIA has not been evaluated.</paragraph>
+                  <paragraph>The safe use of LAVERDIA has not been evaluated in dogs younger than 7 months of age.</paragraph>
+                  <paragraph>The primary metabolism of LAVERDIA in vitro and in vivo is thought to be inactivation by glutathione (GSH) conjugation. Therefore, administration of LAVERDIA with drugs which undergo substantial GSH conjugation (e.g., acetaminophen) should be minimized.</paragraph>
+               </text>
+               <effectiveTime value="20260209"/>
+            </section>
+         </component>
+         <component>
+            <section ID="L675f5b90-39ba-4e13-9b26-a0300987dee1">
+               <id root="9fb3b6b3-23f5-4235-aff3-f3677787bb23"/>
+               <code code="34084-4" codeSystem="2.16.840.1.113883.6.1" displayName="ADVERSE REACTIONS SECTION"/>
+               <title>ADVERSE REACTIONS:</title>
+               <text>
+                  <paragraph>A randomized, masked, controlled, multicenter clinical field study evaluated the effectiveness and safety of LAVERDIA for the treatment of lymphoma. One hundred and twenty-seven dogs received at least one dose of LAVERDIA. Thirty-three dogs received control tablets.</paragraph>
+                  <paragraph>The Veterinary Cooperative Oncology Group - common terminology criteria for adverse events (VCOG-CTCAE) definitions<sup>1</sup> were used to grade the adverse reactions observed:</paragraph>
+                  <paragraph>Grade 1 (mild), Grade 2 (moderate), Grade 3 (severe), Grade 4 (life-threatening), and Grade 5 (death or euthanasia). Most adverse reactions during the study were Grade 1 or 2.</paragraph>
+                  <paragraph>The adverse reactions observed in the study and number of dogs experiencing each adverse reaction are summarized in Table 1 below.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Table 1. Adverse Reactions Reported During the Field Study</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">
+                        <renderMultiMedia referencedObject="L705f1ed9-2ad6-4129-9638-939d069df3c0"/>
+                     </content>
+                  </paragraph>
+                  <paragraph>
+                     <content>* Of the dogs who had anorexia, 53/94 (56%) in the LAVERDIA group and 5/17 (29%) in the control group received a concomitant medication added to improve appetite.</content>
+                  </paragraph>
+                  <paragraph>During the study, additional reported adverse reactions for hematologic and serum chemistry abnormalities included neutrophilia, leukocytosis, leukopenia, hypokalemia, hypochloremia.</paragraph>
+               </text>
+               <effectiveTime value="20260226"/>
+               <component>
+                  <section ID="L7f0d2fda-8348-4301-9e77-a1d8c3db8ec0">
+                     <id root="23c1c2f3-0be6-4c7a-88b8-0db1701fd808"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>Serious Adverse Reactions:</title>
+                     <text>
+                        <paragraph>Serious adverse events (SAEs) were reported in 22% (28 of 127) dogs in the LAVERDIA group and 15.2% (5 of the 33) dogs in the control group. Twenty-two dogs in the LAVERDIA group and 4 dogs in the control group were euthanized or died. SAEs reported in other dogs in the LAVERDIA group included thrombocytopenia (one dog), pleural effusion (two dogs), elevated total bilirubin (one dog), neutropenia (one dog), and ventricular arrythmias/swollen face/collapse (one dog). In the control group, one dog had necrosis of the skin on tail secondary to self-trauma.</paragraph>
+                     </text>
+                     <effectiveTime value="20260226"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="Lef27aaf9-4f4f-4a35-846d-f442e197bdff">
+                     <id root="93288166-dbf2-49df-a34e-3ff323f80abd"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>Conditional Approval Experience:</title>
+                     <text>
+                        <paragraph>LAVERDIA was conditionally approved and marketed from 2021-2025 under the proprietary name LAVERDIA-CA1. The following adverse events<br/>were voluntarily reported for LAVERDIA-CA1 during the conditional approval: anemia, polyuria/pollakiuria, leukocytosis, neutrophilia, muscle weakness, and lymphopenia.</paragraph>
+                     </text>
+                     <effectiveTime value="20260209"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="L64a15af9-9d80-4ee8-a799-befbdf933b47">
+                     <id root="cf1c0e6e-46af-46e7-ae1c-cd317f73249e"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>CONTACT INFORMATION:</title>
+                     <text>
+                        <paragraph>To report suspected adverse events, for technical assistance, or to obtain a copy of the Safety Data Sheet (SDS) contact Dechra Veterinary Products at 1-866-933-2472.</paragraph>
+                        <paragraph>For additional information about adverse drug experience reporting for animal drugs, contact FDA at 1-888-FDA-VETS or at www.fda.gov/reportanimalae</paragraph>
+                     </text>
+                     <effectiveTime value="20260209"/>
+                  </section>
+               </component>
+               <component>
+                  <observationMedia ID="L705f1ed9-2ad6-4129-9638-939d069df3c0">
+                     <text>Table 1</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="Table 1.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="La99f7c4d-3ef1-454d-908b-80c5c067d5df">
+               <id root="6c04f7d2-99cd-41f7-bb87-7d9f3bb37151"/>
+               <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+               <title>INFORMATION FOR DOG OWNERS:</title>
+               <text>
+                  <paragraph>Always provide the Client Information Sheet with each prescription and review it with the dog owner or person responsible for care of the dog. Advise dog owners about possible adverse reactions, when to contact a veterinarian, how to handle and administer the product, and how to clean up any feces, urine, vomit, or saliva from dogs treated with LAVERDIA. The Client Information Sheet also contains warnings for humans and what to do in case of accidental human exposure to LAVERDIA.</paragraph>
+               </text>
+               <effectiveTime value="20260209"/>
+            </section>
+         </component>
+         <component>
+            <section ID="L1e245bd7-14a6-4a26-985d-a4c292899b09">
+               <id root="cbb2e5b0-28df-49ea-88c0-2453a7cb2d65"/>
+               <code code="34090-1" codeSystem="2.16.840.1.113883.6.1" displayName="CLINICAL PHARMACOLOGY SECTION"/>
+               <title>CLINICAL PHARMACOLOGY:</title>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">Mechanism of action:</content>
+                  </paragraph>
+                  <paragraph>Verdinexor is a reversible, selective inhibitor of nuclear export (SINE) that specifically blocks chromosome region maintenance 1 (CRM1), also known as exportin 1 (XPO1). Verdinexor inhibits the export of tumor suppressor proteins (TSP) and growth regulatory proteins (GRP) from the nucleus where they carry out their normal functions; it is selectively cytotoxic for cells with genomic damage (i.e. for tumor cells).</paragraph>
+                  <paragraph/>
+               </text>
+               <effectiveTime value="20260226"/>
+               <component>
+                  <section ID="Lb96b3d6e-5e55-46b9-8c47-a24c51cd0e5a">
+                     <id root="178867b0-891f-4fc7-8f40-0310cf700e48"/>
+                     <code code="43682-4" codeSystem="2.16.840.1.113883.6.1" displayName="PHARMACOKINETICS SECTION"/>
+                     <title>Pharmacokinetics:</title>
+                     <text>
+                        <paragraph>Following oral administration of a non-final formulation of verdinexor three times per week for 13 weeks to fed healthy young adult Beagle dogs, overall mean exposure in terms of area under the plasma concentration time curve from time zero to the last quantifiable plasma concentration (AUC<sub>last</sub>) and maximum plasma concentration (C<sub>max</sub>) showed an increase from 1.25 mg/kg to 1.5 mg/kg; however, exposure at 1.75 mg/kg was either similar or lower than exposure for the 1.5 mg/kg dose group on both evaluation days. The increase in exposure as assessed by dose normalized AUC<sub>last</sub> and dose normalized C<sub>max</sub> was approximately dose proportional from 1.25 mg/kg to 1.5 mg/kg and less than dose proportional from 1.5 mg/kg to 1.75 mg/kg in males on both evaluation days. In females, the increase in AUC<sub>last</sub> and C<sub>max</sub> was greater than dose proportional from 1.25 mg/kg to 1.5 mg/kg and there was minimal increase in exposure from 1.5 mg/kg to 1.75 mg/kg on both evaluation days.</paragraph>
+                        <paragraph>Inter-animal variability was relatively high across all dose groups (%CV ranging from 16% to 81% for AUC<sub>last</sub>); therefore, pharmacokinetic differences or trends should be interpreted cautiously.</paragraph>
+                        <paragraph>Following oral administration of a non-final formulation of verdinexor to fed and fasted dogs, there was a significant food effect on the pharmacokinetics of verdinexor with a 3-fold and 5-fold increase in AUC and C<sub>max</sub>, respectively, when verdinexor was administered orally in the presence of food. Time to reach C<sub>max</sub> (T<sub>max</sub>) was markedly more variable (1-18 hour) when dogs were dosed under fasted conditions as compared to when verdinexor was administered under fed conditions (1.1-2.5 hour).</paragraph>
+                        <paragraph>
+                           <content styleCode="bold">Table 2. Arithmetic mean (± standard deviation) of verdinexor pharmacokinetic parameters following the first administration of a non-final formulation of verdinexor (maximum proposed label dose 1.5 mg/kg body weight) in fed male and female healthy young adult Beagle Dogs</content>
+                        </paragraph>
+                        <paragraph>
+                           <content styleCode="bold">
+                              <renderMultiMedia referencedObject="L451d5247-fb18-4c7c-b75c-daa994d3f496"/>
+                           </content>
+                        </paragraph>
+                        <paragraph>AUC<sub>last</sub> = area under the curve from the time of dosing to the last quantifiable plasma concentration<br/>C<sub>max</sub> = maximum plasma concentration<br/>T<sub>1/2</sub> = half-life<br/>T<sub>max</sub> = time to maximum plasma concentration<br/>
+                           <sup>#</sup>Median (range)</paragraph>
+                     </text>
+                     <effectiveTime value="20260226"/>
+                     <component>
+                        <observationMedia ID="L451d5247-fb18-4c7c-b75c-daa994d3f496">
+                           <text>Table 2</text>
+                           <value mediaType="image/jpeg" xsi:type="ED">
+                              <reference value="Table 2.jpg"/>
+                           </value>
+                        </observationMedia>
+                     </component>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="Lb5fad994-1bf5-4c2c-a512-77fe2a199902">
+               <id root="672d63a3-f231-4976-a09a-52728b34d5bd"/>
+               <code code="60563-4" codeSystem="2.16.840.1.113883.6.1" displayName="SUMMARY OF SAFETY AND EFFECTIVENESS"/>
+               <title>EFFECTIVENESS:</title>
+               <text>
+                  <paragraph>The effectiveness and safety of LAVERDIA for the treatment of lymphoma was evaluated in a randomized, controlled, masked, multicenter clinical field study. LAVERDIA was compared to control (identical tablets without verdinexor) using time to progression (TTP) as the primary endpoint. Progression was monitored at Days 7, 14, 28, 42, and 56. Progression was defined as the time from Day 0 to progressive disease (PD) for target and non-target lesions using assessment by a modified response evaluation criteria for peripheral nodal lymphoma in dogs<sup>2</sup>. The modification accommodated dogs that had an initial response to treatment and demonstrated clinical benefit despite lymph node (the target lesion) enlargement.</paragraph>
+                  <paragraph>One hundred and sixty (160) dogs were enrolled and randomly assigned to treatment with either LAVERDIA (n=127) or control (n=33). LAVERDIA was administered as described in the <content styleCode="bold">DOSAGE AND ADMINISTRATION</content> section with food or immediately after a meal. The population included dogs with B-cell (80.6% of dogs) or T-cell lymphoma (18.3%) that were naïve to chemotherapy (60% of dogs) or relapsed after chemotherapy (40%), aged 3 to 14 years old, weighing between 9.3 and 72.7 kg, with the most common breeds being mixed breeds, Labrador retriever, and German Shepherd. Use of concomitant appetite stimulants was allowed. If no response to appetite stimulants occurred, prednisone administered at 0.5-1 mg/kg per day was allowed.</paragraph>
+                  <paragraph>Effectiveness was evaluated in 134 dogs (106 dogs in the LAVERDIA group and 28 in control). Including the administration of prednisone as a covariate in the statistical model, the TTP of dogs treated with LAVERDIA was statistically significantly longer (p-value = 0.011) than that of dogs treated with control. Time to progression was 37 days in the LAVERDIA group (with a 95% confidence interval of 29 to 57 days) and 23 days in the control group (with a 95% confidence interval of 14 to 30 days).</paragraph>
+                  <paragraph>Thirty-one (29.2%) dogs in the LAVERDIA group completed the 56-day study while 2 (7.1%) dogs in the control group completed the study. The primary reason that dogs did not complete the study was due to progressive disease, adverse events, and/or death.</paragraph>
+                  <paragraph>Concomitant medications were used primarily for gastrointestinal adverse events or sedation for diagnostics during the study. The most commonly used concomitant medications included maropitant, prednisone, capromorelin, butorphanol, metronidazole, ondansetron, gabapentin, dexmedetomidine, trazadone, atipamezole, isotonic solutions, amoxicillin and clavulanic acid, and heartworm, flea, and tick preventives.</paragraph>
+               </text>
+               <effectiveTime value="20260226"/>
+               <component>
+                  <section ID="L72e84287-5a55-448c-a33b-1391788210e9">
+                     <id root="e0b8b5ee-a263-4fd6-a70b-70685f9c17b1"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>TARGET ANIMAL SAFETY:</title>
+                     <text>
+                        <paragraph>In a 13-week margin of safety study, 32 healthy Beagle dogs (4/sex/group), approximately 7 months old at study initiation, were administered<br/>LAVERDIA at either 0, 1.0, 1.5, or 1.75 mg/kg of body weight 3 times a week (Monday, Wednesday, and Friday). Dogs in the control group were sham-dosed. Dogs were fed prior to dosing. All dogs survived to study termination.</paragraph>
+                        <paragraph>Dose-dependent LAVERDIA-related clinical findings included vomiting, inappetence, decreased body condition, decreased body weight, loss of skin elasticity, lacrimation, slight depression, and slight decrease of forelimb strength.</paragraph>
+                        <paragraph>Non-dose-dependent LAVERDIA-related findings included abnormal feces (soft, watery, or mucoid feces), excessive shedding, and sparse hair.</paragraph>
+                        <paragraph>Dogs in the 1.0 mg/kg group and dogs in the 1.5 and 1.75 mg/kg groups had lower body weight values, starting on study days 28 and 21 respectively, that continued to the end of the study compared to control dogs.</paragraph>
+                        <paragraph>Dose-dependent LAVERDIA-related clinical pathology findings included decreases in chloride and increases in fibrinogen. Non-dose-dependent LAVERDIA-related clinical pathology findings included decreases in lymphocytes, eosinophils, and monocytes, and increases in albumin and blood urea nitrogen.</paragraph>
+                        <paragraph>Dose-dependent organ weight findings in the dogs administered LAVERDIA included lower testes, thymus, and thyroid/parathyroid gland weights. Dose-dependent histopathological findings in the dogs administered LAVERDIA included lesions in the testes and epididymides (moderate to marked seminiferous tubules degeneration/atrophy, minimal to moderate vacuolation, and minimal Leydig cell hypertrophy in the testes; and severe oligospermia/germ cell debris in the epididymides) and in the thymus (minimal to mild cortical lymphoid depletion).</paragraph>
+                        <paragraph/>
+                     </text>
+                     <effectiveTime value="20260226"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="Lc95bce9e-c5e9-4a27-a759-d46e00aa4502">
+               <id root="7e7a1451-f760-4082-92f0-258fb6271735"/>
+               <code code="34069-5" codeSystem="2.16.840.1.113883.6.1" displayName="HOW SUPPLIED SECTION"/>
+               <title>HOW SUPPLIED:</title>
+               <text>
+                  <paragraph>LAVERDIA (verdinexor tablets) is presented as immediate release coated tablets in four dosage strengths, 2.5 mg, 10 mg, 22.5 mg, and 50 mg. Each tablet strength is supplied in a 16-count and 50-count HDPE bottle with a heat sealed, child-resistant cap and a desiccant included in each bottle.</paragraph>
+               </text>
+               <effectiveTime value="20260209"/>
+            </section>
+         </component>
+         <component>
+            <section ID="L82b56f5b-e8eb-4d20-9b87-603dc3efd347">
+               <id root="d15dd1f3-8e9d-49d6-8d78-67d7dedc0495"/>
+               <code code="69763-1" codeSystem="2.16.840.1.113883.6.1" displayName="DISPOSAL AND WASTE HANDLING"/>
+               <title>DISPOSAL:</title>
+               <text>
+                  <paragraph>Dispose of any unused product or waste materials in accordance with proper procedures for cytotoxic drugs.</paragraph>
+               </text>
+               <effectiveTime value="20260209"/>
+            </section>
+         </component>
+         <component>
+            <section ID="L1c4c7e51-e7b9-44d7-8c69-90adf7f714ee">
+               <id root="0d6ce3f1-ae4e-4aa6-9ace-91950d6d30bf"/>
+               <code code="44425-7" codeSystem="2.16.840.1.113883.6.1" displayName="STORAGE AND HANDLING SECTION"/>
+               <title>STORAGE INFORMATION:</title>
+               <text>
+                  <paragraph>Store the bottles at controlled room temperature 20° to 25°C (68° – 77°F).</paragraph>
+               </text>
+               <effectiveTime value="20260209"/>
+            </section>
+         </component>
+         <component>
+            <section ID="L1bf4c21e-d53b-403f-9905-afc8f845427b">
+               <id root="fd328556-b4c0-48fc-a83e-e18e203b64f3"/>
+               <code code="34093-5" codeSystem="2.16.840.1.113883.6.1" displayName="REFERENCES SECTION"/>
+               <title>REFERENCES:</title>
+               <text>
+                  <paragraph>1. Veterinary Cooperative Oncology Group- Common Terminology Criteria for Adverse Events (VCOG-CTCAE v2) following investigational therapy in dogs and cats. Vet Compar Oncol. 2021, Vol.19(2), p.311-352.</paragraph>
+                  <paragraph>2. Response evaluation criteria for peripheral nodal lymphoma in dogs (v1.0) - a Veterinary Cooperative Oncology Group (VCOG) consensus document. Vail DM, Michels GM, Khanna C, Selting KA, London CA; Veterinary Cooperative Oncology Group. Vet Compar Oncol. 2010; 8(1), p. 28-37.</paragraph>
+               </text>
+               <effectiveTime value="20260209"/>
+            </section>
+         </component>
+         <component>
+            <section ID="Lff6869c1-4071-435b-9748-6dd12ee140bd">
+               <id root="817425f9-6fc6-4684-89d3-e97533eff844"/>
+               <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+               <text>
+                  <paragraph>Laverdia is a registered trademark of Dechra Limited. Dechra is a registered trademark of Dechra Pharmaceuticals Limited.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Manufactured for:</content>
+                  </paragraph>
+                  <paragraph>Dechra Veterinary Products, LLC<br/>7015 College Boulevard, Suite 525, Overland Park, KS 66211</paragraph>
+                  <paragraph>Product inquiries should be directed to Dechra Veterinary Products, (866) 933-2472.</paragraph>
+                  <paragraph>Approved by FDA under NADA # 141-614</paragraph>
+                  <paragraph>Issued: January 2026</paragraph>
+                  <paragraph>
+                     <content>
+                        <renderMultiMedia referencedObject="Lbc9048e0-8f97-4954-af7a-f3545f37946b"/>
+                     </content>
+                  </paragraph>
+                  <paragraph>
+                     <content>1 8 9 4 - 0 3  P I N - 7 0 0 1 - 0 9</content>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20260226"/>
+               <component>
+                  <observationMedia ID="Lbc9048e0-8f97-4954-af7a-f3545f37946b">
+                     <text>Logo</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="Image 2 - Logo.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="L811f3382-1fb9-440c-819a-4f146cdf6e36">
+               <id root="886196db-b5fc-4c1a-bbb1-ba2d534171a0"/>
+               <code code="42230-3" codeSystem="2.16.840.1.113883.6.1" displayName="SPL PATIENT PACKAGE INSERT SECTION"/>
+               <title>Client Information Sheet</title>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">LAVERDIA<sup>®</sup>
+                     </content>
+                     <br/>(verdinexor tablets)</paragraph>
+                  <paragraph>The client information sheet contains important information about<content styleCode="bold"> LAVERDIA (verdinexor tablets)</content>. You should read this information before you start giving your dog LAVERDIA and review it each time the prescription is refilled as there may be new information. This sheet is provided only as a summary and does not take the place of instructions from your veterinarian. Talk with your veterinarian if you do not understand any of this information or if you want to know more about LAVERDIA.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">What is LAVERDIA?</content>
+                     <br/>LAVERDIA is an FDA approved drug to treat lymphoma in dogs. The active ingredient in LAVERDIA is verdinexor, a substance that works by preventing tumor suppressing proteins from leaving the nucleus of cells, resulting in disruption of cancer cell survival and eventual cancer cell death.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">What do I need to tell my veterinarian before my dog is treated with LAVERDIA?</content>
+                     <br/>Tell your veterinarian:<br/>• About other medications your dog is taking, including prescription drugs, over the counter drugs, heartworm preventatives, flea and tick medications, and vitamins and supplements, including herbal supplements.<br/>• About your dog’s previous or current medical conditions, including any infection.<br/>• If your dog is pregnant, nursing puppies, or you intend to breed him/her.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">How is my dog given LAVERDIA?</content>
+                     <br/>•<content styleCode="bold"> ALWAYS WEAR GLOVES</content> when handling LAVERDIA and its packaging. See the <content styleCode="bold">Handling Instructions</content> section (on the reverse side of this sheet) to learn more about safely administering LAVERDIA to your dog.<br/>• LAVERDIA is given by oral administration (by mouth) to dogs.<br/>• <content styleCode="bold">Feed your dog a small meal immediately before giving LAVERDIA.</content>
+                     <br/>• LAVERDIA may be hidden inside a treat but be certain your dog swallows the entire tablet(s). It is not recommended that tablets be placed directly in a meal/food bowl as it may be difficult to determine if they have been consumed if the entire meal is not consumed by your dog.<br/>• Follow your veterinarian’s instructions for how much and how often to give LAVERDIA. Your dog may need to take a combination of different tablet sizes to receive the correct dose of LAVERDIA. Give all tablets at the same time. Do not change this dose or regimen without consulting with your veterinarian.<br/>• Give each dose of LAVERDIA at least 72 hours apart (for example, give on Monday and Thursday or Tuesday and Friday).<br/>• If your dog misses a dose of LAVERDIA, do not make up the dose. Instead, simply give the dose on the next regularly scheduled day. Be sure to tell your veterinarian about any missed doses or any difficulty with giving the tablets.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">How will LAVERDIA affect my dog’s cancer?</content>
+                     <br/>LAVERDIA is intended to treat your dog’s cancer. Frequent check-ups by your veterinarian are necessary to determine whether your dog is responding to treatment, and to decide whether your dog should continue to receive LAVERDIA.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">What are some possible side effects of LAVERDIA?</content>
+                     <br/>LAVERDIA may cause side effects, even at the prescribed dose. Serious side effects can occur, with or without warning.</paragraph>
+                  <paragraph>The most frequent side effects are:<br/>• Decreased/Loss of appetite<br/>• Vomiting<br/>• Lethargy<br/>• Weight Loss<br/>• Diarrhea</paragraph>
+                  <paragraph>There are other side effects that may occur. For more<br/>information about side effects ask your veterinarian.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Stop LAVERDIA immediately and contact your veterinarian if you notice any of the following changes in your dog:</content>
+                     <br/>• Refusal to eat for more than 1 day<br/>• Repeated vomiting or diarrhea<br/>• Lethargy<br/>• If your dog experiences other changes that concern you</paragraph>
+                  <paragraph>This client information sheet gives the most important information about LAVERDIA. For more information about LAVERDIA, talk to your veterinarian.</paragraph>
+                  <paragraph>To report a suspected adverse reaction (side effect) call Dechra Veterinary Products at 866-933-2472.</paragraph>
+                  <paragraph>For additional information about adverse drug experience reporting for animal drugs, contact FDA at 1-888-FDA-VETS or at www.fda.gov/reportanimalae</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">See reverse side for HANDLING INSTRUCTIONS</content>
+                  </paragraph>
+                  <paragraph/>
+               </text>
+               <effectiveTime value="20260226"/>
+               <component>
+                  <section ID="L8a94c5b3-3dc2-4420-aa13-ab5ed13016c1">
+                     <id root="1c78abe5-3876-4c46-a920-f9c18762cf6f"/>
+                     <code code="50741-8" codeSystem="2.16.840.1.113883.6.1" displayName="SAFE HANDLING WARNING SECTION"/>
+                     <title>HANDLING INSTRUCTIONS:</title>
+                     <text>
+                        <paragraph>
+                           <content styleCode="bold">What do I need to know to handle LAVERDIA (verdinexor tablets) safely?</content>
+                           <br/>
+                           <content styleCode="bold">ALWAYS WEAR GLOVES</content> when handling LAVERDIA and its packaging. Because LAVERDIA is an anti-cancer drug, extra care must be taken when handling the tablets, giving the drug to your dog, and cleaning up after your dog.<br/>• LAVERDIA is not for use in humans.<br/>• Do not eat, drink or smoke while handling the product.<br/>• Keep LAVERDIA in a secure storage area:<br/>   o Out of the reach of children. Children should not come in contact with LAVERDIA.<br/>   o Out of reach of dogs, cats, and other animals to prevent accidental ingestion or overdose.<br/>• Do not store near food or near a food preparation area, or with medications intended for use in humans.<br/>• Pregnant women, women who may become pregnant, and nursing women should not handle or administer LAVERDIA or come in contact with the feces, urine, vomit, or saliva from LAVERDIA-treated dogs.<br/>• LAVERDIA may harm an unborn baby. For pregnant and nursing women, accidental ingestion of LAVERDIA may have adverse effects on pregnancy or the nursing baby.<br/>• LAVERDIA may affect female and male fertility.</paragraph>
+                        <paragraph>
+                           <content styleCode="bold">How to minimize exposure to the active ingredient when handling LAVERDIA?</content>
+                           <br/>
+                           <content styleCode="bold">ALWAYS WEAR GLOVES</content> when handling LAVERDIA and its packaging. The following handling procedures will help to minimize exposure to the active ingredient in LAVERDIA for you and other members of your household:<br/>• Anyone who administers LAVERDIA to your dog should wear protective chemotherapy resistant gloves when handling LAVERDIA. Check with your veterinarian to ensure you have the appropriate gloves.<br/>• Minimize the number of people handling LAVERDIA.<br/>• When you or others are handling LAVERDIA tablets:<br/>   o Do not split or crush the tablets because this will disrupt the protective film coating.<br/>   o LAVERDIA tablets should be administered to your dog immediately after they are removed from the bottle.<br/>   o Protective disposable chemotherapy resistant gloves should be worn if handling broken or moistened tablets. If your dog spits out the    LAVERDIA tablet, the tablet will be moistened and should be handled with protective disposable chemotherapy resistant gloves.<br/>   o If the LAVERDIA tablet is “hidden” in a treat, make sure that your dog has eaten the entire dose. This will minimize the potential for exposure    to children or other household members to LAVERDIA.<br/>• Return any unused LAVERDIA tablets to your veterinarian.</paragraph>
+                        <paragraph>
+                           <content styleCode="bold">What should I do in case of accidental contact when handling LAVERDIA?</content>
+                           <br/>• In case of contact with skin, wash the affected area immediately and thoroughly with soap and water.<br/>• In the case of accidental eye exposure:<br/>   o Rinse the eyes with large amounts of tap water (use eyewash station if present) for 10 minutes while holding back the eyelid.<br/>   o Remove contact lenses.<br/>   o Seek medical advice immediately and show the package insert, label, or client information sheet to the physician.</paragraph>
+                        <paragraph>
+                           <content styleCode="bold">• If LAVERDIA is accidentally ingested, seek medical advice immediately. If there is significant contact with feces, urine, vomit, or saliva from your dog during treatment, or within 3 days after the last treatment, without proper precautions, seek medical advice immediately. It is important to show the treating physician a copy of the package insert, label, or client information sheet.</content>
+                        </paragraph>
+                        <paragraph>
+                           <content styleCode="bold">How do I safely clean up after my dog during treatment with LAVERDIA?</content>Because LAVERDIA is a cancer treatment drug, extra care must be taken when cleaning up after your dog during treatment and for <content styleCode="bold">3 days</content> after the last treatment with LAVERDIA.<br/>• Avoid direct contact with feces, urine, vomit, or saliva during treatment and for <content styleCode="bold">3 days</content> after the dog has completed treatment with LAVERDIA.<br/>• Any skin that comes in contact with feces, urine, vomit, or saliva should be washed immediately with soap and water.<br/>• When cleaning up feces, urine, vomit, or saliva you should wear protective disposable chemotherapy resistant gloves and collect the contaminated material with disposable absorptive material (such as paper towels) and place them into a plastic bag. Carefully remove the gloves and place them in the bag and tie or fasten it securely. Wash your hands thoroughly afterwards.<br/>• You should not wash any items soiled with feces, urine, vomit, or saliva from your dog with other laundry during treatment and for <content styleCode="bold">3 days</content> after the dog has completed treatment.<br/>• Do not let your dog urinate or defecate in areas where people may come in direct contact with the urine or feces.<br/>• Children should not come in contact with the feces, urine, vomit, or saliva of treated dogs.<br/>• <content styleCode="bold">If there is significant contact with feces, urine, vomit, or saliva from your dog during treatment, or within 3 days after the last treatment, without proper precautions, seek medical advice immediately. It is important to show the treating physician a copy of the package insert, label, or client information sheet.</content>
+                        </paragraph>
+                        <paragraph>Because LAVERDIA may be present in your dog's saliva during treatment and for <content styleCode="bold">3 days</content> after the last treatment, wear protective disposable chemotherapy resistant gloves when handling the dog’s toys, food bowl, and water bowl. Wash food and water bowls separately from other items.</paragraph>
+                        <paragraph/>
+                        <paragraph>LAVERDIA® is a trademark of Dechra Pharmaceuticals Limited. Dechra is a registered trademark of Dechra Pharmaceuticals Limited.</paragraph>
+                        <paragraph>
+                           <content styleCode="bold">Manufactured for:</content>
+                           <br/>Dechra Veterinary Products, LLC<br/>7015 College Boulevard, Suite 525 Overland Park, KS 66211<br/>(866) 933-2472</paragraph>
+                        <paragraph>Approved by FDA under NADA # 141-614</paragraph>
+                        <paragraph>Issued 01/2026</paragraph>
+                        <paragraph>
+                           <content>
+                              <content>
+                                 <renderMultiMedia referencedObject="Ledd4db9c-9752-47ee-9eff-9302a5390ee7"/>
+                              </content>
+                           </content>
+                        </paragraph>
+                        <paragraph>
+                           <content>
+                              <content>PPT-7002-04</content>
+                           </content>
+                        </paragraph>
+                     </text>
+                     <effectiveTime value="20260226"/>
+                     <component>
+                        <observationMedia ID="Ledd4db9c-9752-47ee-9eff-9302a5390ee7">
+                           <text>Logo 2</text>
+                           <value mediaType="image/jpeg" xsi:type="ED">
+                              <reference value="Image 3 - Logo 2.jpg"/>
+                           </value>
+                        </observationMedia>
+                     </component>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="Ld4b4c281-5ff5-4c71-9686-20a088aa9a1b">
+               <id root="53e42ec5-1627-4bcf-9777-2ea8c70d94cb"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <text>
+                  <paragraph>
+                     <content>PRINCIPAL DISPLAY PANEL - 2.5 mg Carton</content>
+                  </paragraph>
+                  <paragraph>2.5 mg</paragraph>
+                  <paragraph>NDC 17033-021-01</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">LAVERDIA®</content>
+                     <br/>(verdinexor tablets)</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">2.5 mg per tablet</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Antineoplastic</content>
+                     <br/>
+                     <content styleCode="bold">For Oral Use in Dogs Only</content>
+                  </paragraph>
+                  <paragraph>Indicated for the treatment of lymphoma in dogs</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">CAUTION:</content> Federal law restricts this drug to use by or on the order of a licensed veterinarian.</paragraph>
+                  <paragraph>Approved by FDA under NADA # 141-614</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">NET CONTENTS</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">16 tablets</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Dechra</content>
+                  </paragraph>
+                  <paragraph>
+                     <renderMultiMedia referencedObject="L16b5f667-1f65-4dcf-84a0-b045e1ba0b9c"/>
+                  </paragraph>
+                  <paragraph/>
+                  <paragraph>PRINCIPAL DISPLAY PANEL - 10 mg Carton</paragraph>
+                  <paragraph>10 mg</paragraph>
+                  <paragraph>NDC 17033-022-01</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">LAVERDIA®</content>
+                     <br/>(verdinexor tablets)</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">10 mg per tablet</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Antineoplastic</content>
+                     <br/>
+                     <content styleCode="bold">For Oral Use in Dogs Only</content>
+                  </paragraph>
+                  <paragraph>Indicated for the treatment of lymphoma in dogs</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">CAUTION:</content> Federal law restricts this drug to use by or on the order of a licensed veterinarian.</paragraph>
+                  <paragraph>Approved by FDA under NADA # 141-614</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">
+                        <content>NET CONTENTS</content>
+                     </content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">
+                        <content/>
+                     </content>
+                     <content styleCode="bold">16 tablets</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Dechra</content>
+                  </paragraph>
+                  <paragraph>
+                     <renderMultiMedia referencedObject="Lf5d15bf2-ca8e-45a2-a1ea-feab53362778"/>
+                  </paragraph>
+                  <paragraph>
+                     <content/>
+                  </paragraph>
+                  <paragraph>
+                     <content>PRINCIPAL DISPLAY PANEL - 50 mg Carton</content>
+                  </paragraph>
+                  <paragraph>50 mg</paragraph>
+                  <paragraph>NDC 17033-024-01</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">LAVERDIA®</content>
+                     <br/>(verdinexor tablets)</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">50 mg per tablet</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Antineoplastic</content>
+                     <br/>
+                     <content styleCode="bold">For Oral Use in Dogs Only</content>
+                  </paragraph>
+                  <paragraph>Indicated for the treatment of lymphoma in dogs</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">CAUTION:</content> Federal law restricts this drug to use by or on the order of a licensed veterinarian.</paragraph>
+                  <paragraph>Approved by FDA under NADA # 141-614</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">NET CONTENTS</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">16 tablets</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Dechra</content>
+                  </paragraph>
+                  <paragraph>
+                     <renderMultiMedia referencedObject="La836b91e-e173-4289-adea-7f2c9c419877"/>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20260226"/>
+               <component>
+                  <observationMedia ID="L16b5f667-1f65-4dcf-84a0-b045e1ba0b9c">
+                     <text>2.5mg Carton</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="Laverdia 2.5mg 16ct Carton.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+               <component>
+                  <observationMedia ID="Lf5d15bf2-ca8e-45a2-a1ea-feab53362778">
+                     <text>10mg Carton</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="Laverdia 10mg 16ct Carton.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+               <component>
+                  <observationMedia ID="La836b91e-e173-4289-adea-7f2c9c419877">
+                     <text>50mg Carton</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="Laverdia 50mg 16ct Carton.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+      </structuredBody>
+   </component>
+</document>

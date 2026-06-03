@@ -1,0 +1,1546 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="https://www.accessdata.fda.gov/spl/stylesheet/spl.xsl" type="text/xsl"?>
+<document xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 https://www.accessdata.fda.gov/spl/schema/spl.xsd">
+   <id root="725edef0-5923-4b2d-8226-2143aaa89622"/>
+   <code code="50578-4" codeSystem="2.16.840.1.113883.6.1" displayName="PRESCRIPTION ANIMAL DRUG LABEL"/>
+   <title>Enroquin<sup>®</sup>
+      <br/>(enrofloxacin)<br/>Flavored Tablets</title>
+   <effectiveTime value="20260226"/>
+   <setId root="5b17309c-5f00-4af3-97bc-d84805261439"/>
+   <versionNumber value="7"/>
+   <author>
+      <time/>
+      <assignedEntity>
+         <representedOrganization>
+            <id extension="362142734" root="1.3.6.1.4.1.519.1"/>
+            <name>Dechra Veterinary Products, LLC</name>
+         </representedOrganization>
+      </assignedEntity>
+   </author>
+   <component>
+      <structuredBody>
+         <component>
+            <section ID="DLDE">
+               <id root="6c4521f6-0044-4175-9948-661e63bff296"/>
+               <code code="48780-1" codeSystem="2.16.840.1.113883.6.1" displayName="SPL PRODUCT DATA ELEMENTS SECTION"/>
+               <effectiveTime value="20241218"/>
+               <subject>
+                  <manufacturedProduct>
+                     <manufacturedProduct>
+                        <code code="17033-303" codeSystem="2.16.840.1.113883.6.69"/>
+                        <name>Enroquin Flavored</name>
+                        <formCode code="C42998" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET"/>
+                        <asEntityWithGeneric>
+                           <genericMedicine>
+                              <name>Enrofloxacin</name>
+                           </genericMedicine>
+                        </asEntityWithGeneric>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator value="22.7" unit="mg"/>
+                              <denominator value="1" unit="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="3DX3XEK1BN" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>Enrofloxacin</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="3DX3XEK1BN" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>Enrofloxacin</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <asContent>
+                           <quantity>
+                              <numerator value="100" unit="1"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code code="17033-303-10" codeSystem="2.16.840.1.113883.6.69"/>
+                              <formCode code="C43169" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE"/>
+                           </containerPackagedProduct>
+                        </asContent>
+                        <asContent>
+                           <quantity>
+                              <numerator value="500" unit="1"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code code="17033-303-50" codeSystem="2.16.840.1.113883.6.69"/>
+                              <formCode code="C43169" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE"/>
+                           </containerPackagedProduct>
+                        </asContent>
+                     </manufacturedProduct>
+                     <subjectOf>
+                        <approval>
+                           <id extension="ANADA200680" root="2.16.840.1.113883.3.150"/>
+                           <code code="C73583" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ANADA"/>
+                           <author>
+                              <territorialAuthority>
+                                 <territory>
+                                    <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                 </territory>
+                              </territorialAuthority>
+                           </author>
+                        </approval>
+                     </subjectOf>
+                     <subjectOf>
+                        <marketingAct>
+                           <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <statusCode code="active"/>
+                           <effectiveTime>
+                              <low value="20220101"/>
+                           </effectiveTime>
+                        </marketingAct>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLCOLOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C48332" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BROWN" xsi:type="CE"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSCORE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value value="4" xsi:type="INT"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSHAPE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C48348" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ROUND" xsi:type="CE"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSIZE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value unit="mm" value="10" xsi:type="PQ"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLIMPRINT" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value xsi:type="ST">F;L;23</value>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLFLAVOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C73402" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MEAT" xsi:type="CE"/>
+                        </characteristic>
+                     </subjectOf>
+                     <consumedIn>
+                        <substanceAdministration>
+                           <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORAL"/>
+                        </substanceAdministration>
+                     </consumedIn>
+                  </manufacturedProduct>
+               </subject>
+               <subject>
+                  <manufacturedProduct>
+                     <manufacturedProduct>
+                        <code code="17033-304" codeSystem="2.16.840.1.113883.6.69"/>
+                        <name>Enroquin Flavored</name>
+                        <formCode code="C42998" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET"/>
+                        <asEntityWithGeneric>
+                           <genericMedicine>
+                              <name>Enrofloxacin</name>
+                           </genericMedicine>
+                        </asEntityWithGeneric>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator value="68" unit="mg"/>
+                              <denominator value="1" unit="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="3DX3XEK1BN" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>Enrofloxacin</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="3DX3XEK1BN" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>Enrofloxacin</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <asContent>
+                           <quantity>
+                              <numerator value="50" unit="1"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code code="17033-304-05" codeSystem="2.16.840.1.113883.6.69"/>
+                              <formCode code="C43169" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE"/>
+                           </containerPackagedProduct>
+                        </asContent>
+                        <asContent>
+                           <quantity>
+                              <numerator value="250" unit="1"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code code="17033-304-25" codeSystem="2.16.840.1.113883.6.69"/>
+                              <formCode code="C43169" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE"/>
+                           </containerPackagedProduct>
+                        </asContent>
+                     </manufacturedProduct>
+                     <subjectOf>
+                        <approval>
+                           <id extension="ANADA200680" root="2.16.840.1.113883.3.150"/>
+                           <code code="C73583" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ANADA"/>
+                           <author>
+                              <territorialAuthority>
+                                 <territory>
+                                    <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                 </territory>
+                              </territorialAuthority>
+                           </author>
+                        </approval>
+                     </subjectOf>
+                     <subjectOf>
+                        <marketingAct>
+                           <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <statusCode code="active"/>
+                           <effectiveTime>
+                              <low value="20220101"/>
+                           </effectiveTime>
+                        </marketingAct>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLCOLOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C48332" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BROWN" xsi:type="CE"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSCORE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value value="4" xsi:type="INT"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSHAPE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C48348" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ROUND" xsi:type="CE"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSIZE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value unit="mm" value="15" xsi:type="PQ"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLIMPRINT" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value xsi:type="ST">F;L;68</value>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLFLAVOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C73402" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MEAT" xsi:type="CE"/>
+                        </characteristic>
+                     </subjectOf>
+                     <consumedIn>
+                        <substanceAdministration>
+                           <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORAL"/>
+                        </substanceAdministration>
+                     </consumedIn>
+                  </manufacturedProduct>
+               </subject>
+               <subject>
+                  <manufacturedProduct>
+                     <manufacturedProduct>
+                        <code code="17033-305" codeSystem="2.16.840.1.113883.6.69"/>
+                        <name>Enroquin Flavored</name>
+                        <formCode code="C42998" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET"/>
+                        <asEntityWithGeneric>
+                           <genericMedicine>
+                              <name>Enrofloxacin</name>
+                           </genericMedicine>
+                        </asEntityWithGeneric>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator value="136" unit="mg"/>
+                              <denominator value="1" unit="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="3DX3XEK1BN" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>Enrofloxacin</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="3DX3XEK1BN" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>Enrofloxacin</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <asContent>
+                           <quantity>
+                              <numerator value="50" unit="1"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code code="17033-305-05" codeSystem="2.16.840.1.113883.6.69"/>
+                              <formCode code="C43169" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE"/>
+                           </containerPackagedProduct>
+                        </asContent>
+                        <asContent>
+                           <quantity>
+                              <numerator value="200" unit="1"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code code="17033-305-20" codeSystem="2.16.840.1.113883.6.69"/>
+                              <formCode code="C43169" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE"/>
+                           </containerPackagedProduct>
+                        </asContent>
+                     </manufacturedProduct>
+                     <subjectOf>
+                        <approval>
+                           <id extension="ANADA200680" root="2.16.840.1.113883.3.150"/>
+                           <code code="C73583" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ANADA"/>
+                           <author>
+                              <territorialAuthority>
+                                 <territory>
+                                    <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                 </territory>
+                              </territorialAuthority>
+                           </author>
+                        </approval>
+                     </subjectOf>
+                     <subjectOf>
+                        <marketingAct>
+                           <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <statusCode code="active"/>
+                           <effectiveTime>
+                              <low value="20220101"/>
+                           </effectiveTime>
+                        </marketingAct>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLCOLOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C48332" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BROWN" xsi:type="CE"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSCORE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value value="4" xsi:type="INT"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSHAPE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C48348" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ROUND" xsi:type="CE"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSIZE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value unit="mm" value="18" xsi:type="PQ"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLIMPRINT" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value xsi:type="ST">F;L;136</value>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLFLAVOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C73402" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MEAT" xsi:type="CE"/>
+                        </characteristic>
+                     </subjectOf>
+                     <consumedIn>
+                        <substanceAdministration>
+                           <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORAL"/>
+                        </substanceAdministration>
+                     </consumedIn>
+                  </manufacturedProduct>
+               </subject>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="5ec7543b-8f6c-4b0d-8b2e-9a1a876a85fc"/>
+               <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">Antibacterial Tablets for Dogs and Cats</content>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20260226"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="a7b43700-230d-45ef-bb4c-8f6e49cb5ebe"/>
+               <code code="50741-8" codeSystem="2.16.840.1.113883.6.1" displayName="SAFE HANDLING WARNING SECTION"/>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">CAUTION:</content>
+                  </paragraph>
+                  <paragraph>Federal (U.S.A.) law restricts this drug to use by or on the order of a licensed veterinarian.</paragraph>
+                  <paragraph>▶ Federal law prohibits the extralabel use of this drug in food-producing animals. ◀</paragraph>
+               </text>
+               <effectiveTime value="20241218"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="977732b2-ba54-40d3-b182-3ff6efc134c0"/>
+               <code code="34089-3" codeSystem="2.16.840.1.113883.6.1" displayName="DESCRIPTION SECTION"/>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">DESCRIPTION:</content>
+                  </paragraph>
+                  <paragraph>Enrofloxacin is a synthetic chemotherapeutic agent from the class of the quinolone carboxylic acid derivatives. It has antibacterial activity against a broad spectrum of Gram negative and Gram positive bacteria (See <linkHtml href="#TABLE1">Tables I</linkHtml>and <linkHtml href="#TABLE2">II</linkHtml>). It is rapidly absorbed from the digestive tract, penetrating into all measured body tissues and fluids (See<linkHtml href="#TABLE3">Table III</linkHtml>). Tablets are available in three sizes (22.7, 68.0 and 136.0 mg enrofloxacin).</paragraph>
+               </text>
+               <effectiveTime value="20260226"/>
+               <component>
+                  <section>
+                     <id root="3114cea7-5fab-4879-b7b9-18dc098546f5"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <text>
+                        <paragraph>
+                           <content styleCode="bold">CHEMICAL NOMENCLATURE AND STRUCTURAL FORMULA:</content>
+                        </paragraph>
+                        <paragraph>1-cyclopropyl-7-(4-ethyl-1-piperazinyl)-6-fluoro-1,4-dihydro-4-oxo-3-quinolinecarboxylic acid.</paragraph>
+                        <paragraph>
+                           <renderMultiMedia referencedObject="L857a9e2b-f515-43b7-929f-dab20dfe3334"/>
+                        </paragraph>
+                     </text>
+                     <effectiveTime value="20260226"/>
+                     <component>
+                        <observationMedia ID="L857a9e2b-f515-43b7-929f-dab20dfe3334">
+                           <text>chem structure</text>
+                           <value mediaType="image/jpeg" xsi:type="ED">
+                              <reference value="Chem Structure.jpg"/>
+                           </value>
+                        </observationMedia>
+                     </component>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="c579894f-7eaa-4ddf-b8ce-b92d5d157113"/>
+               <code code="43679-0" codeSystem="2.16.840.1.113883.6.1" displayName="MECHANISM OF ACTION SECTION"/>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">ACTIONS:</content>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20260226"/>
+               <component>
+                  <section>
+                     <id root="4771ebf8-a628-4cfe-8338-b0079119dffb"/>
+                     <code code="49489-8" codeSystem="2.16.840.1.113883.6.1" displayName="MICROBIOLOGY SECTION"/>
+                     <text>
+                        <paragraph>
+                           <content styleCode="bold">Microbiology:</content>
+                        </paragraph>
+                        <paragraph>Quinolone carboxylic acid derivatives are classified as DNA gyrase inhibitors. The mechanism of action of these compounds is very complex and not yet fully understood. The site of action is bacterial gyrase, a synthesis promoting enzyme. The effect on <content styleCode="italics">Escherichia coli</content> is the inhibition of DNA synthesis through prevention of DNA supercoiling. Among other things, such compounds lead to the cessation of cell respiration and division. They may also interrupt bacterial membrane integrity.<sup>1</sup>
+                        </paragraph>
+                        <paragraph>Enrofloxacin is bactericidal, with activity against both Gram negative and Gram positive bacteria. The minimum inhibitory concentrations (MICs) were determined for a series of 39 isolates representing 9 genera of bacteria from natural infections in dogs and cats, selected principally because of resistance to one or more of the following antibiotics: ampicillin, cephalothin, colistin, chloramphenicol, erythromycin, gentamicin, kanamycin, penicillin, streptomycin, tetracycline, triple sulfa and sulfa/trimethoprim. The MIC values forenrofloxacin against these isolates are presented in Table I. Most strains of these organisms were found to be susceptible to enrofloxacin <content styleCode="italics">in vitro</content> but the clinical significance has not been determined for some of the isolates.</paragraph>
+                        <paragraph>The susceptibility of organisms to enrofloxacin should be determined using enrofloxacin 5 mcg disks. Specimens for susceptibility testing should be collected prior to the initiation ofenrofloxacin therapy.</paragraph>
+                        <table ID="TABLE1" width="80%">
+                           <caption>TABLE I — MIC Values for Enrofloxacin Against Canine and Feline Pathogens (Diagnostic laboratory isolates, 1984)</caption>
+                           <colgroup>
+                              <col width="40%" align="left" valign="top"/>
+                              <col width="20%" align="center" valign="top"/>
+                              <col width="40%" align="left" valign="top"/>
+                           </colgroup>
+                           <thead>
+                              <tr styleCode="First Last">
+                                 <th styleCode="Lrule Rrule" align="left">Organisms</th>
+                                 <th styleCode="Rrule" align="center">Isolates</th>
+                                 <th styleCode="Rrule" align="left">MIC Range (mcg/mL)</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr styleCode="Botrule First">
+                                 <td styleCode="Lrule Rrule" align="left">
+                                    <content styleCode="italics">Bacteroides</content> spp.</td>
+                                 <td styleCode="Rrule" align="center">2</td>
+                                 <td styleCode="Rrule" align="left">2</td>
+                              </tr>
+                              <tr styleCode="Botrule">
+                                 <td styleCode="Lrule Rrule" align="left">
+                                    <content styleCode="italics">Bordetella bronchiseptica</content>
+                                 </td>
+                                 <td styleCode="Rrule" align="center">3</td>
+                                 <td styleCode="Rrule" align="left">0.125-0.5</td>
+                              </tr>
+                              <tr styleCode="Botrule">
+                                 <td styleCode="Lrule Rrule" align="left">
+                                    <content styleCode="italics">Brucella canis</content>
+                                 </td>
+                                 <td styleCode="Rrule" align="center">2</td>
+                                 <td styleCode="Rrule" align="left">0.125-0.25</td>
+                              </tr>
+                              <tr styleCode="Botrule">
+                                 <td styleCode="Lrule Rrule" align="left">
+                                    <content styleCode="italics">Clostridium perfringens</content>
+                                 </td>
+                                 <td styleCode="Rrule" align="center">1</td>
+                                 <td styleCode="Rrule" align="left">0.5</td>
+                              </tr>
+                              <tr styleCode="Botrule">
+                                 <td styleCode="Lrule Rrule" align="left">
+                                    <content styleCode="italics">Escherichia coli</content>
+                                 </td>
+                                 <td styleCode="Rrule" align="center">5<footnote ID="tb1ft1">Includes feline isolates.</footnote>
+                                 </td>
+                                 <td styleCode="Rrule" align="left">≤ 0.016-0.031</td>
+                              </tr>
+                              <tr styleCode="Botrule">
+                                 <td styleCode="Lrule Rrule" align="left">
+                                    <content styleCode="italics">Klebsiella</content> spp.</td>
+                                 <td styleCode="Rrule" align="center">11<footnoteRef IDREF="tb1ft1"/>
+                                 </td>
+                                 <td styleCode="Rrule" align="left">0.031-0.5</td>
+                              </tr>
+                              <tr styleCode="Botrule">
+                                 <td styleCode="Lrule Rrule" align="left">
+                                    <content styleCode="italics">Proteus mirabilis</content>
+                                 </td>
+                                 <td styleCode="Rrule" align="center">6</td>
+                                 <td styleCode="Rrule" align="left">0.062-0.125</td>
+                              </tr>
+                              <tr styleCode="Botrule">
+                                 <td styleCode="Lrule Rrule" align="left">
+                                    <content styleCode="italics">Pseudomonas aeruginosa</content>
+                                 </td>
+                                 <td styleCode="Rrule" align="center">4</td>
+                                 <td styleCode="Rrule" align="left">0.5-8</td>
+                              </tr>
+                              <tr>
+                                 <td styleCode="Lrule Rrule" align="left">
+                                    <content styleCode="italics">Staphylococcus</content> spp.</td>
+                                 <td styleCode="Rrule" align="center">5</td>
+                                 <td styleCode="Rrule" align="left">0.125</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <paragraph>The inhibitory activity on 120 isolates of seven canine urinary pathogens was also investigated and is listed in Table II.</paragraph>
+                        <table ID="TABLE2" width="80%">
+                           <caption>TABLE II — MIC Values for Enrofloxacin Against Canine Urinary Pathogens (Diagnostic laboratory isolates, 1985)</caption>
+                           <colgroup>
+                              <col width="40%" align="left" valign="top"/>
+                              <col width="20%" align="center" valign="top"/>
+                              <col width="40%" align="left" valign="top"/>
+                           </colgroup>
+                           <thead>
+                              <tr styleCode="First Last">
+                                 <th styleCode="Lrule Rrule" align="left">Organisms</th>
+                                 <th styleCode="Rrule" align="center">Isolates</th>
+                                 <th styleCode="Rrule" align="left">MIC Range (mcg/mL)</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr styleCode="Botrule First">
+                                 <td styleCode="Lrule Rrule" align="left">
+                                    <content styleCode="italics">E. coli</content>
+                                 </td>
+                                 <td styleCode="Rrule" align="center">30</td>
+                                 <td styleCode="Rrule" align="left">0.06-2.0</td>
+                              </tr>
+                              <tr styleCode="Botrule">
+                                 <td styleCode="Lrule Rrule" align="left">
+                                    <content styleCode="italics">P. mirabilis</content>
+                                 </td>
+                                 <td styleCode="Rrule" align="center">20</td>
+                                 <td styleCode="Rrule" align="left">0.125-2.0</td>
+                              </tr>
+                              <tr styleCode="Botrule">
+                                 <td styleCode="Lrule Rrule" align="left">
+                                    <content styleCode="italics">K. pneumoniae</content>
+                                 </td>
+                                 <td styleCode="Rrule" align="center">20</td>
+                                 <td styleCode="Rrule" align="left">0.06-0.5</td>
+                              </tr>
+                              <tr styleCode="Botrule">
+                                 <td styleCode="Lrule Rrule" align="left">
+                                    <content styleCode="italics">P. aeruginosa</content>
+                                 </td>
+                                 <td styleCode="Rrule" align="center">10</td>
+                                 <td styleCode="Rrule" align="left">1.0-8.0</td>
+                              </tr>
+                              <tr styleCode="Botrule">
+                                 <td styleCode="Lrule Rrule" align="left">
+                                    <content styleCode="italics">Enterobacter</content> spp.</td>
+                                 <td styleCode="Rrule" align="center">10</td>
+                                 <td styleCode="Rrule" align="left">0.06-1.0</td>
+                              </tr>
+                              <tr styleCode="Botrule">
+                                 <td styleCode="Lrule Rrule" align="left">
+                                    <content styleCode="italics">Staph.</content> (coag. +)</td>
+                                 <td styleCode="Rrule" align="center">20</td>
+                                 <td styleCode="Rrule" align="left">0.125-0.5</td>
+                              </tr>
+                              <tr>
+                                 <td styleCode="Lrule Rrule" align="left">
+                                    <content styleCode="italics">Strep.</content> (alpha hemol.)</td>
+                                 <td styleCode="Rrule" align="center">10</td>
+                                 <td styleCode="Rrule" align="left">0.5-8.0</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <paragraph/>
+                     </text>
+                     <effectiveTime value="20260226"/>
+                  </section>
+               </component>
+               <component>
+                  <section>
+                     <id root="1dad1269-bdb0-4ce2-a338-adf90a2c625c"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <text>
+                        <paragraph>
+                           <content styleCode="bold">Distribution in the Body:</content> Enrofloxacin penetrates into all canine and feline tissues and body fluids. Concentrations of drug equal to or greater than the MIC for many pathogens (See <linkHtml href="#TABLE1">Tables I</linkHtml>, <linkHtml href="#TABLE2">II</linkHtml> and <linkHtml href="#TABLE3">III</linkHtml>) are reached in most tissues by two hours after dosing at 2.5 mg/kg and are maintained for 8-12 hours after dosing. Particularly high levels ofenrofloxacin are found in urine.Asummary of the body fluid/tissue drug levels at 2 to 12 hours after dosing at 2.5 mg/kg is given in Table III.</paragraph>
+                        <table width="60%" ID="TABLE3">
+                           <caption>TABLE III — Body Fluid/Tissue distribution of Enrofloxacin in Dogs and Cats</caption>
+                           <col width="48%" align="left" valign="top"/>
+                           <col width="13%" align="left" valign="top"/>
+                           <col width="13%" align="left" valign="top"/>
+                           <col width="13%" align="left" valign="top"/>
+                           <col width="13%" align="left" valign="top"/>
+                           <thead>
+                              <tr styleCode="Botrule">
+                                 <th styleCode="Lrule Rrule" colspan="5" align="center">Single Oral Dose= 2.5 mg/kg (1.13 mg/lb)</th>
+                              </tr>
+                              <tr styleCode="Botrule">
+                                 <th styleCode="Lrule"/>
+                                 <th styleCode="Rrule" colspan="4" align="center">Post-treatment Enrofloxacin Levels</th>
+                              </tr>
+                              <tr styleCode="Botrule">
+                                 <th styleCode="Lrule Rrule"/>
+                                 <th colspan="2" align="center" styleCode="Rrule">Canine (n = 2)</th>
+                                 <th styleCode="Rrule" colspan="2" align="center">Feline (n = 4)</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr styleCode="Botrule">
+                                 <td styleCode="Lrule Rrule">
+                                    <content styleCode="bold">Body Fluids (mcg/mL)</content>
+                                 </td>
+                                 <td styleCode="Rrule">
+                                    <content styleCode="bold">2 Hr.</content>
+                                 </td>
+                                 <td styleCode="Rrule">
+                                    <content styleCode="bold">8 Hr.</content>
+                                 </td>
+                                 <td styleCode="Rrule">
+                                    <content styleCode="bold">2 Hr.</content>
+                                 </td>
+                                 <td styleCode="Rrule">
+                                    <content styleCode="bold">12 Hr.</content>
+                                 </td>
+                              </tr>
+                              <tr styleCode="Botrule">
+                                 <td styleCode="Lrule Rrule">Bile</td>
+                                 <td styleCode="Rrule">–</td>
+                                 <td styleCode="Rrule">–</td>
+                                 <td styleCode="Rrule">2.13</td>
+                                 <td styleCode="Rrule">1.97</td>
+                              </tr>
+                              <tr styleCode="Botrule">
+                                 <td styleCode="Lrule Rrule">Cerebrospinal Fluid</td>
+                                 <td styleCode="Rrule">–</td>
+                                 <td styleCode="Rrule">–</td>
+                                 <td styleCode="Rrule">0.37</td>
+                                 <td styleCode="Rrule">0.10</td>
+                              </tr>
+                              <tr styleCode="Botrule">
+                                 <td styleCode="Lrule Rrule">Urine</td>
+                                 <td styleCode="Rrule">43.05</td>
+                                 <td styleCode="Rrule">55.35</td>
+                                 <td styleCode="Rrule">12.81</td>
+                                 <td styleCode="Rrule">26.41</td>
+                              </tr>
+                              <tr styleCode="Botrule">
+                                 <td styleCode="Lrule Rrule">Eye Fluids</td>
+                                 <td styleCode="Rrule">0.53</td>
+                                 <td styleCode="Rrule">0.66</td>
+                                 <td styleCode="Rrule">0.45</td>
+                                 <td styleCode="Rrule">0.65</td>
+                              </tr>
+                              <tr styleCode="Botrule">
+                                 <td styleCode="Lrule Rrule">Whole Blood</td>
+                                 <td styleCode="Rrule">1.01</td>
+                                 <td styleCode="Rrule">0.36</td>
+                                 <td styleCode="Rrule">–</td>
+                                 <td styleCode="Rrule">–</td>
+                              </tr>
+                              <tr styleCode="Botrule">
+                                 <td styleCode="Lrule Rrule">Plasma</td>
+                                 <td styleCode="Rrule">0.67</td>
+                                 <td styleCode="Rrule">0.33</td>
+                                 <td styleCode="Rrule">–</td>
+                                 <td styleCode="Rrule">–</td>
+                              </tr>
+                              <tr styleCode="Botrule">
+                                 <td styleCode="Lrule Rrule">Serum</td>
+                                 <td styleCode="Rrule">–</td>
+                                 <td styleCode="Rrule">–</td>
+                                 <td styleCode="Rrule">0.48</td>
+                                 <td styleCode="Rrule">0.18</td>
+                              </tr>
+                              <tr styleCode="Botrule">
+                                 <td styleCode="Lrule Rrule" colspan="5">
+                                    <content styleCode="bold">Tissues (mcg/g) Hematopoietic System</content>
+                                 </td>
+                              </tr>
+                              <tr styleCode="Botrule">
+                                 <td styleCode="Lrule Rrule">Liver</td>
+                                 <td styleCode="Rrule">3.02</td>
+                                 <td styleCode="Rrule">1.36</td>
+                                 <td styleCode="Rrule">1.84</td>
+                                 <td styleCode="Rrule">0.37</td>
+                              </tr>
+                              <tr styleCode="Botrule">
+                                 <td styleCode="Lrule Rrule">Spleen</td>
+                                 <td styleCode="Rrule">1.45</td>
+                                 <td styleCode="Rrule">0.85</td>
+                                 <td styleCode="Rrule">1.33</td>
+                                 <td styleCode="Rrule">0.52</td>
+                              </tr>
+                              <tr styleCode="Botrule">
+                                 <td styleCode="Lrule Rrule">Bone Marrow</td>
+                                 <td styleCode="Rrule">2.10</td>
+                                 <td styleCode="Rrule">1.22</td>
+                                 <td styleCode="Rrule">1.68</td>
+                                 <td styleCode="Rrule">0.64</td>
+                              </tr>
+                              <tr styleCode="Botrule">
+                                 <td styleCode="Lrule Rrule">Lymph Node</td>
+                                 <td styleCode="Rrule">1.32</td>
+                                 <td styleCode="Rrule">0.91</td>
+                                 <td styleCode="Rrule">0.49</td>
+                                 <td styleCode="Rrule">0.21</td>
+                              </tr>
+                              <tr styleCode="Botrule">
+                                 <td styleCode="Lrule Rrule" colspan="5">
+                                    <content styleCode="bold">Urogenital System</content>
+                                 </td>
+                              </tr>
+                              <tr styleCode="Botrule">
+                                 <td styleCode="Lrule Rrule">Kidney</td>
+                                 <td styleCode="Rrule">1.87</td>
+                                 <td styleCode="Rrule">0.99</td>
+                                 <td styleCode="Rrule">1.43</td>
+                                 <td styleCode="Rrule">0.37</td>
+                              </tr>
+                              <tr styleCode="Botrule">
+                                 <td styleCode="Lrule Rrule">Bladder Wall</td>
+                                 <td styleCode="Rrule">1.36</td>
+                                 <td styleCode="Rrule">0.98</td>
+                                 <td styleCode="Rrule">1.16</td>
+                                 <td styleCode="Rrule">0.55</td>
+                              </tr>
+                              <tr styleCode="Botrule">
+                                 <td styleCode="Lrule Rrule">Testes</td>
+                                 <td styleCode="Rrule">1.36</td>
+                                 <td styleCode="Rrule">1.10</td>
+                                 <td styleCode="Rrule">1.01</td>
+                                 <td styleCode="Rrule">0.28</td>
+                              </tr>
+                              <tr styleCode="Botrule">
+                                 <td styleCode="Lrule Rrule">Prostate</td>
+                                 <td styleCode="Rrule">1.36</td>
+                                 <td styleCode="Rrule">2.20</td>
+                                 <td styleCode="Rrule">1.88</td>
+                                 <td styleCode="Rrule">0.55</td>
+                              </tr>
+                              <tr styleCode="Botrule">
+                                 <td styleCode="Lrule Rrule">Ovaries</td>
+                                 <td styleCode="Rrule">–</td>
+                                 <td styleCode="Rrule">–</td>
+                                 <td styleCode="Rrule">0.78</td>
+                                 <td styleCode="Rrule">0.56</td>
+                              </tr>
+                              <tr styleCode="Botrule">
+                                 <td styleCode="Lrule Rrule">Uterine Wall</td>
+                                 <td styleCode="Rrule">1.59</td>
+                                 <td styleCode="Rrule">0.29</td>
+                                 <td styleCode="Rrule">0.81</td>
+                                 <td styleCode="Rrule">1.05</td>
+                              </tr>
+                              <tr styleCode="Botrule">
+                                 <td styleCode="Lrule Rrule" colspan="5">
+                                    <content styleCode="bold">Gastrointestinal and Cardiopulmonary Systems</content>
+                                 </td>
+                              </tr>
+                              <tr styleCode="Botrule">
+                                 <td styleCode="Lrule Rrule">Lung</td>
+                                 <td styleCode="Rrule">1.34</td>
+                                 <td styleCode="Rrule">0.82</td>
+                                 <td styleCode="Rrule">0.91</td>
+                                 <td styleCode="Rrule">0.33</td>
+                              </tr>
+                              <tr styleCode="Botrule">
+                                 <td styleCode="Lrule Rrule">Heart</td>
+                                 <td styleCode="Rrule">1.88</td>
+                                 <td styleCode="Rrule">0.78</td>
+                                 <td styleCode="Rrule">0.84</td>
+                                 <td styleCode="Rrule">0.32</td>
+                              </tr>
+                              <tr styleCode="Botrule">
+                                 <td styleCode="Lrule Rrule">Stomach</td>
+                                 <td styleCode="Rrule">3.24</td>
+                                 <td styleCode="Rrule">2.16</td>
+                                 <td styleCode="Rrule">3.26</td>
+                                 <td styleCode="Rrule">0.27</td>
+                              </tr>
+                              <tr styleCode="Botrule">
+                                 <td styleCode="Lrule Rrule">Small Intestine</td>
+                                 <td styleCode="Rrule">2.10</td>
+                                 <td styleCode="Rrule">1.11</td>
+                                 <td styleCode="Rrule">2.72</td>
+                                 <td styleCode="Rrule">0.40</td>
+                              </tr>
+                              <tr styleCode="Botrule">
+                                 <td styleCode="Lrule Rrule">Large Intestine</td>
+                                 <td styleCode="Rrule">–</td>
+                                 <td styleCode="Rrule">–</td>
+                                 <td styleCode="Rrule">0.94</td>
+                                 <td styleCode="Rrule">1.10</td>
+                              </tr>
+                              <tr styleCode="Botrule">
+                                 <td styleCode="Lrule Rrule" colspan="5">
+                                    <content styleCode="bold">Other</content>
+                                 </td>
+                              </tr>
+                              <tr styleCode="Botrule">
+                                 <td styleCode="Lrule Rrule">Fat</td>
+                                 <td styleCode="Rrule">0.52</td>
+                                 <td styleCode="Rrule">0.40</td>
+                                 <td styleCode="Rrule">0.24</td>
+                                 <td styleCode="Rrule">0.11</td>
+                              </tr>
+                              <tr styleCode="Botrule">
+                                 <td styleCode="Lrule Rrule">Skin</td>
+                                 <td styleCode="Rrule">0.66</td>
+                                 <td styleCode="Rrule">0.48</td>
+                                 <td styleCode="Rrule">0.46</td>
+                                 <td styleCode="Rrule">0.17</td>
+                              </tr>
+                              <tr styleCode="Botrule">
+                                 <td styleCode="Lrule Rrule">Muscle</td>
+                                 <td styleCode="Rrule">1.62</td>
+                                 <td styleCode="Rrule">0.77</td>
+                                 <td styleCode="Rrule">0.53</td>
+                                 <td styleCode="Rrule">0.29</td>
+                              </tr>
+                              <tr styleCode="Botrule">
+                                 <td styleCode="Lrule Rrule">Brain</td>
+                                 <td styleCode="Rrule">0.25</td>
+                                 <td styleCode="Rrule">0.24</td>
+                                 <td styleCode="Rrule">0.22</td>
+                                 <td styleCode="Rrule">0.12</td>
+                              </tr>
+                              <tr styleCode="Botrule">
+                                 <td styleCode="Lrule Rrule">Mammary Gland</td>
+                                 <td styleCode="Rrule">0.45</td>
+                                 <td styleCode="Rrule">0.21</td>
+                                 <td styleCode="Rrule">0.36</td>
+                                 <td styleCode="Rrule">0.30</td>
+                              </tr>
+                              <tr>
+                                 <td styleCode="Lrule Rrule">Feces</td>
+                                 <td styleCode="Rrule">1.65</td>
+                                 <td styleCode="Rrule">9.97</td>
+                                 <td styleCode="Rrule">0.37</td>
+                                 <td styleCode="Rrule">4.18</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </text>
+                     <effectiveTime value="20241218"/>
+                  </section>
+               </component>
+               <component>
+                  <section>
+                     <id root="1581de9a-4287-4112-92b0-82d9609c42f7"/>
+                     <code code="43682-4" codeSystem="2.16.840.1.113883.6.1" displayName="PHARMACOKINETICS SECTION"/>
+                     <text>
+                        <paragraph>
+                           <content styleCode="bold">Pharmacokinetics:</content>
+                        </paragraph>
+                        <paragraph>In dogs, the absorption and elimination characteristics of the oral formulation are linear (plasma concentrations increase proportionally with dose) when enrofloxacin is administered at up to 11.5 mg/kg, twice daily.<sup>2</sup>Approximately 80% of the orally administered dose enters the systemic circulation unchanged. The eliminating organs, based on the drug's body clearance time, can readily remove the drug with no indication that the eliminating mechanisms are saturated. The primary route of excretion is via the urine. The absorption and elimination characteristics beyond this point are unknown. In cats, no oral absorption information is available at other than 2.5 mg/kg, administered orally as a single dose. Saturable absorption and/or elimination processes may occur at greater doses. When saturation of the absorption process occurs, the plasma concentration of the active moiety will be less than predicted, based on the concept of dose proportionality.</paragraph>
+                        <paragraph>Following an oral dose in dogs of 2.5 mg/kg (1.13 mg/lb), enrofloxacin reached 50% of its maximum serum concentration in 15 minutes and peak serum level was reached in one hour. The elimination half-life in dogs is approximately 2½ - 3 hours at that dose, while in cats it is greater than 4 hours. In a study comparing dogs and cats, the peak concentration and the time to peak concentration were not different.</paragraph>
+                        <paragraph>A graph indicating the mean serum levels following a dose of 2.5 mg/kg (1.13 mg/lb) in dogs (oral and intramuscular) and cats (oral) is shown in Figure 1.</paragraph>
+                        <paragraph>
+                           <content styleCode="bold">
+                              <renderMultiMedia referencedObject="L7f452787-061e-4a0d-9a08-e4a2fbaa3ba5"/>
+                           </content>
+                        </paragraph>
+                        <paragraph>
+                           <content styleCode="bold">Figure 1</content>
+                           <content> - </content>
+                           <content styleCode="bold">Serum Concentrations of Enrofloxacin Following a Single Oral or Intramuscular Dose at 2.5 mg/kg in Dogs and a Single Oral Dose at 2.5 mg/kg in Cats.</content>
+                        </paragraph>
+                     </text>
+                     <effectiveTime value="20260226"/>
+                     <component>
+                        <observationMedia ID="L7f452787-061e-4a0d-9a08-e4a2fbaa3ba5">
+                           <text>Figure 1</text>
+                           <value mediaType="image/jpeg" xsi:type="ED">
+                              <reference value="enroquin-02.jpg"/>
+                           </value>
+                        </observationMedia>
+                     </component>
+                  </section>
+               </component>
+               <component>
+                  <section>
+                     <id root="98595cd9-5090-4f68-afbb-fdf4264b45f4"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <text>
+                        <paragraph>
+                           <content styleCode="bold">Breakpoint:</content> Based on pharmacokinetic studies of enrofloxacin in dogs and cats after a single oral administration of 2.5 mg enrofloxacin/kg BW (i.e. half of the lowest-end single daily dose range for dogs and half the single daily dose for cats) and the data listed in Tables I and II, the following breakpoints are recommended for canine and feline isolates.</paragraph>
+                        <table width="70%">
+                           <col width="33%" align="left" valign="top"/>
+                           <col width="34%" align="left" valign="top"/>
+                           <col width="33%" align="left" valign="top"/>
+                           <thead>
+                              <tr>
+                                 <th styleCode="Lrule Rrule">Zone Diameter (mm)</th>
+                                 <th styleCode="Rrule">MIC (μg/mL)</th>
+                                 <th styleCode="Rrule">Interpretation</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr styleCode="Botrule">
+                                 <td styleCode="Lrule Rrule">≥ 21</td>
+                                 <td styleCode="Rrule">≤ 0.5</td>
+                                 <td styleCode="Rrule">Susceptible (S)</td>
+                              </tr>
+                              <tr styleCode="Botrule">
+                                 <td styleCode="Lrule Rrule">18 - 20</td>
+                                 <td styleCode="Rrule">1</td>
+                                 <td styleCode="Rrule">Intermediate (I)</td>
+                              </tr>
+                              <tr>
+                                 <td styleCode="Lrule Rrule">≤ 17</td>
+                                 <td styleCode="Rrule">≥ 2</td>
+                                 <td styleCode="Rrule">Resistant (R)</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <paragraph>A report of "Susceptible" indicates that the pathogen is likely to be inhibited by generally achievable plasma levels. A report of "Intermediate" is a technical buffer and isolates falling into this category should be retested. Alternatively the organism may be successfully treated if the infection is in a body site where drug is physiologically concentrated. A report of "Resistant" indicates that the achievable drug concentrations are unlikely to be inhibitory and other therapy should be selected.</paragraph>
+                        <paragraph>Standardized procedures require the use of laboratory control organisms for both standardized disk diffusion assays and standardized dilution assays. The 5 µg enrofloxacin disk should give the following zone diameters and enrofloxacin powder should provide the following MIC values for reference strains.</paragraph>
+                        <table width="80%">
+                           <col width="50%" align="left" valign="top"/>
+                           <col width="25%" align="left" valign="top"/>
+                           <col width="25%" align="left" valign="top"/>
+                           <thead>
+                              <tr>
+                                 <th styleCode="Lrule Rrule">QC strain</th>
+                                 <th styleCode="Rrule">MIC (μg/mL)</th>
+                                 <th styleCode="Rrule">Zone Diameter (mm)</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr styleCode="Botrule">
+                                 <td styleCode="Lrule Rrule">
+                                    <content styleCode="italics">E. coli</content> ATCC 25922 											</td>
+                                 <td styleCode="Rrule">0.008 - 0.03</td>
+                                 <td styleCode="Rrule">32 - 40</td>
+                              </tr>
+                              <tr styleCode="Botrule">
+                                 <td styleCode="Lrule Rrule">
+                                    <content styleCode="italics">P. aeruginosa</content> ATCC 27853 											</td>
+                                 <td styleCode="Rrule">1 - 4</td>
+                                 <td styleCode="Rrule">15 - 19</td>
+                              </tr>
+                              <tr styleCode="Botrule">
+                                 <td styleCode="Lrule Rrule">												S. <content styleCode="italics">aureus</content> ATCC 25923 											</td>
+                                 <td styleCode="Rrule"/>
+                                 <td styleCode="Rrule">27 - 31</td>
+                              </tr>
+                              <tr>
+                                 <td styleCode="Lrule Rrule">												S. <content styleCode="italics">aureus</content> ATCC 29213 											</td>
+                                 <td styleCode="Rrule">0.03 - 0.12</td>
+                                 <td styleCode="Rrule"/>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </text>
+                     <effectiveTime value="20241218"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="fcc365f8-148c-4c74-9d89-35b0e87f881f"/>
+               <code code="50745-9" codeSystem="2.16.840.1.113883.6.1" displayName="VETERINARY INDICATIONS SECTION"/>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">INDICATIONS:</content>
+                  </paragraph>
+                  <paragraph>Enroquin (enrofloxacin) Flavored Tablets are indicated for the management of diseases associated with bacteria susceptible to enrofloxacin. Enroquin Flavored Tablets are indicated for use in dogs and cats.</paragraph>
+               </text>
+               <effectiveTime value="20241218"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="705af390-132a-4a28-820f-59aa720a2fee"/>
+               <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">EFFICACY CONFIRMATION:</content>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20260226"/>
+               <component>
+                  <section>
+                     <id root="6046b4d6-e5ea-48a4-96b0-b0f5254458e1"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <text>
+                        <paragraph>
+                           <content styleCode="bold">Dogs:</content> Clinical efficacy was established in dermal infections (wounds and abscesses) associated with susceptible strains of <content styleCode="italics">Escherichia coli, Klebsiella pneumoniae, Proteus mirabilis,</content> and <content styleCode="italics">Staphylococcus intermedius;</content> respiratory infections (pneumonia, tonsillitis, rhinitis) associated with susceptible strains of<content styleCode="italics">Escherichia coli</content> and <content styleCode="italics">Staphylococcus aureus;</content> and urinary cystitis associated with susceptible strains of<content styleCode="italics">Escherichia coli, Proteus mirabilis,</content> and <content styleCode="italics">Staphylococcus aureus.</content>
+                        </paragraph>
+                     </text>
+                     <effectiveTime value="20260226"/>
+                  </section>
+               </component>
+               <component>
+                  <section>
+                     <id root="6176463d-2283-4560-968a-dd724a449bb8"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <text>
+                        <paragraph>
+                           <content styleCode="bold">Cats:</content> Clinical efficacy was established in denmal infections (wounds and abscesses) associated with susceptible strains of <content styleCode="italics">Pasteurella multocida, Staphylococcus aureus,</content> and <content styleCode="italics">Staphylococcus epidermidis.</content>
+                        </paragraph>
+                     </text>
+                     <effectiveTime value="20241218"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="0f0c23e3-7dda-46e2-8601-42d43cf790d1"/>
+               <code code="34070-3" codeSystem="2.16.840.1.113883.6.1" displayName="CONTRAINDICATIONS SECTION"/>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">CONTRAINDICATIONS:</content>
+                  </paragraph>
+                  <paragraph>Enrofloxacin is contraindicated in dogs and cats known to be hypersensitive to quinolones.</paragraph>
+               </text>
+               <effectiveTime value="20241218"/>
+               <component>
+                  <section>
+                     <id root="065a04d9-44af-4ec4-9d21-59f6ad8fa76c"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <text>
+                        <paragraph>
+                           <content styleCode="bold">Dogs:</content> Based on the studies discussed under the section on Animal Safety Summary, the use of enrofloxacin is contraindicated in small and medium breeds of dogs during the rapid growth phase (between 2 and 8 months of age). The safe use of enrofloxacin has not been established in large and giant breeds during the rapid growth phase. Large breeds may be in this phase for up to one year of age and the giant breeds for up to 18 months. In clinical field trials utilizing a daily oral dose of 5.0 mg/kg, there were no reports of lameness or joint problems in any breed. However, controlled studies with histological examination of the articular cartilage have not been conducted in the large or giant breeds.</paragraph>
+                     </text>
+                     <effectiveTime value="20241218"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="435dda8a-6cc3-4730-9362-650e668da184"/>
+               <code code="34084-4" codeSystem="2.16.840.1.113883.6.1" displayName="ADVERSE REACTIONS SECTION"/>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">ADVERSE REACTIONS:</content>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20241218"/>
+               <component>
+                  <section>
+                     <id root="fd15a007-b80a-4e7b-8242-1e9456edd46d"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <text>
+                        <paragraph>
+                           <content styleCode="bold">Dogs:</content> Two of the 270 (0.7%) dogs treated with enrofloxacin at 5.0 mg/kg per day in the clinical field studies exhibited side effects, which were apparently drug-related. These two cases ofvomition were self-limiting.</paragraph>
+                     </text>
+                     <effectiveTime value="20241218"/>
+                     <component>
+                        <section>
+                           <id root="70bdce7b-0850-42e3-81bd-e0a9de64d874"/>
+                           <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                           <text>
+                              <paragraph>
+                                 <content styleCode="bold">Post-Approval Experience:</content> The following adverse experiences, although rare, are based on voluntary post-approval adverse drug experience reporting. The categories of reactions are listed in decreasing order of frequency by body system.</paragraph>
+                              <paragraph>Gastrointestinal: anorexia, diarrhea, vomiting, elevated liver enzymes</paragraph>
+                              <paragraph>Neurologic: ataxia, seizures</paragraph>
+                              <paragraph>Behavioral: depression, lethargy, nervousness</paragraph>
+                           </text>
+                           <effectiveTime value="20241218"/>
+                        </section>
+                     </component>
+                  </section>
+               </component>
+               <component>
+                  <section>
+                     <id root="e282b96a-5a4e-4db2-a739-97c6b60f681e"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <text>
+                        <paragraph>
+                           <content styleCode="bold">Cats:</content> No drug-related side effects were reported in 124 cats treated with enrofloxacin at 5.0 mg/kg per day for 10 days in clinical field studies.</paragraph>
+                     </text>
+                     <effectiveTime value="20241218"/>
+                     <component>
+                        <section>
+                           <id root="fad2fd90-17db-4828-bed4-35fa206e8b7b"/>
+                           <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                           <text>
+                              <paragraph>
+                                 <content styleCode="bold">Post-Approval Experience:</content> The following adverse experiences, although rare, are based on voluntary post-approval adverse drug experience reporting. The categories of reactions are listed in decreasing order of frequency by body system.</paragraph>
+                              <paragraph>Ocular: Mydriasis, retinal degeneration (retinal atrophy, attenuated retinal vessels, and hyperreflective tapeta have been reported), loss of vision. Mydriasis may be an indication of impending or existing retinal changes.</paragraph>
+                              <paragraph>Gastrointestinal: vomiting, anorexia, elevated liver enzymes, diarrhea</paragraph>
+                              <paragraph>Neurologic: ataxia, seizures</paragraph>
+                              <paragraph>Behavioral: depression, lethargy, vocalization, aggression</paragraph>
+                              <paragraph>To report suspected adverse drug events, for technical assistance or to obtain a copy of the Safety Data Sheet, contact Dechra at (866) 933-2472. For additional information about adverse drug experience reporting for animal drugs, contact FDA at 1-888-FDA-VETS or http://www.fda.gov/reportanimalae.</paragraph>
+                           </text>
+                           <effectiveTime value="20241218"/>
+                        </section>
+                     </component>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="24ae0af7-4873-4a24-a90c-7d758dd24c52"/>
+               <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">ANIMAL SAFETY SUMMARY:</content>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20241218"/>
+               <component>
+                  <section>
+                     <id root="ae71f7c2-d7eb-4e49-8f9f-fc2ff1307bbb"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <text>
+                        <paragraph>
+                           <content styleCode="bold">Dogs:</content> Adult dogs receiving enrofloxacin orally at a daily dosage rate of 52 mg/kg for 13 weeks had only isolated incidences of vomition and inappetence. Adult dogs receiving the tablet formulalion for 30 consecutive days at a daily treatment of 25 mg/kg did not exhibit significant clinical signs nor were there effects upon the clinical chemistry, hematological or histological parameters. Daily doses of 125 mg/kg for up to 11 days induced vomition, inappetence, depression, difficult locomotion and death while adult dogs receiving 50 mg/kg/day for 14 days had clinical signs ofvomition and inappetence.</paragraph>
+                        <paragraph>Adult dogs dosed intramuscularly for three treatments at 12.5 mg/kg followed by 57 oral treatments at 12.5 mg/kg, all at 12 hour intervals, did not exhibit either significant clinical signs or effects upon the clinical chemistry, hematological or histological parameters.</paragraph>
+                        <paragraph>Oral treatment of 15 to 28 week old growing puppies with daily dosage rates of 25 mg/kg has induced abnormal carriage of the carpal joint and weakness in the hindquarters. Significant improvement of clinical signs is observed following drug withdrawal. Microscopic studies have identified lesions of the articular cartilage following 30 day treatments at either 5, 15 or 25 mg/kg in this age group. Clinical signs of difficult ambulation or associated cartilage lesions have not been observed in 29 to 34 week old puppies following daily treatments of 25 mg/kg for 30 consecutive days nor in 2 week old puppies with the same treatment schedule.</paragraph>
+                        <paragraph>Tests indicated no effect on circulating microfilariae or adult heartworms ( <content styleCode="italics">Dirofilaria immitis)</content> when dogs were treated ala daily dosage rate of 15 mg/kg for 30 days. No effect on cholinesterase values was observed.</paragraph>
+                        <paragraph>No adverse effects were observed on reproductive parameters when male dogs received 10 consecutive daily treatments of 15 mg/kg/day at 3 intervals (90, 45 and 14 days) prior to breeding or when female dogs received 10 consecutive daily treatments of 15 mg/kg/day at 4 intervals: between 30 and 0 days prior to breeding, early pregnancy (between 10th &amp; 30th days), late pregnancy (between 40th &amp; 60th days), and during lactation (the first 28 days).</paragraph>
+                     </text>
+                     <effectiveTime value="20241218"/>
+                  </section>
+               </component>
+               <component>
+                  <section>
+                     <id root="ab84bdc5-7879-49e6-a22b-954c27af10c1"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <text>
+                        <paragraph>
+                           <content styleCode="bold">Cats:</content> Cats in age ranges of 3 to 4 months and 7 to 10 months received daily treatments of 25 mg/kg for 30 consecutive days with no adverse effects upon the clinical chemistry, hematolo9ical or histological parameters. In cats 7-10 months of age treated daily for 30 consecutive days, 2 of 4 receiving 5 mg/kg, 3 of 4 receiving 15 mg/kg, 2 of 4 receiving 25 mg/kg and 1 of 4 nontreated controls experienced occasional vomition. Five to 7 month old cats had no side effects with daily treatments of 15 mg/kg for 30 days, but 2 of 4 animals had articular cartilage lesions when administered 25 mg/kg per day for 30 days.</paragraph>
+                        <paragraph>Doses of 125 mg/kg for 5 consecutive days to adult cats induced vomition, depression, incoordination and death while those receiving 50 mg/kg for 6 days had clinical signs of vomition, inappetence, incoordination and convulsions, but they returned to normal.</paragraph>
+                        <paragraph>Enrofloxacin was administered to thirty-two (8 per group), six- to eight-month-old cats at doses of 0, 5, 20, and 50 mg/kg of body weight once a day for 21 consecutive days. There were no adverse effects observed in cats that received 5 mg/kg body weight of enrofloxacin. The administration of enrofloxacin at 20 mg/kg body weight or greater caused salivation, vomition, and depression. Additionally, dosing at 20 mg/kg body weight or greater resulted in mild to severe fundic lesions on ophthalmologic examination (change in color of the fund us, central or generalized retinal degeneration), abnormal electroretinograms (including blindness), and diffuse light microscopic changes in the retina.</paragraph>
+                     </text>
+                     <effectiveTime value="20241218"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="69652853-db10-4e11-9136-46adf3f7334b"/>
+               <code code="34073-7" codeSystem="2.16.840.1.113883.6.1" displayName="DRUG INTERACTIONS SECTION"/>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">DRUG INTERACTIONS:</content>
+                  </paragraph>
+                  <paragraph>Compounds that contain metal cations (e.g., aluminum, calcium, iron, magnesium) may reduce the absorption of some quinolone-class drugs from the intestinal tract. Concomitant therapy with other drugs that are metabolized in the liver may reduce the clearance rates of the quinoloneand the other drug.</paragraph>
+               </text>
+               <effectiveTime value="20241218"/>
+               <component>
+                  <section>
+                     <id root="b1330fc3-6e93-47c6-bc64-d4f8dc0a2670"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <text>
+                        <paragraph>
+                           <content styleCode="bold">Dogs:</content> Enrofloxacin has been administered to dogs at a daily dosage rate of 10 mg/kg concurrently with a wide variety of other health products including anthelmintics (praziquantel, febantel, sodium disophenol), insecticides (fenthion, pyrethrins), heartworm preventatives (diethylcarbamazine) and other antibiotics (ampicillin, gentamicin sulfate, penicillin, dihydrostreptomycin). No incompatibilities with other drugs are known at this lime.</paragraph>
+                     </text>
+                     <effectiveTime value="20241218"/>
+                  </section>
+               </component>
+               <component>
+                  <section>
+                     <id root="b76e24c5-2d88-4771-a50b-10ab5372d5d0"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <text>
+                        <paragraph>
+                           <content styleCode="bold">Cats:</content> Enrofloxacin was administered at a daily dosage rate of 5 mg/kg concurrently with anthelmintics (praziquantel, febantel), an insecticide (propoxur) and another antibacterial (ampicillin). No incompatibilities with other drugs are known at this time.</paragraph>
+                     </text>
+                     <effectiveTime value="20241218"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="07898efe-6ea9-432b-a39a-a50f3086af21"/>
+               <code code="34071-1" codeSystem="2.16.840.1.113883.6.1" displayName="WARNINGS SECTION"/>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">WARNINGS:</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">For use in animals only. In rare instances, use of this product in cats has been associated with Retinal Toxicity. Do not exceed 5 mg/kg of body weight per day in cats. Safety in breeding or pregnant cats has not been established. Keep out of reach of children.</content>
+                  </paragraph>
+                  <paragraph>Avoid contact with eyes. In case of contact, immediately flush eyes with copious amounts of water for 15 minutes. In case of dermal contact, wash skin with soap and water.</paragraph>
+                  <paragraph>Consult a physician if irritation persists following ocular or dermal exposure. Individuals with a history of hypersensitivity to quinolones should avoid this product. In humans, there is a risk of user photosensitization within a few hours after excessive exposure to quinolones. If excessive accidental exposure occurs, avoid direct sunlight.</paragraph>
+                  <paragraph>For customer service or to obtain product information, including Safety Data Sheet, call (866)933-2472.</paragraph>
+                  <paragraph>Keep Enroquin (enrofloxacin) Flavored Tablets in a secure location out of reach of dogs, cats, and other animals lo prevent accidental ingestion or overdose.</paragraph>
+               </text>
+               <effectiveTime value="20241218"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="580c0da2-df05-476d-9cf7-ed3f1fa8d449"/>
+               <code code="42232-9" codeSystem="2.16.840.1.113883.6.1" displayName="PRECAUTIONS SECTION"/>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">PRECAUTIONS:</content>
+                  </paragraph>
+                  <paragraph>Quinolone-class drugs should be used with caution in animals with known or suspected Central Nervous System (CNS) disorders. In such animals, quinolones have, in rare instances, been associated with CNS stimulation which may lead to convulsive seizures.</paragraph>
+                  <paragraph>Quinolone-class drugs have been associated with cartilage erosions in weight-bearing joints and other forms of arthropathy in immature animals of various species.</paragraph>
+                  <paragraph>The use of fluoroquinolones in cats has been reported to adversely affect the retina. Such products should be used with caution in cats.</paragraph>
+               </text>
+               <effectiveTime value="20241218"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="d3e05ef8-03dc-4dbf-bc9e-c7c60c6527d5"/>
+               <code code="34068-7" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE &amp; ADMINISTRATION SECTION"/>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">DOSAGE AND ADMINISTRATION:</content>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20241218"/>
+               <component>
+                  <section>
+                     <id root="f4a946a9-8651-481b-9a58-dfe7a7b4154c"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <text>
+                        <paragraph>
+                           <content styleCode="bold">Dogs:</content> Administer orally at a rate to provide 5-20 mg/kg (2.27 to 9.07 mg/lb) of body weight. Selection of a dose within the range should be based on clinical experience, the severity of disease, and susceptibility of the pathogen. Animals which receive doses in the upper-end of the dose range should be carefully monitored for clinical signs that may include inappetence, depression, and vomition. If dogs do not consume Enroquin Flavored Tablets willingly when offered by hand, then alternatively the tablet(s) may be offered in the food or hand- administered (pilled) as with other oral tablet medications.</paragraph>
+                        <table width="85%">
+                           <col width="20%" align="center" valign="top"/>
+                           <col width="20%" align="center" valign="top"/>
+                           <col width="20%" align="center" valign="top"/>
+                           <col width="20%" align="center" valign="top"/>
+                           <col width="20%" align="center" valign="top"/>
+                           <thead>
+                              <tr styleCode="Botrule">
+                                 <th styleCode="Lrule Rrule">Weight of Dog</th>
+                                 <th styleCode="Rrule" colspan="4">Once Daily Dosing Chart</th>
+                              </tr>
+                              <tr styleCode="Botrule">
+                                 <th styleCode="Lrule Rrule"/>
+                                 <th styleCode="Rrule">5.0 mg/kg</th>
+                                 <th styleCode="Rrule">10.0 mg/kg</th>
+                                 <th styleCode="Rrule">15.0 mg/kg</th>
+                                 <th styleCode="Rrule">20.0 mg/kg</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr styleCode="Botrule">
+                                 <td styleCode="Lrule Rrule">												9.1 kg (20 lb) 											</td>
+                                 <td styleCode="Rrule">2 × 22.7 mg tablets</td>
+                                 <td styleCode="Rrule">1 × 22.7 mg plus<br/> 1 × 68 mg tablets</td>
+                                 <td styleCode="Rrule">1 × 136 mg tablet</td>
+                                 <td styleCode="Rrule">1 × 136 mg plus<br/> 2 × 22.7 mg tablets</td>
+                              </tr>
+                              <tr>
+                                 <td styleCode="Lrule Rrule">												27.2 kg (60 lb) 											</td>
+                                 <td styleCode="Rrule">1 × 136 mg tablets</td>
+                                 <td styleCode="Rrule">2 × 136 mg tablets</td>
+                                 <td styleCode="Rrule">3 × 136 mg tablets</td>
+                                 <td styleCode="Rrule">4 × 136 mg tablets</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <paragraph>All tablet sizes are double scored for accurate dosing.</paragraph>
+                     </text>
+                     <effectiveTime value="20241218"/>
+                  </section>
+               </component>
+               <component>
+                  <section>
+                     <id root="3df72bd8-a3b0-4f58-b995-f40e9156eda9"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <text>
+                        <paragraph>
+                           <content styleCode="bold">Cats:</content> Administer orally at 5 mg/kg (2.27 mg/lb) of bodyweight. The dose for dogs and cats may be administered either as a single daily dose or divided into two (2) equal daily doses administered at twelve (12) hour intervals. The dose should be continued for at least 2-3 days beyond cessation of clinical signs, to a maximum of 30 days. In cats, Enroquin Flavored Tablets should be pilled. After administration, watch the animal closely to be certain the entire dose has been consumed.</paragraph>
+                        <table width="70%">
+                           <col width="25%" align="center" valign="top"/>
+                           <col width="10%" align="left" valign="top"/>
+                           <col width="65%" align="left" valign="top"/>
+                           <thead>
+                              <tr>
+                                 <th styleCode="Lrule Rrule">Weight of Cat</th>
+                                 <th/>
+                                 <th styleCode="Rrule">Once Daily Dosing Chart (5 mg/kg/day)</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr styleCode="Botrule">
+                                 <td styleCode="Lrule Rrule">5 lb (2.27 kg)</td>
+                                 <td/>
+                                 <td styleCode="Rrule">1/2 × 22.7 mg tablet</td>
+                              </tr>
+                              <tr styleCode="Botrule">
+                                 <td styleCode="Lrule Rrule">10 lb (4.5 kg)</td>
+                                 <td/>
+                                 <td styleCode="Rrule">1 × 22.7 mg tablet</td>
+                              </tr>
+                              <tr>
+                                 <td styleCode="Lrule Rrule">15 lb (6.8 kg)</td>
+                                 <td/>
+                                 <td styleCode="Rrule">1 and 1/2 × 22.7 mg tablets or 1/2 × 68 mg tablet</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <paragraph>All tablet sizes are double scored for accurate dosing.</paragraph>
+                     </text>
+                     <effectiveTime value="20241218"/>
+                  </section>
+               </component>
+               <component>
+                  <section>
+                     <id root="8f3e2126-d838-41a8-8281-0aacab90bcbc"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <text>
+                        <paragraph>
+                           <content styleCode="bold">Dogs</content> &amp; <content styleCode="bold">Cats:</content> The duration of treatment should be selected based on clinical evidence.</paragraph>
+                        <paragraph>Generally, administration of Enroquin Flavored Tablets should continue for at least 2-3 days beyond cessation of clinical signs. For severe and/or complicated infections, more prolonged therapy, up to 30 days, may be required. If no improvement is seen within five days, the diagnosis should be re-evaluated and a different course of therapy considered.</paragraph>
+                        <paragraph>The lower limit of the dose range in dogs and the daily dose for cats was based on efficacy studies in dogs and cats where enrofloxacin was administered at 2.5 mg/kg twice daily. Target animal safety and toxicology were used to establish the upper limit ofthe dose range for dogs and treatment duration for dogs and cats.</paragraph>
+                     </text>
+                     <effectiveTime value="20241218"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="30aaed76-8f84-480a-ac65-ce06eb6256f5"/>
+               <code code="44425-7" codeSystem="2.16.840.1.113883.6.1" displayName="STORAGE AND HANDLING SECTION"/>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">STORAGE:</content>
+                  </paragraph>
+                  <paragraph>Dispense tablets in tight containers only.</paragraph>
+                  <paragraph>Store at 20° to 25°C (68° to 77°F), excursions permitted between 15° and 30°C (between 59° and 86°F) [see USP Controlled Room Temperature].</paragraph>
+               </text>
+               <effectiveTime value="20241218"/>
+               <component>
+                  <section>
+                     <id root="bef8b973-5233-48f4-ad9b-b86d0baff740"/>
+                     <code code="34069-5" codeSystem="2.16.840.1.113883.6.1" displayName="HOW SUPPLIED SECTION"/>
+                     <text>
+                        <paragraph>
+                           <content styleCode="bold">HOW SUPPLIED:</content>
+                        </paragraph>
+                        <table width="70%">
+                           <col width="25%" align="left" valign="top"/>
+                           <col width="50%" align="center" valign="top"/>
+                           <col width="25%" align="center" valign="top"/>
+                           <thead>
+                              <tr>
+                                 <th styleCode="Lrule Rrule">NDC Number</th>
+                                 <th styleCode="Rrule">Enroquin Flavored Tablets<br/> Tablet Size</th>
+                                 <th styleCode="Rrule">Tablets/Bottle</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr styleCode="Botrule">
+                                 <td styleCode="Lrule Rrule">17033-303-10</td>
+                                 <td styleCode="Rrule">22.7 mg</td>
+                                 <td styleCode="Rrule">100 Double Scored</td>
+                              </tr>
+                              <tr styleCode="Botrule">
+                                 <td styleCode="Lrule Rrule">17033-303-50</td>
+                                 <td styleCode="Rrule">22.7 mg</td>
+                                 <td styleCode="Rrule">500 Double Scored</td>
+                              </tr>
+                              <tr styleCode="Botrule">
+                                 <td styleCode="Lrule Rrule">17033-304-05</td>
+                                 <td styleCode="Rrule">68.0 mg</td>
+                                 <td styleCode="Rrule">50 Double Scored</td>
+                              </tr>
+                              <tr styleCode="Botrule">
+                                 <td styleCode="Lrule Rrule">17033-304-25</td>
+                                 <td styleCode="Rrule">68.0 mg</td>
+                                 <td styleCode="Rrule">250 Double Scored</td>
+                              </tr>
+                              <tr styleCode="Botrule">
+                                 <td styleCode="Lrule Rrule">17033-305-05</td>
+                                 <td styleCode="Rrule">136.0 mg</td>
+                                 <td styleCode="Rrule">50 Double Scored</td>
+                              </tr>
+                              <tr>
+                                 <td styleCode="Lrule Rrule">17033-305-20</td>
+                                 <td styleCode="Rrule">136.0 mg</td>
+                                 <td styleCode="Rrule">200 Double Scored</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </text>
+                     <effectiveTime value="20241218"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="d176411e-418c-4f98-88b2-2ef4a71e0961"/>
+               <code code="34093-5" codeSystem="2.16.840.1.113883.6.1" displayName="REFERENCES SECTION"/>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">REFERENCES:</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">1.</content> Doughherty, T.J., &amp; Saukkonen, J.J. (1985). Membrane permeability changes associated with DNA gyrase inhibitors in Escherichia Coli. Antimicrob Agents Chemother, 28 (2), 200-206.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">2.</content> Walker, R.D., Stein, G.E., Hauptmam, J.G., McDonald, K.H. (1992). Pharmacokinetic evaluation of enrofloxacin administered orally to healthy dogs. Am J Vet Res, 53 (12): 2315-2319.</paragraph>
+               </text>
+               <effectiveTime value="20241218"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="dd9a6131-534f-4af4-87f6-8cc5126b960d"/>
+               <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+               <text>
+                  <paragraph>Approved by FDA under ANADA # 200-680</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Distributed by:</content>
+                     <br/>Dechra Veterinary Products<br/>7015 College Boulevard, Suite 525<br/>Overland Park, KS 66211 USA</paragraph>
+                  <paragraph>Made in India</paragraph>
+                  <paragraph>Neutral Code No. MP/DRUGS/28/53/2020</paragraph>
+                  <paragraph>Enroquin<sup>®</sup> is a registered trademark of Dechra Veterinary Products, LLC.</paragraph>
+                  <paragraph>Rev. April 2023</paragraph>
+                  <paragraph>12000203</paragraph>
+               </text>
+               <effectiveTime value="20241218"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="e3da4803-0f0b-48f8-93f0-b54ed19e4e37"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>PRINCIPAL DISPLAY PANEL - 22.7 mg Tablet Bottle Label</title>
+               <text>
+                  <paragraph>NDC: 17033-303-10</paragraph>
+                  <paragraph>22.7 mg</paragraph>
+                  <paragraph>Enroquin<sup>®</sup>
+                  </paragraph>
+                  <paragraph>(enrofloxacin) Flavored Tablets<br/>Antibacterial Tablets</paragraph>
+                  <paragraph>22.7 mg</paragraph>
+                  <paragraph>For The Treatment Of Susceptible<br/>Bacterial Pathogens In Dogs And Cats</paragraph>
+                  <paragraph>CAUTION: Federal (U.S.A.) law restricts this drug<br/>to use by or on the order of a licensed veterinarian.</paragraph>
+                  <paragraph>Federal law prohibits the extralabel use<br/>of this drug in food-producing animals.</paragraph>
+                  <paragraph>Each tablet contains: 22.7 mg enrofloxacin<br/>Approved by FDA under ANADA # 200-680</paragraph>
+                  <paragraph>100 Tablets</paragraph>
+                  <paragraph>Dechra</paragraph>
+                  <paragraph>
+                     <renderMultiMedia referencedObject="L83bc4b20-dc1c-4c9d-93fd-ca2cdfbceef3"/>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20260226"/>
+               <component>
+                  <observationMedia ID="L83bc4b20-dc1c-4c9d-93fd-ca2cdfbceef3">
+                     <text>22.7mg 100ct</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="22.7mg 100ct.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="6850ce11-88aa-4a4a-a5ba-dd4be77f6578"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>PRINCIPAL DISPLAY PANEL - 68 mg Tablet Bottle Label</title>
+               <text>
+                  <paragraph>NDC: 17033-304-05</paragraph>
+                  <paragraph>68 mg</paragraph>
+                  <paragraph>Enroquin<sup>®</sup>
+                  </paragraph>
+                  <paragraph>(enrofloxacin) Flavored Tablets<br/>Antibacterial Tablets</paragraph>
+                  <paragraph>68 mg</paragraph>
+                  <paragraph>For The Treatment Of Susceptible<br/>Bacterial Pathogens In Dogs And Cats</paragraph>
+                  <paragraph>CAUTION: Federal (U.S.A.) law restricts this drug<br/>to use by or on the order of a licensed veterinarian.</paragraph>
+                  <paragraph>Federal law prohibits the extralabel use<br/>of this drug in food-producing animals.</paragraph>
+                  <paragraph>Each tablet contains: 68 mg enrofloxacin<br/>Approved by FDA under ANADA # 200-680</paragraph>
+                  <paragraph>50 Tablets</paragraph>
+                  <paragraph>Dechra</paragraph>
+                  <paragraph>
+                     <renderMultiMedia referencedObject="L919ab126-4d4f-4966-a76d-de0d951a60fb"/>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20260226"/>
+               <component>
+                  <observationMedia ID="L919ab126-4d4f-4966-a76d-de0d951a60fb">
+                     <text>68mg 50ct</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="68mg 50ct.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="dc41cf37-9338-4f1b-a538-a5370a524c77"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>PRINCIPAL DISPLAY PANEL - 136 mg Tablet Bottle Label</title>
+               <text>
+                  <paragraph>NDC: 17033-305-05</paragraph>
+                  <paragraph>136 mg</paragraph>
+                  <paragraph>Enroquin<sup>®</sup>
+                  </paragraph>
+                  <paragraph>(enrofloxacin) Flavored Tablets<br/>Antibacterial Tablets</paragraph>
+                  <paragraph>136 mg</paragraph>
+                  <paragraph>For The Treatment Of Susceptible<br/>Bacterial Pathogens In Dogs And Cats</paragraph>
+                  <paragraph>CAUTION: Federal (U.S.A.) law restricts this drug<br/>to use by or on the order of a licensed veterinarian.</paragraph>
+                  <paragraph>Federal law prohibits the extralabel use<br/>of this drug in food-producing animals.</paragraph>
+                  <paragraph>Each tablet contains: 136 mg enrofloxacin<br/>Approved by FDA under ANADA # 200-680</paragraph>
+                  <paragraph>50 Tablets</paragraph>
+                  <paragraph>Dechra</paragraph>
+                  <paragraph>
+                     <renderMultiMedia referencedObject="Lb8bc1992-27a0-4e1e-95c0-a6b71f717166"/>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20260226"/>
+               <component>
+                  <observationMedia ID="Lb8bc1992-27a0-4e1e-95c0-a6b71f717166">
+                     <text>136mg 50ct</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="136mg 50ct.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+      </structuredBody>
+   </component>
+</document>

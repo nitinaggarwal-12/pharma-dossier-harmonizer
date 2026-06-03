@@ -1,0 +1,4 @@
+pydantic
+streamlit
+plotly
+# Note: The google-adk library is required but might need specific installation instructions depending on the environment.

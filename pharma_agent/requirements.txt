@@ -1,0 +1,7 @@
+google-cloud-aiplatform
+google-cloud-documentai
+google-adk
+pandas
+openpyxl
+pypdf
+google-cloud-storage

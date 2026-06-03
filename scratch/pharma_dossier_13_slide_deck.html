@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Executive Presentation (13 Slides): Pharma Dossier Harmonizer</title>
+    <!-- Premium Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-gradient: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+            --slide-bg: rgba(255, 255, 255, 0.97);
+            --text-main: #0f172a;
+            --text-muted: #475569;
+            --accent-primary: #4f46e5;
+            --accent-secondary: #06b6d4;
+            --code-bg: #0b0f19;
+            --border-color: rgba(226, 232, 240, 0.8);
+            --shadow-premium: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+            --shadow-glow: 0 0 40px -10px rgba(79, 70, 229, 0.3);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-gradient);
+            background-attachment: fixed;
+            min-height: 100vh;
+            color: var(--text-main);
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+        }
+
+        /* Top Bar & Controls */
+        header {
+            background: rgba(15, 23, 42, 0.75);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 12px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-title {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #fff;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 600;
+            font-size: 16px;
+            letter-spacing: -0.3px;
+        }
+
+        .header-title span {
+            background: linear-gradient(90deg, #a5b4fc, #c084fc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 700;
+        }
+
+        .controls {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .btn {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-family: 'Inter', sans-serif;
+            font-size: 13px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-color: rgba(255, 255, 255, 0.3);
+            transform: translateY(-1px);
+        }
+
+        .btn-primary {
+            background: var(--accent-primary);
+            border-color: #6366f1;
+        }
+
+        .btn-primary:hover {
+            background: #4338ca;
+            border-color: #4f46e5;
+            box-shadow: 0 0 15px rgba(79, 70, 229, 0.4);
+        }
+
+        .slide-counter {
+            color: #94a3b8;
+            font-size: 13px;
+            font-weight: 500;
+            min-width: 90px;
+            text-align: center;
+        }
+
+        select.slide-select {
+            background: rgba(15, 23, 42, 0.8);
+            color: #e2e8f0;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 7px 12px;
+            border-radius: 8px;
+            font-size: 13px;
+            font-family: 'Inter', sans-serif;
+            cursor: pointer;
+            outline: none;
+        }
+        select.slide-select option {
+            background: #0f172a;
+            color: #fff;
+        }
+
+        /* Progress Bar */
+        .progress-container {
+            width: 100%;
+            height: 3px;
+            background: rgba(255, 255, 255, 0.05);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        .progress-bar {
+            height: 100%;
+            background: linear-gradient(90deg, #4f46e5, #06b6d4);
+            width: 5%;
+            transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* Main Layout Area */
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 24px;
+            transition: all 0.3s ease;
+        }
+
+        /* Slide Container */
+        .slide-deck {
+            width: 100%;
+            max-width: 1100px;
+            position: relative;
+        }
+
+        .slide {
+            background: var(--slide-bg);
+            border-radius: 20px;
+            padding: 56px 64px;
+            box-shadow: var(--shadow-premium), var(--shadow-glow);
+            border: 1px solid var(--border-color);
+            min-height: 640px;
+            display: none;
+            flex-direction: column;
+            justify-content: space-between;
+            animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            backdrop-filter: blur(20px);
+        }
+
+        .slide.active {
+            display: flex;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.98) translateY(10px); }
+            to { opacity: 1; transform: scale(1) translateY(0); }
+        }
+
+        /* Continuous Scrolling View Mode */
+        body.continuous-view main { padding: 20px 16px; }
+        body.continuous-view .slide-deck { display: flex; flex-direction: column; gap: 32px; }
+        body.continuous-view .slide { display: flex !important; animation: none; min-height: auto; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); }
+        body.continuous-view .slide-footer { margin-top: 40px; border-top: 1px solid #e2e8f0; padding-top: 16px; }
+
+        /* Slide Typography & Elements */
+        .slide-header { margin-bottom: 28px; }
+        .slide-subtitle {
+            font-family: 'Outfit', sans-serif;
+            color: var(--accent-primary);
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .slide-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 32px;
+            font-weight: 700;
+            color: #0f172a;
+            line-height: 1.2;
+            letter-spacing: -0.5px;
+        }
+
+        .slide-title.title-main {
+            font-size: 42px;
+            background: linear-gradient(135deg, #0f172a 0%, #312e81 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .slide-body {
+            flex: 1;
+            font-size: 16px;
+            line-height: 1.65;
+            color: #334155;
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+
+        /* Lists */
+        ul, ol { padding-left: 22px; display: flex; flex-direction: column; gap: 10px; }
+        li { color: #1e293b; }
+        li strong { color: #0f172a; }
+
+        /* Highlight Boxes & Callouts */
+        .alert-box {
+            padding: 18px 22px;
+            border-radius: 12px;
+            background: #f5f7ff;
+            border: 1px solid #e0e7ff;
+            border-left: 5px solid var(--accent-primary);
+            margin: 12px 0;
+        }
+        .alert-box.notes { background: #f8fafc; border-color: #e2e8f0; border-left-color: #64748b; }
+        .alert-box.warning { background: #fef2f2; border-color: #fee2e2; border-left-color: #ef4444; }
+        .alert-box.success { background: #ecfdf5; border-color: #d1fae5; border-left-color: #10b981; }
+        .alert-header { font-family: 'Outfit', sans-serif; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px; display: flex; align-items: center; gap: 6px; }
+        .notes .alert-header { color: #475569; }
+        .warning .alert-header { color: #b91c1c; }
+        .success .alert-header { color: #047857; }
+        .alert-box:not(.notes):not(.warning):not(.success) .alert-header { color: var(--accent-primary); }
+        .alert-content { font-size: 14.5px; color: #334155; margin: 0; }
+
+        /* Code Blocks */
+        pre { background: var(--code-bg); border-radius: 12px; padding: 18px; overflow-x: auto; border: 1px solid rgba(255, 255, 255, 0.05); box-shadow: inset 0 2px 4px rgba(0,0,0,0.2); font-family: 'JetBrains Mono', monospace; font-size: 12.5px; color: #e2e8f0; line-height: 1.5; }
+        code.inline { font-family: 'JetBrains Mono', monospace; background: #f1f5f9; color: #0f172a; padding: 2px 6px; border-radius: 6px; font-size: 0.9em; border: 1px solid #e2e8f0; }
+
+        /* Tables */
+        .table-wrapper { overflow-x: auto; border-radius: 12px; border: 1px solid #e2e8f0; margin: 10px 0; }
+        table { width: 100%; border-collapse: collapse; text-align: left; font-size: 14px; }
+        th { background: #f8fafc; padding: 14px 18px; font-weight: 600; color: #0f172a; border-bottom: 2px solid #e2e8f0; }
+        td { padding: 14px 18px; border-bottom: 1px solid #f1f5f9; color: #475569; }
+        tr:hover td { background: #f8fafc; }
+        .badge { display: inline-block; padding: 3px 8px; border-radius: 12px; font-size: 11px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; }
+        .badge-red { background: #fee2e2; color: #991b1b; border: 1px solid #fca5a5; }
+        .badge-green { background: #d1fae5; color: #065f46; border: 1px solid #a7f3d0; }
+        .badge-indigo { background: #e0e7ff; color: #3730a3; border: 1px solid #a5b4fc; }
+
+        /* Two-Column Layouts */
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+
+        /* Simulation Specific Styles */
+        .prompt-box { background-color: #f1f5f9; border: 1px solid #cbd5e1; border-left: 4px solid var(--accent-primary); border-radius: 8px; padding: 16px 20px; font-size: 14px; color: #0f172a; font-weight: 500; margin-bottom: 16px; }
+        .trace-console { background-color: var(--code-bg); border-radius: 8px; padding: 14px; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #e2e8f0; line-height: 1.6; margin-bottom: 16px; border: 1px solid #1e293b; }
+        .trace-line { display: flex; gap: 8px; }
+        .trace-line .source { color: #38bdf8; font-weight: 600; }
+        .trace-line .arrow { color: #64748b; }
+        .trace-line .action { color: #a3e635; }
+        .simulated-output { background-color: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 22px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+
+        /* Slide Footer */
+        .slide-footer { display: flex; justify-content: space-between; align-items: center; font-size: 12px; color: #94a3b8; margin-top: 24px; }
+
+        /* Responsive */
+        @media (max-width: 768px) { .slide { padding: 32px 24px; min-height: 500px; } .slide-title { font-size: 24px; } .slide-title.title-main { font-size: 32px; } .grid-2 { grid-template-columns: 1fr; } header { padding: 10px 16px; } .slide-counter { display: none; } }
+        @media print { body { background: none; color: #000; } header, .controls, .progress-container { display: none !important; } main { padding: 0 !important; } .slide-deck { gap: 0 !important; } .slide { display: flex !important; box-shadow: none !important; border: none !important; border-bottom: 2px solid #000 !important; border-radius: 0 !important; page-break-after: always; padding: 40px 0 !important; min-height: auto !important; } }
+    </style>
+</head>
+<body>
+
+    <!-- Top Bar & Navigation -->
+    <header>
+        <div class="header-title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#a5b4fc" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
+            Pharma Dossier Harmonizer <span>13-Slide Executive Deck</span>
+        </div>
+        
+        <div class="controls">
+            <select class="slide-select" id="slideSelect" onchange="goToSlide(parseInt(this.value))">
+                <option value="1">1. Title Slide</option>
+                <option value="2">2. Strategic Introduction & Executive Vision</option>
+                <option value="3">3. The Biopharma Business Problem</option>
+                <option value="4">4. System Capabilities Overview</option>
+                <option value="5">5. Detailed Technical Architecture</option>
+                <option value="6">6. Deep-Dive: ADK Multi-Agent Topology</option>
+                <option value="7">7. Advanced Vector RAG Mechanics</option>
+                <option value="8">8. Biopharma Quality & Stability Audit Workflow</option>
+                <option value="9">9. Technical eCTD Folder Validation Workflow</option>
+                <option value="10">10. Executive Business & Technical Benefits</option>
+                <option value="11">11. Simulated Flow 1: eCTD Folder Audit</option>
+                <option value="12">12. Simulated Flow 2: Deep Scientific Quality</option>
+                <option value="13">13. Simulated Flow 3: Boxed Warnings RAG</option>
+            </select>
+
+            <button class="btn" onclick="toggleViewMode()" id="viewModeBtn">Continuous Scroll</button>
+            <button class="btn" onclick="prevSlide()" id="prevBtn">◀ Prev</button>
+            <span class="slide-counter" id="slideCounter">Slide 1 of 13</span>
+            <button class="btn btn-primary" onclick="nextSlide()" id="nextBtn">Next ▶</button>
+        </div>
+
+        <div class="progress-container"><div class="progress-bar" id="progressBar"></div></div>
+    </header>
+
+    <main>
+        <div class="slide-deck" id="slideDeck">
+            
+            <!-- Slide 1: Title Slide -->
+            <div class="slide active" id="slide-1">
+                <div class="slide-header">
+                    <div class="slide-subtitle">Executive Presentation (13 Slides)</div>
+                    <h1 class="slide-title title-main">Pharma Dossier Harmonizer</h1>
+                </div>
+                <div class="slide-body" style="justify-content: center;">
+                    <p style="font-size: 20px; color: #1e293b; font-weight: 500;">Accelerating Global Biopharma Regulatory Submissions via Multi-Agent AI Orchestration</p>
+                    <hr style="border: 0; border-top: 1px solid #e2e8f0; margin: 10px 0;">
+                    <div style="display: flex; flex-direction: column; gap: 10px;">
+                        <p><strong>Target Enterprise Deployment:</strong> Vertex AI Agent Engine & Gemini Enterprise Plus UI Chat</p>
+                        <p><strong>Power-User Review Sandbox:</strong> Next.js 14 Offline Analytical Dashboard (<code class="inline">localhost:3000</code>)</p>
+                        <p><strong>Orchestration Framework:</strong> Google Agent Development Kit (ADK) & Gemini 2.5 Flash</p>
+                        <p><strong>Audience Scope:</strong> Biopharma Executive Leadership, Global Regulatory Affairs, CMC & IT Infrastructure Teams</p>
+                    </div>
+                    
+                    <div class="alert-box notes" style="margin-top: 30px;">
+                        <div class="alert-header">🎤 Speaker Notes</div>
+                        <p class="alert-content">Welcome, executive leadership and biopharma regulatory colleagues. Today we present the optimized 13-slide masterclass for the <b>Pharma Dossier Harmonizer</b>. In an industry where regulatory review delays directly impact patient access and patent exclusivities, this multi-agent reasoning platform automates complex electronic Common Technical Document (eCTD) audits, chemistry manufacturing controls (CMC) verification, and global specification gap analyses with absolute precision.</p>
+                    </div>
+                </div>
+                <div class="slide-footer">
+                    <div><span>Vertex AI Reasoning Engine</span></div>
+                    <div>Slide 1</div>
+                </div>
+            </div>
+
+            <!-- Slide 2: Strategic Introduction & Executive Vision -->
+            <div class="slide" id="slide-2">
+                <div class="slide-header">
+                    <div class="slide-subtitle">Strategic Introduction & Executive Vision</div>
+                    <h2 class="slide-title">Bridging Business Velocity with Scientific Rigor</h2>
+                </div>
+                <div class="slide-body">
+                    <div style="background: #f8fafc; border-radius: 12px; padding: 20px; border: 1px solid #e2e8f0;">
+                        <h3 style="color: var(--accent-primary); font-family: 'Outfit'; font-size: 18px; margin-bottom: 8px;">🎯 The Core Mandate</h3>
+                        <p style="margin: 0;">To establish a zero-latency, highly intelligent automated regulatory review engine that acts as a synchronized expert co-pilot for submission medical writers and QA reviewers, guaranteeing compliance with <b>ICH, FDA, and EMA</b> standards prior to electronic transmission.</p>
+                    </div>
+
+                    <h3 style="font-family: 'Outfit'; font-size: 18px; color: #0f172a; margin-top: 10px;">Key Value Propositions</h3>
+                    <div class="grid-2">
+                        <div class="alert-box" style="margin: 0;">
+                            <div class="alert-header">1. For Business Leadership</div>
+                            <p class="alert-content">Dramatically accelerates time-to-market by intercepting regulatory omissions that trigger review clock pauses or costly agency RFIs.</p>
+                        </div>
+                        <div class="alert-box" style="margin: 0;">
+                            <div class="alert-header">2. For Biopharma Scientists</div>
+                            <p class="alert-content">Automates laborious cross-referencing between dense Module 3 CMC formulations and evolving international quality guidelines.</p>
+                        </div>
+                        <div class="alert-box" style="margin: 0; grid-column: span 2;">
+                            <div class="alert-header">3. For IT & Data Engineering</div>
+                            <p class="alert-content">Deploys secure, localized multi-agent routing architectures that index submission arrays into persistent BigQuery data lakes and zero-latency vector caches without exposing proprietary intellectual property.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-footer">
+                    <div><span>Strategic Alignment</span></div>
+                    <div>Slide 2</div>
+                </div>
+            </div>
+
+            <!-- Slide 3: The Biopharma Business Problem -->
+            <div class="slide" id="slide-3">
+                <div class="slide-header">
+                    <div class="slide-subtitle">The Biopharma Business Problem</div>
+                    <h2 class="slide-title">The High Cost of Submission Friction & Gatekeeper Interceptions</h2>
+                </div>
+                <div class="slide-body">
+                    <p>Bringing a novel biopharmaceutical compound to market is a highly complex, multi-billion-dollar undertaking where submission friction introduces immense operational risk:</p>
+                    
+                    <div style="margin: 10px 0; padding: 20px; background: #0f172a; border-radius: 12px; text-align: center;">
+                        <code style="color: #38bdf8; font-family: 'JetBrains Mono'; font-size: 13.5px; display: block;">[ 10,000+ Page Submissions ] ➔ [ Manual Guideline Mapping (Weeks) ] ➔ [ Agency Interception (Paused Clocks) ]</code>
+                    </div>
+
+                    <h3 style="font-family: 'Outfit'; font-size: 18px; color: #0f172a;">Key Operational Roadblocks</h3>
+                    <ul>
+                        <li><strong>Requests for Information (RFIs) & Interlocutory Review (IR):</strong> Regulatory agencies (FDA/EMA) frequently pause review clocks due to omitted raw stability tables, unexplained impurity bounds, or missing forced degradation study parameters.</li>
+                        <li><strong>Refusal-to-File (RTF) Gatekeeper Rejections:</strong> Administrative errors—such as uppercase letters in XML schema filenames or missing mandatory regional utility folder paths in eCTD packages—result in immediate submission rejection before scientific review even begins.</li>
+                        <li><strong>Massive Data Fragmentation:</strong> Submissions span disparate file types (multimodal PDFs, Word drafts, HL7 XML messaging schemas) that must align symmetrically across global regional standards.</li>
+                    </ul>
+                </div>
+                <div class="slide-footer">
+                    <div><span>Operational Roadblocks</span></div>
+                    <div>Slide 3</div>
+                </div>
+            </div>
+
+            <!-- Slide 4: System Capabilities Overview -->
+            <div class="slide" id="slide-4">
+                <div class="slide-header">
+                    <div class="slide-subtitle">System Capabilities Overview</div>
+                    <h2 class="slide-title">A Unified Platform Delivering Two Powerful Review Experiences</h2>
+                </div>
+                <div class="slide-body">
+                    <div class="grid-2" style="align-items: stretch;">
+                        <!-- Experience 1 -->
+                        <div style="background: #fff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 28px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); display: flex; flex-direction: column; justify-content: space-between;">
+                            <div>
+                                <span class="badge badge-indigo" style="margin-bottom: 12px;">Executive Review</span>
+                                <h3 style="font-family: 'Outfit'; font-size: 20px; color: #0f172a; margin-bottom: 14px;">1. Gemini Enterprise UI Chat</h3>
+                                <ul style="padding-left: 16px; font-size: 14.5px; gap: 12px;">
+                                    <li><strong>Native Workspace Integration:</strong> Corporate biopharma reviewers query the multi-agent engine conversationally directly inside their secured enterprise chat interface.</li>
+                                    <li><strong>Multimodal Document Ingress:</strong> Supports direct multimodal parsing for PDF drops or Cloud Storage batch trigger endpoints (<code class="inline">gs://</code>).</li>
+                                    <li><strong>Stateful Turn Memory:</strong> Seamlessly tracks active dossier context across complex multi-turn validation interactions.</li>
+                                </ul>
+                            </div>
+                            <div style="margin-top: 20px; padding-top: 12px; border-top: 1px solid #f1f5f9; font-size: 12px; color: #64748b;">Targeted for Corporate Regulatory Leaders</div>
+                        </div>
+
+                        <!-- Experience 2 -->
+                        <div style="background: #fff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 28px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); display: flex; flex-direction: column; justify-content: space-between;">
+                            <div>
+                                <span class="badge badge-green" style="margin-bottom: 12px;">Deep QA Analytics</span>
+                                <h3 style="font-family: 'Outfit'; font-size: 20px; color: #0f172a; margin-bottom: 14px;">2. Next.js Offline Dashboard</h3>
+                                <ul style="padding-left: 16px; font-size: 14.5px; gap: 12px;">
+                                    <li><strong>Real-Time Typewriter Audits:</strong> Live generation of custom styled report cards highlighting critical scientific and physical formatting gaps.</li>
+                                    <li><strong>Symmetrical Delta Views:</strong> High-speed Git-style split diff views comparing draft baselines against newly proposed Module outlines.</li>
+                                    <li><strong>Interactive Threading:</strong> Simulates inbound correspondence letters from international agencies to prepare exact response libraries.</li>
+                                </ul>
+                            </div>
+                            <div style="margin-top: 20px; padding-top: 12px; border-top: 1px solid #f1f5f9; font-size: 12px; color: #64748b;">Targeted for Local Power-User QA Specialists</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-footer">
+                    <div><span>Dual-Access Architecture</span></div>
+                    <div>Slide 4</div>
+                </div>
+            </div>
+
+            <!-- Slide 5: Detailed Technical Architecture -->
+            <div class="slide" id="slide-5">
+                <div class="slide-header">
+                    <div class="slide-subtitle">Detailed Technical Architecture</div>
+                    <h2 class="slide-title">End-to-End Enterprise Data & Reasoning Middleware Topology</h2>
+                </div>
+                <div class="slide-body">
+                    <p>The platform routes user instructions through specialized processing middleware layers to securely bridge raw cloud storage files with deep reasoning models:</p>
+                    
+                    <pre style="padding: 16px; font-size: 12px; line-height: 1.4;"><code>[ User Entry Points ]
+  ├── Gemini Enterprise UI Chat  ➔ (Conversational ADK Routing Protocol)
+  └── Next.js Power Dashboard    ➔ (REST Backend API Bridge on Port 8002)
+        │
+[ Backend Orchestration Layer ]
+  ├── Vertex AI Agent Engine     ➔ Hosts coordinated sub-agent app runtimes
+  └── Fast-Path Bridge Core      ➔ Evaluates storage bounds & vector caches
+        │
+[ Data Access & Extraction Cloud Infrastructure ]
+  ├── Google Cloud Storage       ➔ Hosts staged active physical packages
+  ├── Google Document AI         ➔ Advanced 15-page PDF batch slice parsing API
+  ├── BigQuery Index Engine      ➔ Indexes structured document text persistently
+  └── Vector Embedding Cache     ➔ Local disk vector structures (.vector_cache/)</code></pre>
+
+                    <div class="alert-box success" style="margin-top: 6px;">
+                        <div class="alert-header">⚡ Fast-Path Pipeline Optimization</div>
+                        <p class="alert-content">To prevent massive API processing bills and unblock processing speed, the system caches pre-processed document context from BigQuery or local disk structures directly into memory (<code class="inline">0ms latency</code>), utilizing Document AI segment extraction purely as a dynamic fallback.</p>
+                    </div>
+                </div>
+                <div class="slide-footer">
+                    <div><span>Infrastructure Topology</span></div>
+                    <div>Slide 5</div>
+                </div>
+            </div>
+
+            <!-- Slide 6: Deep-Dive: ADK Multi-Agent Node Topology -->
+            <div class="slide" id="slide-6">
+                <div class="slide-header">
+                    <div class="slide-subtitle">Deep-Dive: ADK Multi-Agent Node Topology</div>
+                    <h2 class="slide-title">Specialized Collaborative Reasoning via Google ADK</h2>
+                </div>
+                <div class="slide-body">
+                    <p>The core framework initializes a root sequential routing agent (<code class="inline">Coordinator</code>) that dynamically commands localized expert sub-agents based on parsed instructions:</p>
+                    
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Sub-Agent Name</th>
+                                    <th>Core Responsibility / Biopharma Operational Domain</th>
+                                    <th>Active Tool Bound</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong><code class="inline">DossierIngestionAgent</code></strong></td>
+                                    <td>Extracts raw CMC facts, composition tables, and safety bounds. Rejects generic non-pharma files.</td>
+                                    <td><code class="inline">extract_dossier_text</code></td>
+                                </tr>
+                                <tr>
+                                    <td><strong><code class="inline">RegulatoryRetrievalAgent</code></strong></td>
+                                    <td>Performs localized vector text chunking retrieval over standard specification documents.</td>
+                                    <td><code class="inline">retrieve_regulatory_guidelines</code></td>
+                                </tr>
+                                <tr>
+                                    <td><strong><code class="inline">DeltaAnalysisAgent</code></strong></td>
+                                    <td>Executes symmetrical split line diff calculations across discrete formulation drafts.</td>
+                                    <td><code class="inline">compare_dossier_versions</code></td>
+                                </tr>
+                                <tr>
+                                    <td><strong><code class="inline">ComplianceAgent</code></strong></td>
+                                    <td>Strictly enforces eCTD physical casing laws, directory validation, and XML parameters.</td>
+                                    <td><code class="inline">verify_ectd_packages</code></td>
+                                </tr>
+                                <tr>
+                                    <td><strong><code class="inline">EctdShellAgent</code></strong></td>
+                                    <td>Generates standard validated JSON folder skeletons containing injected gap annotations.</td>
+                                    <td><code class="inline">generate_ectd_shell</code></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <p style="font-size: 14px; color: var(--text-muted);">* Results are aggregated by the <strong><code class="inline">FinalReviewerAgent</code></strong> to enforce schema structure validation against the <code class="inline">HarmonizerResult</code> Pydantic layout before output emission.</p>
+                </div>
+                <div class="slide-footer">
+                    <div><span>Agent Collaboration Schema</span></div>
+                    <div>Slide 6</div>
+                </div>
+            </div>
+
+            <!-- Slide 7: Advanced Vector RAG & Zero-Latency Pre-Caching -->
+            <div class="slide" id="slide-7">
+                <div class="slide-header">
+                    <div class="slide-subtitle">Advanced Vector RAG & Zero-Latency Pre-Caching</div>
+                    <h2 class="slide-title">High-Speed Semantic Search over Complex Guidelines</h2>
+                </div>
+                <div class="slide-body">
+                    <p>To evaluate scientific drafts against complex international standards like the official ICH Quality directories (<code class="inline">M4Q_R1_Guideline.pdf</code>), the application implements high-speed local vector indexing:</p>
+                    
+                    <ol style="padding-left: 20px; gap: 12px;">
+                        <li><strong>Chunking Boundaries:</strong> Guideline streams are partitioned into uniform dense textual segments using an optimized <b>700-character upper bound coupled with a 150-character sliding overlap</b> to prevent context drift.</li>
+                        <li><strong>High-Dimensional Embedding:</strong> Slices are projected into 768-dimensional continuous float vectors leveraging Vertex AI's state-of-the-art <b><code class="inline">text-embedding-004</code></b> model.</li>
+                        <li><strong>Persistent Disk Pre-Caching:</strong> To eliminate external network lookups, array layouts are natively staged inside local disk repositories (<code class="inline">.vector_cache/vector_cache_[filename].json</code>).</li>
+                        <li><strong>Pure Local Execution:</strong> Queries are embedded dynamically to resolve <b>cosine similarity locally in pure Python memory (&lt;2ms calculation lag)</b> before piping top candidate paragraphs to the reasoning interface.</li>
+                    </ol>
+
+                    <div class="alert-box notes" style="margin-top: 10px;">
+                        <div class="alert-header">💡 Technical Biopharma Benefit</div>
+                        <p class="alert-content">Pre-computing and serializing document vector structures locally allows the system to warm up instantly and bypass exponential API rate limits during concurrent enterprise reviewer loads.</p>
+                    </div>
+                </div>
+                <div class="slide-footer">
+                    <div><span>Vector Index Engine</span></div>
+                    <div>Slide 7</div>
+                </div>
+            </div>
+
+            <!-- Slide 8: Biopharma Quality & Stability Gap Auditing Workflow -->
+            <div class="slide" id="slide-8">
+                <div class="slide-header">
+                    <div class="slide-subtitle">Biopharma Quality & Stability Gap Auditing Workflow</div>
+                    <h2 class="slide-title">Auditing CMC Module 3 Drafts Against Official Standards</h2>
+                </div>
+                <div class="slide-body">
+                    <p>To eliminate manual cross-referencing during technical reviews, the system evaluates Module 3 CMC draft text blocks symmetrically against official guidance matrices:</p>
+                    
+                    <div class="grid-2">
+                        <div style="background: #f8fafc; padding: 20px; border-radius: 12px; border: 1px solid #e2e8f0;">
+                            <h3 style="font-family: 'Outfit'; font-size: 16px; color: #0f172a; margin-bottom: 10px;">📄 Source Dossier Input</h3>
+                            <p style="font-size: 14px; margin-bottom: 8px;"><b>Draft File:</b> <code class="inline">m3-dp-pharma-dev - working.md</code></p>
+                            <p style="font-size: 13.5px; color: var(--text-muted);">Contains plaintext Module 3 Drug Product summaries describing proposed storage bounds but lacking raw experimental matrix datasets.</p>
+                        </div>
+                        <div style="background: #f8fafc; padding: 20px; border-radius: 12px; border: 1px solid #e2e8f0;">
+                            <h3 style="font-family: 'Outfit'; font-size: 16px; color: #4f46e5; margin-bottom: 10px;">🎯 Target Specification Input</h3>
+                            <p style="font-size: 14px; margin-bottom: 8px;"><b>Guideline Standard:</b> <code class="inline">M4Q_R1_Guideline.pdf</code></p>
+                            <p style="font-size: 13.5px; color: var(--text-muted);">Official international standard detailing scientific stability boundaries, stress degradation expectations, and required potency reports.</p>
+                        </div>
+                    </div>
+
+                    <div class="alert-box warning" style="margin-top: 10px;">
+                        <div class="alert-header">🔍 Scientific Gap Discovered & Verbatim Cited</div>
+                        <p class="alert-content">The reasoning model evaluates both buffers and intercepts that while the draft lists general shelf-life conclusions, <b>it completely omits mandatory tabulated raw metrics from 6-month accelerated stability testing under stress conditions (40°C / 75% RH)</b>, citing verbatim requirement evidence from <b>Guideline Page 17 (Section 3.2.S.7.1)</b>.</p>
+                    </div>
+                </div>
+                <div class="slide-footer">
+                    <div><span>Scientific Content Audit</span></div>
+                    <div>Slide 8</div>
+                </div>
+            </div>
+
+            <!-- Slide 9: Technical eCTD Schema & Folder Validation Workflow -->
+            <div class="slide" id="slide-9">
+                <div class="slide-header">
+                    <div class="slide-subtitle">Technical eCTD Schema & Folder Validation Workflow</div>
+                    <h2 class="slide-title">Ensuring Physical Folder Compliance Before Transmission</h2>
+                </div>
+                <div class="slide-body">
+                    <p>Electronic Common Technical Documents require flawless administrative structure. The platform automates physical directory checks instantly:</p>
+                    
+                    <div style="display: flex; flex-direction: column; gap: 12px; margin: 10px 0;">
+                        <div style="padding: 14px; background: #f8fafc; border-radius: 10px; border-left: 4px solid #3b82f6;">
+                            <strong>1. Ingestion & Tool Invocation:</strong> Reviewers prompt the engine to inspect their staged workspace folder paths or GCS buckets (<code class="inline">pharma_agent/user_files/</code>). The Coordinator delegates to the <code class="inline">ComplianceAgent</code>.
+                        </div>
+                        <div style="padding: 14px; background: #f8fafc; border-radius: 10px; border-left: 4px solid #10b981;">
+                            <strong>2. Filename Casing Rules Verification:</strong> Iterates across every file string to verify strict lowercase file names (instantly flagging space-delimiters or uppercase schema codes like <code class="inline">COCT_MT150007UV.xsd</code>).
+                        </div>
+                        <div style="padding: 14px; background: #f8fafc; border-radius: 10px; border-left: 4px solid #f59e0b;">
+                            <strong>3. Administrative Directory Audit:</strong> Walks physical package paths to check for mandatory standard structures, guaranteeing the presence of necessary regional routes like <code class="inline">m1/fda</code> and <code class="inline">m1/eu/util/dtd</code>.
+                        </div>
+                    </div>
+
+                    <div style="padding: 12px 16px; background: #fef2f2; border: 1px solid #fca5a5; border-radius: 8px; display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-weight: 600; color: #991b1b;">🔴 Final Audit Output: Status Failed (Non-Compliant)</span>
+                        <span class="badge badge-red">33 Casing Gaps Detected</span>
+                    </div>
+                </div>
+                <div class="slide-footer">
+                    <div><span>Physical Schema Audit</span></div>
+                    <div>Slide 9</div>
+                </div>
+            </div>
+
+            <!-- Slide 10: Executive Business & Technical Benefits -->
+            <div class="slide" id="slide-10">
+                <div class="slide-header">
+                    <div class="slide-subtitle">Executive Business & Technical Benefits</div>
+                    <h2 class="slide-title">Transformative Value Across Biopharma Operations</h2>
+                </div>
+                <div class="slide-body">
+                    <div class="grid-2" style="gap: 20px;">
+                        <div style="background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 22px; box-shadow: 0 2px 4px rgba(0,0,0,0.03);">
+                            <span class="badge badge-indigo" style="margin-bottom: 10px;">Commercial Velocity</span>
+                            <h3 style="font-family: 'Outfit'; font-size: 18px; color: #0f172a; margin-bottom: 8px;">1. Elimination of RFI Review Pauses</h3>
+                            <p style="font-size: 14px; color: var(--text-muted); margin: 0;">Proactively identifies missing raw stability tables and degradation data before submission, preventing agency clock halts that delay commercial launch.</p>
+                        </div>
+
+                        <div style="background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 22px; box-shadow: 0 2px 4px rgba(0,0,0,0.03);">
+                            <span class="badge badge-green" style="margin-bottom: 10px;">Scientific Efficiency</span>
+                            <h3 style="font-family: 'Outfit'; font-size: 18px; color: #0f172a; margin-bottom: 8px;">2. 99%+ Reduction in Audit Labor</h3>
+                            <p style="font-size: 14px; color: var(--text-muted); margin: 0;">Compresses laborious manual cross-referencing of 10,000-page dossiers against global guidelines from weeks to sub-second automated RAG lookups.</p>
+                        </div>
+
+                        <div style="background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 22px; box-shadow: 0 2px 4px rgba(0,0,0,0.03);">
+                            <span class="badge badge-red" style="margin-bottom: 10px;">Risk Mitigation</span>
+                            <h3 style="font-family: 'Outfit'; font-size: 18px; color: #0f172a; margin-bottom: 8px;">3. Zero Refusal-to-File (RTF) Risks</h3>
+                            <p style="font-size: 14px; color: var(--text-muted); margin: 0;">Automated pre-flight scans ensure 100% compliance with physical eCTD casing laws and regional directory structures before electronic transport.</p>
+                        </div>
+
+                        <div style="background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 22px; box-shadow: 0 2px 4px rgba(0,0,0,0.03);">
+                            <span class="badge badge-indigo" style="margin-bottom: 10px;">Regulatory Traceability</span>
+                            <h3 style="font-family: 'Outfit'; font-size: 18px; color: #0f172a; margin-bottom: 8px;">4. Absolute Audit Traceability</h3>
+                            <p style="font-size: 14px; color: var(--text-muted); margin: 0;">Every identified requirement or data gap verbatim cites specific source files, section taxonomy codes, and exact page numbers, preserving complete regulatory integrity.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-footer">
+                    <div><span>Enterprise Impact</span></div>
+                    <div>Slide 10</div>
+                </div>
+            </div>
+
+            <!-- Slide 11: Simulated Flow 1: eCTD Technical Naming & Folder Audit -->
+            <div class="slide" id="slide-11">
+                <div class="slide-header">
+                    <div class="slide-subtitle">Simulated Flow 1 (Enterprise UI Prompt & Expected Output)</div>
+                    <h2 class="slide-title">eCTD Technical Naming & Folder Audit</h2>
+                </div>
+                <div class="slide-body">
+                    <div class="prompt-box">
+                        <strong style="color: var(--accent-primary); display: block; font-size: 12px; text-transform: uppercase; margin-bottom: 4px;">Detailed Enterprise Prompt</strong>
+                        Please invoke the verify_ectd_packages tool to scan my staged folders in Cloud Storage, list the scanned files, and audit them for compliance casing gaps.
+                    </div>
+
+                    <div class="trace-console">
+                        <div class="trace-line"><span class="source">[Coordinator Agent]</span> <span class="arrow">➔</span> <span class="action">Routing instruction directly to ComplianceAgent.</span></div>
+                        <div class="trace-line"><span class="source">[ComplianceAgent]</span> <span class="arrow">➔</span> <span class="action">Firing command: verify_ectd_packages()</span></div>
+                        <div class="trace-line"><span class="source">[GCS Blob Scanner]</span> <span class="arrow">➔</span> <span class="action">Walking target path: gs://pharma-dossiers-nitinagga-ge/</span></div>
+                        <div class="trace-line"><span class="source">[Validation Evaluator]</span> <span class="arrow">➔</span> <span class="action">Evaluating string arrays -> Flagging uppercase strings & folder path omissions.</span></div>
+                    </div>
+
+                    <div class="simulated-output">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; border-bottom: 1px solid #f1f5f9; padding-bottom: 8px;">
+                            <span style="font-weight: 700; font-size: 14px; color: #b91c1c;">🔴 Expected Simulated Response: Non-Compliant Folder Layout</span>
+                            <span class="badge badge-red">33 Casing Errors Found</span>
+                        </div>
+                        
+                        <p style="font-size: 13px; color: #334155; margin-bottom: 10px;">Your physical folder layout violates eCTD filename casing laws and structural requirements.</p>
+                        
+                        <div class="grid-2" style="gap: 12px; margin-bottom: 12px;">
+                            <div style="background: #f8fafc; padding: 10px; border-radius: 6px; font-size: 12px;">
+                                <strong>Casing Omissions:</strong> Found <b>33 files</b> with spaces or uppercase strings (e.g. <code class="inline">COCT_MT150007UV.xsd</code>, <code class="inline">Genericode.zip</code>).
+                            </div>
+                            <div style="background: #f8fafc; padding: 10px; border-radius: 6px; font-size: 12px;">
+                                <strong>Missing Regional Paths:</strong> Mandatory structural directories <code class="inline">m1/fda</code> and <code class="inline">m1/eu/util/dtd</code> omitted.
+                            </div>
+                        </div>
+                        
+                        <p style="font-size: 11.5px; color: #64748b;"><b>🟢 Scanned Files List:</b> Successfully indexed 46 files in GCS: <code class="inline">m3-dp-pharma-dev.md</code>, <code class="inline">M4Q_R1_Guideline.pdf</code>, <code class="inline">Validation_eCTD.pdf</code>, etc.</p>
+                    </div>
+                </div>
+                <div class="slide-footer">
+                    <div><span>Simulated Interaction</span></div>
+                    <div>Slide 11</div>
+                </div>
+            </div>
+
+            <!-- Slide 12: Simulated Flow 2: Deep Scientific Stability Quality Audit -->
+            <div class="slide" id="slide-12">
+                <div class="slide-header">
+                    <div class="slide-subtitle">Simulated Flow 2 (Enterprise UI Prompt & Expected Output)</div>
+                    <h2 class="slide-title">Deep Scientific Stability Quality Audit</h2>
+                </div>
+                <div class="slide-body">
+                    <div class="prompt-box">
+                        <strong style="color: var(--accent-primary); display: block; font-size: 12px; text-transform: uppercase; margin-bottom: 4px;">Detailed Enterprise Prompt</strong>
+                        Validate my staged dossier m3-dp-pharma-dev - working.md against the M4Q_R1_Guideline.pdf specifications. Check if the dossier includes the mandatory accelerated stability potency limits and forced degradation summaries under Module 3.2.S. Cite the exact section and page numbers.
+                    </div>
+
+                    <div class="trace-console">
+                        <div class="trace-line"><span class="source">[Coordinator Agent]</span> <span class="arrow">➔</span> <span class="action">Instruction requires guideline extraction -> Invoking ComplianceAgent.</span></div>
+                        <div class="trace-line"><span class="source">[ComplianceAgent]</span> <span class="arrow">➔</span> <span class="action">Executing query_guideline_pdf("accelerated stability potency Module 3.2.S")</span></div>
+                        <div class="trace-line"><span class="source">[Vector Index Core]</span> <span class="arrow">➔</span> <span class="action">Vector Pre-Cache loaded instantly in 0ms. Projecting embedding via text-embedding-004.</span></div>
+                    </div>
+
+                    <div class="simulated-output">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; border-bottom: 1px solid #f1f5f9; padding-bottom: 8px;">
+                            <span style="font-weight: 700; font-size: 14px; color: #0f172a;">🔍 Expected Simulated Response: Quality Audit Report Gaps Identified</span>
+                            <span class="badge badge-red">Scientific Gaps Found</span>
+                        </div>
+                        
+                        <p style="font-size: 13px; color: #334155; margin-bottom: 10px;">An audit of draft dossier <b><code class="inline">m3-dp-pharma-dev - working.md</code></b> against <b><code class="inline">M4Q_R1_Guideline.pdf</code></b> has revealed significant gaps in Module 3.2.S:</p>
+                        
+                        <ul style="padding-left: 16px; font-size: 12.5px; gap: 8px;">
+                            <li>
+                                <strong style="color: #b91c1c;">🔴 Stability Potency Gap:</strong> Under <b><code class="inline">M4Q_R1_Guideline.pdf</code> Page 17 (Section 3.2.S.7.1 - Stability Summary)</b>, submissions must include tabulated results from accelerated stability testing (at 6 months, 40°C / 75% RH).<br>
+                                <span style="color: #64748b;">Dossier Status: Only lists generic shelf-life summaries and lacks raw tabulated accelerated stability matrices.</span>
+                            </li>
+                            <li>
+                                <strong style="color: #b91c1c;">🔴 Potency Degradation Gaps:</strong> Tabulated potency summary results from Module 3.2.P.8.3 must also be summarized (<b>Guideline Page 9</b>).
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-footer">
+                    <div><span>Simulated Interaction</span></div>
+                    <div>Slide 12</div>
+                </div>
+            </div>
+
+            <!-- Slide 13: Simulated Flow 3: CCDS Boxed Warning Label Harmonization -->
+            <div class="slide" id="slide-13">
+                <div class="slide-header">
+                    <div class="slide-subtitle">Simulated Flow 3 (Enterprise UI Prompt & Expected Output)</div>
+                    <h2 class="slide-title">CCDS Boxed Warning Label Harmonization</h2>
+                </div>
+                <div class="slide-body">
+                    <div class="prompt-box">
+                        <strong style="color: var(--accent-primary); display: block; font-size: 12px; text-transform: uppercase; margin-bottom: 4px;">Detailed Enterprise Prompt</strong>
+                        Harmonize the safety warning labels for Adalimumab under my staged dossier Module 3 against the prescribing safety warnings in the DailyMed registry.
+                    </div>
+
+                    <div class="trace-console">
+                        <div class="trace-line"><span class="source">[Coordinator Agent]</span> <span class="arrow">➔</span> <span class="action">Extracting substance keyword -> Routing request to LabelHarmonizerAgent.</span></div>
+                        <div class="trace-line"><span class="source">[LabelHarmonizerAgent]</span> <span class="arrow">➔</span> <span class="action">Command tool: search_labels(product_name="Adalimumab")</span></div>
+                        <div class="trace-line"><span class="source">[SPL Registry Core]</span> <span class="arrow">➔</span> <span class="action">Resolving active compound safety profiles from sample reference matrices.</span></div>
+                    </div>
+
+                    <div class="simulated-output">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; border-bottom: 1px solid #f1f5f9; padding-bottom: 8px;">
+                            <span style="font-weight: 700; font-size: 14px; color: #0f172a;">🤖 Expected Simulated Response: Label Harmonization Gaps Identified</span>
+                            <span class="badge badge-red">Critical Omission</span>
+                        </div>
+                        
+                        <p style="font-size: 12.5px; color: #475569; margin-bottom: 8px;"><b>Registry Boxed Warnings Found for Adalimumab (DailyMed SPL):</b></p>
+                        <ol style="padding-left: 16px; font-size: 12.5px; gap: 4px; margin-bottom: 10px;">
+                            <li><b>⚠️ Serious Infections:</b> Increased risk of active tuberculosis, invasive fungal infections, and bacterial sepsis.</li>
+                            <li><b>⚠️ Malignancies:</b> Increased risk of lymphoma and other pediatric cancers.</li>
+                        </ol>
+
+                        <div style="padding: 10px; background: #fef2f2; border-radius: 6px; border: 1px solid #fca5a5; font-size: 12px;">
+                            <strong style="color: #b91c1c; display: block;">✖ Critical Warning Gap Intercept</strong>
+                            <span style="color: #991b1b;">The staged dossier correctly references compound properties but completely omits mandatory boxed warnings for pediatric malignancies and invasive fungal infections. Update Module 1.14 to incorporate these declarations.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-footer">
+                    <div><span>Simulated Interaction</span></div>
+                    <div>Slide 13</div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script>
+        let currentSlide = 1;
+        const totalSlides = 13;
+        let isContinuousView = false;
+
+        function updateControls() {
+            if (isContinuousView) return;
+            
+            document.querySelectorAll('.slide').forEach(slide => slide.classList.remove('active'));
+            const targetSlide = document.getElementById(`slide-${currentSlide}`);
+            if (targetSlide) targetSlide.classList.add('active');
+
+            document.getElementById('prevBtn').disabled = currentSlide === 1;
+            document.getElementById('nextBtn').disabled = currentSlide === totalSlides;
+            document.getElementById('prevBtn').style.opacity = currentSlide === 1 ? '0.4' : '1';
+            document.getElementById('nextBtn').style.opacity = currentSlide === totalSlides ? '0.4' : '1';
+
+            document.getElementById('slideCounter').innerText = `Slide ${currentSlide} of ${totalSlides}`;
+            document.getElementById('slideSelect').value = currentSlide;
+
+            const progressPercent = ((currentSlide - 1) / (totalSlides - 1)) * 100;
+            document.getElementById('progressBar').style.width = `${Math.max(5, progressPercent)}%`;
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function nextSlide() { if (currentSlide < totalSlides) { currentSlide++; updateControls(); } }
+        function prevSlide() { if (currentSlide > 1) { currentSlide--; updateControls(); } }
+        function goToSlide(index) { if (index >= 1 && index <= totalSlides) { currentSlide = index; updateControls(); } }
+
+        function toggleViewMode() {
+            isContinuousView = !isContinuousView;
+            const body = document.body;
+            const viewBtn = document.getElementById('viewModeBtn');
+            
+            if (isContinuousView) {
+                body.classList.add('continuous-view');
+                viewBtn.innerText = 'Slides View';
+                viewBtn.classList.add('btn-primary');
+                document.getElementById('prevBtn').style.display = 'none';
+                document.getElementById('nextBtn').style.display = 'none';
+                document.getElementById('slideCounter').style.display = 'none';
+                document.getElementById('slideSelect').style.display = 'none';
+                document.getElementById('progressBar').style.width = '100%';
+            } else {
+                body.classList.remove('continuous-view');
+                viewBtn.innerText = 'Continuous Scroll';
+                viewBtn.classList.remove('btn-primary');
+                document.getElementById('prevBtn').style.display = 'inline-block';
+                document.getElementById('nextBtn').style.display = 'inline-block';
+                document.getElementById('slideCounter').style.display = 'inline-block';
+                document.getElementById('slideSelect').style.display = 'inline-block';
+                updateControls();
+            }
+        }
+
+        window.addEventListener('keydown', function(e) {
+            if (isContinuousView) return;
+            if (e.key === 'ArrowRight' || e.key === 'PageDown') nextSlide();
+            else if (e.key === 'ArrowLeft' || e.key === 'PageUp') prevSlide();
+        });
+
+        window.onload = function() { updateControls(); };
+    </script>
+</body>
+</html>

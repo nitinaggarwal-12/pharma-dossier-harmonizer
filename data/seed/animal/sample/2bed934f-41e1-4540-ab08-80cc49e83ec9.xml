@@ -1,0 +1,1167 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="https://www.accessdata.fda.gov/spl/stylesheet/spl.xsl" type="text/xsl"?>
+<document xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 https://www.accessdata.fda.gov/spl/schema/spl.xsd">
+   <id root="2bed934f-41e1-4540-ab08-80cc49e83ec9"/>
+   <code code="50578-4" codeSystem="2.16.840.1.113883.6.1" displayName="PRESCRIPTION ANIMAL DRUG LABEL"/>
+   <title>Numelvi™ <br/> (atinvicitinib tablets)</title>
+   <effectiveTime value="20260226"/>
+   <setId root="4926fcfa-20a0-46d8-aca2-53ae88332a31"/>
+   <versionNumber value="1"/>
+   <author>
+      <time/>
+      <assignedEntity>
+         <representedOrganization>
+            <id extension="001317601" root="1.3.6.1.4.1.519.1"/>
+            <name>Merck Sharp &amp; Dohme Corp.</name>
+            <assignedEntity>
+               <assignedOrganization/>
+            </assignedEntity>
+         </representedOrganization>
+      </assignedEntity>
+   </author>
+   <component>
+      <structuredBody>
+         <component>
+            <section ID="DLDE">
+               <id root="1abc8c00-39d7-4b01-a1ad-9b107f17ae4f"/>
+               <code code="48780-1" codeSystem="2.16.840.1.113883.6.1" displayName="SPL PRODUCT DATA ELEMENTS SECTION"/>
+               <effectiveTime value="20260226"/>
+               <subject>
+                  <manufacturedProduct>
+                     <manufacturedProduct>
+                        <code code="0061-1434" codeSystem="2.16.840.1.113883.6.69"/>
+                        <name>Numelvi</name>
+                        <formCode code="C42998" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET"/>
+                        <asEntityWithGeneric>
+                           <genericMedicine>
+                              <name>atinvicitinib</name>
+                           </genericMedicine>
+                        </asEntityWithGeneric>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator value="4.8" unit="mg"/>
+                              <denominator value="1" unit="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="C238YE66P2" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>ATINVICITINIB</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="C238YE66P2" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>ATINVICITINIB</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <asContent>
+                           <quantity>
+                              <numerator value="30" unit="1"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code/>
+                              <formCode code="C43173" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE, PLASTIC"/>
+                              <asContent>
+                                 <quantity>
+                                    <numerator value="1" unit="1"/>
+                                    <denominator value="1"/>
+                                 </quantity>
+                                 <containerPackagedProduct>
+                                    <code code="0061-1434-01" codeSystem="2.16.840.1.113883.6.69"/>
+                                    <formCode code="C43182" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CARTON"/>
+                                 </containerPackagedProduct>
+                              </asContent>
+                           </containerPackagedProduct>
+                        </asContent>
+                        <asContent>
+                           <quantity>
+                              <numerator value="90" unit="1"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code/>
+                              <formCode code="C43173" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE, PLASTIC"/>
+                              <asContent>
+                                 <quantity>
+                                    <numerator value="1" unit="1"/>
+                                    <denominator value="1"/>
+                                 </quantity>
+                                 <containerPackagedProduct>
+                                    <code code="0061-1434-02" codeSystem="2.16.840.1.113883.6.69"/>
+                                    <formCode code="C43182" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CARTON"/>
+                                 </containerPackagedProduct>
+                              </asContent>
+                           </containerPackagedProduct>
+                        </asContent>
+                     </manufacturedProduct>
+                     <subjectOf>
+                        <approval>
+                           <id extension="NADA141596" root="2.16.840.1.113883.3.150"/>
+                           <code code="C73593" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="NADA"/>
+                           <author>
+                              <territorialAuthority>
+                                 <territory>
+                                    <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                 </territory>
+                              </territorialAuthority>
+                           </author>
+                        </approval>
+                     </subjectOf>
+                     <subjectOf>
+                        <marketingAct>
+                           <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <statusCode code="active"/>
+                           <effectiveTime>
+                              <low value="20260225"/>
+                           </effectiveTime>
+                        </marketingAct>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLCOLOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C48325" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="WHITE" xsi:type="CE">
+                              <originalText>White to off-white</originalText>
+                           </value>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSCORE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value value="2" xsi:type="INT"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSHAPE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C48345" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="OVAL" xsi:type="CE">
+                              <originalText>Oblong shape</originalText>
+                           </value>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSIZE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value unit="mm" value="11" xsi:type="PQ"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLIMPRINT" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value xsi:type="ST">S;S</value>
+                        </characteristic>
+                     </subjectOf>
+                     <consumedIn>
+                        <substanceAdministration>
+                           <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORAL"/>
+                        </substanceAdministration>
+                     </consumedIn>
+                  </manufacturedProduct>
+               </subject>
+               <subject>
+                  <manufacturedProduct>
+                     <manufacturedProduct>
+                        <code code="0061-1435" codeSystem="2.16.840.1.113883.6.69"/>
+                        <name>Numelvi</name>
+                        <formCode code="C42998" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET"/>
+                        <asEntityWithGeneric>
+                           <genericMedicine>
+                              <name>atinvicitinib</name>
+                           </genericMedicine>
+                        </asEntityWithGeneric>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator value="7.2" unit="mg"/>
+                              <denominator value="1" unit="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="C238YE66P2" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>ATINVICITINIB</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="C238YE66P2" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>ATINVICITINIB</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <asContent>
+                           <quantity>
+                              <numerator value="30" unit="1"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code/>
+                              <formCode code="C43173" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE, PLASTIC"/>
+                              <asContent>
+                                 <quantity>
+                                    <numerator value="1" unit="1"/>
+                                    <denominator value="1"/>
+                                 </quantity>
+                                 <containerPackagedProduct>
+                                    <code code="0061-1435-01" codeSystem="2.16.840.1.113883.6.69"/>
+                                    <formCode code="C43182" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CARTON"/>
+                                 </containerPackagedProduct>
+                              </asContent>
+                           </containerPackagedProduct>
+                        </asContent>
+                        <asContent>
+                           <quantity>
+                              <numerator value="90" unit="1"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code/>
+                              <formCode code="C43173" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE, PLASTIC"/>
+                              <asContent>
+                                 <quantity>
+                                    <numerator value="1" unit="1"/>
+                                    <denominator value="1"/>
+                                 </quantity>
+                                 <containerPackagedProduct>
+                                    <code code="0061-1435-02" codeSystem="2.16.840.1.113883.6.69"/>
+                                    <formCode code="C43182" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CARTON"/>
+                                 </containerPackagedProduct>
+                              </asContent>
+                           </containerPackagedProduct>
+                        </asContent>
+                     </manufacturedProduct>
+                     <subjectOf>
+                        <approval>
+                           <id extension="NADA141596" root="2.16.840.1.113883.3.150"/>
+                           <code code="C73593" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="NADA"/>
+                           <author>
+                              <territorialAuthority>
+                                 <territory>
+                                    <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                 </territory>
+                              </territorialAuthority>
+                           </author>
+                        </approval>
+                     </subjectOf>
+                     <subjectOf>
+                        <marketingAct>
+                           <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <statusCode code="active"/>
+                           <effectiveTime>
+                              <low value="20260225"/>
+                           </effectiveTime>
+                        </marketingAct>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLCOLOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C48325" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="WHITE" xsi:type="CE">
+                              <originalText>White to off-white</originalText>
+                           </value>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSCORE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value value="2" xsi:type="INT"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSHAPE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C48345" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="OVAL" xsi:type="CE">
+                              <originalText>Oblong shape</originalText>
+                           </value>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSIZE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value unit="mm" value="12" xsi:type="PQ"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLIMPRINT" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value xsi:type="ST">M;M</value>
+                        </characteristic>
+                     </subjectOf>
+                     <consumedIn>
+                        <substanceAdministration>
+                           <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORAL"/>
+                        </substanceAdministration>
+                     </consumedIn>
+                  </manufacturedProduct>
+               </subject>
+               <subject>
+                  <manufacturedProduct>
+                     <manufacturedProduct>
+                        <code code="0061-1436" codeSystem="2.16.840.1.113883.6.69"/>
+                        <name>Numelvi</name>
+                        <formCode code="C42998" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET"/>
+                        <asEntityWithGeneric>
+                           <genericMedicine>
+                              <name>atinvicitinib</name>
+                           </genericMedicine>
+                        </asEntityWithGeneric>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator value="21.6" unit="mg"/>
+                              <denominator value="1" unit="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="C238YE66P2" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>ATINVICITINIB</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="C238YE66P2" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>ATINVICITINIB</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <asContent>
+                           <quantity>
+                              <numerator value="30" unit="1"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code/>
+                              <formCode code="C43173" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE, PLASTIC"/>
+                              <asContent>
+                                 <quantity>
+                                    <numerator value="1" unit="1"/>
+                                    <denominator value="1"/>
+                                 </quantity>
+                                 <containerPackagedProduct>
+                                    <code code="0061-1436-01" codeSystem="2.16.840.1.113883.6.69"/>
+                                    <formCode code="C43182" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CARTON"/>
+                                 </containerPackagedProduct>
+                              </asContent>
+                           </containerPackagedProduct>
+                        </asContent>
+                        <asContent>
+                           <quantity>
+                              <numerator value="90" unit="1"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code/>
+                              <formCode code="C43173" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE, PLASTIC"/>
+                              <asContent>
+                                 <quantity>
+                                    <numerator value="1" unit="1"/>
+                                    <denominator value="1"/>
+                                 </quantity>
+                                 <containerPackagedProduct>
+                                    <code code="0061-1436-02" codeSystem="2.16.840.1.113883.6.69"/>
+                                    <formCode code="C43182" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CARTON"/>
+                                 </containerPackagedProduct>
+                              </asContent>
+                           </containerPackagedProduct>
+                        </asContent>
+                     </manufacturedProduct>
+                     <subjectOf>
+                        <approval>
+                           <id extension="NADA141596" root="2.16.840.1.113883.3.150"/>
+                           <code code="C73593" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="NADA"/>
+                           <author>
+                              <territorialAuthority>
+                                 <territory>
+                                    <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                 </territory>
+                              </territorialAuthority>
+                           </author>
+                        </approval>
+                     </subjectOf>
+                     <subjectOf>
+                        <marketingAct>
+                           <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <statusCode code="active"/>
+                           <effectiveTime>
+                              <low value="20260225"/>
+                           </effectiveTime>
+                        </marketingAct>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLCOLOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C48325" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="WHITE" xsi:type="CE">
+                              <originalText>White to off-white</originalText>
+                           </value>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSCORE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value value="2" xsi:type="INT"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSHAPE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C48345" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="OVAL" xsi:type="CE">
+                              <originalText>Oblong shape</originalText>
+                           </value>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSIZE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value unit="mm" value="17" xsi:type="PQ"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLIMPRINT" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value xsi:type="ST">L;L</value>
+                        </characteristic>
+                     </subjectOf>
+                     <consumedIn>
+                        <substanceAdministration>
+                           <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORAL"/>
+                        </substanceAdministration>
+                     </consumedIn>
+                  </manufacturedProduct>
+               </subject>
+               <subject>
+                  <manufacturedProduct>
+                     <manufacturedProduct>
+                        <code code="0061-1437" codeSystem="2.16.840.1.113883.6.69"/>
+                        <name>Numelvi</name>
+                        <formCode code="C42998" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET"/>
+                        <asEntityWithGeneric>
+                           <genericMedicine>
+                              <name>atinvicitinib</name>
+                           </genericMedicine>
+                        </asEntityWithGeneric>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator value="31.6" unit="mg"/>
+                              <denominator value="1" unit="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="C238YE66P2" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>ATINVICITINIB</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="C238YE66P2" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>ATINVICITINIB</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <asContent>
+                           <quantity>
+                              <numerator value="30" unit="1"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code/>
+                              <formCode code="C43173" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE, PLASTIC"/>
+                              <asContent>
+                                 <quantity>
+                                    <numerator value="1" unit="1"/>
+                                    <denominator value="1"/>
+                                 </quantity>
+                                 <containerPackagedProduct>
+                                    <code code="0061-1437-01" codeSystem="2.16.840.1.113883.6.69"/>
+                                    <formCode code="C43182" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CARTON"/>
+                                 </containerPackagedProduct>
+                              </asContent>
+                           </containerPackagedProduct>
+                        </asContent>
+                        <asContent>
+                           <quantity>
+                              <numerator value="90" unit="1"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code/>
+                              <formCode code="C43173" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE, PLASTIC"/>
+                              <asContent>
+                                 <quantity>
+                                    <numerator value="1" unit="1"/>
+                                    <denominator value="1"/>
+                                 </quantity>
+                                 <containerPackagedProduct>
+                                    <code code="0061-1437-02" codeSystem="2.16.840.1.113883.6.69"/>
+                                    <formCode code="C43182" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CARTON"/>
+                                 </containerPackagedProduct>
+                              </asContent>
+                           </containerPackagedProduct>
+                        </asContent>
+                     </manufacturedProduct>
+                     <subjectOf>
+                        <approval>
+                           <id extension="NADA141596" root="2.16.840.1.113883.3.150"/>
+                           <code code="C73593" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="NADA"/>
+                           <author>
+                              <territorialAuthority>
+                                 <territory>
+                                    <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                 </territory>
+                              </territorialAuthority>
+                           </author>
+                        </approval>
+                     </subjectOf>
+                     <subjectOf>
+                        <marketingAct>
+                           <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <statusCode code="active"/>
+                           <effectiveTime>
+                              <low value="20260225"/>
+                           </effectiveTime>
+                        </marketingAct>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLCOLOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C48325" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="WHITE" xsi:type="CE">
+                              <originalText>White to off-white</originalText>
+                           </value>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSCORE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value value="2" xsi:type="INT"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSHAPE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C48345" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="OVAL" xsi:type="CE">
+                              <originalText>Oblong shape</originalText>
+                           </value>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSIZE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value unit="mm" value="20" xsi:type="PQ"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLIMPRINT" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value xsi:type="ST">XL;XL</value>
+                        </characteristic>
+                     </subjectOf>
+                     <consumedIn>
+                        <substanceAdministration>
+                           <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORAL"/>
+                        </substanceAdministration>
+                     </consumedIn>
+                  </manufacturedProduct>
+               </subject>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="1d874369-2dda-466a-b307-7474a22cd5b0"/>
+               <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+               <text>
+                  <paragraph>Immunomodulator <br/> 223751 R10</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">For oral use in dogs only</content>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20260226"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="ae1fab0b-193f-4249-8952-c5494a591337"/>
+               <code code="34071-1" codeSystem="2.16.840.1.113883.6.1" displayName="WARNINGS SECTION"/>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">CAUTION:</content> Federal law restricts this drug to use by or on the order of a licensed veterinarian.</paragraph>
+               </text>
+               <effectiveTime value="20260226"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="b6430974-cad7-499b-a95c-e395629b0888"/>
+               <code code="34089-3" codeSystem="2.16.840.1.113883.6.1" displayName="DESCRIPTION SECTION"/>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">DESCRIPTION</content>:</paragraph>
+                  <paragraph>The active ingredient in NUMELVI is atinvicitinib. Atinvicitinib is a synthetic selective Janus kinase (JAK) 1 inhibitor. The chemical (IUPAC) name of atinvicitinib is 1-[(3R,4S)-4-cyanooxan-3-yl]-3-[(2-fluoro-6-methoxypyridin-4-yl)amino]-1H-pyrazole-4-carboxamide.</paragraph>
+               </text>
+               <effectiveTime value="20260226"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="470c229c-f515-4b36-ae3f-ea59a6d86d55"/>
+               <code code="50745-9" codeSystem="2.16.840.1.113883.6.1" displayName="VETERINARY INDICATIONS SECTION"/>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">INDICATIONS</content>:</paragraph>
+                  <paragraph>NUMELVI is indicated for the control of pruritus associated with allergic dermatitis in dogs 6 months of age and older.</paragraph>
+               </text>
+               <effectiveTime value="20260226"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="3ef91ba2-1b67-43a9-82d6-ac3a013969df"/>
+               <code code="34068-7" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE &amp; ADMINISTRATION SECTION"/>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">DOSAGE AND ADMINISTRATION</content>:</paragraph>
+                  <paragraph>NUMELVI should be administered orally, once daily, at a dose of 0.36 to 0.54 mg atinvicitinib/lb (0.8 to 1.2 mg atinvicitinib/kg) body weight according to the Dosing Table below.</paragraph>
+                  <paragraph>NUMELVI should be administered with food.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Dosing Table</content>
+                  </paragraph>
+                  <table width="85%">
+                     <col width="17%" align="center" valign="middle"/>
+                     <col width="17%" align="center" valign="middle"/>
+                     <col width="17%" align="center" valign="middle"/>
+                     <col width="17%" align="center" valign="middle"/>
+                     <col width="16%" align="center" valign="middle"/>
+                     <col width="16%" align="center" valign="middle"/>
+                     <thead>
+                        <tr styleCode="Botrule">
+                           <th styleCode="Lrule Rrule" rowspan="2">Body Weight <br/> Ranges (lb)</th>
+                           <th styleCode="Rrule" rowspan="2">Body Weight <br/> Ranges (kg)</th>
+                           <th styleCode="Rrule" colspan="4">Number of Tablets to be Administered</th>
+                        </tr>
+                        <tr>
+                           <th styleCode="Rrule">4.8 mg tablets</th>
+                           <th styleCode="Rrule">7.2 mg tablets</th>
+                           <th styleCode="Rrule">21.6 mg tablets</th>
+                           <th styleCode="Rrule">31.6 mg tablets</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr styleCode="Botrule">
+                           <td styleCode="Lrule Rrule">4.4 - 6.5</td>
+                           <td styleCode="Rrule">2 - 2.9</td>
+                           <td styleCode="Rrule">0.5</td>
+                           <td styleCode="Rrule"/>
+                           <td styleCode="Rrule"/>
+                           <td styleCode="Rrule"/>
+                        </tr>
+                        <tr styleCode="Botrule">
+                           <td styleCode="Lrule Rrule">6.6 - 9.5</td>
+                           <td styleCode="Rrule">3 - 4.3</td>
+                           <td styleCode="Rrule"/>
+                           <td styleCode="Rrule">0.5</td>
+                           <td styleCode="Rrule"/>
+                           <td styleCode="Rrule"/>
+                        </tr>
+                        <tr styleCode="Botrule">
+                           <td styleCode="Lrule Rrule">9.6 - 13.3</td>
+                           <td styleCode="Rrule">4.4 - 6</td>
+                           <td styleCode="Rrule">1</td>
+                           <td styleCode="Rrule"/>
+                           <td styleCode="Rrule"/>
+                           <td styleCode="Rrule"/>
+                        </tr>
+                        <tr styleCode="Botrule">
+                           <td styleCode="Lrule Rrule">13.4 - 19.9</td>
+                           <td styleCode="Rrule">6.1 - 9</td>
+                           <td styleCode="Rrule"/>
+                           <td styleCode="Rrule">1</td>
+                           <td styleCode="Rrule"/>
+                           <td styleCode="Rrule"/>
+                        </tr>
+                        <tr styleCode="Botrule">
+                           <td styleCode="Lrule Rrule">20 - 29.8</td>
+                           <td styleCode="Rrule">9.1 - 13.5</td>
+                           <td styleCode="Rrule"/>
+                           <td styleCode="Rrule"/>
+                           <td styleCode="Rrule">0.5</td>
+                           <td styleCode="Rrule"/>
+                        </tr>
+                        <tr styleCode="Botrule">
+                           <td styleCode="Lrule Rrule">29.9 - 42.6</td>
+                           <td styleCode="Rrule">13.6 - 19.3</td>
+                           <td styleCode="Rrule"/>
+                           <td styleCode="Rrule"/>
+                           <td styleCode="Rrule"/>
+                           <td styleCode="Rrule">0.5</td>
+                        </tr>
+                        <tr styleCode="Botrule">
+                           <td styleCode="Lrule Rrule">42.7 - 58.4</td>
+                           <td styleCode="Rrule">19.4 - 26.5</td>
+                           <td styleCode="Rrule"/>
+                           <td styleCode="Rrule"/>
+                           <td styleCode="Rrule">1</td>
+                           <td styleCode="Rrule"/>
+                        </tr>
+                        <tr styleCode="Botrule">
+                           <td styleCode="Lrule Rrule">58.5 - 87</td>
+                           <td styleCode="Rrule">26.6 - 39.5</td>
+                           <td styleCode="Rrule"/>
+                           <td styleCode="Rrule"/>
+                           <td styleCode="Rrule"/>
+                           <td styleCode="Rrule">1</td>
+                        </tr>
+                        <tr styleCode="Botrule">
+                           <td styleCode="Lrule Rrule">87.1 - 118.9</td>
+                           <td styleCode="Rrule">39.6 - 54</td>
+                           <td styleCode="Rrule"/>
+                           <td styleCode="Rrule"/>
+                           <td styleCode="Rrule"/>
+                           <td styleCode="Rrule">1.5</td>
+                        </tr>
+                        <tr styleCode="Botrule">
+                           <td styleCode="Lrule Rrule">119 - 174.2</td>
+                           <td styleCode="Rrule">54.1 - 79</td>
+                           <td styleCode="Rrule"/>
+                           <td styleCode="Rrule"/>
+                           <td styleCode="Rrule"/>
+                           <td styleCode="Rrule">2</td>
+                        </tr>
+                        <tr>
+                           <td styleCode="Lrule Rrule">≥ 174.3</td>
+                           <td styleCode="Rrule">≥79.1</td>
+                           <td styleCode="Rrule" colspan="4">Administer the appropriate combination of tablet strengths</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </text>
+               <effectiveTime value="20260226"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="29470a61-8a83-45df-94e2-3853579ac349"/>
+               <code code="34071-1" codeSystem="2.16.840.1.113883.6.1" displayName="WARNINGS SECTION"/>
+               <title>WARNINGS:</title>
+               <effectiveTime value="20260226"/>
+               <component>
+                  <section>
+                     <id root="9115b097-33c7-4a3a-88e8-95503d21fa6c"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>User Safety Warnings:</title>
+                     <text>
+                        <paragraph>This product is not for human use. Keep this and all drugs out of reach of children. Wash hands thoroughly with soap and water immediately after handling tablets. In case of accidental ingestion, seek medical attention immediately.</paragraph>
+                     </text>
+                     <effectiveTime value="20260226"/>
+                  </section>
+               </component>
+               <component>
+                  <section>
+                     <id root="b51645b4-0ee0-4628-849d-34b777e6aed0"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>Animal Safety Warnings:</title>
+                     <text>
+                        <paragraph>Dogs should be monitored for the development of infections because NUMELVI may increase susceptibility to opportunistic infections, including demodicosis and interdigital furunculosis (see <content styleCode="bold">
+                              <linkHtml href="#TAS">Target Animal Safety</linkHtml>
+                           </content>).</paragraph>
+                        <paragraph>NUMELVI is not for use in dogs with serious infections.</paragraph>
+                        <paragraph>NUMELVI is a JAK inhibitor. New neoplastic conditions (benign and malignant) have been reported in dogs treated with other JAK inhibitors.</paragraph>
+                        <paragraph>Consider the risks and benefits of treatment prior to initiating NUMELVI in dogs with a history of recurrent demodicosis.</paragraph>
+                        <paragraph>NUMELVI modulates the immune system.</paragraph>
+                        <paragraph>NUMELVI is not for use in dogs less than 6 months of age (see <content styleCode="bold">
+                              <linkHtml href="#TAS">Target Animal Safety</linkHtml>
+                           </content>).</paragraph>
+                        <paragraph>Keep NUMELVI in a secure location out of reach of dogs, cats, and other animals to prevent accidental ingestion or overdose.</paragraph>
+                     </text>
+                     <effectiveTime value="20260226"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="687e496f-406d-45ac-bd1e-8daeaee0f559"/>
+               <code code="42232-9" codeSystem="2.16.840.1.113883.6.1" displayName="PRECAUTIONS SECTION"/>
+               <title>PRECAUTIONS:</title>
+               <text>
+                  <paragraph>The effectiveness and safety of NUMELVI have not been evaluated in a field study beyond 28 days (see <content styleCode="bold">
+                        <linkHtml href="#AR">Adverse Reactions</linkHtml>
+                     </content> and <content styleCode="bold">
+                        <linkHtml href="#Effectiveness">Effectiveness</linkHtml>
+                     </content>).</paragraph>
+                  <paragraph>The safe use of NUMELVI has not been evaluated in breeding, pregnant, or lactating dogs. Decreased mean testes weight was observed in a laboratory safety study (see <content styleCode="bold">
+                        <linkHtml href="#TAS">Target Animal Safety</linkHtml>
+                     </content>).</paragraph>
+                  <paragraph>The safe use of NUMELVI has not been evaluated in combination with glucocorticoids, cyclosporine, or other systemic immunosuppressive agents.</paragraph>
+               </text>
+               <effectiveTime value="20260226"/>
+            </section>
+         </component>
+         <component>
+            <section ID="AR">
+               <id root="1329a2e8-5409-444f-896d-10ba2a74ce59"/>
+               <code code="34084-4" codeSystem="2.16.840.1.113883.6.1" displayName="ADVERSE REACTIONS SECTION"/>
+               <title>ADVERSE REACTIONS:</title>
+               <text>
+                  <paragraph>In a masked field study assessing effectiveness and safety of NUMELVI for the control of pruritus associated with allergic dermatitis in dogs, 144 NUMELVI-treated dogs and 144 placebo-treated dogs were evaluated for safety for up to 28 days. Adverse reactions seen during the field study are summarized in Table 1 below.</paragraph>
+                  <table width="85%">
+                     <caption>Table 1. Adverse Reactions through Day 28</caption>
+                     <col width="34%" align="center" valign="middle"/>
+                     <col width="33%" align="center" valign="middle"/>
+                     <col width="33%" align="center" valign="middle"/>
+                     <thead>
+                        <tr>
+                           <th styleCode="Lrule Rrule">Adverse Reaction</th>
+                           <th styleCode="Rrule">NUMELVI (N=144) <br/> Number of dogs (%)</th>
+                           <th styleCode="Rrule">Placebo (N=144) <br/> Number of dogs (%)</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr styleCode="Botrule">
+                           <td styleCode="Lrule Rrule">Vomiting or nausea</td>
+                           <td styleCode="Rrule">10 (6.9%)</td>
+                           <td styleCode="Rrule">6 (4.2%)</td>
+                        </tr>
+                        <tr styleCode="Botrule">
+                           <td styleCode="Lrule Rrule">Otitis externa</td>
+                           <td styleCode="Rrule">9 (6.3%)</td>
+                           <td styleCode="Rrule">8 (5.6%)</td>
+                        </tr>
+                        <tr styleCode="Botrule">
+                           <td styleCode="Lrule Rrule">Hematuria (without urinary tract infection)</td>
+                           <td styleCode="Rrule">7 (4.9%)</td>
+                           <td styleCode="Rrule">6 (4.2%)</td>
+                        </tr>
+                        <tr styleCode="Botrule">
+                           <td styleCode="Lrule Rrule">Anorexia</td>
+                           <td styleCode="Rrule">6 (4.2%)</td>
+                           <td styleCode="Rrule">5 (3.5%)</td>
+                        </tr>
+                        <tr styleCode="Botrule">
+                           <td styleCode="Lrule Rrule">Bacterial skin infection</td>
+                           <td styleCode="Rrule">6 (4.2%)</td>
+                           <td styleCode="Rrule">10 (6.9%)</td>
+                        </tr>
+                        <tr styleCode="Botrule">
+                           <td styleCode="Lrule Rrule">Diarrhea</td>
+                           <td styleCode="Rrule">6 (4.2%)</td>
+                           <td styleCode="Rrule">15 (10.4%)</td>
+                        </tr>
+                        <tr styleCode="Botrule">
+                           <td styleCode="Lrule Rrule">Crystalluria</td>
+                           <td styleCode="Rrule">5 (3.5%)</td>
+                           <td styleCode="Rrule">2 (1.4%)</td>
+                        </tr>
+                        <tr styleCode="Botrule">
+                           <td styleCode="Lrule Rrule">Lethargy</td>
+                           <td styleCode="Rrule">5 (3.5%)</td>
+                           <td styleCode="Rrule">5 (3.5%)</td>
+                        </tr>
+                        <tr styleCode="Botrule">
+                           <td styleCode="Lrule Rrule">Urinary tract infection</td>
+                           <td styleCode="Rrule">5 (3.5%)</td>
+                           <td styleCode="Rrule">5 (3.5%)</td>
+                        </tr>
+                        <tr styleCode="Botrule">
+                           <td styleCode="Lrule Rrule">Upset stomach, including flatulence, retching, and bloating</td>
+                           <td styleCode="Rrule">3 (2.1%)</td>
+                           <td styleCode="Rrule">0</td>
+                        </tr>
+                        <tr styleCode="Botrule">
+                           <td styleCode="Lrule Rrule">Neurological disorder (e.g., tremors, ataxia)</td>
+                           <td styleCode="Rrule">2 (1.4%)</td>
+                           <td styleCode="Rrule">1 (0.7%)</td>
+                        </tr>
+                        <tr styleCode="Botrule">
+                           <td styleCode="Lrule Rrule">Ocular discharge</td>
+                           <td styleCode="Rrule">2 (1.4%)</td>
+                           <td styleCode="Rrule">1 (0.7%)</td>
+                        </tr>
+                        <tr styleCode="Botrule">
+                           <td styleCode="Lrule Rrule">Coughing</td>
+                           <td styleCode="Rrule">1 (0.7%)</td>
+                           <td styleCode="Rrule">0</td>
+                        </tr>
+                        <tr styleCode="Botrule">
+                           <td styleCode="Lrule Rrule">Granuloma</td>
+                           <td styleCode="Rrule">1 (0.7%)</td>
+                           <td styleCode="Rrule">0</td>
+                        </tr>
+                        <tr>
+                           <td styleCode="Lrule Rrule">Increased urination</td>
+                           <td styleCode="Rrule">1 (0.7%)</td>
+                           <td styleCode="Rrule">0</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <paragraph>Abnormal hematology results likely related to NUMELVI administration included leukopenia, neutropenia, eosinopenia, monocytopenia, and lymphocytosis.</paragraph>
+                  <paragraph>Abnormal serum chemistry results likely related to NUMELVI administration included increased alanine aminotransferase (ALT), aspartate aminotransferase (AST), and symmetric dimethylarginine (SDMA), and hypercholesterolemia.</paragraph>
+                  <paragraph>Three NUMELVI-treated dogs withdrew from the study early due to an adverse reaction, two of which were considered likely related to NUMELVI treatment (i.e., diarrhea). Two placebo-treated dogs also withdrew from the study early due to an adverse reaction (i.e., diarrhea).</paragraph>
+               </text>
+               <effectiveTime value="20260226"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="7eb6336f-2751-49ee-b143-85f910c07493"/>
+               <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+               <title>CONTACT INFORMATION:</title>
+               <text>
+                  <paragraph>For technical information or to report a suspected adverse event, please contact Merck Animal Health at 1-800-224-5318 or https://www.merck-animal-health-usa.com. Safety Data Sheets (SDSs) can be found at https://www.merck.com/products/safety-data-sheets/#.</paragraph>
+                  <paragraph>For additional information about reporting adverse drug experiences for animal drugs, contact FDA at 1-888-FDA-VETS or https://www.fda.gov/reportanimalae.</paragraph>
+               </text>
+               <effectiveTime value="20260226"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="ef7dadcc-20d4-49ac-bb2e-0f0ff571d363"/>
+               <code code="34090-1" codeSystem="2.16.840.1.113883.6.1" displayName="CLINICAL PHARMACOLOGY SECTION"/>
+               <title>CLINICAL PHARMACOLOGY:</title>
+               <effectiveTime value="20260226"/>
+               <component>
+                  <section>
+                     <id root="1319baeb-b6c6-41b5-8a2a-57d0789cf011"/>
+                     <code code="43679-0" codeSystem="2.16.840.1.113883.6.1" displayName="MECHANISM OF ACTION SECTION"/>
+                     <text>
+                        <paragraph>
+                           <content styleCode="underline">Mechanism of Action</content>
+                        </paragraph>
+                        <paragraph>Atinvicitinib is a Janus kinase (JAK) inhibitor. It inhibits the function of a variety of pruritogenic, pro-inflammatory and allergy related cytokines that are dependent upon JAK enzymes. Atinvicitinib is more selective for JAK1 compared to JAK2, JAK3, and tyrosine kinase 2 (TYK2). Atinvicitinib is not a corticosteroid or an antihistamine.</paragraph>
+                     </text>
+                     <effectiveTime value="20260226"/>
+                  </section>
+               </component>
+               <component>
+                  <section>
+                     <id root="9441ee44-b06b-468b-922f-e272f3b0e8a4"/>
+                     <code code="43682-4" codeSystem="2.16.840.1.113883.6.1" displayName="PHARMACOKINETICS SECTION"/>
+                     <text>
+                        <paragraph>
+                           <content styleCode="underline">Pharmacokinetics</content>
+                        </paragraph>
+                        <paragraph>In a laboratory margin of safety study in healthy 6-month-old dogs (see <content styleCode="bold">
+                              <linkHtml href="#TAS">Target Animal Safety</linkHtml>
+                           </content>), after repeat daily oral administration of atinvicitinib at 1.2 mg/kg for 6 months, the atinvicitinib mean (coefficient of variation % [CV%]) maximum concentration (C<sub>max</sub>) was 214 ng/mL (42%) with a median T<sub>max</sub> (time to C<sub>max</sub>) of 2 (range 1-6) hours. The mean area under the curve from the time of dosing to the last quantifiable plasma concentration (AUC<sub>last</sub>) and half-life were 888 h*ng/mL (27%) and 2.3 hours (27%), respectively. Minimal accumulation was observed between Days 1 and 182 with geometric mean accumulation ratios for C<sub>max</sub> and AUC<sub>last</sub> of 1.0 and 1.2. AUC<sub>last</sub> and C<sub>max</sub> increased in a linear but less than proportional manner where a 5-fold increase in dose resulted in a 4.5-fold (95% confidence interval [CI]: 3.6-5.3) and 3.7-fold (95% CI: 3.1-4.2) increase in AUC<sub>last</sub> and C<sub>max</sub> , respectively.</paragraph>
+                        <paragraph>Following a single oral or intravenous administration of atinvicitinib, the geometric mean oral bioavailability based on AUC<sub>last</sub> was 45.5%. </paragraph>
+                        <paragraph>The mean systemic clearance following intravenous administration is 1074 mL/h/kg with a harmonic mean terminal half-life of 1.1 hours and a mean volume of distribution of 1651 mL/kg. Following a single oral administration of atinvicitinib at 1.2 mg/kg, C<sub>max</sub> and AUC<sub>last</sub> were 280% and 120% higher, respectively, in the fed state as compared to the fasted state (n=16). Atinvicitinib was found to be mainly excreted in the feces while urinary elimination was a minor route of excretion. Atinvicitinib has moderate protein binding with 82.3% bound in fortified canine plasma at a concentration of 1802 ng/mL (5 μM).</paragraph>
+                     </text>
+                     <effectiveTime value="20260226"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="Effectiveness">
+               <id root="0d692730-2f7e-4b77-a7d9-d3668ab766d9"/>
+               <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">EFFECTIVENESS:</content>
+                  </paragraph>
+                  <paragraph>A masked, 28-day, placebo-controlled study was conducted at 26 veterinary clinics in the US, enrolling 288 client-owned dogs diagnosed with allergic dermatitis and having at least moderate pruritus. The allergic dermatitis was attributed to one or more of the following conditions (in the order of frequency): atopic dermatitis, unspecified allergic dermatitis, food hypersensitivity, flea allergy dermatitis, and contact dermatitis. Dogs were randomized to once daily treatment with NUMELVI at 0.8 - 1.2 mg/kg or placebo, at a ratio of 1:1 respectively. Other medications that could affect the evaluation of effectiveness were not allowed during the study, such as corticosteroids, antihistamines, and cyclosporine. Treatment success for each dog was defined as a ≥ 50% reduction from baseline in owner-assessed pruritus scores on the Pruritus Visual Analog Scale (PVAS) on at least 5 out of the first 7 days of treatment. The proportion of dogs in the NUMELVI group that were treatment successes was greater than and significantly different compared to the placebo group on Day 7 (Table 2, below).</paragraph>
+                  <table width="85%">
+                     <caption>Table 2. Estimated Proportion of Dogs Achieving Treatment Success</caption>
+                     <col width="50%" align="center" valign="middle"/>
+                     <col width="50%" align="center" valign="middle"/>
+                     <thead>
+                        <tr>
+                           <th styleCode="Lrule Rrule">Treatment Group</th>
+                           <th styleCode="Rrule">Estimated Proportion of Success<footnote>Based on back-transformed least squares means.</footnote>
+                           </th>
+                        </tr>
+                     </thead>
+                     <tfoot>
+                        <tr>
+                           <td colspan="2" align="left">N = number of dogs</td>
+                        </tr>
+                     </tfoot>
+                     <tbody>
+                        <tr styleCode="Botrule">
+                           <td styleCode="Lrule Rrule">NUMELVI (N = 125)</td>
+                           <td styleCode="Rrule">0.23</td>
+                        </tr>
+                        <tr styleCode="Botrule">
+                           <td styleCode="Lrule Rrule">Placebo (N = 125)</td>
+                           <td styleCode="Rrule">0.07<footnote>Placebo vs. NUMELVI p = 0.0128</footnote>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <paragraph>Mean owner-assessed PVAS scores were lower in the NUMELVI group after Day 0 (Figure 1, below).</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Figure 1:</content> Mean owner-assessed PVAS Scores by Treatment for Days 0-7</paragraph>
+                  <renderMultiMedia referencedObject="MM1"/>
+                  <paragraph>Veterinarians used a Dermatitis Visual Analog Scale (DVAS) to assess each dog's dermatitis. Veterinarian-assessed DVAS scores were lower for the NUMELVI group compared to the placebo group at all time points through Day 28.</paragraph>
+               </text>
+               <effectiveTime value="20260226"/>
+               <component>
+                  <observationMedia ID="MM1">
+                     <text>Figure 1</text>
+                     <value xsi:type="ED" mediaType="image/jpeg">
+                        <reference value="numelvi-01.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="TAS">
+               <id root="f636d874-ac5f-4fe0-a753-855b57dc1407"/>
+               <code code="43678-2" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE FORMS &amp; STRENGTHS SECTION"/>
+               <title>TARGET ANIMAL SAFETY:</title>
+               <effectiveTime value="20260226"/>
+               <component>
+                  <section>
+                     <id root="bee3170f-4b2c-46bb-af78-6b35903fb0e1"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <text>
+                        <paragraph>
+                           <content styleCode="underline">Margin of Safety Study</content>
+                        </paragraph>
+                        <paragraph>NUMELVI was administered orally to 24 healthy, 6-month-old Beagle dogs at 1X, 3X, and 5X (8 dogs per group) the maximum labeled dose of 1.2 mg/kg once daily for 6 months. The 8 dogs in the control group were sham dosed. Dogs were dosed in the fed state. One dog in the 5X group developed progressive alopecia, fever, lethargy, generalized lymphadenitis, interdigital furunculosis (cysts), interdigital swellings, and pustules on the border of the oral cavity. The dog had a declining clinical condition under continued treatment with NUMELVI and was euthanized on Day 175. The lesions were histologically consistent with generalized demodicosis including marked, chronic, active dermal inflammation, and minimal, multifocal, neutrophilic infiltration in the mandibular lymph node and were considered due to NUMELVI-induced immunosuppression. The dog demonstrated greater systemic exposure to NUMELVI (higher C<sub>max</sub> and AUC<sub>last</sub> values) compared to other dogs in the 5X group. One dog in the 3X group developed a single interdigital cyst with no <content styleCode="italics">Demodex canis</content> mites identified in the hair follicles. Male dogs in the NUMELVI treatment groups had decreased mean testes weight compared to the control dogs. Microscopic pathology findings in one 1X dog with pre-existing unilateral cryptorchidism and one 3X dog included unilateral, focal, minimal testicular tubular hypoplasia. There were no NUMELVI-related effects on clinical pathology.</paragraph>
+                     </text>
+                     <effectiveTime value="20260226"/>
+                  </section>
+               </component>
+               <component>
+                  <section>
+                     <id root="53fae267-7aaf-490c-8958-42bc50178021"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <text>
+                        <paragraph>
+                           <content styleCode="underline">Vaccine Response Study</content>
+                        </paragraph>
+                        <paragraph>NUMELVI was administered orally to 10 healthy, 6-month-old, vaccine naïve Beagle dogs at 3X the maximum labeled dose of 1.2 mg/kg once daily for 84 days. The dogs in the control group (10) received placebo tablets. All dogs were dosed in the fed state. After the last dose on Day 84, all dogs were observed for an additional 84 days. All dogs received a multivalent modified live canine adenovirus type-2 (CAV), canine distemper virus (CDV), canine parvovirus (CPV) vaccination and a killed rabies virus (RV) vaccination on Day 28. An additional multivalent modified live CAV, CDV, CPV vaccination was administered on Day 56. All dogs in the NUMELVI treatment group demonstrated an adequate serological immune response to the modified live CAV, CDV, CPV, and killed RV vaccination on Day 84. There were no NUMELVI-related adverse clinical effects.</paragraph>
+                     </text>
+                     <effectiveTime value="20260226"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="e92d7b40-eb27-4da8-921f-6a79b7912991"/>
+               <code code="44425-7" codeSystem="2.16.840.1.113883.6.1" displayName="STORAGE AND HANDLING SECTION"/>
+               <title>STORAGE CONDITIONS:</title>
+               <text>
+                  <paragraph>NUMELVI tablets should be stored at 15 to 30°C (59 to 86°F).</paragraph>
+               </text>
+               <effectiveTime value="20260226"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="5f3e5fde-22ad-42b2-a792-34ad524523d9"/>
+               <code code="34069-5" codeSystem="2.16.840.1.113883.6.1" displayName="HOW SUPPLIED SECTION"/>
+               <title>HOW SUPPLIED:</title>
+               <text>
+                  <paragraph>NUMELVI (atinvicitinib tablets) is available in scored tablets in four strengths: 4.8 mg, 7.2 mg, 21.6 mg, and 31.6 mg per tablet. Each tablet strength is available in 30 and 90 count bottles. Each tablet is marked with an S, M, L, or XL that correspond to the different tablet strengths.</paragraph>
+               </text>
+               <effectiveTime value="20260226"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="0a7b9020-675a-4583-9106-f8494038a910"/>
+               <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+               <text>
+                  <paragraph>Approved by FDA under NADA # 141-596</paragraph>
+                  <paragraph>Formulated in Austria. <br/> Distributed by Intervet Inc. (d/b/a Merck Animal Health), Rahway, NJ 07065. <br/> Copyright © 2025 Merck &amp; Co., Inc., Rahway, NJ, USA and its affiliates. <br/> All rights reserved. <br/> Rev. 12/2025</paragraph>
+                  <paragraph>MERCK <br/> Animal Health</paragraph>
+               </text>
+               <effectiveTime value="20260226"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="840dc8ae-73ab-43c2-aa90-06b9a9da24f6"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>PRINCIPAL DISPLAY PANEL - 4.8 mg Bottle Carton</title>
+               <text>
+                  <paragraph>Numelvi™ <br/> (atinvicitinib tablets)</paragraph>
+                  <paragraph>4.8 mg</paragraph>
+                  <paragraph>FOR ORAL USE IN DOGS ONLY</paragraph>
+                  <paragraph>Caution: Federal law restricts <br/> this drug to use by or on the order <br/> of a licensed veterinarian.</paragraph>
+                  <paragraph>Approved by FDA under <br/> NADA # 141-596</paragraph>
+                  <paragraph>90 Tablets</paragraph>
+                  <paragraph>MERCK <br/> Animal Health</paragraph>
+                  <renderMultiMedia referencedObject="MM2"/>
+               </text>
+               <effectiveTime value="20260226"/>
+               <component>
+                  <observationMedia ID="MM2">
+                     <text>PRINCIPAL DISPLAY PANEL - 4.8 mg Bottle Carton</text>
+                     <value xsi:type="ED" mediaType="image/jpeg">
+                        <reference value="numelvi-02.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="9d90a592-9ec7-4d8f-801f-bd0038f81f0e"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>PRINCIPAL DISPLAY PANEL - 7.2 mg Bottle Carton</title>
+               <text>
+                  <paragraph>Numelvi™ <br/> (atinvicitinib tablets)</paragraph>
+                  <paragraph>7.2 mg</paragraph>
+                  <paragraph>FOR ORAL USE IN DOGS ONLY</paragraph>
+                  <paragraph>Caution: Federal law restricts <br/> this drug to use by or on the order <br/> of a licensed veterinarian.</paragraph>
+                  <paragraph>Approved by FDA under <br/> NADA # 141-596</paragraph>
+                  <paragraph>90 Tablets</paragraph>
+                  <paragraph>MERCK <br/> Animal Health</paragraph>
+                  <renderMultiMedia referencedObject="MM3"/>
+               </text>
+               <effectiveTime value="20260226"/>
+               <component>
+                  <observationMedia ID="MM3">
+                     <text>PRINCIPAL DISPLAY PANEL - 7.2 mg Bottle Carton</text>
+                     <value xsi:type="ED" mediaType="image/jpeg">
+                        <reference value="numelvi-03.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="0339db60-edb6-4049-90d0-53fc981ee8e5"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>PRINCIPAL DISPLAY PANEL - 21.6 mg Bottle Carton</title>
+               <text>
+                  <paragraph>Numelvi™ <br/> (atinvicitinib tablets)</paragraph>
+                  <paragraph>21.6 mg</paragraph>
+                  <paragraph>FOR ORAL USE IN DOGS ONLY</paragraph>
+                  <paragraph>Caution: Federal law restricts this drug to use <br/> by or on the order of a licensed veterinarian.</paragraph>
+                  <paragraph>Approved by FDA under NADA # 141-596</paragraph>
+                  <paragraph>90 Tablets</paragraph>
+                  <paragraph>MERCK <br/> Animal Health</paragraph>
+                  <renderMultiMedia referencedObject="MM4"/>
+               </text>
+               <effectiveTime value="20260226"/>
+               <component>
+                  <observationMedia ID="MM4">
+                     <text>PRINCIPAL DISPLAY PANEL - 21.6 mg Bottle Carton</text>
+                     <value xsi:type="ED" mediaType="image/jpeg">
+                        <reference value="numelvi-04.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="87422591-3d53-4a0a-92d0-862f53be3f3b"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>PRINCIPAL DISPLAY PANEL - 31.6 mg Bottle Carton</title>
+               <text>
+                  <paragraph>Numelvi™ <br/> (atinvicitinib tablets)</paragraph>
+                  <paragraph>31.6 mg</paragraph>
+                  <paragraph>FOR ORAL USE IN DOGS ONLY</paragraph>
+                  <paragraph>Caution: Federal law restricts this drug to use <br/> by or on the order of a licensed veterinarian.</paragraph>
+                  <paragraph>Approved by FDA under NADA # 141-596</paragraph>
+                  <paragraph>90 Tablets</paragraph>
+                  <paragraph>MERCK <br/> Animal Health</paragraph>
+                  <renderMultiMedia referencedObject="MM5"/>
+               </text>
+               <effectiveTime value="20260226"/>
+               <component>
+                  <observationMedia ID="MM5">
+                     <text>PRINCIPAL DISPLAY PANEL - 31.6 mg Bottle Carton</text>
+                     <value xsi:type="ED" mediaType="image/jpeg">
+                        <reference value="numelvi-05.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+      </structuredBody>
+   </component>
+</document>

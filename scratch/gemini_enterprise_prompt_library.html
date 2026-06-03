@@ -1,0 +1,1244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini Enterprise UI: 10 High-Fidelity Prompt Scenarios</title>
+    <!-- Premium Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-main: #f8fafc;
+            --surface-card: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #475569;
+            --text-light: #64748b;
+            --accent-indigo: #4f46e5;
+            --accent-indigo-light: #e0e7ff;
+            --accent-cyan: #06b6d4;
+            --border-color: #e2e8f0;
+            --console-bg: #0b0f19;
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--bg-main);
+            color: var(--text-main);
+            line-height: 1.65;
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* Sidebar Navigation Drawer */
+        aside {
+            width: 320px;
+            background-color: #ffffff;
+            border-right: 1px solid var(--border-color);
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 40;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .sidebar-header {
+            padding: 24px;
+            border-bottom: 1px solid var(--border-color);
+            background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+            color: #ffffff;
+        }
+
+        .sidebar-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: -0.3px;
+            line-height: 1.3;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .sidebar-subtitle {
+            font-size: 12px;
+            color: #94a3b8;
+            margin-top: 6px;
+            font-weight: 500;
+        }
+
+        .nav-list {
+            list-style: none;
+            overflow-y: auto;
+            padding: 16px 12px;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .nav-item {
+            padding: 10px 14px;
+            border-radius: 8px;
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--text-muted);
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border: 1px solid transparent;
+        }
+
+        .nav-item:hover {
+            background-color: #f1f5f9;
+            color: var(--text-main);
+        }
+
+        .nav-item.active {
+            background-color: var(--accent-indigo-light);
+            color: var(--accent-indigo);
+            font-weight: 600;
+            border-color: #c7d2fe;
+        }
+
+        .nav-num {
+            min-width: 22px;
+            height: 22px;
+            border-radius: 11px;
+            background-color: #f1f5f9;
+            color: var(--text-light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 11px;
+            font-weight: 700;
+        }
+
+        .nav-item.active .nav-num {
+            background-color: var(--accent-indigo);
+            color: #ffffff;
+        }
+
+        /* Main Content Area */
+        main {
+            flex: 1;
+            margin-left: 320px;
+            padding: 48px 56px;
+            max-width: 1200px;
+        }
+
+        .page-header {
+            margin-bottom: 40px;
+            border-bottom: 2px solid var(--accent-indigo);
+            padding-bottom: 20px;
+        }
+
+        .page-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--text-main);
+            letter-spacing: -0.5px;
+        }
+
+        .page-desc {
+            font-size: 16px;
+            color: var(--text-muted);
+            margin-top: 8px;
+        }
+
+        /* Scenario Section Card */
+        .scenario-card {
+            background-color: var(--surface-card);
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow-md);
+            padding: 40px;
+            margin-bottom: 48px;
+            scroll-margin-top: 40px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .scenario-card:hover {
+            box-shadow: var(--shadow-lg);
+        }
+
+        .scenario-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 24px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid #f1f5f9;
+        }
+
+        .scenario-title-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .scenario-badge {
+            background-color: var(--accent-indigo);
+            color: #ffffff;
+            font-family: 'Outfit', sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 20px;
+        }
+
+        .scenario-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--text-main);
+        }
+
+        .routing-meta {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .meta-tag {
+            font-size: 12px;
+            font-weight: 600;
+            padding: 4px 10px;
+            border-radius: 6px;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .meta-agent { background-color: #f1f5f9; color: #0f172a; border: 1px solid #cbd5e1; }
+        .meta-tool { background-color: #ecfdf5; color: #047857; border: 1px solid #a7f3d0; font-family: 'JetBrains Mono', monospace; }
+        .meta-vision { background-color: #fdf4ff; color: #86198f; border: 1px solid #f87171; font-family: 'Inter', sans-serif; }
+
+        /* Block Headings */
+        .section-label {
+            font-family: 'Outfit', sans-serif;
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--accent-indigo);
+            margin: 24px 0 8px 0;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .scenario-card .section-label:first-of-type {
+            margin-top: 0;
+        }
+
+        .objective-text {
+            font-size: 15.5px;
+            color: var(--text-muted);
+            background-color: #f8fafc;
+            padding: 14px 18px;
+            border-radius: 8px;
+            border-left: 4px solid #94a3b8;
+        }
+
+        /* Prompt Display Container */
+        .prompt-container {
+            position: relative;
+            margin: 12px 0 24px 0;
+        }
+
+        .prompt-box {
+            background-color: #f1f5f9;
+            border: 1px solid #cbd5e1;
+            border-left: 4px solid var(--accent-indigo);
+            border-radius: 8px;
+            padding: 16px 20px;
+            font-family: 'Inter', sans-serif;
+            font-size: 14.5px;
+            color: #0f172a;
+            font-weight: 500;
+            white-space: pre-wrap;
+        }
+
+        .copy-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #ffffff;
+            border: 1px solid #cbd5e1;
+            color: var(--text-muted);
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 11px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .copy-btn:hover {
+            background-color: var(--accent-indigo);
+            color: #ffffff;
+            border-color: var(--accent-indigo);
+        }
+
+        /* ADK Tool Execution Trace Console */
+        .trace-console {
+            background-color: var(--console-bg);
+            border-radius: 10px;
+            padding: 16px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 12px;
+            color: #e2e8f0;
+            line-height: 1.6;
+            overflow-x: auto;
+            margin-bottom: 24px;
+            border: 1px solid #1e293b;
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .trace-line {
+            display: flex;
+            gap: 8px;
+        }
+        .trace-line .source { color: #38bdf8; font-weight: 600; }
+        .trace-line .arrow { color: #64748b; }
+        .trace-line .action { color: #a3e635; }
+        .trace-line.alert .action { color: #f87171; }
+
+        /* Simulated Output Card rendering */
+        .simulated-output {
+            background-color: #ffffff;
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: var(--shadow-sm);
+            margin-top: 12px;
+        }
+
+        .output-banner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 12px;
+            border-bottom: 1px solid #f1f5f9;
+            margin-bottom: 16px;
+        }
+
+        .output-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .status-pill {
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+        .pill-green { background-color: #d1fae5; color: #065f46; border: 1px solid #a7f3d0; }
+        .pill-red { background-color: #fee2e2; color: #991b1b; border: 1px solid #fca5a5; }
+        .pill-indigo { background-color: #e0e7ff; color: #3730a3; border: 1px solid #a5b4fc; }
+
+        .output-body {
+            font-size: 14px;
+            color: #334155;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .output-body ul, .output-body ol {
+            padding-left: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        code.inline {
+            font-family: 'JetBrains Mono', monospace;
+            background-color: #f1f5f9;
+            color: #0f172a;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            border: 1px solid #e2e8f0;
+        }
+
+        /* Diff Highlight Output */
+        pre.diff-box {
+            background-color: #0f172a;
+            border-radius: 8px;
+            padding: 14px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 12px;
+            color: #e2e8f0;
+            overflow-x: auto;
+        }
+        .diff-plus { color: #a3e635; background-color: rgba(163, 230, 53, 0.1); display: block; }
+        .diff-minus { color: #f87171; background-color: rgba(248, 113, 113, 0.1); display: block; }
+        .diff-header { color: #94a3b8; display: block; }
+
+        /* Follow-up suggestions */
+        .suggestions-box {
+            background-color: #f8fafc;
+            border-radius: 8px;
+            padding: 14px 18px;
+            border: 1px solid var(--border-color);
+            margin-top: 20px;
+        }
+
+        .suggestions-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--accent-indigo);
+            margin-bottom: 6px;
+        }
+
+        .suggestions-list {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .suggestions-list li {
+            font-size: 13px;
+            color: var(--text-muted);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .suggestions-list li::before {
+            content: "➔";
+            color: var(--accent-cyan);
+            font-weight: bold;
+        }
+
+        /* Two-column alert block */
+        .alert-callout {
+            background-color: #fef2f2;
+            border: 1px solid #fca5a5;
+            border-radius: 10px;
+            padding: 16px;
+            margin-bottom: 14px;
+        }
+        .alert-callout strong { color: #991b1b; display: block; font-size: 14px; margin-bottom: 4px; }
+        .alert-callout p { color: #7f1d1d; font-size: 13px; margin: 0; }
+
+        /* Print Optimization */
+        @media print {
+            aside { display: none !important; }
+            main { margin-left: 0 !important; padding: 0 !important; max-width: 100% !important; }
+            .scenario-card { page-break-inside: avoid; box-shadow: none !important; border: 1px solid #000 !important; margin-bottom: 30px !important; padding: 24px !important; }
+            body { background-color: #fff !important; }
+            .copy-btn { display: none !important; }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            aside { width: 260px; }
+            main { margin-left: 260px; padding: 32px; }
+        }
+
+        @media (max-width: 768px) {
+            aside { display: none; }
+            main { margin-left: 0; padding: 20px; }
+            .scenario-header { flex-direction: column; gap: 12px; }
+            .routing-meta { margin-top: 4px; }
+            .scenario-card { padding: 24px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sidebar Filter Navigation Drawer -->
+    <aside>
+        <div class="sidebar-header">
+            <div class="sidebar-title">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#a5b4fc" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
+                Gemini Enterprise
+            </div>
+            <div class="sidebar-subtitle">Prompt Scenarios Runbook</div>
+        </div>
+        
+        <ul class="nav-list" id="navList">
+            <li class="nav-item active" onclick="scrollToScenario(1)">
+                <span class="nav-num">1</span>
+                <span>Serverless GCS Ingress</span>
+            </li>
+            <li class="nav-item" onclick="scrollToScenario(2)">
+                <span class="nav-num">2</span>
+                <span>Multimodal Direct Chat</span>
+            </li>
+            <li class="nav-item" onclick="scrollToScenario(3)">
+                <span class="nav-num">3</span>
+                <span>eCTD Layout & Naming Scan</span>
+            </li>
+            <li class="nav-item" onclick="scrollToScenario(4)">
+                <span class="nav-num">4</span>
+                <span>ICH Q1A Stability Audit</span>
+            </li>
+            <li class="nav-item" onclick="scrollToScenario(5)">
+                <span class="nav-num">5</span>
+                <span>DailyMed Warnings RAG</span>
+            </li>
+            <li class="nav-item" onclick="scrollToScenario(6)">
+                <span class="nav-num">6</span>
+                <span>Mismatch Guardrail Core</span>
+            </li>
+            <li class="nav-item" onclick="scrollToScenario(7)">
+                <span class="nav-num">7</span>
+                <span>Session Outline Drafts</span>
+            </li>
+            <li class="nav-item" onclick="scrollToScenario(8)">
+                <span class="nav-num">8</span>
+                <span>Symmetrical Line Diffing</span>
+            </li>
+            <li class="nav-item" onclick="scrollToScenario(9)">
+                <span class="nav-num">9</span>
+                <span>Excel Rule Matrix Lookups</span>
+            </li>
+            <li class="nav-item" onclick="scrollToScenario(10)">
+                <span class="nav-num">10</span>
+                <span>Non-Pharma Security Halt</span>
+            </li>
+        </ul>
+    </aside>
+
+    <!-- Main Content Container -->
+    <main>
+        <div class="page-header">
+            <h1 class="page-title">10 High-Fidelity Prompt Scenarios</h1>
+            <p class="page-desc">Conversational Verification Matrix for Pharma Dossier Harmonizer multi-agent interactions inside the Gemini Enterprise UI.</p>
+        </div>
+
+        <!-- Scenario 1 -->
+        <div class="scenario-card" id="scenario-1">
+            <div class="scenario-header">
+                <div class="scenario-title-wrapper">
+                    <span class="scenario-badge">Scenario 1</span>
+                    <h2 class="scenario-title">Serverless GCS Document Ingress & BigQuery Parsing</h2>
+                </div>
+                <div class="routing-meta">
+                    <span class="meta-tag meta-agent">🤖 DossierIngestionAgent</span>
+                    <span class="meta-tag meta-tool">🔧 extract_dossier_text</span>
+                </div>
+            </div>
+
+            <div class="section-label">User Objective</div>
+            <div class="objective-text">Command the agent to ingest an external cloud storage file dynamically using background serverless triggers, extract its key regulatory facts, and index the results inside corporate BigQuery sets.</div>
+
+            <div class="section-label">Exact Conversational Prompt</div>
+            <div class="prompt-container">
+                <div class="prompt-box" id="prompt-text-1">Please ingest my source dossier stored at gs://pharma-dossiers-nitinagga-ge/dossiers/m3-dp-pharma-dev - working.md using the extract_dossier_text tool. Extract all active ingredient properties, stability parameters, and proposed manufacturing details.</div>
+                <button class="copy-btn" onclick="copyPrompt(1)">Copy Prompt</button>
+            </div>
+
+            <div class="section-label">Internal ADK Routing & Tool Execution Trace</div>
+            <div class="trace-console">
+                <div class="trace-line"><span class="source">[Coordinator Agent]</span> <span class="arrow">➔</span> <span class="action">Intent parsed: External Cloud Ingestion URI detected.</span></div>
+                <div class="trace-line"><span class="source">[Coordinator Agent]</span> <span class="arrow">➔</span> <span class="action">Delegating instruction payload to DossierIngestionAgent.</span></div>
+                <div class="trace-line"><span class="source">[DossierIngestionAgent]</span> <span class="arrow">➔</span> <span class="action">Invoking tool: extract_dossier_text("gs://pharma-dossiers-nitinagga-ge/dossiers/m3-dp-pharma-dev - working.md")</span></div>
+                <div class="trace-line"><span class="source">[Document AI Bridge]</span> <span class="arrow">➔</span> <span class="action">Executing 15-page batch segment splitting. Process complete.</span></div>
+                <div class="trace-line"><span class="source">[BigQuery Indexer]</span> <span class="arrow">➔</span> <span class="action">Row inserted successfully into nitinagga-ge.dossier_analysis.extracted_files.</span></div>
+            </div>
+
+            <div class="section-label">Simulated High-Fidelity Agent Response</div>
+            <div class="simulated-output">
+                <div class="output-banner">
+                    <div class="output-title">📥 Dossier Ingestion & Extraction Status: Complete</div>
+                    <span class="status-pill pill-green">INDEXED</span>
+                </div>
+                <div class="output-body">
+                    <p>I have successfully connected to your target GCS bucket, pre-processed the file stream using <b>Google Cloud Document AI</b>, and cataloged the extracted baseline matrix into <b>BigQuery</b>.</p>
+                    
+                    <p><b>📂 File Profile Summary:</b></p>
+                    <ul>
+                        <li><b>Source Path:</b> <code class="inline">gs://pharma-dossiers-nitinagga-ge/dossiers/m3-dp-pharma-dev - working.md</code></li>
+                        <li><b>Extracted Length:</b> 14,892 characters processed across narrative slices.</li>
+                        <li><b>Target Domain:</b> Module 3 Drug Product (DP) Formulations Development.</li>
+                    </ul>
+
+                    <p><b>🧬 Extracted Key Substance Facts:</b></p>
+                    <ul>
+                        <li><b>Active Pharmaceutical Ingredient (API):</b> Praziquantel (High-purity grade).</li>
+                        <li><b>Listed Excipients:</b> Lactose monohydrate, microcrystalline cellulose, sodium starch glycolate.</li>
+                        <li><b>Proposed Shelf-Life Declaration:</b> 24 months stored below 25°C.</li>
+                        <li><b>Data Audit Intercept:</b> The document provides broad summary descriptions but <b>omits raw stability matrices</b>.</li>
+                    </ul>
+                </div>
+
+                <div class="suggestions-box">
+                    <div class="suggestions-title">Suggested Next Steps</div>
+                    <ul class="suggestions-list">
+                        <li>Audit this dossier text for missing forced degradation study data against ICH M4Q standards.</li>
+                        <li>Generate an eCTD structural shell baseline based on these extracted components.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scenario 2 -->
+        <div class="scenario-card" id="scenario-2">
+            <div class="scenario-header">
+                <div class="scenario-title-wrapper">
+                    <span class="scenario-badge">Scenario 2</span>
+                    <h2 class="scenario-title">Multimodal Direct Chat Attachment Parsing</h2>
+                </div>
+                <div class="routing-meta">
+                    <span class="meta-tag meta-agent">🤖 DossierIngestionAgent</span>
+                    <span class="meta-tag meta-vision">👁️ Multimodal Vision Lens</span>
+                </div>
+            </div>
+
+            <div class="section-label">User Objective</div>
+            <div class="objective-text">Drop a complex regional submission PDF directly into the chat window, bypassing external web APIs to review inline potency tables natively using multimodal transformer vision.</div>
+
+            <div class="section-label">Exact Conversational Prompt</div>
+            <div class="prompt-container">
+                <div class="prompt-box" id="prompt-text-2">Review the attached regional submission PDF natively using your multimodal vision context. Summarize the active drug ingredients, clinical potency bounds, and regional approval tracking numbers.</div>
+                <button class="copy-btn" onclick="copyPrompt(2)">Copy Prompt</button>
+            </div>
+
+            <div class="section-label">Internal ADK Routing & Tool Execution Trace</div>
+            <div class="trace-console">
+                <div class="trace-line"><span class="source">[Coordinator Agent]</span> <span class="arrow">➔</span> <span class="action">Direct UI file buffer ingress intercepted.</span></div>
+                <div class="trace-line"><span class="source">[Coordinator Agent]</span> <span class="arrow">➔</span> <span class="action">Triggering Multimodal Lens override logic. Bypassing remote extraction API nodes.</span></div>
+                <div class="trace-line"><span class="source">[DossierIngestionAgent]</span> <span class="arrow">➔</span> <span class="action">Projecting document visual frames and embedded text layers straight into active reasoning registers.</span></div>
+            </div>
+
+            <div class="section-label">Simulated High-Fidelity Agent Response</div>
+            <div class="simulated-output">
+                <div class="output-banner">
+                    <div class="output-title">👁️ Multimodal Document Ingestion Analysis</div>
+                    <span class="status-pill pill-indigo">NATIVE INGRESS</span>
+                </div>
+                <div class="output-body">
+                    <p>I have ingested your attached regional submission draft directly via <b>multimodal text and visual context</b>. By evaluating layout geometries and tabular data blocks natively, I bypassed remote database processing.</p>
+                    
+                    <p><b>📑 Regional Submission Snapshot:</b></p>
+                    <ul>
+                        <li><b>Administrative Tracking ID:</b> <code class="inline">NDA 125057 / Orig1s425</code></li>
+                        <li><b>Originating Agency:</b> Food and Drug Administration (FDA), Center for Drug Evaluation and Research (CDER).</li>
+                        <li><b>Submission Type:</b> Original New Drug Application Supplemental Review.</li>
+                    </ul>
+
+                    <p><b>🧪 Verified Clinical Potency Metrics:</b></p>
+                    <ul>
+                        <li><b>Active Component Base:</b> Evaluated clinical lot matrices enforce a potency release range bounded tightly between <b>95.0% to 105.0%</b> of labeled initial concentrations.</li>
+                        <li><b>Tabular Extraction Integrity:</b> Parsed multi-column matrix layouts confirming structural consistency across all pre-clinical test runs.</li>
+                    </ul>
+                </div>
+
+                <div class="suggestions-box">
+                    <div class="suggestions-title">Suggested Next Steps</div>
+                    <ul class="suggestions-list">
+                        <li>Perform a side-by-side symmetrical delta comparison against historical baseline approvals.</li>
+                        <li>Search DailyMed registries to verify boxed prescribing label alignment for this compound.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scenario 3 -->
+        <div class="scenario-card" id="scenario-3">
+            <div class="scenario-header">
+                <div class="scenario-title-wrapper">
+                    <span class="scenario-badge">Scenario 3</span>
+                    <h2 class="scenario-title">eCTD Physical Folder Schema & Naming Casing Audit</h2>
+                </div>
+                <div class="routing-meta">
+                    <span class="meta-tag meta-agent">🤖 ComplianceAgent</span>
+                    <span class="meta-tag meta-tool">🔧 verify_ectd_packages</span>
+                </div>
+            </div>
+
+            <div class="section-label">User Objective</div>
+            <div class="objective-text">Perform an exhaustive physical check across workspace submission directories to flag filename casing issues and highlight missing regional utility folders.</div>
+
+            <div class="section-label">Exact Conversational Prompt</div>
+            <div class="prompt-container">
+                <div class="prompt-box" id="prompt-text-3">Please invoke the verify_ectd_packages tool to scan my staged folders in Cloud Storage, list the scanned files, and audit them for compliance casing gaps.</div>
+                <button class="copy-btn" onclick="copyPrompt(3)">Copy Prompt</button>
+            </div>
+
+            <div class="section-label">Internal ADK Routing & Tool Execution Trace</div>
+            <div class="trace-console">
+                <div class="trace-line"><span class="source">[Coordinator Agent]</span> <span class="arrow">➔</span> <span class="action">Routing instruction directly to ComplianceAgent.</span></div>
+                <div class="trace-line"><span class="source">[ComplianceAgent]</span> <span class="arrow">➔</span> <span class="action">Firing command: verify_ectd_packages()</span></div>
+                <div class="trace-line"><span class="source">[GCS Blob Scanner]</span> <span class="arrow">➔</span> <span class="action">Walking target path: gs://pharma-dossiers-nitinagga-ge/</span></div>
+                <div class="trace-line alert"><span class="source">[Validation Evaluator]</span> <span class="arrow">➔</span> <span class="action">Evaluating string arrays -> Flagging uppercase strings & folder path omissions.</span></div>
+            </div>
+
+            <div class="section-label">Simulated High-Fidelity Agent Response</div>
+            <div class="simulated-output">
+                <div class="output-banner">
+                    <div class="output-title" style="color: #b91c1c;">🔴 eCTD Technical Audit Status: Non-Compliant</div>
+                    <span class="status-pill pill-red">GAPS FOUND</span>
+                </div>
+                <div class="output-body">
+                    <p>Your physical folder layout violates eCTD filename casing laws and structural requirements.</p>
+                    
+                    <p><b>Casing Gaps Identified:</b></p>
+                    <p>Found <b>33 files</b> violating naming criteria (casing or spaces detected). Examples:</p>
+                    <ul>
+                        <li><code class="inline">COCT_MT150007UV.xsd</code> (Contains uppercase characters)</li>
+                        <li><code class="inline">eCTD 3.2.2 - EU M1 Validation Criteria v8.2.xlsx</code> (Contains spaces and capitals)</li>
+                        <li><code class="inline">Genericode.zip</code> (Contains uppercase characters)</li>
+                    </ul>
+
+                    <p><b>Structural Folder Gaps:</b></p>
+                    <ul>
+                        <li><span style="color: #b91c1c; font-weight: 600;">🔴 Missing Path:</span> <code class="inline">m1/fda</code> (Mandatory US Regional folder)</li>
+                        <li><span style="color: #b91c1c; font-weight: 600;">🔴 Missing Path:</span> <code class="inline">m1/eu/util/dtd</code> (Mandatory EU DTD Schema folder)</li>
+                    </ul>
+
+                    <p style="font-size: 13px; color: var(--text-light); margin-top: 8px;"><b>🟢 Scanned Files List:</b> Successfully indexed 46 files in GCS: <code class="inline">m3-dp-pharma-dev - working.md</code>, <code class="inline">M4Q_R1_Guideline.pdf</code>, <code class="inline">Validation_eCTD.pdf</code>, etc.</p>
+                </div>
+
+                <div class="suggestions-box">
+                    <div class="suggestions-title">Suggested Next Steps</div>
+                    <ul class="suggestions-list">
+                        <li>Explain the naming requirements for eCTD schema files under Validation_eCTD_v4_0_v1_5.pdf.</li>
+                        <li>Generate an automated script to convert non-compliant filenames to valid lowercase strings.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scenario 4 -->
+        <div class="scenario-card" id="scenario-4">
+            <div class="scenario-header">
+                <div class="scenario-title-wrapper">
+                    <span class="scenario-badge">Scenario 4</span>
+                    <h2 class="scenario-title">ICH Q1A Accelerated Stability Study Timeframe Audit</h2>
+                </div>
+                <div class="routing-meta">
+                    <span class="meta-tag meta-agent">🤖 ComplianceAgent</span>
+                    <span class="meta-tag meta-tool">🔧 query_guideline_pdf</span>
+                </div>
+            </div>
+
+            <div class="section-label">User Objective</div>
+            <div class="objective-text">Perform an advanced semantic vector similarity search inside official guidance manuals to audit draft stability parameters against verified global timelines.</div>
+
+            <div class="section-label">Exact Conversational Prompt</div>
+            <div class="prompt-container">
+                <div class="prompt-box" id="prompt-text-4">Validate my staged dossier m3-dp-pharma-dev - working.md against the M4Q_R1_Guideline.pdf specifications. Check if the dossier includes the mandatory accelerated stability potency limits and forced degradation summaries under Module 3.2.S. Cite the exact section and page numbers.</div>
+                <button class="copy-btn" onclick="copyPrompt(4)">Copy Prompt</button>
+            </div>
+
+            <div class="section-label">Internal ADK Routing & Tool Execution Trace</div>
+            <div class="trace-console">
+                <div class="trace-line"><span class="source">[Coordinator Agent]</span> <span class="arrow">➔</span> <span class="action">Instruction requires guideline extraction -> Invoking ComplianceAgent.</span></div>
+                <div class="trace-line"><span class="source">[ComplianceAgent]</span> <span class="arrow">➔</span> <span class="action">Stripping prompt string -> Executing query_guideline_pdf("accelerated stability potency limits forced degradation Module 3.2.S")</span></div>
+                <div class="trace-line"><span class="source">[Vector Index Core]</span> <span class="arrow">➔</span> <span class="action">Vector Pre-Cache loaded instantly in 0ms. Projecting embedding via text-embedding-004.</span></div>
+                <div class="trace-line"><span class="source">[Vector Index Core]</span> <span class="arrow">➔</span> <span class="action">Cosine similarity evaluated (&lt;2ms). Emitting top 3 text boundaries to LLM.</span></div>
+            </div>
+
+            <div class="section-label">Simulated High-Fidelity Agent Response</div>
+            <div class="simulated-output">
+                <div class="output-banner">
+                    <div class="output-title">🔍 Quality Audit Report: Scientific Gaps Identified</div>
+                    <span class="status-pill pill-red">GAPS IDENTIFIED</span>
+                </div>
+                <div class="output-body">
+                    <p>An audit of your draft dossier <b><code class="inline">m3-dp-pharma-dev - working.md</code></b> against <b><code class="inline">M4Q_R1_Guideline.pdf</code></b> has revealed significant scientific gaps in Module 3.2.S:</p>
+                    
+                    <ul>
+                        <li>
+                            <strong style="color: #b91c1c;">🔴 Stability Potency Gap:</strong> Under <b><code class="inline">M4Q_R1_Guideline.pdf</code> Page 17 (Section 3.2.S.7.1 - Stability Summary)</b>, submissions must include tabulated results from accelerated stability testing (at 6 months, 40°C ± 2°C / 75% RH ± 5% RH).<br>
+                            <span style="color: var(--text-light); font-size: 13px;">Dossier Status: Your draft dossier only lists a generic shelf-life summary and lacks raw tabulated accelerated stability potency metrics.</span>
+                        </li>
+                        <li>
+                            <strong style="color: #b91c1c;">🔴 Potency Degradation Gaps:</strong> Tabulated potency summary results from Module 3.2.P.8.3 must also be summarized (<b>Guideline Page 9</b>).<br>
+                            <span style="color: var(--text-light); font-size: 13px;">Dossier Status: Accelerated degradation study limits are missing.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="suggestions-box">
+                    <div class="suggestions-title">Suggested Next Steps</div>
+                    <ul class="suggestions-list">
+                        <li>Generate an eCTD Module 3.2.S shell and mark these missing sections as Data Gaps.</li>
+                        <li>Retrieve standard forced degradation parameters from ICH Q1A.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scenario 5 -->
+        <div class="scenario-card" id="scenario-5">
+            <div class="scenario-header">
+                <div class="scenario-title-wrapper">
+                    <span class="scenario-badge">Scenario 5</span>
+                    <h2 class="scenario-title">DailyMed Prescribing Boxed Warning Label Harmonization</h2>
+                </div>
+                <div class="routing-meta">
+                    <span class="meta-tag meta-agent">🤖 LabelHarmonizerAgent</span>
+                    <span class="meta-tag meta-tool">🔧 search_labels</span>
+                </div>
+            </div>
+
+            <div class="section-label">User Objective</div>
+            <div class="objective-text">Audit internal drug substance formulation documentation against external DailyMed prescribing databases to confirm that required boxed safety warnings are fully present.</div>
+
+            <div class="section-label">Exact Conversational Prompt</div>
+            <div class="prompt-container">
+                <div class="prompt-box" id="prompt-text-5">Harmonize the safety warning labels for Adalimumab under my staged dossier Module 3 against the prescribing safety warnings in the DailyMed registry.</div>
+                <button class="copy-btn" onclick="copyPrompt(5)">Copy Prompt</button>
+            </div>
+
+            <div class="section-label">Internal ADK Routing & Tool Execution Trace</div>
+            <div class="trace-console">
+                <div class="trace-line"><span class="source">[Coordinator Agent]</span> <span class="arrow">➔</span> <span class="action">Extracting substance keyword -> Routing request to LabelHarmonizerAgent.</span></div>
+                <div class="trace-line"><span class="source">[LabelHarmonizerAgent]</span> <span class="arrow">➔</span> <span class="action">Command tool: search_labels(product_name="Adalimumab")</span></div>
+                <div class="trace-line"><span class="source">[SPL Registry Core]</span> <span class="arrow">➔</span> <span class="action">Resolving active compound safety profiles from sample reference matrices.</span></div>
+            </div>
+
+            <div class="section-label">Simulated High-Fidelity Agent Response</div>
+            <div class="simulated-output">
+                <div class="output-banner">
+                    <div class="output-title">🤖 Label Harmonization Summary: Gaps Identified</div>
+                    <span class="status-pill pill-red">REVIEW REQUIRED</span>
+                </div>
+                <div class="output-body">
+                    <p><b>Analyzed Substance:</b> Adalimumab &nbsp;|&nbsp; <b>Registry Source:</b> DailyMed SPL Prescribing Registry</p>
+                    
+                    <p><b>Registry Boxed Warnings Found:</b></p>
+                    <ol>
+                        <li><b>⚠️ Serious Infections:</b> Increased risk of active tuberculosis, invasive fungal infections, and bacterial sepsis.</li>
+                        <li><b>⚠️ Malignancies:</b> Increased risk of lymphoma and other pediatric cancers.</li>
+                    </ol>
+
+                    <div style="padding: 12px; background-color: #fef2f2; border-left: 4px solid #ef4444; border-radius: 6px; margin-top: 4px;">
+                        <strong style="color: #991b1b; font-size: 13px; display: block;">✖ Critical Warning Gap Omission</strong>
+                        <span style="color: #7f1d1d; font-size: 13px;">The staged dossier <code class="inline">m3-device-dmf.md</code> correctly references active compound properties but <b>completely omits mandatory boxed warnings for pediatric malignancies and invasive fungal infections</b>. Update Module 1.14 (Labeling section) to incorporate these boxed safety warnings to ensure FDA compliance.</span>
+                    </div>
+                </div>
+
+                <div class="suggestions-box">
+                    <div class="suggestions-title">Suggested Next Steps</div>
+                    <ul class="suggestions-list">
+                        <li>Draft a compliant warning label text for Adalimumab serious infections for Module 1.14.</li>
+                        <li>Perform a comparative analysis against alternative active compound files.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scenario 6 -->
+        <div class="scenario-card" id="scenario-6">
+            <div class="scenario-header">
+                <div class="scenario-title-wrapper">
+                    <span class="scenario-badge">Scenario 6</span>
+                    <h2 class="scenario-title">Proactive Target Specification Mismatch Interception</h2>
+                </div>
+                <div class="routing-meta">
+                    <span class="meta-tag meta-agent">🤖 Coordinator Gate</span>
+                    <span class="meta-tag meta-vision">🛡️ Safety Guard Interceptor</span>
+                </div>
+            </div>
+
+            <div class="section-label">User Objective</div>
+            <div class="objective-text">Verify that the agent engine proactively halts processing and flags configuration mismatches when a reviewer pairs a scientific file draft alongside an incompatible technical IT directory manual.</div>
+
+            <div class="section-label">Exact Conversational Prompt</div>
+            <div class="prompt-container">
+                <div class="prompt-box" id="prompt-text-6">Does my dossier m3-dp-pharma-dev - working.md include the required accelerated stability potency data under Module 3.2.S when evaluated using the Validation_eCTD_v4_0_v1_5.pdf guidelines?</div>
+                <button class="copy-btn" onclick="copyPrompt(6)">Copy Prompt</button>
+            </div>
+
+            <div class="section-label">Internal ADK Routing & Tool Execution Trace</div>
+            <div class="trace-console">
+                <div class="trace-line"><span class="source">[Coordinator Agent]</span> <span class="arrow">➔</span> <span class="action">Parsing target guideline domain: Validation_eCTD_v4_0_v1_5.pdf = IT Folder XML Standard.</span></div>
+                <div class="trace-line"><span class="source">[Coordinator Agent]</span> <span class="arrow">➔</span> <span class="action">Parsing user task domain: Accelerated stability potency data = Scientific Quality Summary.</span></div>
+                <div class="trace-line alert"><span class="source">[Safety Interceptor]</span> <span class="arrow">➔</span> <span class="action">Domain mismatch alert activated. Halting text comparisons to prevent erroneous audit emission.</span></div>
+            </div>
+
+            <div class="section-label">Simulated High-Fidelity Agent Response</div>
+            <div class="simulated-output">
+                <div class="alert-callout">
+                    <strong>⚠️ Target Specification Mismatch Intercepted</strong>
+                    <p>You have requested a scientific stability and potency evaluation using <b>Validation_eCTD_v4_0_v1_5.pdf</b>. This document is an administrative IT technical folder layout manual and does not contain chemical stability or experimental degradation boundary criteria.</p>
+                </div>
+
+                <div class="output-body">
+                    <p><b>💡 Corrective Guidance & File Recommendation:</b></p>
+                    <p>To successfully perform your requested quality analysis over draft <b><code class="inline">m3-dp-pharma-dev - working.md</code></b>, you must choose the correct target baseline from your active reference library:</p>
+                    
+                    <ul>
+                        <li><b><span style="color: #047857; font-weight: bold;">BEST MATCH</span> Recommended Guideline:</b> <b><code class="inline">M4Q_R1_Guideline.pdf</code></b> <i>(ICH Harmonised Tripartite Guideline for the Common Technical Document for Quality)</i>.</li>
+                        <li><b>Action Needed:</b> Please update your reference parameter to <code class="inline">M4Q_R1_Guideline.pdf</code> and re-submit your query to unlock semantic stability vector checks.</li>
+                    </ul>
+                </div>
+
+                <div class="suggestions-box">
+                    <div class="suggestions-title">Suggested Next Steps</div>
+                    <ul class="suggestions-list">
+                        <li>Switch reference target to M4Q_R1_Guideline.pdf and proceed with stability audits.</li>
+                        <li>Audit the folder layout of this dossier using the currently selected technical manual.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scenario 7 -->
+        <div class="scenario-card" id="scenario-7">
+            <div class="scenario-header">
+                <div class="scenario-title-wrapper">
+                    <span class="scenario-badge">Scenario 7</span>
+                    <h2 class="scenario-title">Stateful Session Memory Submission Shell Generation</h2>
+                </div>
+                <div class="routing-meta">
+                    <span class="meta-tag meta-agent">🤖 EctdShellAgent</span>
+                    <span class="meta-tag meta-tool">🔧 generate_ectd_shell</span>
+                </div>
+            </div>
+
+            <div class="section-label">User Objective</div>
+            <div class="objective-text">Command the system to instantly construct a standard, structured eCTD module skeleton outline while preserving context and gap markers from previous conversational interaction turns.</div>
+
+            <div class="section-label">Exact Conversational Prompt</div>
+            <div class="prompt-container">
+                <div class="prompt-box" id="prompt-text-7">Now draft an eCTD shell outline for that drug product module, keeping those identified gaps marked as Data Gaps.</div>
+                <button class="copy-btn" onclick="copyPrompt(7)">Copy Prompt</button>
+            </div>
+
+            <div class="section-label">Internal ADK Routing & Tool Execution Trace</div>
+            <div class="trace-console">
+                <div class="trace-line"><span class="source">[Coordinator Agent]</span> <span class="arrow">➔</span> <span class="action">Referencing active Turn Session Memory -> Resolving active source file context.</span></div>
+                <div class="trace-line"><span class="source">[Coordinator Agent]</span> <span class="arrow">➔</span> <span class="action">Invoking EctdShellAgent payload.</span></div>
+                <div class="trace-line"><span class="source">[EctdShellAgent]</span> <span class="arrow">➔</span> <span class="action">Firing command: generate_ectd_shell(module_name="Module 3")</span></div>
+                <div class="trace-line"><span class="source">[JSON Builder Core]</span> <span class="arrow">➔</span> <span class="action">Injecting historical gap status variables into standard taxonomy nodes.</span></div>
+            </div>
+
+            <div class="section-label">Simulated High-Fidelity Agent Response</div>
+            <div class="simulated-output">
+                <div class="output-banner">
+                    <div class="output-title">📑 Generated eCTD Submission Skeleton (Module 3)</div>
+                    <span class="status-pill pill-green">STAGED</span>
+                </div>
+                <div class="output-body">
+                    <p>Compiled standard taxonomy mapping for your active dossier with automatically injected gap placeholders based on previous QA findings:</p>
+                    
+                    <pre class="diff-box"><code>{
+  "eCTD_Module_3": {
+    "3.2.P.1": "Description and Composition - Draft Complete",
+    "3.2.P.2": "Pharmaceutical Development - Data Gap (Accelerated degradation bounds missing)",
+    "3.2.P.3": "Manufacture - Draft Complete",
+    "3.2.P.8": "Stability - Data Gap (Missing 6-month raw tabulated potency metrics)",
+    "3.2.S.7.1": "Stability Summary - Pending Remediation"
+  }
+}</code></pre>
+                    <p style="font-size: 13px; color: var(--text-light); margin-top: 4px;"><b>Status:</b> Skeleton staged successfully. Ready for content injection workflows.</p>
+                </div>
+
+                <div class="suggestions-box">
+                    <div class="suggestions-title">Suggested Next Steps</div>
+                    <ul class="suggestions-list">
+                        <li>Export this JSON outline directly to Cloud Storage.</li>
+                        <li>Compare this structural outline against the EU M1 Regional validation layout.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scenario 8 -->
+        <div class="scenario-card" id="scenario-8">
+            <div class="scenario-header">
+                <div class="scenario-title-wrapper">
+                    <span class="scenario-badge">Scenario 8</span>
+                    <h2 class="scenario-title">Symmetrical Line-by-Line Version Diffing</h2>
+                </div>
+                <div class="routing-meta">
+                    <span class="meta-tag meta-agent">🤖 DeltaAnalysisAgent</span>
+                    <span class="meta-tag meta-tool">🔧 compare_dossier_versions</span>
+                </div>
+            </div>
+
+            <div class="section-label">User Objective</div>
+            <div class="objective-text">Execute localized side-by-side split line diffing over two distinct dossier draft versions to visually isolate incremental text additions and deletions.</div>
+
+            <div class="section-label">Exact Conversational Prompt</div>
+            <div class="prompt-container">
+                <div class="prompt-box" id="prompt-text-8">Compare the text contents of my old baseline draft m3-dp-pharma-dev - working.md against the newly extended draft m3-dp-pharma-dev.md.pdf using the compare_dossier_versions tool. Show the unified git diff output.</div>
+                <button class="copy-btn" onclick="copyPrompt(8)">Copy Prompt</button>
+            </div>
+
+            <div class="section-label">Internal ADK Routing & Tool Execution Trace</div>
+            <div class="trace-console">
+                <div class="trace-line"><span class="source">[Coordinator Agent]</span> <span class="arrow">➔</span> <span class="action">Multi-version input parameters detected -> Routing payload to DeltaAnalysisAgent.</span></div>
+                <div class="trace-line"><span class="source">[DeltaAnalysisAgent]</span> <span class="arrow">➔</span> <span class="action">Loading file blocks from BigQuery indices.</span></div>
+                <div class="trace-line"><span class="source">[DeltaAnalysisAgent]</span> <span class="arrow">➔</span> <span class="action">Invoking tool: compare_dossier_versions(old_text="...", new_text="...")</span></div>
+                <div class="trace-line"><span class="source">[Diff Engine Core]</span> <span class="arrow">➔</span> <span class="action">Generating optimized unified diff delta buffers.</span></div>
+            </div>
+
+            <div class="section-label">Simulated High-Fidelity Agent Response</div>
+            <div class="simulated-output">
+                <div class="output-banner">
+                    <div class="output-title">⇄ Version Delta Analysis Report</div>
+                    <span class="status-pill pill-indigo">DIFF CALCULATED</span>
+                </div>
+                <div class="output-body">
+                    <p>I have executed a line-by-line split comparison mapping updates between your historical baseline file and your newly revised draft.</p>
+                    
+                    <p style="font-size: 13px;"><b>File Baseline:</b> <code class="inline">m3-dp-pharma-dev - working.md</code> &nbsp;|&nbsp; <b>Target Revised:</b> <code class="inline">m3-dp-pharma-dev.md.pdf</code></p>
+                    
+                    <p><b>Unified Git Diff Output Excerpt:</b></p>
+                    <pre class="diff-box"><span class="diff-header">--- old_baseline/3.2.P.8_Stability.md
++++ revised_draft/3.2.P.8_Stability.md
+@@ -14,5 +14,10 @@</span>
+ Drug product exhibits compliant stability characteristics under normal long-term 
+ storage at 25°C/60% RH over 12 months.
+ 
+<span class="diff-minus">-Accelerated stability testing conclusions remain in progress.</span>
+<span class="diff-plus">+Accelerated stability testing completed across 3 pilot scale batches at 40°C/75% RH.
++Raw tabular potency assay values confirm an average assay recovery of 98.4% at 6 months, 
++fully meeting release requirements. No significant chromatographic degradation impurities 
++were detected exceeding the 0.05% qualification threshold.</span></pre>
+                    <p style="font-size: 13px; color: var(--text-light);"><b>Delta Status:</b> Validated structural data updates detected. Potency tables inserted successfully.</p>
+                </div>
+
+                <div class="suggestions-box">
+                    <div class="suggestions-title">Suggested Next Steps</div>
+                    <ul class="suggestions-list">
+                        <li>Approve these delta changes and export the merged block to the review portal.</li>
+                        <li>Run a final compliance verification pass over the updated text segment.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scenario 9 -->
+        <div class="scenario-card" id="scenario-9">
+            <div class="scenario-header">
+                <div class="scenario-title-wrapper">
+                    <span class="scenario-badge">Scenario 9</span>
+                    <h2 class="scenario-title">Technical Error Code Validation via Excel Lookup Matrices</h2>
+                </div>
+                <div class="routing-meta">
+                    <span class="meta-tag meta-agent">🤖 ComplianceAgent</span>
+                    <span class="meta-tag meta-tool">🔧 query_excel_criteria</span>
+                </div>
+            </div>
+
+            <div class="section-label">User Objective</div>
+            <div class="objective-text">Demonstrate the agent's rule extraction optimization logic by looking up explicit technical validation rule codes stored natively inside regional verification matrices.</div>
+
+            <div class="section-label">Exact Conversational Prompt</div>
+            <div class="prompt-container">
+                <div class="prompt-box" id="prompt-text-9">Look up technical validation rule '1.1' inside the local Excel criteria matrix to explain the exact file naming and regional folder path layout criteria for submission files.</div>
+                <button class="copy-btn" onclick="copyPrompt(9)">Copy Prompt</button>
+            </div>
+
+            <div class="section-label">Internal ADK Routing & Tool Execution Trace</div>
+            <div class="trace-console">
+                <div class="trace-line"><span class="source">[Coordinator Agent]</span> <span class="arrow">➔</span> <span class="action">Instruction targets specific lookup parameters -> Invoking ComplianceAgent.</span></div>
+                <div class="trace-line"><span class="source">[ComplianceAgent]</span> <span class="arrow">➔</span> <span class="action">Executing Keyword Strip optimization -> Removing natural language boilerplate.</span></div>
+                <div class="trace-line"><span class="source">[ComplianceAgent]</span> <span class="arrow">➔</span> <span class="action">Firing targeted tool: query_excel_criteria(query="1.1")</span></div>
+                <div class="trace-line"><span class="source">[Excel Bridge Core]</span> <span class="arrow">➔</span> <span class="action">Querying eCTD Validation Criteria v8.2.xlsx. Row resolved.</span></div>
+            </div>
+
+            <div class="section-label">Simulated High-Fidelity Agent Response</div>
+            <div class="simulated-output">
+                <div class="output-banner">
+                    <div class="output-title">📊 Technical Validation Rule Matrix Lookup</div>
+                    <span class="status-pill pill-green">RESOLVED</span>
+                </div>
+                <div class="output-body">
+                    <p>I have queried the official eCTD criteria spreadsheet repository natively, parsing explicit validation bounds for rule code <b><code class="inline">1.1</code></b>.</p>
+                    
+                    <p><b>Rule Verification Details:</b></p>
+                    <ul>
+                        <li><b>Rule Target Code:</b> <code class="inline">1.1</code></li>
+                        <li><b>Verification Class:</b> Critical Regional Technical Requirement.</li>
+                        <li><b>Criteria Description:</b> Submissions must follow specific electronic filename and hierarchical directory specifications. Absolute folder routes must adhere to structural layout standards, guaranteeing that regional root nodes contain valid localized paths.</li>
+                        <li><b>Application Scope:</b> Module 1 Regional Administration XML payload structures.</li>
+                    </ul>
+
+                    <p style="margin-top: 4px;"><b>Data Audit Implication:</b><br>
+                    <span style="color: var(--text-muted); font-size: 13.5px;">Violations of Rule 1.1 (such as injecting whitespace characters or uppercase letters into path declarations) trigger automatic agency refusal actions. Ensure file profiles map symmetrically to this standard before final transmission.</span></p>
+                </div>
+
+                <div class="suggestions-box">
+                    <div class="suggestions-title">Suggested Next Steps</div>
+                    <ul class="suggestions-list">
+                        <li>Execute a live scan across staged workspaces to cross-check against Rule 1.1 criteria.</li>
+                        <li>Query alternative related validation error matrix bounds (e.g. Rule 1.2).</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scenario 10 -->
+        <div class="scenario-card" id="scenario-10">
+            <div class="scenario-header">
+                <div class="scenario-title-wrapper">
+                    <span class="scenario-badge">Scenario 10</span>
+                    <h2 class="scenario-title">Automated Inception Guardrails Rejecting Non-Pharma Files</h2>
+                </div>
+                <div class="routing-meta">
+                    <span class="meta-tag meta-agent">🤖 DossierIngestionAgent</span>
+                    <span class="meta-tag meta-vision">🛑 Safety Guard Core</span>
+                </div>
+            </div>
+
+            <div class="section-label">User Objective</div>
+            <div class="objective-text">Stress-test the custom safety constraints built into the platform by uploading an arbitrary, non-regulatory business document to verify interception and prompt rejection.</div>
+
+            <div class="section-label">Exact Conversational Prompt</div>
+            <div class="prompt-container">
+                <div class="prompt-box" id="prompt-text-10">Extract all available clinical trial drug facts and proposed module definitions from this newly uploaded file. (Attached: Q3_Project_Consulting_Invoice.pdf)</div>
+                <button class="copy-btn" onclick="copyPrompt(10)">Copy Prompt</button>
+            </div>
+
+            <div class="section-label">Internal ADK Routing & Tool Execution Trace</div>
+            <div class="trace-console">
+                <div class="trace-line"><span class="source">[Coordinator Agent]</span> <span class="arrow">➔</span> <span class="action">Routing input payload to DossierIngestionAgent.</span></div>
+                <div class="trace-line"><span class="source">[DossierIngestionAgent]</span> <span class="arrow">➔</span> <span class="action">Pre-parsing stream to evaluate contextual domain safety directives.</span></div>
+                <div class="trace-line alert"><span class="source">[Safety Guard Core]</span> <span class="arrow">➔</span> <span class="action">Extracted text maps to financial terminology ("invoice", "billable hours", "rate").</span></div>
+                <div class="trace-line alert"><span class="source">[Safety Guard Core]</span> <span class="arrow">➔</span> <span class="action">Interception triggered. Aborting fact generation routines to preserve domain alignment.</span></div>
+            </div>
+
+            <div class="section-label">Simulated High-Fidelity Agent Response</div>
+            <div class="simulated-output">
+                <div class="output-banner" style="border-bottom-color: #fee2e2;">
+                    <div class="output-title" style="color: #b91c1c;">🛑 Document Extraction Rejected: Safety Guardrail Activated</div>
+                    <span class="status-pill pill-red">BLOCKED</span>
+                </div>
+                <div class="output-body">
+                    <p style="color: #991b1b; font-weight: 600; font-size: 14.5px;">Ingestion failed: The uploaded document is not a valid pharmaceutical dossier or regulatory manual.</p>
+                    
+                    <p><b>Contextual Security Intercept Details:</b></p>
+                    <ul>
+                        <li><b>Evaluated Stream Profile:</b> <code class="inline">Q3_Project_Consulting_Invoice.pdf</code></li>
+                        <li><b>Safety Directives Violation:</b> The multi-agent orchestrator is restricted to processing clinical protocols, eCTD folder matrices, RAG validation specifications, and chemistry manufacturing controls (CMC). The supplied input contains financial accounting and invoicing statements, falling completely outside legitimate regulatory review domains.</li>
+                        <li><b>System Action Taken:</b> The file buffer was immediately flushed from active reasoning memory. To prevent hallucinating mock drug properties, no regulatory output skeletons were compiled.</li>
+                    </ul>
+                </div>
+
+                <div class="suggestions-box">
+                    <div class="suggestions-title">Suggested Next Steps</div>
+                    <ul class="suggestions-list">
+                        <li>Attach a valid Module 3 dossier or reference guideline to proceed with your QA tasks.</li>
+                        <li>Review the Active Files Inventory listing in the End-to-End User Guide.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Interactivity Javascript logic -->
+    <script>
+        // Smooth scroll navigation drawer filter logic
+        function scrollToScenario(num) {
+            const targetCard = document.getElementById(`scenario-${num}`);
+            if (targetCard) {
+                targetCard.scrollIntoView({ behavior: 'smooth' });
+                
+                // Update sidebar visual states
+                document.querySelectorAll('.nav-item').forEach(item => item.classList.remove('active'));
+                const navItems = document.querySelectorAll('.nav-item');
+                if (navItems[num - 1]) {
+                    navItems[num - 1].classList.add('active');
+                }
+                
+                // Trigger temporary glow ring on active card for feedback
+                targetCard.style.transform = 'scale(1.01)';
+                targetCard.style.boxShadow = '0 0 25px rgba(79, 70, 229, 0.3)';
+                setTimeout(() => {
+                    targetCard.style.transform = 'none';
+                    targetCard.style.boxShadow = '';
+                }, 500);
+            }
+        }
+
+        // Direct copy prompt strings logic
+        function copyPrompt(num) {
+            const promptElem = document.getElementById(`prompt-text-${num}`);
+            if (promptElem) {
+                let textToCopy = promptElem.innerText;
+                // Strip simulation attachment tags if present to copy pure input
+                textToCopy = textToCopy.replace(/\s*\(Attached:.*?\)/g, '');
+                
+                navigator.clipboard.writeText(textToCopy).then(() => {
+                    const btn = event.target;
+                    const originalText = btn.innerText;
+                    btn.innerText = "✓ Copied!";
+                    btn.style.backgroundColor = "#10b981";
+                    btn.style.color = "#ffffff";
+                    btn.style.borderColor = "#10b981";
+                    
+                    setTimeout(() => {
+                        btn.innerText = originalText;
+                        btn.style.backgroundColor = "";
+                        btn.style.color = "";
+                        btn.style.borderColor = "";
+                    }, 1500);
+                }).catch(err => {
+                    console.error('Failed to copy text: ', err);
+                });
+            }
+        }
+
+        // Intersection Observer logic to auto-highlight sidebar item based on viewport scroll
+        window.addEventListener('DOMContentLoaded', () => {
+            const cards = document.querySelectorAll('.scenario-card');
+            const navItems = document.querySelectorAll('.nav-item');
+            
+            const observerOptions = {
+                root: null,
+                rootMargin: '-100px 0px -40% 0px',
+                threshold: 0.2
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const id = entry.target.getAttribute('id');
+                        const num = parseInt(id.split('-')[1]);
+                        
+                        navItems.forEach(item => item.classList.remove('active'));
+                        if (navItems[num - 1]) {
+                            navItems[num - 1].classList.add('active');
+                        }
+                    }
+                });
+            }, observerOptions);
+
+            cards.forEach(card => observer.observe(card));
+        });
+    </script>
+</body>
+</html>

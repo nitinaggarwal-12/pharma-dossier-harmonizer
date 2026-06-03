@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="https://www.accessdata.fda.gov/spl/stylesheet/spl.xsl" type="text/xsl"?>
+<document xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 https://www.accessdata.fda.gov/spl/schema/spl.xsd">
+   <id root="41fab7af-68d9-41e5-97fe-1ce0606058cf"/>
+   <code code="50577-6" codeSystem="2.16.840.1.113883.6.1" displayName="OTC ANIMAL DRUG LABEL"/>
+   <title>Pi<content styleCode="italics">vet</content>al<sub>®</sub> Suffusion™ K ANTISEPTIC SPRAY</title>
+   <effectiveTime value="20260212"/>
+   <setId root="cd50c9e7-9060-4e56-9583-b8b643244cea"/>
+   <versionNumber value="1"/>
+   <author>
+      <time/>
+      <assignedEntity>
+         <representedOrganization>
+            <id root="1.3.6.1.4.1.519.1" extension="627265361"/>
+            <name>Aspen Veterinary Resources, LTD.</name>
+            <assignedEntity>
+               <assignedOrganization/>
+            </assignedEntity>
+         </representedOrganization>
+      </assignedEntity>
+   </author>
+   <component>
+      <structuredBody>
+         <component>
+            <section>
+               <id root="3c2f1e36-3f37-49b6-8cd9-e0aa15014ee4"/>
+               <code code="48780-1" codeSystem="2.16.840.1.113883.6.1" displayName="SPL product data elements section"/>
+               <title/>
+               <text/>
+               <effectiveTime value="20260213"/>
+               <subject>
+                  <manufacturedProduct>
+                     <manufacturedProduct>
+                        <code code="46066-338" codeSystem="2.16.840.1.113883.6.69"/>
+                        <name>Suffusion K ANTISEPTIC</name>
+                        <formCode code="C42989" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="SPRAY"/>
+                        <asEntityWithGeneric>
+                           <genericMedicine>
+                              <name>Chlorhexidine, Ketoconazole</name>
+                           </genericMedicine>
+                        </asEntityWithGeneric>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator value="2" unit="g"/>
+                              <denominator value="100" unit="mL"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="R4KO0DY52L" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>CHLORHEXIDINE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="R4KO0DY52L" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>CHLORHEXIDINE</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator value="1" unit="g"/>
+                              <denominator value="100" unit="mL"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="R9400W927I" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>KETOCONAZOLE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="R9400W927I" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>KETOCONAZOLE</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="059QF0KO0R" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>WATER</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="PDC6A3C0OX" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>GLYCERIN</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="7T1F30V5YH" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>POLYSORBATE 20</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="6DC9Q167V3" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>PROPYLENE GLYCOL</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="33X04XA5AT" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>LACTIC ACID, UNSPECIFIED FORM</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="Z6J799EAJK" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>OAT</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="88KCS7120E" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>CERAMIDE 9</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="F1X8L2B00J" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>CERAMIDE AP</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="4370DF050B" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>CERAMIDE NP</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="1VPU26JZZ4" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>POTASSIUM SORBATE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="229D0E1QFA" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>METHYLISOTHIAZOLINONE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="7243K85WFO" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SODIUM LAUROYL LACTYLATE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <asContent>
+                           <quantity>
+                              <numerator value="237" unit="mL"/>
+                              <denominator value="1" unit="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code code="46066-338-90" codeSystem="2.16.840.1.113883.6.69"/>
+                              <formCode code="C43175" displayName="BOTTLE, SPRAY" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           </containerPackagedProduct>
+                        </asContent>
+                     </manufacturedProduct>
+                     <subjectOf>
+                        <marketingAct>
+                           <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <statusCode code="active"/>
+                           <effectiveTime>
+                              <low value="20260301"/>
+                           </effectiveTime>
+                        </marketingAct>
+                     </subjectOf>
+                     <subjectOf>
+                        <approval>
+                           <code code="C73627" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="unapproved drug other"/>
+                           <author>
+                              <territorialAuthority>
+                                 <territory>
+                                    <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                 </territory>
+                              </territorialAuthority>
+                           </author>
+                        </approval>
+                     </subjectOf>
+                     <consumedIn>
+                        <substanceAdministration>
+                           <routeCode code="C38304" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TOPICAL"/>
+                        </substanceAdministration>
+                     </consumedIn>
+                  </manufacturedProduct>
+               </subject>
+            </section>
+         </component>
+         <component>
+            <section ID="L892c1794-e6a1-4253-8623-617cf754025a">
+               <id root="e3492111-87c1-49b3-9dd2-c37c2751f4ad"/>
+               <code code="55106-9" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - ACTIVE INGREDIENT SECTION"/>
+               <title>ACTIVE INGREDIENTS:</title>
+               <text>
+                  <paragraph>Chlorhexidine 2%, Ketoconazole 1%.</paragraph>
+               </text>
+               <effectiveTime value="20260213"/>
+            </section>
+         </component>
+         <component>
+            <section ID="Lf506de33-8eb5-4e3e-a57a-4818f54b03f2">
+               <id root="dba336b4-9b80-4c4c-bd22-2d8d75adc20f"/>
+               <code code="51727-6" codeSystem="2.16.840.1.113883.6.1" displayName="INACTIVE INGREDIENT SECTION"/>
+               <title>INACTIVE INGREDIENTS:</title>
+               <text>
+                  <paragraph>Water, Glycerin, Polysorbate 20, Propylene Glycol, Lactic Acid, Avena Sativa (Oat) Kernel Extract, Ceramide EOP, Ceramide AP, Ceramide NP, Fragrance, Potassium Sorbate, Methylisothiazolinone, Sodium Lauroyl Lactylate.</paragraph>
+               </text>
+               <effectiveTime value="20260213"/>
+            </section>
+         </component>
+         <component>
+            <section ID="Lf4c50105-874e-4580-95e0-2f698b1a3726">
+               <id root="16cdbce6-1d34-4715-922e-94d1e7c16045"/>
+               <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+               <title>PROPERTIES:</title>
+               <text>
+                  <paragraph>Suffusion<sup>TM</sup> K Antiseptic Spray is a leave-on spray with chlorhexidine and ketoconazole, antibacterial and antifungal ingredients for antiseptic activity on the skin. Skin nourishing nutrients moisturize and calm the skin. They also support the skin's natural immune system, and provide building blocks for renewed skin barrier integrity.</paragraph>
+               </text>
+               <effectiveTime value="20260213"/>
+            </section>
+         </component>
+         <component>
+            <section ID="L86144ac7-4a67-4325-8ddb-14383323462a">
+               <id root="5669a2db-c8b0-4129-9e0e-3754a5cb1193"/>
+               <code code="34067-9" codeSystem="2.16.840.1.113883.6.1" displayName="INDICATIONS &amp; USAGE SECTION"/>
+               <title>INDICATIONS:</title>
+               <text>
+                  <paragraph>For use on dogs or cats with bacterial or fungal skin infections that are responsive to chlorhexidine or ketoconazole.</paragraph>
+               </text>
+               <effectiveTime value="20260213"/>
+            </section>
+         </component>
+         <component>
+            <section ID="La8852393-4061-4512-98f1-3aeed9dac0ab">
+               <id root="bad70d80-c3d7-44b6-8bc1-8ec62ebbc8eb"/>
+               <code code="34068-7" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE &amp; ADMINISTRATION SECTION"/>
+               <title>DIRECTIONS FOR USE:</title>
+               <text>
+                  <paragraph>Apply 1 to 3 times a day for 2-3 weeks or as directed by your veterinarian. Part the fur and spray directly on the affected area(s) of the skin. Gently smooth product on the skin to ensure full coverage. Do not allow the animal to lick the treated area. Wash hands after use.</paragraph>
+                  <paragraph>TREAT ABNORMALITIES FIRST</paragraph>
+                  <paragraph>
+                     <content>APPLY 1-3 TIMES PER DAY</content>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20260213"/>
+            </section>
+         </component>
+         <component>
+            <section ID="Leb4c3700-ba1b-4167-ba89-2c3882365fe3">
+               <id root="0994d285-a86f-4a13-9059-a635e9c705a5"/>
+               <code code="42232-9" codeSystem="2.16.840.1.113883.6.1" displayName="PRECAUTIONS SECTION"/>
+               <title>CAUTIONS:</title>
+               <text>
+                  <paragraph>For external use on dogs and cats only. Avoid contact with eyes. In case of contact with eyes, rinse thoroughly and consult your veterinarian. If skin irritation occurs or increases, discontinue use and consult with your veterinarian.</paragraph>
+               </text>
+               <effectiveTime value="20260213"/>
+            </section>
+         </component>
+         <component>
+            <section ID="L032bfb6e-5d53-4990-aafa-edaa7c4d1bca">
+               <id root="b325948b-242b-43d1-8522-c30aee3128c7"/>
+               <code code="34071-1" codeSystem="2.16.840.1.113883.6.1" displayName="WARNINGS SECTION"/>
+               <title>WARNING:</title>
+               <text>
+                  <paragraph>Keep out of reach of children.</paragraph>
+               </text>
+               <effectiveTime value="20260213"/>
+            </section>
+         </component>
+         <component>
+            <section ID="L18993d0d-9a4b-4a79-b026-151b88bed024">
+               <id root="314af711-9028-4fe9-ad4a-e5a5f96f8d23"/>
+               <code code="44425-7" codeSystem="2.16.840.1.113883.6.1" displayName="STORAGE AND HANDLING SECTION"/>
+               <title>STORAGE CONDITIONS:</title>
+               <text>
+                  <paragraph>Store at room temperature. Do not freeze.</paragraph>
+               </text>
+               <effectiveTime value="20260213"/>
+            </section>
+         </component>
+         <component>
+            <section ID="L1bb7ee72-bee6-4b2a-8903-c09c2d5ae269">
+               <id root="984bd075-d6e7-4a93-b5b3-9c5a38e3bb5e"/>
+               <code code="53413-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - QUESTIONS SECTION"/>
+               <title>QUESTIONS?</title>
+               <text>
+                  <paragraph>info@aspenveterinaryresources.com</paragraph>
+               </text>
+               <effectiveTime value="20260213"/>
+            </section>
+         </component>
+         <component>
+            <section ID="L19d5a3ed-5158-4043-9920-04bbe41c71db">
+               <id root="ddeb3822-5632-4697-b267-345766906ff2"/>
+               <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+               <title/>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">FOR DOGS &amp; CATS</content>
+                  </paragraph>
+                  <paragraph>ANTIBACTERIAL<br/>ANTIFUNGAL</paragraph>
+                  <paragraph>Manufactured for:<br/>Aspen Veterinary Resources<sup>®</sup>, LTD.<br/>Liberty, MO 64068</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">pivetalvet.com</content>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20260213"/>
+            </section>
+         </component>
+         <component>
+            <section ID="L872b0a7e-fc1a-4f25-ba81-62168123670a">
+               <id root="88f90390-3d59-4292-85fb-d4e89c15c5ce"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>Packaging</title>
+               <text>
+                  <paragraph>
+                     <renderMultiMedia referencedObject="Lbc29ee94-b942-4d82-bd5a-3458043fe780"/>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20260213"/>
+               <component>
+                  <observationMedia ID="Lbc29ee94-b942-4d82-bd5a-3458043fe780">
+                     <text>Suffusion K ANTISEPTIC SPRAY</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="46066338-1.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+      </structuredBody>
+   </component>
+</document>

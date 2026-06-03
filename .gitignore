@@ -1,0 +1,35 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Node / Frontend
+node_modules/
+.next/
+out/
+build/
+.vercel/
+next-env.d.ts
+*.tsbuildinfo
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs and environment
+*.log
+.env
+.env.local
+.env.development
+.env.production
+.env.staging
+
+# Project specific
+.adk/
+scratch/pharma_dossier_harmonizer_codebase.zip
+
+# Large data binaries
+data/seed/dm_spl_monthly_update_mar2026.zip
+

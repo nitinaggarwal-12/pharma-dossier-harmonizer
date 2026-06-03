@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="https://www.accessdata.fda.gov/spl/stylesheet/spl.xsl" type="text/xsl"?>
+<document xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 https://www.accessdata.fda.gov/spl/schema/spl.xsd">
+   <id root="3d4076a3-a346-414f-a01d-71a7c85d7312"/>
+   <code code="50578-4" codeSystem="2.16.840.1.113883.6.1" displayName="PRESCRIPTION ANIMAL DRUG LABEL"/>
+   <title>
+      <content styleCode="bold">
+         <content styleCode="italics">Elanco</content>
+      </content>
+      <br/>
+      <content styleCode="bold">Droncit<sup>TM</sup>
+      </content>
+      <br/>
+      <content styleCode="bold">(praziquantel)</content>
+      <br/>
+      <content styleCode="bold">Injectable Cestocide</content>
+      <br/>
+      <content styleCode="bold">For Dogs And Cats</content>
+   </title>
+   <effectiveTime value="20260223"/>
+   <setId root="641f1874-ad52-40fd-9c63-2ca537a6e147"/>
+   <versionNumber value="7"/>
+   <author>
+      <time/>
+      <assignedEntity>
+         <representedOrganization>
+            <id extension="966985624" root="1.3.6.1.4.1.519.1"/>
+            <name>Elanco US Inc.</name>
+            <assignedEntity>
+               <assignedOrganization/>
+            </assignedEntity>
+         </representedOrganization>
+      </assignedEntity>
+   </author>
+   <component>
+      <structuredBody>
+         <component>
+            <section>
+               <id root="792433ef-62ee-4ecf-8fad-737ee1ed54d4"/>
+               <code code="48780-1" codeSystem="2.16.840.1.113883.6.1" displayName="SPL product data elements section"/>
+               <effectiveTime value="20260223"/>
+               <subject>
+                  <manufacturedProduct>
+                     <manufacturedProduct>
+                        <code code="58198-0031" codeSystem="2.16.840.1.113883.6.69"/>
+                        <name>Droncit</name>
+                        <formCode code="C42945" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="INJECTION, SOLUTION"/>
+                        <asEntityWithGeneric>
+                           <genericMedicine>
+                              <name>Praziquantel</name>
+                           </genericMedicine>
+                        </asEntityWithGeneric>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator unit="mg" value="56.8"/>
+                              <denominator unit="mL" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="6490C9U457" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>PRAZIQUANTEL</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="6490C9U457" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>PRAZIQUANTEL</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <asContent>
+                           <quantity>
+                              <numerator unit="mL" value="10"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code code="58198-0031-1" codeSystem="2.16.840.1.113883.6.69"/>
+                              <formCode code="C43226" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="VIAL"/>
+                              <asContent>
+                                 <quantity>
+                                    <numerator unit="1" value="1"/>
+                                    <denominator value="1"/>
+                                 </quantity>
+                                 <containerPackagedProduct>
+                                    <code code="58198-0031-3" codeSystem="2.16.840.1.113883.6.69"/>
+                                    <formCode code="C43182" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CARTON"/>
+                                 </containerPackagedProduct>
+                              </asContent>
+                           </containerPackagedProduct>
+                        </asContent>
+                        <asContent>
+                           <quantity>
+                              <numerator unit="mL" value="50"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code code="58198-0031-2" codeSystem="2.16.840.1.113883.6.69"/>
+                              <formCode code="C43226" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="VIAL"/>
+                              <asContent>
+                                 <quantity>
+                                    <numerator unit="1" value="1"/>
+                                    <denominator value="1"/>
+                                 </quantity>
+                                 <containerPackagedProduct>
+                                    <code code="58198-0031-4" codeSystem="2.16.840.1.113883.6.69"/>
+                                    <formCode code="C43182" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CARTON"/>
+                                 </containerPackagedProduct>
+                              </asContent>
+                           </containerPackagedProduct>
+                        </asContent>
+                     </manufacturedProduct>
+                     <subjectOf>
+                        <approval>
+                           <id extension="NADA111607" root="2.16.840.1.113883.3.150"/>
+                           <code code="C73593" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="NADA"/>
+                           <author>
+                              <territorialAuthority>
+                                 <territory>
+                                    <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                 </territory>
+                              </territorialAuthority>
+                           </author>
+                        </approval>
+                     </subjectOf>
+                     <subjectOf>
+                        <marketingAct>
+                           <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <statusCode code="active"/>
+                           <effectiveTime>
+                              <low value="19810203"/>
+                           </effectiveTime>
+                        </marketingAct>
+                     </subjectOf>
+                     <consumedIn>
+                        <substanceAdministration>
+                           <routeCode code="C28161" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="INTRAMUSCULAR"/>
+                        </substanceAdministration>
+                     </consumedIn>
+                     <consumedIn>
+                        <substanceAdministration>
+                           <routeCode code="C38299" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="SUBCUTANEOUS"/>
+                        </substanceAdministration>
+                     </consumedIn>
+                  </manufacturedProduct>
+               </subject>
+            </section>
+         </component>
+         <component>
+            <section ID="s1">
+               <id root="eaa8ebea-40a0-4ca3-9d55-3b0ca91eb41d"/>
+               <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+               <text>
+                  <paragraph>56.8 mg/mL Solution </paragraph>
+               </text>
+               <effectiveTime value="20260223"/>
+            </section>
+         </component>
+         <component>
+            <section ID="s2">
+               <id root="46ddd491-7565-4d64-ae51-e4c5ea7e1e2a"/>
+               <code code="34089-3" codeSystem="2.16.840.1.113883.6.1" displayName="DESCRIPTION SECTION"/>
+               <title>DESCRIPTION: </title>
+               <text>
+                  <paragraph>Droncit Injectable Cestocide is a clear solution containing 56.8 milligrams of praziquantel per mL which has been formulated for subcutaneous or intramuscular use in dogs and cats for removal of cestodes (tapeworms). </paragraph>
+               </text>
+               <effectiveTime value="20260223"/>
+            </section>
+         </component>
+         <component>
+            <section ID="s3">
+               <id root="e2890134-6c0b-4663-9340-f7f742d0a86f"/>
+               <code code="34067-9" codeSystem="2.16.840.1.113883.6.1" displayName="INDICATIONS &amp; USAGE SECTION"/>
+               <title>INDICATIONS: </title>
+               <text>
+                  <paragraph>Droncit (praziquantel) Injectable Cestocide is indicated for the removal of the following canine and/or feline cestodes. Dogs: <content styleCode="italics">Dipylidium caninum</content>, <content styleCode="italics">Taenia pisiformis</content>, <content styleCode="italics">Echinococcus granulosus</content> and for the removal and control of <content styleCode="italics">Echinococcus multilocularis</content>. Cats: <content styleCode="italics">Taenia taeniaeformis</content> and <content styleCode="italics">Dipylidium caninum.</content>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20260223"/>
+            </section>
+         </component>
+         <component>
+            <section ID="s4">
+               <id root="781db9c0-0a92-4500-b6af-320570522d6f"/>
+               <code code="43679-0" codeSystem="2.16.840.1.113883.6.1" displayName="MECHANISM OF ACTION SECTION"/>
+               <title>ACTION:</title>
+               <text>
+                  <paragraph>Droncit (praziquantel) is absorbed, metabolized in the liver and excreted via the bile into the digestive tract where its cestocidal activity is exerted.<sup>1</sup> Following exposure to praziquantel, the tapeworm loses its ability to resist digestion by the mammalian host. Because of this, whole tapeworms, including the scolex, are very rarely passed after administration of praziquantel. It is common to see only disintegrated and partially digested pieces of tapeworms in the stool. The majority of tapeworms killed are digested and are not found in the feces. </paragraph>
+               </text>
+               <effectiveTime value="20260223"/>
+            </section>
+         </component>
+         <component>
+            <section ID="s5">
+               <id root="bb0a268e-e26f-497d-b2cc-37380b4eb7d7"/>
+               <code code="34068-7" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE &amp; ADMINISTRATION SECTION"/>
+               <title>USE DIRECTIONS:</title>
+               <text>
+                  <paragraph>Droncit (praziquantel) Injectable Cestocide may be administered by either the subcutaneous or intramuscular route to dogs and cats. The recommended dosage of praziquantel varies according to body weight. Smaller animals require a relatively larger dosage. The optimum dosage for each individual animal will be achieved by utilizing the following dosage schedule. </paragraph>
+                  <table ID="_Reft300" styleCode="Noautorules" width="100%">
+                     <caption>DOGS AND PUPPIES†</caption>
+                     <col width="44%"/>
+                     <col width="56%"/>
+                     <tfoot>
+                        <tr>
+                           <td align="left" colspan="2" valign="top">† Not intended for use in puppies less than four (4) weeks of age. </td>
+                        </tr>
+                     </tfoot>
+                     <tbody>
+                        <tr>
+                           <td valign="top">
+                              <paragraph>Dogs: </paragraph>
+                           </td>
+                           <td valign="top"/>
+                        </tr>
+                        <tr>
+                           <td valign="top">
+                              <paragraph>   5 lbs. and under </paragraph>
+                           </td>
+                           <td valign="top">
+                              <paragraph>0.3 mL </paragraph>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td valign="top">
+                              <paragraph>   6-10 lbs. </paragraph>
+                           </td>
+                           <td valign="top">
+                              <paragraph>0.5 mL </paragraph>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td valign="top">
+                              <paragraph>   11-25 lbs. </paragraph>
+                           </td>
+                           <td valign="top">
+                              <paragraph>1.0 mL </paragraph>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td valign="top">
+                              <paragraph>   over 25 lbs. </paragraph>
+                           </td>
+                           <td valign="top">
+                              <paragraph>0.2 mL /5 lbs.<br/>body weight to a<br/>maximum of 3 mL </paragraph>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table ID="_Reft301" styleCode="Noautorules" width="100%">
+                     <caption>CATS AND KITTENS†† </caption>
+                     <col width="47%"/>
+                     <col width="53%"/>
+                     <tfoot>
+                        <tr>
+                           <td align="left" colspan="2" valign="top">†† Not intended for use in kittens less than six (6) weeks of age. </td>
+                        </tr>
+                     </tfoot>
+                     <tbody>
+                        <tr>
+                           <td valign="top">
+                              <paragraph>Cats: </paragraph>
+                           </td>
+                           <td valign="top"/>
+                        </tr>
+                        <tr>
+                           <td valign="top">
+                              <paragraph>   Under 5 lbs. </paragraph>
+                           </td>
+                           <td valign="top">
+                              <paragraph>0.2 mL </paragraph>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td valign="top">
+                              <paragraph>   5-10 lbs. </paragraph>
+                           </td>
+                           <td valign="top">
+                              <paragraph>0.4 mL </paragraph>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td valign="top">
+                              <paragraph>   11 lbs. and over </paragraph>
+                           </td>
+                           <td valign="top">
+                              <paragraph>0.6 mL maximum </paragraph>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <paragraph>10 mL: Use within 6 months of first puncture and puncture a maximum of 25 times. Any product remaining after 25 punctures or more than 6 months after initial puncture should be discarded. </paragraph>
+                  <paragraph>50 mL: Use within 6 months of first puncture and puncture a maximum of 90 times. Any product remaining after 90 punctures or more than 6 months after initial puncture should be discarded. </paragraph>
+               </text>
+               <effectiveTime value="20260223"/>
+            </section>
+         </component>
+         <component>
+            <section ID="s6">
+               <id root="33fd6b54-2361-46da-8593-9ab46f46b426"/>
+               <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+               <title>FASTING: </title>
+               <text>
+                  <paragraph>The recommended dosage of praziquantel is not affected by the presence or absence of food in the gastrointestinal tract, therefore, FASTING IS NEITHER NECESSARY NOR RECOMMENDED. </paragraph>
+               </text>
+               <effectiveTime value="20260223"/>
+            </section>
+         </component>
+         <component>
+            <section ID="s7">
+               <id root="e786f19f-2228-4673-80f4-bf38e3460637"/>
+               <code code="34068-7" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE &amp; ADMINISTRATION SECTION"/>
+               <title>ADMINISTRATION:</title>
+               <text>
+                  <paragraph>Droncit (praziquantel) Injectable Cestocide may be administered by either the subcutaneous or intramuscular route to dogs and cats. The intramuscular route may be preferred in dogs due to a brief period of pain that occasionally follows subcutaneous administration. </paragraph>
+                  <paragraph>Anaphylactoid reactions were not observed in clinical trials. However, as with any drug an anaphylactoid reaction can occur with this product and should be treated symptomatically if it occurs. </paragraph>
+               </text>
+               <effectiveTime value="20260223"/>
+            </section>
+         </component>
+         <component>
+            <section ID="s8">
+               <id root="a3f09c7e-f10c-4026-9906-08bd023ff03f"/>
+               <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+               <title>RETREATMENT: </title>
+               <text>
+                  <paragraph>For those animals living where reinfections are likely to occur, clients should be instructed in the steps to optimize prevention, otherwise, retreatment may be necessary. This is true in cases of <content styleCode="italics">Dipylidium caninum</content> where reinfection is almost certain to occur if fleas are not removed from the animal and its environment. In addition, for control of <content styleCode="italics">Echinococcus multilocularis,</content> a program of regular treatment every 21 to 26 days may be indicated (see <content styleCode="italics">
+                        <linkHtml href="#s9">E. multilocularis</linkHtml>
+                     </content> section below). </paragraph>
+               </text>
+               <effectiveTime value="20260223"/>
+            </section>
+         </component>
+         <component>
+            <section ID="s9">
+               <id root="fd23dc08-27d9-48d6-a6e4-b1b236300dd5"/>
+               <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+               <title>ECHINOCOCCUS MULTILOCULARIS: </title>
+               <text>
+                  <paragraph>
+                     <content styleCode="italics">Echinococcus multilocularis</content> is a tapeworm species ordinarily considered to be found in wild canids, including foxes, coyotes and wolves. The parasite has also been identified in domestic dogs and cats and potentially is a serious public health concern by involving humans as accidental intermediate hosts. </paragraph>
+                  <renderMultiMedia ID="id-887957475" referencedObject="ID_1eeff5b4-aff5-42e2-8192-863f019585cc"/>
+                  <paragraph>The life cycle of the parasite is based on a predator-prey relationship, as depicted above. </paragraph>
+                  <paragraph>The adult tapeworm is small (1-4mm) and resides in the intestinal tract of the definitive host (wild or domestic canids). Eggs from the adult tapeworm are shed in the feces of the infected canid. Rodents such as mice and voles serve as the intermediate host for <content styleCode="italics">E. multilocularis.</content> Eggs ingested by rodents develop in the liver, lungs and other organs to form multilocular cysts. The life cycle is completed after a canid consumes a rodent infected with cysts. After ingestion of the infected rodent, larvae within the cyst develop to adult tapeworms in the intestinal tract of the canid. Eggs may begin to be passed in the feces of the canid approximately 28 days later. </paragraph>
+                  <paragraph>This parasite poses a serious public health problem because of the possibility for human involvement in the life cycle. If eggs shed by an infected canid are accidentally ingested, a highly pathogenic condition (Alveolar Hydatid Disease) results from development of the cyst stage in humans. </paragraph>
+                  <paragraph>The original geographic distribution of <content styleCode="italics">E. multilocularis</content> was primarily confined to northern areas of North America. Current evidence indicates migration of the parasite well into the continental United States.<sup>2,3</sup>
+                  </paragraph>
+                  <paragraph>Domestic dogs living in <content styleCode="italics">E. multilocularis</content> endemic areas that roam freely with the opportunity to catch wild rodents are at risk for infection. Pet owners should be advised on how to minimize this risk. Proper restraint of roaming dogs should be encouraged, along with regular treatment with Droncit Injectable solution, following the dosing schedule aforementioned and precautions indicated below. </paragraph>
+                  <paragraph>Additional information on the life cycle and epidemiology of this parasite is available in veterinary parasitology texts.<sup>4,5</sup>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20260223"/>
+               <component>
+                  <section ID="s10">
+                     <id root="41a6fa8d-cf5b-4906-aabb-f6c93b10b6e0"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>Diagnosis: </title>
+                     <text>
+                        <paragraph>Diagnosis of <content styleCode="italics">E. multilocularis</content> in canids is difficult. The adult tapeworm produces no clinical signs of infection. Tapeworm segments (proglottids) are usually not observed in the feces. <content styleCode="italics">E. multilocularis</content> eggs, observed using microscopic fecal examination procedures, are similar in appearance to the common taeniid species of canids such as <content styleCode="italics">Taenia pisiformis</content>. </paragraph>
+                        <paragraph>Assistance in the diagnosis of <content styleCode="italics">E. multilocularis</content> may be available from a state veterinary diagnostic laboratory. Additional information regarding areas where <content styleCode="italics">E. multilocularis</content> is suspected or has been confirmed may be obtained from area veterinary schools or the Centers for Disease Control in Atlanta, GA. </paragraph>
+                     </text>
+                     <effectiveTime value="20260223"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="s11">
+                     <id root="922c7432-7da5-4084-bb0f-6c2f58d4c78c"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>Treatment: </title>
+                     <text>
+                        <paragraph>Dogs infected with <content styleCode="italics">E. multilocularis</content> should be treated to prevent exposure of humans to infective eggs and to reduce perpetuation of the parasite’s life cycle. </paragraph>
+                        <paragraph>The dosage of Droncit Injectable solution for removal of <content styleCode="italics">E. multilocularis</content> is the same as that indicated for the removal of the other tapeworm species listed on the label. Laboratory efficacy studies have demonstrated the recommended dosage is 100% efficacious for removal of this tapeworm. </paragraph>
+                        <paragraph>Under condition of continual exposure to wild rodents, retreatment of the dog at 21-26 day intervals is recommended to prevent the shedding of infectious eggs. </paragraph>
+                     </text>
+                     <effectiveTime value="20260223"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="s12">
+                     <id root="a3ad90c8-c3cc-4a1c-ab1b-87233b559a4f"/>
+                     <code code="42232-9" codeSystem="2.16.840.1.113883.6.1" displayName="PRECAUTIONS SECTION"/>
+                     <title>Precautions: </title>
+                     <text>
+                        <paragraph>Strict hygienic precautions should be taken when handling dogs or feces suspected of harboring <content styleCode="italics">E. multilocularis.</content> Infected dogs treated for the first time with Droncit Injectable solution and dogs treated at intervals greater than 28 days may shed eggs in the feces after treatment. The animal should be held in the clinic during this interval and all feces should be incinerated or autoclaved. If these procedures are not possible, the eggs can be destroyed by soaking the feces in a sodium hypochlorite (bleach) solution of 3.75% or greater.<sup>6</sup> All areas where the animal was maintained or in contact with should be thoroughly cleaned with sodium hypochlorite and allowed to dry completely before reuse. </paragraph>
+                     </text>
+                     <effectiveTime value="20260223"/>
+                  </section>
+               </component>
+               <component>
+                  <observationMedia ID="ID_1eeff5b4-aff5-42e2-8192-863f019585cc">
+                     <text>Life cycle of the parasite</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="dro06-0001-01.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="s13">
+               <id root="ae498d2a-758b-4191-9ab1-eef10b33e60c"/>
+               <code code="34088-5" codeSystem="2.16.840.1.113883.6.1" displayName="OVERDOSAGE SECTION"/>
+               <title>OVERDOSAGE: </title>
+               <text>
+                  <paragraph>The safety index has been derived from controlled safety evaluations, clinical trials and prior approved use in foreign countries. Dosages of 5 times the labeled rate at 14 day intervals to dogs as young as 4 weeks did not produce signs of clinical toxicity following either intramuscular or subcutaneous injections. No significant clinical chemistry, hematological, cholinesterase or histopathological changes occurred. Dosages of 5 times the labeled rate at 14 day intervals to kittens as young as 5 1/2 weeks did not produce signs of clinical toxicity following either intramuscular or subcutaneous injections. Symptoms of overdosage (33.8 to 40 times the labeled dosage rate) in adult dogs included vomition, excessive salivation and depression, but no deaths. Symptoms of overdosage (10 to 20 times the labeled dosage rate) in adult cats included vomition, depression, muscle tremors and incoordination. Deaths occurred in 5 of 8 cats treated subcutaneously and in all 8 injected intramuscularly at doses greater than 20 times the label rate. </paragraph>
+               </text>
+               <effectiveTime value="20260223"/>
+            </section>
+         </component>
+         <component>
+            <section ID="s14">
+               <id root="817073e1-1baa-48af-8cfa-5c91801d3a1a"/>
+               <code code="34070-3" codeSystem="2.16.840.1.113883.6.1" displayName="CONTRAINDICATIONS SECTION"/>
+               <title>CONTRAINDICATIONS: </title>
+               <text>
+                  <paragraph>There are no known contraindications to the use of praziquantel. </paragraph>
+               </text>
+               <effectiveTime value="20260223"/>
+            </section>
+         </component>
+         <component>
+            <section ID="s15">
+               <id root="a768d558-107b-44e7-8fda-81997c1cb685"/>
+               <code code="42228-7" codeSystem="2.16.840.1.113883.6.1" displayName="PREGNANCY SECTION"/>
+               <title>PREGNANCY: </title>
+               <text>
+                  <paragraph>Droncit (praziquantel) has been tested in breeding and pregnant dogs and cats. No adverse effects were noted. </paragraph>
+               </text>
+               <effectiveTime value="20260223"/>
+            </section>
+         </component>
+         <component>
+            <section ID="s16">
+               <id root="b3e7e2e3-16e3-4475-abbd-3cc527c07e1d"/>
+               <code code="34084-4" codeSystem="2.16.840.1.113883.6.1" displayName="ADVERSE REACTIONS SECTION"/>
+               <title>ADVERSE REACTIONS: </title>
+               <text>
+                  <paragraph>Mild side effects were observed in 18 of 189 dogs (9.5%) and 8 of 85 cats (9.4%) administered Droncit Injectable in field trials. For dogs the majority of these were described as brief pain responses following injections to larger dogs (weighing over 50 lbs.). Two dogs exhibited a brief period of mild vomiting and/or drowsy or staggering gait. The eight cats exhibited either diarrhea, weakness, vomition, salivation, sleepiness, burning on injection and/or a temporary lack of appetite. Local irritation or swelling at the site of subcutaneous injections have been reported for cats. </paragraph>
+               </text>
+               <effectiveTime value="20260223"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_156e297a-2c8d-45b6-9dcb-7b44c7193eab">
+               <id root="56c2f5a2-b65b-472d-aed7-19d46f0e4266"/>
+               <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+               <title>CONTACT INFORMATION: </title>
+               <text>
+                  <paragraph>For product questions, or to report adverse reactions, or for a copy of the Safety Data Sheet (SDS), call Elanco Product and Veterinary Support at 888-545-5973.</paragraph>
+                  <paragraph>For additional information about reporting adverse drug experiences for animal drugs, contact FDA at 1-888-FDA-VETS or <linkHtml href="http://www.fda.gov/reportanimalae">http://www.fda.gov/reportanimalae</linkHtml>.</paragraph>
+               </text>
+               <effectiveTime value="20260223"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_2b77e438-1186-48af-aff3-2aca2b6b0e64">
+               <id root="2c2efb06-606d-44e8-8ec2-a7d464012ef4"/>
+               <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+               <title>CAUTION: </title>
+               <text>
+                  <paragraph>Federal law restricts this drug to use by or on the order of a licensed veterinarian.</paragraph>
+               </text>
+               <effectiveTime value="20260223"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_d0674d1a-dfb4-4c27-b1c9-4f9d91cbc235">
+               <id root="9232a33a-5ce9-4ee7-9661-06e178f9f793"/>
+               <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+               <title>STORAGE CONDITIONS: </title>
+               <text>
+                  <paragraph>Store at or below 25º C. Do not allow to freeze.</paragraph>
+               </text>
+               <effectiveTime value="20260223"/>
+            </section>
+         </component>
+         <component>
+            <section ID="s18">
+               <id root="5d6bb89b-7c4c-47bb-923f-bc56ed491bbc"/>
+               <code code="34069-5" codeSystem="2.16.840.1.113883.6.1" displayName="HOW SUPPLIED SECTION"/>
+               <title>HOW SUPPLIED: </title>
+               <text>
+                  <table styleCode="Noautorules" width="100%">
+                     <col width="11%"/>
+                     <col width="89%"/>
+                     <tbody>
+                        <tr>
+                           <td valign="top">
+                              <paragraph>Code: </paragraph>
+                           </td>
+                           <td valign="top">
+                              <paragraph>10 mL vial </paragraph>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td valign="top"/>
+                           <td valign="top">
+                              <paragraph>50 mL vial </paragraph>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </text>
+               <effectiveTime value="20260223"/>
+            </section>
+         </component>
+         <component>
+            <section ID="s19">
+               <id root="5252e5ba-1e83-4b39-b4b5-41c84117231b"/>
+               <code code="34093-5" codeSystem="2.16.840.1.113883.6.1" displayName="REFERENCES SECTION"/>
+               <title>REFERENCES: </title>
+               <text>
+                  <list listType="ordered">
+                     <item>
+                        <caption>1.</caption>Andrews P. Pharmacokinetic Studies with DRONCIT in Animals Using a Biological Assay. <content styleCode="italics">Veterinary Medical Review</content>, 2/76, pg. 154-165. </item>
+                     <item>
+                        <caption>2.</caption>Hildreth MB, Johnson MD and Kazacos KR. 1991. A Zoonosis of Increasing Concern in the United States. <content styleCode="italics">Compendium for Cont Ed,</content> 13(5) 727-740. </item>
+                     <item>
+                        <caption>3.</caption>Lieby PD, Carney WP and Woods CE. 1970. Studies on Sylvatic Echinococcosis. III. Host Occurrence and Geographic Distribution of <content styleCode="italics">Echinococcus multilocularis</content> in the North Central United States. <content styleCode="italics">J Parasit</content> 56 (6) 1141-1150. </item>
+                     <item>
+                        <caption>4.</caption>Georgi JR and Georgi ME. 1990. <content styleCode="italics">Parasitology for Veterinarians.</content> W.B. Saunders Co. 118-138. </item>
+                     <item>
+                        <caption>5.</caption>Soulsby EJL. 1982. <content styleCode="italics">Helminths, Arthropods and Protozoa of Domesticated Animals.</content> 7th Edition. Lea &amp; Febigir. 118-138. </item>
+                     <item>
+                        <caption>6.</caption>Craig PS and McPharson CNL. 1988. Sodium Hypochlorite as an Ovicide for <content styleCode="italics">Echinococcus. Ann Trop Med and Parasit</content> 82(2) 211-213. </item>
+                  </list>
+                  <paragraph>Manufactured for:<br/>Elanco US Inc.<br/>Indianapolis, IN 46221 U.S.A.</paragraph>
+                  <paragraph>Droncit, Elanco and the diagonal bar logo are trademarks of Elanco or its affiliates.<br/>Revised: November 2025<br/>© 2025 Elanco or its affiliates.<br/>Approved by FDA under NADA # 111-607<br/>PA600583X</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">
+                        <content styleCode="italics">Elanco™</content>
+                     </content>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20260223"/>
+            </section>
+         </component>
+         <component>
+            <section ID="s20">
+               <id root="a854aa94-9949-4647-8f71-af3855b42ae0"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>Principal Display Panel </title>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">
+                        <content styleCode="italics">Elanco</content>
+                     </content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Droncit<sup>TM</sup>
+                     </content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">(praziquantel)</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Injectable Cestocide</content>
+                     <br/>
+                     <content styleCode="bold">For Dogs And Cats</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">For Removal Of <content styleCode="italics">D. caninum,<br/>T. pisiformis, E. granulosus</content>
+                        <br/>And For Removal And Control<br/>Of <content styleCode="italics">E. multilocularis</content> From<br/>Dogs. For Removal Of <content styleCode="italics">D.<br/>caninum</content> And <content styleCode="italics">T. taeniaeformis</content>
+                        <br/>From Cats.</content>
+                  </paragraph>
+                  <paragraph>56.8 mg/mL Solution </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">10 mL</content>
+                  </paragraph>
+                  <paragraph>Manufactured for:<br/>Elanco US Inc.<br/>Indianapolis, IN 46221 U.S.A <br/>Approved by FDA under NADA # 111-607<br/>Made in China</paragraph>
+                  <renderMultiMedia ID="id507797730" referencedObject="ID_771a1fd3-9a84-4279-bdf7-0f92fb66c928"/>
+                  <paragraph>
+                     <content styleCode="bold">
+                        <content styleCode="italics">Elanco</content>
+                     </content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Droncit<sup>TM</sup>
+                     </content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">(praziquantel)</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Injectable Cestocide</content>
+                     <br/>
+                     <content styleCode="bold">For Dogs And Cats</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">For Removal Of <content styleCode="italics">D. caninum, T.<br/>pisiformis, E. granulosus</content> And For<br/>Removal And Control Of <content styleCode="italics">E. multi-<br/>locularis</content> From Dogs. For Removal<br/>Of <content styleCode="italics">D. caninum </content>And<content styleCode="italics"> T. taeniaeformis</content>
+                        <br/>From Cats.</content>
+                  </paragraph>
+                  <paragraph>56.8 mg/mL Solution </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">50 mL</content>
+                  </paragraph>
+                  <paragraph>Manufactured for:<br/>Elanco US Inc.<br/>Indianapolis, IN 46221 U.S.A.<br/>Approved by FDA under NADA # 111-607 <br/>Made in China</paragraph>
+                  <renderMultiMedia ID="id1185028449" referencedObject="ID_1bba6a72-71b4-448f-a76d-581ea17c471a"/>
+               </text>
+               <effectiveTime value="20260223"/>
+               <component>
+                  <observationMedia ID="ID_771a1fd3-9a84-4279-bdf7-0f92fb66c928">
+                     <text>Droncit (praziquantel) Injectable Cestocide for Dogs and Cats 10 mL Carton Label</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="dro06-0001-02.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+               <component>
+                  <observationMedia ID="ID_1bba6a72-71b4-448f-a76d-581ea17c471a">
+                     <text>Droncit (praziquantel) Injectable Cestocide for Dogs and Cats 50 mL Carton Label</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="dro06-0001-03.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+      </structuredBody>
+   </component>
+</document>

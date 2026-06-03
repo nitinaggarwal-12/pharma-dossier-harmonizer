@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Pharma Dossier Harmonizer — Deployment & Registration Guide</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #1e293b;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 24px;
+            background-color: #f8fafc;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            border: 1px solid #e2e8f0;
+        }
+        h1 {
+            font-size: 2.2em;
+            color: #0f172a;
+            border-bottom: 2px solid #4f46e5;
+            padding-bottom: 12px;
+            margin-top: 0;
+        }
+        h2 {
+            font-size: 1.6em;
+            color: #1e1b4b;
+            margin-top: 36px;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 8px;
+        }
+        h3 {
+            font-size: 1.2em;
+            color: #4f46e5;
+            margin-top: 24px;
+        }
+        p, li {
+            font-size: 15px;
+            color: #334155;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        code {
+            background-color: #f1f5f9;
+            padding: 3px 6px;
+            border-radius: 6px;
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+            font-size: 0.9em;
+            color: #0f172a;
+        }
+        pre {
+            background-color: #0f172a;
+            padding: 16px;
+            border-radius: 12px;
+            overflow-x: auto;
+            border: 1px solid #1e293b;
+        }
+        pre code {
+            background-color: transparent;
+            color: #f8fafc;
+            padding: 0;
+            border-radius: 0;
+        }
+        hr {
+            border: 0;
+            border-top: 1px solid #e2e8f0;
+            margin: 32px 0;
+        }
+        a {
+            color: #4f46e5;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .highlight-box {
+            margin: 20px 0;
+            padding: 16px;
+            border-left: 4px solid #4f46e5;
+            background-color: #f5f7ff;
+            border-radius: 0 12px 12px 0;
+        }
+        .alert-box {
+            margin: 20px 0;
+            padding: 16px;
+            border-left: 4px solid #4f46e5;
+            background-color: #eff6ff;
+            border-radius: 0 12px 12px 0;
+        }
+        .alert-box p {
+            margin: 0;
+            font-weight: 500;
+            color: #1e40af;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Pharma Dossier Harmonizer — Deployment & Registration Guide</h1>
+        <p>This guide provides the complete step-by-step technical instructions to build and deploy the <strong>Pharma Dossier Harmonizer</strong> agent onto <strong>Vertex AI Agent Engine (Reasoning Engine)</strong>, and register it inside the <strong>Gemini Enterprise Plus UI</strong> for corporate end-users.</p>
+        
+        <hr/>
+        
+        <h2>📂 Section 1: Build & Deploy to Vertex AI Reasoning Engine</h2>
+        <p>The ADK multi-agent orchestrator is packaged and deployed as a serverless Reasoning Engine on Google Cloud Platform (GCP).</p>
+        
+        <h3>1. GCP Infrastructure Prerequisites</h3>
+        <p>Ensure your active gcloud identity has the <strong>Discovery Engine Admin</strong>, <strong>Vertex AI Administrator</strong>, and <strong>Storage Admin</strong> IAM roles.</p>
+        <p>Enable all mandatory GCP service APIs by executing:</p>
+        <pre><code>gcloud services enable \
+  aiplatform.googleapis.com \
+  cloudresourcemanager.googleapis.com \
+  discoveryengine.googleapis.com \
+  documentai.googleapis.com \
+  bigquery.googleapis.com</code></pre>
+        
+        <h3>2. Staging ground GCS Bucket</h3>
+        <p>The agent requires an active Cloud Storage bucket to store artifacts and support vector caches. Create your bucket if not already present:</p>
+        <pre><code>gsutil mb -l us-central1 gs://pharma-dossiers-nitinagga-ge/</code></pre>
+        
+        <h3>3. Deploying via the ADK CLI</h3>
+        <p>The deployment packages your local <code>pharma_agent/</code> source files (including agents tool-routing parameters, vector similarity schemas, and prompts) and registers them as a serverless Reasoning Engine:</p>
+        <pre><code># 1. Navigate to project root
+cd /Users/nitinagga/Documents/pharma-dossier-ge
+
+# 2. Activate virtual environment
+source .venv/bin/activate
+
+# 3. Deploy using the ADK CLI
+adk deploy agent_engine \
+  --project="nitinagga-ge" \
+  --region="us-central1" \
+  --display_name="Pharma Dossier Harmonizer" \
+  ./pharma_agent</code></pre>
+        
+        <h3>Expected Terminal Output:</h3>
+        <pre><code>Packaging pharma_agent directory...
+Uploading codebase to GCS artifact registry...
+Creating serverless Vertex AI Reasoning Engine instance...
+✓ Reasoning Engine deployed successfully!
+Resource ID: projects/528479452485/locations/us-central1/reasoningEngines/8971879092966129664</code></pre>
+        
+        <div class="alert-box">
+            <p><strong>⚠️ IMPORTANT: Copy the Resource ID!</strong> You will need the exact <code>projects/.../reasoningEngines/...</code> string to register the agent inside Gemini Enterprise.</p>
+        </div>
+        
+        <hr/>
+        
+        <h2>📂 Section 2: Register in Gemini Enterprise Plus UI</h2>
+        <p>Once the agent is deployed as a Vertex Reasoning Engine, an administrator must register it so it appears natively as a secure chat option in Gemini Workspace.</p>
+        
+        <h3>1. Pre-requisites for Registration</h3>
+        <ul>
+            <li><strong>Role Required:</strong> Discovery Engine Admin role on the GCP project.</li>
+            <li><strong>Gemini Enterprise App:</strong> An active Gemini Enterprise app must be provisioned in your Google Workspace Admin console.</li>
+        </ul>
+        
+        <h3>2. Step-by-Step Registration in Google Cloud Console</h3>
+        <ol>
+            <li>Open the <strong><a href="https://console.cloud.google.com" target="_blank">Google Cloud Console</a></strong>.</li>
+            <li>Use the search bar to navigate to <strong><code>Gemini Enterprise / Agent management</code></strong> (or search <strong><code>Discovery Engine / Agent Builders</code></strong>).</li>
+            <li>Click the <strong><code>Register Custom Agent</code></strong> button on the top menu.</li>
+            <li>Select <strong><code>Vertex AI Reasoning Engine (ADK)</code></strong> as the agent type.</li>
+            <li>Fill out the Agent Details:
+                <ul>
+                    <li><strong>Project ID:</strong> <code>nitinagga-ge</code></li>
+                    <li><strong>Location:</strong> <code>us-central1</code></li>
+                    <li><strong>Agent Engine Resource ID:</strong> <em>Paste the exact Resource ID copied from your deployment terminal (e.g., <code>projects/528479452485/locations/us-central1/reasoningEngines/8971879092966129664</code>)</em>.</li>
+                    <li><strong>Display Name:</strong> <code>Pharma Dossier Harmonizer</code></li>
+                    <li><strong>Description:</strong> <code>Expert pharmaceutical assistant for regulatory affairs, compliance, delta analysis, and eCTD Module 3 shell drafting.</code></li>
+                </ul>
+            </li>
+            <li>Click <strong><code>Next</code></strong>.</li>
+        </ol>
+        
+        <h3>3. Configure Role-Based Visibility</h3>
+        <p>To prevent unauthorized access to highly sensitive compound dossiers, assign visibility to specific Active Directory / Workspace groups:</p>
+        <ul>
+            <li><strong><code>Regulatory Affairs Group</code></strong> ➡️ Viewer / User Access.</li>
+            <li><strong><code>Quality Assurance Group</code></strong> ➡️ Viewer / User Access.</li>
+            <li><strong><code>Labeling & Prescribing Group</code></strong> ➡️ Viewer / User Access.</li>
+            <li><strong><code>IT & System Admins</code></strong> ➡️ Full Admin / Management Access.</li>
+        </ul>
+        <p>Click <strong><code>Save and Register</code></strong>.</p>
+        <p>The <strong>Pharma Dossier Harmonizer</strong> will now instantly populate as an active agent in the side panel for all authorized users inside their <strong>Gemini Workspace Chat</strong>!</p>
+        
+        <hr/>
+        
+        <h2>📂 Section 3: Post-Deployment Conversational Smoke Tests</h2>
+        <p>To confirm that the deployed reasoning engine is fully operational and actively calling its GCS, Document AI, and Vector RAG backend tools, log into Gemini Enterprise as an end-user and run these 3 smoke tests:</p>
+        
+        <h3>🧪 Smoke Test 1: GCS Folder & Naming Casing Scan</h3>
+        <p><strong>User Prompt:</strong></p>
+        <pre><code>Use your verify_ectd_packages tool to scan GCS folders and audit our files for casing gaps.</code></pre>
+        <p><strong>Expected Agent Response:</strong></p>
+        <ul>
+            <li><strong>Compliance Flag:</strong> Displays <code>🔴 Non-Compliant</code> due to spaces and uppercase letters.</li>
+            <li><strong>File List:</strong> Lists scanned GCS files, including <code>COCT_MT150007UV.xsd</code> and <code>eCTD 3.2.2 - EU M1 Validation Criteria v8.2.xlsx</code>.</li>
+        </ul>
+        
+        <h3>🧪 Smoke Test 2: Scientific Quality RAG Search</h3>
+        <p><strong>User Prompt:</strong></p>
+        <pre><code>Compare the draft dossier m3-dp-pharma-dev - working.md against M4Q_R1_Guideline.pdf quality standards and identify stability gaps. Cite exact page numbers.</code></pre>
+        <p><strong>Expected Agent Response:</strong></p>
+        <ul>
+            <li><strong>ICH Citation:</strong> Verbatim citation of <strong><code>M4Q_R1_Guideline.pdf</code> Page 17 (Section 3.2.S.7.1)</strong>.</li>
+            <li><strong>Gaps Flagged:</strong> Reports that the draft lacks mandatory tabulated 6-month accelerated stability potency figures under stress conditions.</li>
+        </ul>
+        
+        <h3>🧪 Smoke Test 3: Safety Warning Boxed Labels Harmonization</h3>
+        <p><strong>User Prompt:</strong></p>
+        <pre><code>Harmonize the safety warnings in my staged dossier against DailyMed boxed warnings for Adalimumab.</code></pre>
+        <p><strong>Expected Agent Response:</strong></p>
+        <ul>
+            <li><strong>Warnings Found:</strong> Identifies mandatory boxed warnings for <strong>Serious Infections</strong> and <strong>Malignancies</strong>.</li>
+            <li><strong>Gap Finding:</strong> Flags that the staged dossier lacks these pediatric boxed warnings.</li>
+        </ul>
+    </div>
+</body>
+</html>
