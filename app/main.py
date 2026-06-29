@@ -29,7 +29,7 @@ BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 SAMPLES_PATH = os.path.join(BASE_DIR, 'data/seed/samples.json')
 DB_PATH = os.path.join(BASE_DIR, 'data/seed/drugsatfda.db')
 
-PROJECT_ID = "nitinagga-ge"
+PROJECT_ID = "nitinagga-ge-2"
 LOCATION = "us-central1"
 PROCESSOR_ID = "53ff9ab7988c6acf" # User's Document AI Processor
 
@@ -331,7 +331,7 @@ async def upload_file(file: Optional[UploadFile] = File(None), custom_query: Opt
                         # 3. Fallback to downloading and parsing from GCS dynamically
                         from google.cloud import storage
                         storage_client = storage.Client(project=PROJECT_ID)
-                        bucket = storage_client.bucket("pharma-dossiers-nitinagga-ge")
+                        bucket = storage_client.bucket("pharma-dossiers-nitinagga-ge-2")
                         blob = bucket.blob(f"dossiers/{source_file}")
                         file_content = blob.download_as_bytes()
                         filename_used = f"dossiers/{source_file}"
@@ -711,14 +711,14 @@ async def upload_file(file: Optional[UploadFile] = File(None), custom_query: Opt
             try:
                 from google.cloud import storage
                 storage_client = storage.Client(project=PROJECT_ID)
-                bucket = storage_client.bucket("pharma-dossiers-nitinagga-ge")
+                bucket = storage_client.bucket("pharma-dossiers-nitinagga-ge-2")
                 blob = bucket.blob(filename_used)
                 
                 # Reset stream pointer to upload full original bytes
                 await file.seek(0)
                 content_type = "text/html" if filename_used.endswith(('.html', '.htm')) else ("text/markdown" if filename_used.endswith('.md') else ("text/plain" if filename_used.endswith('.txt') else "application/pdf"))
                 blob.upload_from_file(file.file, content_type=content_type)
-                print(f"Successfully staged file in GCS bucket: gs://pharma-dossiers-nitinagga-ge/{filename_used}")
+                print(f"Successfully staged file in GCS bucket: gs://pharma-dossiers-nitinagga-ge-2/{filename_used}")
                 method_used += " + Staged in GCS"
             except Exception as gcs_err:
                 print(f"Failed staging file in GCS bucket: {gcs_err}")

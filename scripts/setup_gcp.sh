@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Setup GCP project for Pharma Dossier Harmonizer
 
-PROJECT_ID="nitinagga-ge"
+PROJECT_ID="nitinagga-ge-2"
 
 gcloud config set project "$PROJECT_ID"
 

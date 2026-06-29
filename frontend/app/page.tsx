@@ -456,7 +456,7 @@ export default function Home() {
       formData.append('selected_guideline', selectedGuideline.name);
     }
     
-    fetch('http://localhost:8080/upload', {
+    fetch('/api/upload', {
       method: 'POST',
       headers: { 
         'X-API-Key': 'biopharma-secret-key-12345'

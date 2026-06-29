@@ -4,7 +4,8 @@ export const dynamic = 'force-dynamic';
 
 export async function GET() {
   try {
-    const response = await fetch('http://127.0.0.1:8080/dossiers', {
+    const backendUrl = process.env.BACKEND_URL || 'http://127.0.0.1:8080';
+    const response = await fetch(`${backendUrl}/dossiers`, {
       headers: {
         'X-API-Key': 'biopharma-secret-key-12345'
       }

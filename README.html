@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Pharma Gemini Enterprise Agent & Local Sandbox</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #1e293b;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 24px;
+            background-color: #f8fafc;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            border: 1px solid #e2e8f0;
+        }
+        h1 {
+            font-size: 2.2em;
+            color: #0f172a;
+            border-bottom: 2px solid #4f46e5;
+            padding-bottom: 12px;
+            margin-top: 0;
+        }
+        h2 {
+            font-size: 1.6em;
+            color: #1e1b4b;
+            margin-top: 36px;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 8px;
+        }
+        h3 {
+            font-size: 1.2em;
+            color: #4f46e5;
+            margin-top: 24px;
+        }
+        p, li {
+            font-size: 15px;
+            color: #334155;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        code {
+            background-color: #f1f5f9;
+            padding: 3px 6px;
+            border-radius: 6px;
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+            font-size: 0.9em;
+            color: #0f172a;
+        }
+        pre {
+            background-color: #0f172a;
+            padding: 16px;
+            border-radius: 12px;
+            overflow-x: auto;
+            border: 1px solid #1e293b;
+        }
+        pre code {
+            background-color: transparent;
+            color: #f8fafc;
+            padding: 0;
+            border-radius: 0;
+        }
+        hr {
+            border: 0;
+            border-top: 1px solid #e2e8f0;
+            margin: 32px 0;
+        }
+        a {
+            color: #4f46e5;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .highlight-box {
+            margin: 20px 0;
+            padding: 16px;
+            border-left: 4px solid #4f46e5;
+            background-color: #f5f7ff;
+            border-radius: 0 12px 12px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🗂️ Pharma Gemini Enterprise Agent & Local Sandbox</h1>
+        <p>This project implements a multi-agent system for pharmaceutical regulatory dossier analysis, designed to be deployed on Vertex AI Agent Engine, registered in Gemini Enterprise, and run locally as an interactive reviewer dashboard.</p>
+        
+        <hr/>
+        
+        <h2>🛠️ Technical Architecture</h2>
+        <ul>
+            <li><strong>Gemini Enterprise Web App:</strong> The enterprise-user conversational chat entry point.</li>
+            <li><strong>Vertex AI Agent Engine:</strong> Hosts the ADK multi-agent reasoning engine app.</li>
+            <li><strong>ADK Multi-Agent Orchestrator:</strong> Coordinates specialized sub-agents (Ingestion, Retrieval, Labeling, Compliance, Delta, and Reviewers).</li>
+            <li><strong>Local Next.js Reviewer Dashboard:</strong> A highly responsive, premium local dashboard for regulatory QA, delta analysis, and audits.</li>
+            <li><strong>FastAPI Backend Bridge:</strong> Connects the local dashboard with local databases, Document AI APIs, BigQuery indexing, and Vertex AI embedding caches.</li>
+        </ul>
+        
+        <hr/>
+        
+        <h2>👥 ADK Agent Orchestration</h2>
+        <ul>
+            <li><code>PharmaOrchestratorAgent</code> (Sequential/Coordinator Agent)
+                <ul>
+                    <li><code>DossierIngestionAgent</code> (Integrates with Google Document AI)</li>
+                    <li><code>ParallelRegulatoryAnalysisStage</code> (ParallelAgent)
+                        <ul>
+                            <li><code>RegulatoryRetrievalAgent</code> (Semantic RAG guidelines search)</li>
+                            <li><code>DeltaAnalysisAgent</code> (Dossier version diff calculator)</li>
+                            <li><code>LabelHarmonizerAgent</code> (Prescribing labels safety checker)</li>
+                        </ul>
+                    </li>
+                    <li><code>ComplianceAgent</code> (Checks folder layout structures & XML schemas)</li>
+                    <li><code>EctdShellAgent</code> (Drafts initial eCTD shell outlines)</li>
+                    <li><code>FinalReviewerAgent</code> (Compiles final validated JSON report)</li>
+                </ul>
+            </li>
+        </ul>
+        
+        <hr/>
+        
+        <h2>📂 Repository Structure</h2>
+        <pre><code>pharma-gemini-enterprise-agent/
+├── pharma_agent/
+│   ├── __init__.py
+│   ├── agent.py              # Core ADK agent definition
+│   ├── tools.py              # Tools used by agents (Document AI, RAG search)
+│   ├── schemas.py            # Pydantic output validation schemas
+│   └── ground_truth/         # Staged source dossiers & target guidelines
+├── app/
+│   ├── main.py               # FastAPI backend server bridge (Port 8002)
+│   └── streamlit_app.py      # Power-user dashboard
+├── frontend/                 # Next.js React Frontend UI (Port 3000)
+│   ├── app/
+│   │   ├── page.tsx          # Main interactive reviewer panel
+│   │   └── globals.css       # Main styling sheet
+│   └── package.json
+├── cloud_functions/          # Inbound serverless GCP data pipelines
+│   ├── ingest_gcs_file/      # Document AI GCS dynamic trigger function
+│   └── sync_drive_to_gcs/    # Google Drive webhook sync function
+├── scripts/                  # GCP provisioning & provisioning scripts
+│   ├── deploy_agent_engine.sh
+│   └── setup_gcp.sh
+├── scratch/                  # Local utility guides & packaging tools
+│   ├── user_guide.html       # Compiled premium styled HTML User Guide
+│   ├── export_user_guide.py  # Zero-dependency Markdown-to-HTML compiler
+│   └── upload_codebase_to_drive.py # Light-weight codebase ZIP packaging script
+├── requirements.txt
+└── README.md</code></pre>
+        
+        <hr/>
+        
+        <h2>🚀 Local Sandbox Startup Procedure</h2>
+        <p>You can run the entire stack locally on your machine in just two steps:</p>
+        
+        <h3>1. Start the FastAPI Backend Server (Port 8002)</h3>
+        <p>Executes all background PDF parsers, SQLite queries, and Vector RAG tools:</p>
+        <pre><code>uvicorn app.main:app --host 0.0.0.0 --port 8002</code></pre>
+        
+        <h3>2. Start the Next.js Frontend Server (Port 3000)</h3>
+        <p>Launches the premium interactive reviewer dashboard:</p>
+        <pre><code>cd frontend
+npm run dev</code></pre>
+        <p>Open <strong><a href="http://localhost:3000/">http://localhost:3000/</a></strong> in your browser to explore!</p>
+        
+        <hr/>
+        
+        <h2>📖 Documentation & User Guides</h2>
+        <p>We have built a highly detailed, step-by-step <strong>End-to-End User Guide</strong> that covers file directories, local testing cases, and conversational prompt scenarios:</p>
+        <ul>
+            <li><strong>HTML User Guide:</strong> Open <strong><a href="file:///Users/nitinagga/Documents/pharma-dossier-ge/scratch/user_guide.html">scratch/user_guide.html</a></strong> in any browser to copy and paste it directly into Google Docs or MS Word (retains 100% premium styling).</li>
+            <li><strong>Markdown Master:</strong> <strong><a href="file:///Users/nitinagga/.gemini/jetski/brain/ced10084-64bb-4a43-b1e9-15eb6e9e9fb4/user_guide.md">user_guide.md</a></strong> stored securely in your system's App Data.</li>
+            <li><strong>Re-compile Tool:</strong> Run <code>python3 scratch/export_user_guide.py</code> to instantly compile any updates in the markdown file into the HTML guide.</li>
+        </ul>
+        
+        <hr/>
+        
+        <h2>📦 Codebase Packaging & Backup</h2>
+        <p>We have included an optimized backup script to package your codebase (excluding heavy environments and node packages) into a lightweight ZIP:</p>
+        <ul>
+            <li><strong>ZIP Location:</strong> <strong><a href="file:///Users/nitinagga/Documents/pharma-dossier-ge/scratch/">scratch/pharma_dossier_harmonizer_codebase.zip</a></strong>.</li>
+            <li><strong>Run Backup:</strong> Run <code>python3 scratch/upload_codebase_to_drive.py</code> inside your terminal to re-compile the zip at any time!</li>
+        </ul>
+    </div>
+</body>
+</html>

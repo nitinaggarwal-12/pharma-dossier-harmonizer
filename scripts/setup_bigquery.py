@@ -2,7 +2,7 @@ from google.cloud import bigquery
 import os
 from datetime import datetime
 
-PROJECT_ID = "nitinagga-ge"
+PROJECT_ID = "nitinagga-ge-2"
 DATASET_ID = "dossier_analysis"
 TABLE_ID = "extracted_files"
 

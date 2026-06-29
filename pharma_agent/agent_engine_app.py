@@ -3,7 +3,7 @@ from google.adk.artifacts.gcs_artifact_service import GcsArtifactService
 from .agent import root_agent
 
 def gcs_artifact_service_builder(app_name: str):
-    return GcsArtifactService(bucket_name="pharma-dossiers-nitinagga-ge")
+    return GcsArtifactService(bucket_name="pharma-dossiers-nitinagga-ge-2")
 
 adk_app = AdkApp(
     agent=root_agent,

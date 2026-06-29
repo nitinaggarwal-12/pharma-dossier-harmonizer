@@ -7,8 +7,8 @@ import google.auth
 import io
 import functions_framework
 
-PROJECT_ID = os.environ.get("GOOGLE_CLOUD_PROJECT", "nitinagga-ge")
-TARGET_BUCKET = "pharma-dossiers-nitinagga-ge"
+PROJECT_ID = os.environ.get("GOOGLE_CLOUD_PROJECT", "nitinagga-ge-2")
+TARGET_BUCKET = "pharma-dossiers-nitinagga-ge-2"
 
 @functions_framework.http
 def sync_drive_file(request):

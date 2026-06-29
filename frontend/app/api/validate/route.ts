@@ -3,7 +3,8 @@ import { execSync } from 'child_process';
 
 export async function POST() {
   try {
-    const response = await fetch('http://127.0.0.1:8080/validate', {
+    const backendUrl = process.env.BACKEND_URL || 'http://127.0.0.1:8080';
+    const response = await fetch(`${backendUrl}/validate`, {
       method: 'POST',
       headers: {
         'X-API-Key': 'biopharma-secret-key-12345'

@@ -16,7 +16,7 @@ Gemini Enterprise admins can register ADK agents hosted on Vertex AI Agent Engin
 5. Provide:
    - Project ID
    - Location
-   - Agent Engine resource ID: projects/528479452485/locations/us-central1/reasoningEngines/8971879092966129664
+   - Agent Engine resource ID: projects/638420508320/locations/us-central1/reasoningEngines/1583712909148553216
 
    - Display name: Pharma Dossier Harmonizer
    - Description: Regulatory dossier harmonization, compliance, delta analysis, and eCTD drafting assistant

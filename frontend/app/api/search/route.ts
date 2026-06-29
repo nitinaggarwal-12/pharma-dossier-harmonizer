@@ -7,7 +7,8 @@ export async function GET(request: Request) {
     const q = searchParams.get('q');
     const region = searchParams.get('region');
     
-    const url = new URL('http://localhost:8080/search');
+    const backendUrl = process.env.BACKEND_URL || 'http://127.0.0.1:8080';
+    const url = new URL(`${backendUrl}/search`);
     if (q) url.searchParams.append('q', q);
     if (region) url.searchParams.append('region', region);
     

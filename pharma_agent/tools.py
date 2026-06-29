@@ -16,9 +16,40 @@ except FileNotFoundError:
     SAMPLES = []
 
 # Document AI Configuration
-PROJECT_ID = "nitinagga-ge"
+PROJECT_ID = "nitinagga-ge-2"
 LOCATION = "us" 
 PROCESSOR_ID = "53ff9ab7988c6acf" 
+
+
+def get_ground_truth_dir() -> str:
+    """Resolves ground_truth directory locally or downloads from GCS when running on cloud."""
+    local_path = os.path.join(os.path.dirname(__file__), 'ground_truth')
+    if os.path.exists(local_path) and any(f.endswith('.pdf') for f in os.listdir(local_path)):
+        return local_path
+        
+    tmp_path = '/tmp/ground_truth'
+    os.makedirs(tmp_path, exist_ok=True)
+    os.makedirs(os.path.join(tmp_path, '.vector_cache'), exist_ok=True)
+    
+    try:
+        from google.cloud import storage
+        storage_client = storage.Client(project=PROJECT_ID)
+        bucket = storage_client.bucket("pharma-dossiers-nitinagga-ge-2")
+        
+        blobs = storage_client.list_blobs(bucket, prefix="specifications/")
+        for blob in blobs:
+            if blob.name.endswith('/'):
+                continue
+            rel_path = blob.name.replace("specifications/", "")
+            dest_file = os.path.join(tmp_path, rel_path)
+            os.makedirs(os.path.dirname(dest_file), exist_ok=True)
+            if not os.path.exists(dest_file) or os.path.getsize(dest_file) != blob.size:
+                print(f"Downloading from GCS on-demand: {blob.name} -> {dest_file}")
+                blob.download_to_filename(dest_file)
+    except Exception as e:
+        print(f"Error syncing ground_truth from GCS: {e}")
+        
+    return tmp_path
 
 
 def download_gcs_blob(gcs_uri: str) -> bytes:
@@ -58,10 +89,10 @@ def extract_dossier_text(dossier_uri: str) -> Dict:
             try:
                 from google.cloud import storage
                 storage_client = storage.Client(project=PROJECT_ID)
-                bucket = storage_client.bucket("pharma-dossiers-nitinagga-ge")
+                bucket = storage_client.bucket("pharma-dossiers-nitinagga-ge-2")
                 blob = bucket.blob(f"pharma_agent/user_files/{os.path.basename(dossier_uri)}")
                 blob.upload_from_string(image_content, content_type="application/pdf")
-                print(f"Method A Sync: Successfully copied staged dossier to GCS: gs://pharma-dossiers-nitinagga-ge/pharma_agent/user_files/{os.path.basename(dossier_uri)}")
+                print(f"Method A Sync: Successfully copied staged dossier to GCS: gs://pharma-dossiers-nitinagga-ge-2/pharma_agent/user_files/{os.path.basename(dossier_uri)}")
             except Exception as sync_err:
                 print(f"Method A Sync failed: {sync_err}")
         else:
@@ -219,7 +250,7 @@ def query_excel_criteria(query: str) -> List[Dict]:
     Use this ONLY for tracking specific error codes, verification rules, DTD file parameters, 
     file naming rules, and package path locations.
     """
-    file_path = os.path.join(os.path.dirname(__file__), 'ground_truth/eCTD 3.2.2 - EU M1 Validation Criteria v8.2.xlsx')
+    file_path = os.path.join(get_ground_truth_dir(), 'eCTD 3.2.2 - EU M1 Validation Criteria v8.2.xlsx')
     if not os.path.exists(file_path):
         return [{"error": f"File not found at {file_path}"}]
         
@@ -280,7 +311,7 @@ def query_guideline_pdf(query: str) -> List[Dict]:
     """
     print(f"Querying real context PDF documents semantically for: {query}")
     
-    ground_truth_dir = os.path.join(os.path.dirname(__file__), 'ground_truth')
+    ground_truth_dir = get_ground_truth_dir()
     if not os.path.exists(ground_truth_dir):
         return [{"error": "Ground Truth directory cannot be loaded"}]
 
@@ -363,7 +394,7 @@ def verify_ectd_packages() -> Dict:
     try:
         from google.cloud import storage
         storage_client = storage.Client(project=PROJECT_ID)
-        bucket = storage_client.bucket("pharma-dossiers-nitinagga-ge")
+        bucket = storage_client.bucket("pharma-dossiers-nitinagga-ge-2")
         
         blobs = list(storage_client.list_blobs(bucket, prefix=""))
         

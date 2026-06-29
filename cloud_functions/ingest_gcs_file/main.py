@@ -8,7 +8,7 @@ from google.cloud import bigquery
 from google.cloud import documentai_v1 as documentai
 from pypdf import PdfReader
 
-PROJECT_ID = os.environ.get("GOOGLE_CLOUD_PROJECT", "nitinagga-ge")
+PROJECT_ID = os.environ.get("GOOGLE_CLOUD_PROJECT", "nitinagga-ge-2")
 LOCATION = "us"
 PROCESSOR_ID = "53ff9ab7988c6acf"
 

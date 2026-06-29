@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-PROJECT_ID="nitinagga-ge"
+PROJECT_ID="nitinagga-ge-2"
 LOCATION="us-central1"
 DISPLAY_NAME="Pharma Dossier Harmonizer"
 

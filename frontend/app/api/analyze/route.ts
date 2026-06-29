@@ -4,7 +4,8 @@ import { execSync } from 'child_process';
 export async function POST(request: Request) {
   try {
     const body = await request.json();
-    const response = await fetch('http://localhost:8080/analyze', {
+    const backendUrl = process.env.BACKEND_URL || 'http://127.0.0.1:8080';
+    const response = await fetch(`${backendUrl}/analyze`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

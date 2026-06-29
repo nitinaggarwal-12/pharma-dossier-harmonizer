@@ -31,9 +31,10 @@ export async function POST(request: Request) {
 
     let response: Response | null = null;
     let retries = 3;
+    const backendUrl = process.env.BACKEND_URL || 'http://127.0.0.1:8080';
     while (retries > 0) {
       try {
-        response = await fetch('http://127.0.0.1:8080/upload', {
+        response = await fetch(`${backendUrl}/upload`, {
           method: 'POST',
           headers: {
             'X-API-Key': 'biopharma-secret-key-12345'

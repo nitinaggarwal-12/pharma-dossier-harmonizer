@@ -1,7 +1,7 @@
 import vertexai
 from vertexai.generative_models import GenerativeModel
 
-PROJECT_ID = "nitinagga-ge"
+PROJECT_ID = "nitinagga-ge-2"
 LOCATION = "us-central1"
 
 try:
