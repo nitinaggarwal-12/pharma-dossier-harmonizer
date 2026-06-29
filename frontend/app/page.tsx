@@ -738,7 +738,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="min-h-screen bg-slate-50 flex font-sans" style={{ minHeight: '100vh' }}>
+    <div className="min-h-screen bg-slate-50 flex font-sans theme-dark-premium animate-fade-in-up" style={{ minHeight: '100vh' }}>
       {/* Sidebar */}
       <div className="w-64 bg-white border-r border-slate-200 flex flex-col z-10 shadow-sm">
         <div className="p-6 cursor-pointer" onClick={() => { setCurrentPage('Dashboard'); setSelectedDossier(null); setGlobalSearchQuery(''); setGlobalSearchResults(null); }}>
@@ -798,7 +798,7 @@ export default function Home() {
                   </div>
                   <div className="h-10 w-full">
                     <svg className="w-full h-full" viewBox="0 0 100 30" preserveAspectRatio="none">
-                      <path d="M 0 20 Q 25 5 50 15 T 100 5" fill="none" stroke="#6366F1" strokeWidth="2" />
+                      <path d="M 0 20 Q 25 5 50 15 T 100 5" fill="none" stroke="#6366F1" strokeWidth="2" className="path-animate" />
                       <path d="M 0 20 Q 25 5 50 15 T 100 5 L 100 30 L 0 30 Z" fill="#EEF2FF" opacity="0.5" />
                     </svg>
                   </div>
@@ -810,7 +810,7 @@ export default function Home() {
                   </div>
                   <div className="h-10 w-full">
                     <svg className="w-full h-full" viewBox="0 0 100 30" preserveAspectRatio="none">
-                      <path d="M 0 25 Q 25 10 50 5 T 100 20" fill="none" stroke="#10B981" strokeWidth="2" />
+                      <path d="M 0 25 Q 25 10 50 5 T 100 20" fill="none" stroke="#10B981" strokeWidth="2" className="path-animate" />
                       <path d="M 0 25 Q 25 10 50 5 T 100 20 L 100 30 L 0 30 Z" fill="#DEF7EC" opacity="0.5" />
                     </svg>
                   </div>
@@ -822,7 +822,7 @@ export default function Home() {
                   </div>
                   <div className="h-10 w-full">
                     <svg className="w-full h-full" viewBox="0 0 100 30" preserveAspectRatio="none">
-                      <path d="M 0 5 Q 25 20 50 10 T 100 25" fill="none" stroke="#3B82F6" strokeWidth="2" />
+                      <path d="M 0 5 Q 25 20 50 10 T 100 25" fill="none" stroke="#3B82F6" strokeWidth="2" className="path-animate" />
                       <path d="M 0 5 Q 25 20 50 10 T 100 25 L 100 30 L 0 30 Z" fill="#DBEAFE" opacity="0.5" />
                     </svg>
                   </div>
@@ -834,7 +834,7 @@ export default function Home() {
                   </div>
                   <div className="h-10 w-full">
                     <svg className="w-full h-full" viewBox="0 0 100 30" preserveAspectRatio="none">
-                      <path d="M 0 25 Q 25 5 50 25 T 100 5" fill="none" stroke="#EF4444" strokeWidth="2" />
+                      <path d="M 0 25 Q 25 5 50 25 T 100 5" fill="none" stroke="#EF4444" strokeWidth="2" className="path-animate" />
                       <path d="M 0 25 Q 25 5 50 25 T 100 5 L 100 30 L 0 30 Z" fill="#FEE2E2" opacity="0.5" />
                     </svg>
                   </div>
@@ -1057,7 +1057,7 @@ export default function Home() {
                         </div>
 
                         {/* ⚙️ live System background Console logs widget */}
-                        <div className="mt-4 p-4 bg-slate-950 text-slate-300 rounded-xl font-mono text-xs space-y-2 border border-slate-800 shadow-inner">
+                        <div className="mt-4 p-4 bg-slate-950 text-slate-300 rounded-xl font-mono text-xs space-y-2 border border-slate-800 shadow-inner terminal-scan">
                           <p className="text-indigo-400 font-bold flex items-center border-b border-slate-800 pb-1.5 tracking-wide">
                             ⚙️ Live System Ingestion Console
                           </p>
